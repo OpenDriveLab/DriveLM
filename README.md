@@ -44,9 +44,9 @@ In the dataset of DriveLM, we facilitates Perception, Prediction and Planning (P
   
 |  Dataset  | Base Dataset |      Language Form    |   Content | Scale      |  Release?|
 |:---------:|:-------------:|:--------------------:|:------:|:--------------------------------------------:|:----------:|
-| [BDD-X 2018](https://github.com/astra-vision/MonoScene)  |  BDD  | Description | Planning description & Justification    | 8M frame,20k text   |**:heavy_check_mark:**|
+| [BDD-X 2018](https://github.com/JinkyuKimUCB/explainable-deep-driving)  |  BDD  | Description | Planning description & Justification    | 8M frame,20k text   |**:heavy_check_mark:**|
 | [Talk2Car 2019](https://github.com/talk2car/Talk2Car)   |      nuScenes    | Description |  Goal point Description | 30k frame,10k text | **:heavy_check_mark:**|
-| [nuScenes-QA 2023](https://github.com/FANG-MING/occupancy-for-nuscenes)   |   nuScenes  | VQA |  Perception result     | 30k frame, 460k text| :x:|
+| [nuScenes-QA 2023](https://arxiv.org/abs/2305.14836)   |   nuScenes  | VQA |  Perception result     | 30k frame, 460k text| :x:|
 | **DriveLM 2023** | nuScenes| **:boom: VQA+Description** | **.:boom:Perception, Prediction and Planning Logic** | 30k frame, 600k text|**:heavy_check_mark:** Mid August|
 
 </center>
