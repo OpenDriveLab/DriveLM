@@ -85,6 +85,7 @@ AD visual-language model with chain-of-thought ability to produce better plannin
 
 ## TODO 
 - [x] DriveLM `v1.0`
+- [ ] DriveLM `v1.1`
 - [ ] DriveLM `v2.0`
 
 <p align="right">(<a href="#top">back to top</a>)</p>
