@@ -1,6 +1,6 @@
 <div id="top" align="center">
 
-# DriveLM
+# *:rocket*  DriveLM *:rocket*
 
 **Drive on Language: exploring the possibility of connecting autonomous driving and large language models**
 
@@ -47,7 +47,7 @@ In the dataset of DriveLM, we facilitates Perception, Prediction and Planning (P
 | [BDD-X 2018](https://github.com/JinkyuKimUCB/explainable-deep-driving)  |  BDD  | Description | Planning description & Justification    | 8M frame,20k text   |**:heavy_check_mark:**|
 | [Talk2Car 2019](https://github.com/talk2car/Talk2Car)   |      nuScenes    | Description |  Goal point Description | 30k frame,10k text | **:heavy_check_mark:**|
 | [nuScenes-QA 2023](https://arxiv.org/abs/2305.14836)   |   nuScenes  | VQA |  Perception result     | 30k frame, 460k text| :x:|
-| **DriveLM 2023** | nuScenes| **:boom: VQA+Description** | **.:boom:Perception, Prediction and Planning Logic** | 30k frame, 600k text|**:heavy_check_mark:** Mid August|
+| **DriveLM 2023** | nuScenes| **:boom: VQA+Description** | **:boom:Perception, Prediction and Planning Logic** | 30k frame, 600k text|**:heavy_check_mark:** Mid August|
 
 </center>
 
