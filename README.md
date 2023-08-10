@@ -1,6 +1,6 @@
 <div id="top" align="center">
 
-# *:rocket*  DriveLM *:rocket*
+# 🚀  DriveLM  🚀
 
 **Drive on Language: exploring the possibility of connecting autonomous driving and large language models**
 
