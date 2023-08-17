@@ -2,7 +2,7 @@
 
 #  DriveLM  🚀
 
-**Drive on Language: exploring the possibility of connecting autonomous driving and large language models**
+**Drive on Language:** *exploring the possibility of connecting autonomous driving and large language models*
 
 <a href="#license-and-citation">
   <img alt="License: Apache2.0" src="https://img.shields.io/badge/license-Apache%202.0-blue.svg"/>
