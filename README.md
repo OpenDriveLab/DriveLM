@@ -63,9 +63,13 @@ In the version 1.0 of DriveLM, we construct our dataset based on the nuScenes. T
 On the other hand, DriveLM v1.0 contains two main parts:`Train` and `Validation`. `Train` contains 697 scenarios and corresponding Q&A pairs. And `Validation` contains 150 scenerios and  corresponding Q&A pairs.
 
 
+In each scene, there are about 40 keyframes（Sampling frequency is approximately 2 Hz）, and we select one every five keyframes for annotating.And in each keyframe selected,we give the labels and gt-boxes of the objects we are interested in.
+
 ### What's included in DriveLM v2?
+In the version 2.0 of DriveLM, we've made significant improvements: Instead of selecting the frames and objects to be annotated beforehand, we leave it up to the annotator to choose the frames and objects of interest among all the keyframes.
 
 
+Besides,we've increased the freedom of the Q&A pairs by adding customisable questions, which also increase the applicability of Q&A pairs in more diverse scenarios.
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
