@@ -57,8 +57,10 @@
 ## More Details
 
 ### What's included in DriveLM v1?
-In the version 1.0 of DriveLM, we construct our dataset based on the nuScenes. The most central element of DriveLM is scenario-based Q&A. Basically, we divide our Q&A pairs into three part: Perception, Prediction and Planning.
-On the other hand, DriveLM v1.0 contains two main parts:Train and Validation. Train contains 697 scenarios and corresponding Q&A pairs. And Validation contains 150 scenerios and  corresponding Q&A pairs.
+In the version 1.0 of DriveLM, we construct our dataset based on the nuScenes. The most central element of DriveLM is scenario-based Q&A. Basically, we divide our Q&A pairs into three part: `Perception`, `Prediction` and `Planning`.
+
+
+On the other hand, DriveLM v1.0 contains two main parts:`Train` and `Validation`. `Train` contains 697 scenarios and corresponding Q&A pairs. And `Validation` contains 150 scenerios and  corresponding Q&A pairs.
 
 
 ### What's included in DriveLM v2?
