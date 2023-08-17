@@ -25,7 +25,6 @@
 ## Table of Contents
 - [Highlights](#highlights)
 - [More Details](#more-details)
-- [TODO](#todo)
 - [Getting Started](#getting-started)
 - [License and Citation](#license-and-citation)
 - [Related Resources](#related-resources)
@@ -78,13 +77,6 @@ AD visual-language model with chain-of-thought ability to produce better plannin
 ### What's included in DriveLM v2?
 
 
-
-
-
-## TODO 
-- [x] DriveLM `v1.0`
-- [ ] DriveLM `v1.1`
-- [ ] DriveLM `v2.0`
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
