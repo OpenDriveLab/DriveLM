@@ -1,6 +1,6 @@
 <div id="top" align="center">
 
-# 🚀  DriveLM  🚀
+#  DriveLM  🚀
 
 **Drive on Language: exploring the possibility of connecting autonomous driving and large language models**
 
@@ -31,14 +31,11 @@
 
 ## Highlights
 
-### :car: DriveLM:
-Introduce the reasoning ability of large language model in AD to make decision and ensure explainable planning.
-
 
 ### :fire: DriveLM: The *first* language-driving dataset facilitating P3 and logic
-
-In the dataset of DriveLM, we facilitates Perception, Prediction and Planning (P3) with human-written reasoning logic as connection.
-
+- Introduce the reasoning ability of large language model in AD to make decision and ensure explainable planning.
+- In the dataset of DriveLM, we facilitates Perception, Prediction and Planning (P3) with human-written reasoning logic as connection.
+- AD visual-language model with chain-of-thought ability to produce better planning result
 <center>
   
 |  Dataset  | Base Dataset |      Language Form    |   Content | Scale      |  Release?|
@@ -49,18 +46,6 @@ In the dataset of DriveLM, we facilitates Perception, Prediction and Planning (P
 | **DriveLM 2023** | nuScenes| **:boom: VQA+Description** | **:boom:Perception, Prediction and Planning Logic** | 30k frame, 600k text|**:heavy_check_mark:** Mid August|
 
 </center>
-
-
-
-
-
-
-
-### :fire: DriveLM:
-
-AD visual-language model with chain-of-thought ability to produce better planning result
-
-
 
 
 
