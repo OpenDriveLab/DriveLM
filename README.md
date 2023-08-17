@@ -72,12 +72,10 @@ AD visual-language model with chain-of-thought ability to produce better plannin
 
 ## More Details
 
-### Data Part
-#### Perception
-#### Prediction
-#### Planning
+### What's included in DriveLM v1?
 
-### Model Part
+
+### What's included in DriveLM v2?
 
 
 
