@@ -23,11 +23,20 @@
 - **`[2023/08/07]`** DriveLM `v1.0` released
 
 ## Table of Contents
+- [Introduction](#introduction)
 - [Highlights](#highlights)
 - [More Details](#more-details)
 - [Getting Started](#getting-started)
 - [License and Citation](#license-and-citation)
 - [Related Resources](#related-resources)
+
+
+## Introduction
+DriveLM is an open source project, which contains both `Dataset` and `Model`. Through DriveLM, we introduce the reasoning ability of large language model in AD to make decision and ensure explainable planning.
+
+
+Specifically, in the `Dataset` of DriveLM, we facilitates Perception, Prediction and Planning (P3) with human-written reasoning logic as connection. And in the `Model` part, we propose an AD visual-language model with chain-of-thought ability to produce better planning result.
+
 
 ## Highlights
 
