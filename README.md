@@ -56,7 +56,7 @@ Specifically, in the `Dataset` of DriveLM, we facilitates Perception, Prediction
 
 
 #### In the view of general VLM
-- Structured-reasoning, Tree-of-Thought testbench
+- Structured-reasoning, **Tree-of-Thought** testbench
 
  
 #### In the view of autonomous driving
