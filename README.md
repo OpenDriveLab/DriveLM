@@ -42,9 +42,7 @@ Specifically, in the `Dataset` of DriveLM, we facilitates Perception, Prediction
 
 
 ### :fire: DriveLM: The *first* language-driving dataset facilitating P3 and logic
-- Introduce the reasoning ability of large language model in AD to make decision and ensure explainable planning.
-- In the dataset of DriveLM, we facilitates Perception, Prediction and Planning (P3) with human-written reasoning logic as connection.
-- AD visual-language model with chain-of-thought ability to produce better planning result
+
 <center>
   
 |  Dataset  | Base Dataset |      Language Form    |   Content | Scale      |  Release?|
@@ -55,6 +53,18 @@ Specifically, in the `Dataset` of DriveLM, we facilitates Perception, Prediction
 | **DriveLM 2023** | nuScenes| **:boom: VQA+Description** | **:boom:Perception, Prediction and Planning Logic** | 30k frame, 600k text|**:heavy_check_mark:** Mid August|
 
 </center>
+
+
+#### In the view of general VLM
+- Structured-reasoning, Tree-of-Thought testbench
+
+ 
+#### In the view of autonomous driving
+- Full-stack, completeness in functionality (covering perception, prediction and planning)
+- Reasoning for future events that does not even happened
+  - Many "what if"-style question, imagine the future by language
+- Task-driven Decomposition.One scene-level text-goal into multiple frame-level trajectory & planning-text
+
 
 
 
