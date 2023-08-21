@@ -9,6 +9,10 @@
 </div>
   
 <div id="top" align="center">
+
+<p align="center">
+  <img src="assets/front_page.jpg">
+</p>
     
 # DriveLM  🚀
 
