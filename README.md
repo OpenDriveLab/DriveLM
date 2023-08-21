@@ -1,5 +1,14 @@
-<div id="top" align="center">
+<div style='left'>
+<a href="https://huggingface.co/DriveLM" target="_blank">
+    <img alt="Hugging Face" src="https://img.shields.io/badge/%F0%9F%A4%97%20Hugging%20Face-DriveLM-ffc107?color=ffc107&logoColor=white" />
+  </a>
+<a href="https://twitter.com/OpenDriveLab" target="_blank">
+    <img alt="Twitter Follow" src="https://img.shields.io/twitter/follow/OpenDriveLab?style=social&color=brightgreen&logo=twitter" />
+  </a>
 
+</div>
+  
+<div id="top" align="center">
 #  DriveLM  🚀
 
 **Drive on Language:** *exploring the possibility of connecting autonomous driving and large language models*
@@ -11,7 +20,7 @@
 
 
 <p align="center">
-  <img src="demo.gif">
+  <img src="assets/demo.gif">
 </p>
 
 </div>
@@ -32,6 +41,11 @@
 
 
 ## Introduction
+
+<p align="center">
+  <img src="assets/tree.jpg">
+</p>
+
 DriveLM is an open source project, which contains both `Dataset` and `Model`. Through DriveLM, we introduce the reasoning ability of large language model in AD to make decision and ensure explainable planning.
 
 
