@@ -39,8 +39,6 @@
   
 <p align="center">
   <video src="https://github.com/OpenDriveLab/DriveLM/blob/main/assets/Demo.mp4" width="640" height="480" controls></video>
-
-https://github.com/OpenDriveLab/DriveLM/blob/main/assets/Demo.mp4
 </p>
 
 
