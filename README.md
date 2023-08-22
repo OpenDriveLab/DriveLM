@@ -25,6 +25,10 @@
   <img alt="License: Apache2.0" src="https://img.shields.io/badge/license-Apache%202.0-blue.svg"/>
 </a>
 
+<a href="#license-and-citation">
+  <img src="https://img.shields.io/badge/Latest%20release-v1.2-yellow"/>
+</a>
+
 
 
 <p align="center">
