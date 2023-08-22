@@ -37,7 +37,9 @@
 </p>
 </div>
 
-  
+
+## 🔥Highlights of DriveLM Dataset
+
 #### In the view of general VLM
 - Structured-reasoning, **Tree-of-Thought** testbench
 
