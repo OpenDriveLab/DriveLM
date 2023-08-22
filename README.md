@@ -33,7 +33,6 @@
 
 </div>
 
-> - Point of contact: [contact@opendrivelab.com](mailto:contact@opendrivelab.com)
 
 ## News
 
