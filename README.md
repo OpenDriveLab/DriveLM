@@ -14,10 +14,9 @@
 <div id="top" align="center">
 
 <p align="center">
-  <img src="assets/front_page.jpeg">
+  <img src="assets/Title_DriveLM.jpg">
 </p>
     
-# DriveLM  🚀
 
 **Drive on Language:** *exploring the possibility of connecting autonomous driving and large language models*
 
