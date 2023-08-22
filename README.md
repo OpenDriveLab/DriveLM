@@ -5,6 +5,9 @@
 <a href="https://twitter.com/OpenDriveLab" target="_blank">
     <img alt="Twitter Follow" src="https://img.shields.io/twitter/follow/OpenDriveLab?style=social&color=brightgreen&logo=twitter" />
   </a>
+<a href="https://opendrivelab.com" target="_blank">
+<img src="https://img.shields.io/badge/contact%40opendrivelab.com-white?style=social&logo=gmail">
+  </a>
 
 </div>
   
