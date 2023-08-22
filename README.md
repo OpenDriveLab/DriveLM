@@ -25,7 +25,7 @@
   <img alt="License: Apache2.0" src="https://img.shields.io/badge/license-Apache%202.0-blue.svg"/>
 </a>
 
-<a href="#license-and-citation">
+<a href="#getting-start">
   <img src="https://img.shields.io/badge/Latest%20release-v1.2-yellow"/>
 </a>
 
@@ -46,7 +46,7 @@
 - [Introduction](#introduction)
 - [Highlights](#highlights)
 - [More Details](#more-details)
-- [Getting Started](#getting-started)
+- [Getting Start](#getting-start)
 - [License and Citation](#license-and-citation)
 - [Related Resources](#related-resources)
 
