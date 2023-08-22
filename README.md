@@ -1,16 +1,3 @@
-<div style='left'>
-<a href="https://huggingface.co/DriveLM" target="_blank">
-    <img alt="Hugging Face" src="https://img.shields.io/badge/%F0%9F%A4%97%20Hugging%20Face-DriveLM-ffc107?color=ffc107&logoColor=white" />
-  </a>
-<a href="https://twitter.com/OpenDriveLab" target="_blank">
-    <img alt="Twitter Follow" src="https://img.shields.io/twitter/follow/OpenDriveLab?style=social&color=brightgreen&logo=twitter" />
-  </a>
-<a href="https://opendrivelab.com" target="_blank">
-<img src="https://img.shields.io/badge/contact%40opendrivelab.com-white?style=social&logo=gmail">
-  </a>
-
-</div>
-  
 <div id="top" align="center">
 
 <p align="center">
@@ -28,23 +15,38 @@
   <img src="https://img.shields.io/badge/Latest%20release-v1.2-yellow"/>
 </a>
 
+</div>
+
+<div id="top" align="center">
+<a href="https://huggingface.co/DriveLM" target="_blank">
+    <img alt="Hugging Face" src="https://img.shields.io/badge/%F0%9F%A4%97%20Hugging%20Face-DriveLM-ffc107?color=ffc107&logoColor=white" />
+  </a>
+<a href="https://twitter.com/OpenDriveLab" target="_blank">
+    <img alt="Twitter Follow" src="https://img.shields.io/twitter/follow/OpenDriveLab?style=social&color=brightgreen&logo=twitter" />
+  </a>
+<a href="https://opendrivelab.com" target="_blank">
+<img src="https://img.shields.io/badge/contact%40opendrivelab.com-white?style=social&logo=gmail">
+  </a>
+
+</div>
 
 
+<div id="top" align="center">
 <p align="center">
   <img src="assets/demo.gif">
+</p>
+
+<p align="center">
+  <img src="assets/tree.jpg">
 </p>
 
 </div>
 
 
-## News
-
-- **`[2023/08/07]`** DriveLM `v1.0` released
-
 ## Table of Contents
 - [Introduction](#introduction)
 - [Highlights](#highlights)
-- [More Details](#more-details)
+- [News](#news)
 - [Getting Start](#getting-start)
 - [License and Citation](#license-and-citation)
 - [Related Resources](#related-resources)
@@ -52,15 +54,25 @@
 
 ## Introduction
 
-<p align="center">
-  <img src="assets/tree.jpg">
-</p>
-
 DriveLM is an open source project, which contains both `Dataset` and `Model`. Through DriveLM, we introduce the reasoning ability of large language model in AD to make decision and ensure explainable planning.
 
 
 Specifically, in the `Dataset` of DriveLM, we facilitates Perception, Prediction and Planning (P3) with human-written reasoning logic as connection. And in the `Model` part, we propose an AD visual-language model with chain-of-thought ability to produce better planning result.
 
+### What's included in DriveLM v1?
+1️⃣In the version 1.0 of DriveLM, we construct our dataset based on the nuScenes. The most central element of DriveLM is scenario-based Q&A. Basically, we divide our Q&A pairs into three part: `Perception`, `Prediction` and `Planning`.
+
+
+2️⃣On the other hand, DriveLM v1.0 contains two main parts:`Train` and `Validation`. `Train` contains 697 scenarios and corresponding Q&A pairs. And `Validation` contains 150 scenerios and  corresponding Q&A pairs.
+
+
+3️⃣In each scene, there are about 40 keyframes（Sampling frequency is approximately 2 Hz）, and we select one every five keyframes for annotating.And in each keyframe selected,we give the labels and gt-boxes of the objects we are interested in.
+
+### What's included in DriveLM v2?
+1️⃣In the version 2.0 of DriveLM, we've made significant improvements: Instead of selecting the frames and objects to be annotated beforehand, we leave it up to the annotator to choose the frames and objects of interest among all the keyframes.
+
+
+2️⃣Besides,we've increased the freedom of the Q&A pairs by adding customisable questions, which also increase the applicability of Q&A pairs in more diverse scenarios.
 
 ## Highlights
 
@@ -95,24 +107,10 @@ Specifically, in the `Dataset` of DriveLM, we facilitates Perception, Prediction
 <p align="right">(<a href="#top">back to top</a>)</p>
 
 
+## News
 
+- **`[2023/08/07]`** DriveLM `v1.0` released
 
-## More Details
-
-### What's included in DriveLM v1?
-1️⃣In the version 1.0 of DriveLM, we construct our dataset based on the nuScenes. The most central element of DriveLM is scenario-based Q&A. Basically, we divide our Q&A pairs into three part: `Perception`, `Prediction` and `Planning`.
-
-
-2️⃣On the other hand, DriveLM v1.0 contains two main parts:`Train` and `Validation`. `Train` contains 697 scenarios and corresponding Q&A pairs. And `Validation` contains 150 scenerios and  corresponding Q&A pairs.
-
-
-3️⃣In each scene, there are about 40 keyframes（Sampling frequency is approximately 2 Hz）, and we select one every five keyframes for annotating.And in each keyframe selected,we give the labels and gt-boxes of the objects we are interested in.
-
-### What's included in DriveLM v2?
-1️⃣In the version 2.0 of DriveLM, we've made significant improvements: Instead of selecting the frames and objects to be annotated beforehand, we leave it up to the annotator to choose the frames and objects of interest among all the keyframes.
-
-
-2️⃣Besides,we've increased the freedom of the Q&A pairs by adding customisable questions, which also increase the applicability of Q&A pairs in more diverse scenarios.
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
