@@ -38,6 +38,13 @@
 </div>
 
 
+
+https://github.com/OpenDriveLab/DriveLM/assets/103363891/6bf05791-4b28-49bb-bd75-c7fd6d30e989
+
+
+
+
+
 ## 🔥Highlights of DriveLM Dataset
 
 #### In the view of general VLM
