@@ -52,11 +52,11 @@ https://github.com/OpenDriveLab/DriveLM/assets/103363891/72f49215-9894-440f-a2d0
 
  
 #### In the view of full-stack autonomous driving
-- Completeness in functionality (covering perception, prediction and planning QA pairs)
+- Completeness in functionality (covering **perception**, **prediction** and **planning** QA pairs)
 - Reasoning for future events that does not even happened
-  - Many "what if"-style question, imagine the future by language
+  - Many **"what if"**-style questions, imagine the future by language
 - Task-driven Decomposition.
-  - One scene-level text-goal into multiple frame-level trajectory & planning-text
+  - **One** scene-level text-goal into **several** frame-level trajectory & planning-text
 
 
 <div id="top" align="center">
@@ -78,25 +78,25 @@ https://github.com/OpenDriveLab/DriveLM/assets/103363891/72f49215-9894-440f-a2d0
 
 ## Introduction
 
-DriveLM is an open source project, which contains both `Dataset` and `Model`. Through DriveLM, we introduce the reasoning ability of large language model in AD to make decision and ensure explainable planning.
+DriveLM is an open-source project, which contains both `Dataset` and `Model`. Through DriveLM, we introduce the reasoning ability of large language model in autonomous driving (AD) to make decision and ensure explainable planning.
 
 
-Specifically, in the `Dataset` of DriveLM, we facilitates Perception, Prediction and Planning (P3) with human-written reasoning logic as connection. And in the `Model` part, we propose an AD visual-language model with chain-of-thought ability to produce better planning result.
+Specifically, in the `Dataset` of DriveLM, we facilitates Perception, Prediction and Planning (P3) with human-written reasoning logic as connection. And in the `Model` part, we propose an AD visual-language model with tree-of-thought ability to produce better planning result.
 
-### What's included in DriveLM v1?
-1️⃣In the version 1.0 of DriveLM, we construct our dataset based on the nuScenes. The most central element of DriveLM is scenario-based Q&A. Basically, we divide our Q&A pairs into three part: `Perception`, `Prediction` and `Planning`.
-
-
-2️⃣On the other hand, DriveLM v1.0 contains two main parts:`Train` and `Validation`. `Train` contains 697 scenarios and corresponding Q&A pairs. And `Validation` contains 150 scenerios and  corresponding Q&A pairs.
+### What's included in DriveLM dataset?
+1️⃣ We construct our dataset based on the nuScenes. The most central element of DriveLM is scenario-based Q&A. Basically, we divide our Q&A pairs into three part: `Perception`, `Prediction` and `Planning`.
 
 
-3️⃣In each scene, there are about 40 keyframes（Sampling frequency is approximately 2 Hz）, and we select one every five keyframes for annotating.And in each keyframe selected,we give the labels and gt-boxes of the objects we are interested in.
+2️⃣ 
+
+
+3️⃣ In each scene, there are about 40 keyframes（Sampling frequency is approximately 2 Hz）, and we select one every five keyframes for annotating.And in each keyframe selected,we give the labels and gt-boxes of the objects we are interested in.
 
 ### What's included in DriveLM v2?
-1️⃣In the version 2.0 of DriveLM, we've made significant improvements: Instead of selecting the frames and objects to be annotated beforehand, we leave it up to the annotator to choose the frames and objects of interest among all the keyframes.
+1️⃣ In the version 2.0 of DriveLM, we've made significant improvements: Instead of selecting the frames and objects to be annotated beforehand, we leave it up to the annotator to choose the frames and objects of interest among all the keyframes.
 
 
-2️⃣Besides,we've increased the freedom of the Q&A pairs by adding customisable questions, which also increase the applicability of Q&A pairs in more diverse scenarios.
+2️⃣ Besides,we've increased the freedom of the Q&A pairs by adding customisable questions, which also increase the applicability of Q&A pairs in more diverse scenarios.
 
 ## Highlights
 
@@ -120,7 +120,7 @@ Specifically, in the `Dataset` of DriveLM, we facilitates Perception, Prediction
 
 ## News
 
-- **`[2023/08/07]`** DriveLM `v1.0` released
+- **`[2023/08/25]`** DriveLM dataset demo `v1.0` released
 
 
 <p align="right">(<a href="#top">back to top</a>)</p>
