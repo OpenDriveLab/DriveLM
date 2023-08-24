@@ -4,6 +4,12 @@ DriveLM is the **first** language-driving dataset facilitating P3(`Perception`, 
 
 - `version-1.0` [Download in Github](https://github.com/OpenDriveLab/DriveLM), [Download in Huggingface](https://huggingface.co/datasets/OpenDrive/DriveLM)
 ## Prepare dataset
+*We genetate custom annotation files which are different from mmdet3d's*
+```
+python tools/create_data.py nuscenes --root-path ./data/nuscenes --out-dir ./data/nuscenes --extra-tag nuscenes --version v1.0 --canbus ./data
+```
+
+Using the above code will generate `nuscenes_infos_temporal_{train,val}.pkl`.
 
 #### Folder structure.
 
