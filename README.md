@@ -127,6 +127,10 @@ We construct our dataset based on the prevailing nuScenes. The most central elem
 
 </center>
 
+<p align="center">
+  <img src="assets/stats.png">
+</p>
+
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
