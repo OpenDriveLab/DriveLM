@@ -72,7 +72,7 @@ https://github.com/OpenDriveLab/DriveLM/assets/103363891/72f49215-9894-440f-a2d0
 - [News](#news)
 - [Getting Start](#getting-start)
 - [License and Citation](#license-and-citation)
-- [Related Resources](#related-resources)
+- [Other Projects in OpenDriveLab](#Other-Projects-in-OpenDriveLab)
 
 
 ## Introduction
@@ -158,7 +158,7 @@ Please consider citing our paper if the project helps your research with the fol
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
-## Related Resources
+## Other Projects in OpenDriveLab
 [![Awesome](https://awesome.re/badge.svg)](https://awesome.re)
 - [DriveAGI](https://github.com/OpenDriveLab/DriveAGI)  | [OpenLane-V2](https://github.com/OpenDriveLab/OpenLane-V2)
 - [Survey on Bird's-eye-view Perception](https://github.com/OpenDriveLab/BEVPerception-Survey-Recipe) | [BEVFormer](https://github.com/fundamentalvision/BEVFormer) |  [OccNet](https://github.com/OpenDriveLab/OccNet)
