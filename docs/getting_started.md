@@ -12,5 +12,21 @@ python tools/create_data.py nuscenes --root-path ./data/nuscenes --out-dir ./dat
 Using the above code will generate `nuscenes_infos_temporal_{train,val}.pkl`.
 
 #### Folder structure.
+```
+DriveLM
+├── models/
+├── data/
+│   ├── DriveLM_dataset/
+│   │   ├── train/
+│   │   ├── val/
+│   ├── nuscenes/
+│   │   ├── maps/
+│   │   ├── samples/
+│   │   ├── sweeps/
+│   │   ├── v1.0-test/
+|   |   ├── v1.0-trainval/
+|   |   ├── nuscenes_infos_temporal_train.pkl
+|   |   ├── nuscenes_infos_temporal_val.pkl
+```
 
 ## Evaluation
