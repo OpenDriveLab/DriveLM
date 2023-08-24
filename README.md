@@ -118,7 +118,7 @@ We construct our dataset based on the prevailing nuScenes. The most central elem
 
 <center>
   
-|  Dataset  | Base Dataset |      Language Form    |   Content | Scale      |  Release?|
+|  Dataset  | Base Dataset |      Language Form    |   Perspectives | Scale      |  Release?|
 |:---------:|:-------------:|:--------------------:|:------:|:--------------------------------------------:|:----------:|
 | [BDD-X 2018](https://github.com/JinkyuKimUCB/explainable-deep-driving)  |  BDD  | Description | Planning description & Justification    | 8M frame,20k text   |**:heavy_check_mark:**|
 | [Talk2Car 2019](https://github.com/talk2car/Talk2Car)   |      nuScenes    | Description |  Goal point Description | 30k frame,10k text | **:heavy_check_mark:**|
