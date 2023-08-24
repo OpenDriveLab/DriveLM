@@ -52,11 +52,11 @@ https://github.com/OpenDriveLab/DriveLM/assets/103363891/72f49215-9894-440f-a2d0
 
  
 #### In the view of full-stack autonomous driving
-- Completeness in functionality (covering **perception**, **prediction** and **planning** QA pairs)
+- Completeness in functionality (covering **Perception**, **Prediction** and **Planning** QA pairs)
 - Reasoning for future events that does not even happened
-  - Many **"what if"**-style questions, imagine the future by language
+  - Many **"What If"**-style questions, imagine the future by language
 - Task-driven Decomposition.
-  - **One** scene-level text-goal into **several** frame-level trajectory & planning-text
+  - **One** scene-level text-goal into **Many** frame-level trajectory & planning-text
 
 
 <div id="top" align="center">
@@ -84,7 +84,7 @@ DriveLM is an open-source project, which contains both `Dataset` and `Model`. Th
 Specifically, in the `Dataset` of DriveLM, we facilitates Perception, Prediction and Planning (P3) with human-written reasoning logic as connection. And in the `Model` part, we propose an AD visual-language model with tree-of-thought ability to produce better planning result.
 
 ### What's included in DriveLM dataset?
-1️⃣ We construct our dataset based on the nuScenes. The most central element of DriveLM is scenario-based Q&A. Basically, we divide our Q&A pairs into three part: `Perception`, `Prediction` and `Planning`.
+1️⃣ We construct our dataset based on the nuScenes. The most central element of DriveLM is scenario-based Q&A. Basically, we divide our Q&A pairs into three part: `Perception`, `Prediction` and `Planning`. `Perception` questions require the model to recognize objects in the scene. `Prediction` questions ask the model to predict the future status
 
 
 2️⃣ 
