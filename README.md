@@ -138,33 +138,13 @@ We construct our dataset based on the prevailing nuScenes. The most central elem
 ## Getting Start
 - [Download Data](/docs/getting_started.md#download-data)
 - [Prepare Dataset](/docs/getting_started.md#prepare-dataset)
-- [Train a Model](/docs/getting_started.md#train-a-model)
-
+- [Evaluation]() TBA in the future.
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
 
 ## License and Citation
-All assets (including figures and data) and code are under the [Apache 2.0 license](./LICENSE) unless specified otherwise.
-Please consider citing our paper if the project helps your research with the following BibTex:
-
-```bibtex
-@misc{openscene2023,
-      author = {DriveLM Contributors},
-      title = {},
-      url = {https://github.com/OpenDriveLab/DriveLM},
-      year = {2023}
-}
-
-@article{sima2023_occnet,
-      title={}, 
-      author={},
-      year={},
-      eprint={},
-      archivePrefix={arXiv},
-      primaryClass={cs.CV}
-}
-```
+All assets  and code are under the [Apache 2.0 license](./LICENSE) unless specified otherwise. The data is under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Please consider citing our project if the data helps your research.
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
