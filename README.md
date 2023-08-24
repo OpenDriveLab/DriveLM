@@ -50,6 +50,13 @@ https://github.com/OpenDriveLab/DriveLM/assets/103363891/72f49215-9894-440f-a2d0
 #### In the view of general Vision Language Model
 - Structured-reasoning, multi-modality **Tree-of-Thought** testbench.
 
+
+  <div id="top" align="center">
+  <p align="center">
+    <img src="assets/tree.jpg">
+  </p>
+  </div>
+
  
 #### In the view of full-stack autonomous driving
 - Completeness in functionality (covering **Perception**, **Prediction** and **Planning** QA pairs)
@@ -71,13 +78,6 @@ https://github.com/OpenDriveLab/DriveLM/assets/103363891/72f49215-9894-440f-a2d0
 - Task-driven Decomposition.
   - **One** scene-level text-goal into **Many** frame-level trajectory & planning-text
 
-
-<div id="top" align="center">
-<p align="center">
-  <img src="assets/tree.jpg">
-</p>
-
-</div>
 
 
 ## Table of Contents
