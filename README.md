@@ -5,7 +5,7 @@
 </p>
     
 
-**Drive on Language:** *Unlocking the future: where autonomous driving meets limitless language potential.*
+**Drive on Language:** *Unlocking the future where autonomous driving meets limitless language potential.*
 
 <a href="#license-and-citation">
   <img alt="License: Apache2.0" src="https://img.shields.io/badge/license-Apache%202.0-blue.svg"/>
