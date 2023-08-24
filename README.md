@@ -12,7 +12,7 @@
 </a>
 
 <a href="#getting-start">
-  <img src="https://img.shields.io/badge/Latest%20release-v1.2-yellow"/>
+  <img src="https://img.shields.io/badge/Latest%20release-v1.0-yellow"/>
 </a>
 
 </div>
@@ -68,40 +68,40 @@ https://github.com/OpenDriveLab/DriveLM/assets/103363891/72f49215-9894-440f-a2d0
 
 
 ## Table of Contents
-- [Introduction](#introduction)
-- [Highlights](#highlights)
 - [News](#news)
+- [Introduction](#introduction)
 - [Getting Start](#getting-start)
 - [License and Citation](#license-and-citation)
 - [Other Projects in OpenDriveLab](#Other-Projects-in-OpenDriveLab)
 
+## News
+
+- **`[2023/08/25]`** DriveLM dataset demo `v1.0` released
+
+
+<p align="right">(<a href="#top">back to top</a>)</p>
 
 ## Introduction
 
-DriveLM is an open-source project, which contains both `Dataset` and `Model`. Through DriveLM, we introduce the reasoning ability of large language model in autonomous driving (AD) to make decision and ensure explainable planning.
+DriveLM is a project of driving on language, which contains both `Dataset` and `Model`. Through DriveLM, we introduce the reasoning ability of large language model in autonomous driving (AD) to make decision and ensure explainable planning.
 
 
-Specifically, in the `Dataset` of DriveLM, we facilitates Perception, Prediction and Planning (P3) with human-written reasoning logic as connection. And in the `Model` part, we propose an AD visual-language model with tree-of-thought ability to produce better planning result.
+Specifically, in the `Dataset` of DriveLM, we facilitates `Perception, Prediction and Planning (P3)` with human-written reasoning logic as connection. And in the `Model` part, we propose an AD visual-language model with tree-of-thought ability to produce better planning result. Currently, the dataset is released as demo and the model will be released in the future.
 
 ### What's included in DriveLM dataset?
-1️⃣ We construct our dataset based on the nuScenes. The most central element of DriveLM is scenario-based Q&A. Basically, we divide our Q&A pairs into three part: `Perception`, `Prediction` and `Planning`. `Perception` questions require the model to recognize objects in the scene. `Prediction` questions ask the model to predict the future status
+We construct our dataset based on the prevailing nuScenes. The most central element of DriveLM is frame-based Q&A. Basically, we divide our Q&A pairs into three part: `Perception`, `Prediction` and `Planning`. `Perception` questions require the model to recognize objects in the scene. `Prediction` questions ask the model to predict the future status of important objects in the scene. `Planning` questions prompt the model to give reasonable planning actions and avoid dangerous ones.
 
 
-2️⃣ 
+### What's the annotation process?
+
+1️⃣ Key frames selection. Given all frames in one clip, the annotator selects which are the key frames that need to annotate. The criteria is that those frames should involve changing of movement status (lane changing, sudden stop, start from stop).
 
 
-3️⃣ In each scene, there are about 40 keyframes（Sampling frequency is approximately 2 Hz）, and we select one every five keyframes for annotating.And in each keyframe selected,we give the labels and gt-boxes of the objects we are interested in.
+2️⃣ Key objects selection. Given key frames, the annotator needs to pick up key objects in the six surrounding images. The criteria is that those objects should be possible to affect the action of ego-vehicle (traffic signals, pedestrian crossing the road, other vehicles that run into the direction of ego-vehicle).
 
-### What's included in DriveLM v2?
-1️⃣ In the version 2.0 of DriveLM, we've made significant improvements: Instead of selecting the frames and objects to be annotated beforehand, we leave it up to the annotator to choose the frames and objects of interest among all the keyframes.
+3️⃣ Question and Answer annotation. Given those key objects, we automatically generate questions on single object and multi objects about perception, prediction and planning. More detail can be found in our demo data.
 
-
-2️⃣ Besides,we've increased the freedom of the Q&A pairs by adding customisable questions, which also increase the applicability of Q&A pairs in more diverse scenarios.
-
-## Highlights
-
-
-### :fire: DriveLM: The *first* language-driving dataset facilitating P3 and logic
+### :fire:  The *first* language-driving dataset facilitating P3 and logic
 
 <center>
   
@@ -113,14 +113,6 @@ Specifically, in the `Dataset` of DriveLM, we facilitates Perception, Prediction
 | **DriveLM 2023** | nuScenes| **:boom: VQA+Description** | **:boom:Perception, Prediction and Planning Logic** | 30k frame, 600k text|**:heavy_check_mark:** Mid August|
 
 </center>
-
-
-<p align="right">(<a href="#top">back to top</a>)</p>
-
-
-## News
-
-- **`[2023/08/25]`** DriveLM dataset demo `v1.0` released
 
 
 <p align="right">(<a href="#top">back to top</a>)</p>
