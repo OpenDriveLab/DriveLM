@@ -87,7 +87,7 @@ https://github.com/OpenDriveLab/DriveLM/assets/103363891/5081696a-e9cd-42a1-a22d
 
 ## News
 
-- **`[2023/08/25]`** DriveLM dataset demo `v1.0` released
+- **`[2023/08/25]`** DriveLM dataset demo `v1.0` released.
 
 
 <p align="right">(<a href="#top">back to top</a>)</p>
