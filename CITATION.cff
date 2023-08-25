@@ -1,0 +1,8 @@
+cff-version: 1.2.0
+message: "If you use this software, please cite it as below."
+authors:
+  - name: "DriveLM Contributors"
+title: "Drive on Language"
+date-released: 2023-08-25
+url: "https://github.com/OpenDriveLab/DriveLM/"
+license: Apache-2.0
