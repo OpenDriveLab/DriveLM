@@ -29,4 +29,32 @@ DriveLM
 |   |   ├── nuscenes_infos_temporal_val.pkl
 ```
 
+
+### File structure
+```
+train.json
+├── scene_token:{
+│   ├── scene_description:
+│   ├──key_frame:{
+│   │   ├── timestamp:{
+│   │   │   ├── Perception:{
+│   │   │   │   ├──q:[]
+│   │   │   │   ├──a:[]
+│   │   │   │   ├──description:{
+│   │   │   │   │   ├──<c1>: <c1> is a moving car to the front of ego-car
+│   │   │   │   ├──}
+│   │   │   ├──}
+│   │   │   ├── Prediction:{
+│   │   │   │   ├──q:[]
+│   │   │   │   ├──a:[]
+│   │   │   ├──}
+│   │   │   ├── Planning:{
+│   │   │   │   ├──q:[]
+│   │   │   │   ├──a:[]
+│   │   │   ├──}
+│   │   ├──}
+│   ├──}
+├──}
+```
+
 ## Evaluation
