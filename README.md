@@ -39,8 +39,9 @@
 
 
 
-https://github.com/OpenDriveLab/DriveLM/assets/103363891/5081696a-e9cd-42a1-a22d-473ef06a21c1
+https://github.com/OpenDriveLab/DriveLM/assets/103363891/5081696a-e9cd-42a1-a22d-473ef06a21c1 [^1]
 
+[^1]: demo scene token: cc8c0bf57f984915a77078b10eb33198
 
 
 ## 🔥 Highlights of DriveLM Dataset
