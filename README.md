@@ -145,7 +145,16 @@ We construct our dataset based on the prevailing nuScenes. The most central elem
 
 
 ## License and Citation
-All assets and code in this repository are under the [Apache 2.0 license](./LICENSE) unless specified otherwise. The language data is under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Other data (including nuScenes) inherit its own distribution license. Please consider citing our project if the dataset helps your research.
+All assets and code in this repository are under the [Apache 2.0 license](./LICENSE) unless specified otherwise. The language data is under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Other data (including nuScenes) inherit their own distribution licenses. Please consider citing our project if the dataset helps your research.
+
+```BibTeX
+@misc{drivelm2023,
+  title={DriveLM: Drive on Language},
+  author={DriveLM Contributors},
+  howpublished={\url{https://github.com/OpenDriveLab/DriveLM}},
+  year={2023}
+}
+```
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
