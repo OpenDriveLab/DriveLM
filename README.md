@@ -63,7 +63,7 @@ https://github.com/OpenDriveLab/DriveLM/assets/103363891/72f49215-9894-440f-a2d0
 
 
   <p align="center">
-    <img src="assets/point_1.png">
+    <img src="assets/point_1.jpeg">
   </p>
 
 
