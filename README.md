@@ -53,7 +53,7 @@ https://github.com/OpenDriveLab/DriveLM/assets/103363891/72f49215-9894-440f-a2d0
 
   <div id="top" align="center">
   <p align="center">
-    <img src="assets/tree.png">
+    <img src="assets/ToT.jpeg">
   </p>
   </div>
 
