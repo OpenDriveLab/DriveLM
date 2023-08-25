@@ -115,7 +115,7 @@ We construct our dataset based on the prevailing nuScenes. The most central elem
 
 3️⃣ Question and Answer annotation. Given those key objects, we automatically generate questions on single object and multi objects about perception, prediction and planning. More detail can be found in our demo data.
 
-### :fire: Comparison and stats: the *first* language-driving dataset facilitating P3 and logic
+### 📊 Comparison and stats: the *first* language-driving dataset facilitating P3 and logic
 
 <center>
   
