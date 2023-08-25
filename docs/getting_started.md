@@ -1,5 +1,5 @@
 ## Download data
-First, you should download [nuScenes](https://www.nuscenes.org/) first to get started. Next, you can download different versions of DriveLM. The following are the versions we have released.
+To get started, you should download [nuScenes](https://www.nuscenes.org/) first. Next, you can download different versions of DriveLM. The following are the versions we have released.
 
 
 - `version-1.0` [Download in Google Drive](https://drive.google.com/file/d/1HTx7N1N00H8LfU4isovnFRfYhVUXSLUC/view?usp=drive_link), [Download in Huggingface](https://huggingface.co/datasets/OpenDrive/DriveLM)
