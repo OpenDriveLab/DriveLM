@@ -67,6 +67,7 @@ train.json
 
 - `scene_token` is the same as in nuScenes dataset.
 - Under `key_frames`, each key frames are identified by the CAM_FRONT timestampt, which is the same as the CAM_FRONT timestamp in nuScenes dataset.
+- `scene_description` is a one-sentence summary of ego-vehicle behavior in the 20-seconds video clip (the notion of scene in nuScenes dataset).
 - `q` and `a` are python list, with each element a string of either `question` or `answer`.
 - The `description` under `Perception` is a mapping between `c tag` (i.e. \<c1\>) and its textual description of visual appearance.
 
