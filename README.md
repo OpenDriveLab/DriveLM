@@ -1,7 +1,7 @@
 <div id="top" align="center">
 
 <p align="center">
-  <img src="assets/title_DriveLM.jpg">
+  <img src="assets/title.jpg">
 </p>
     
 
@@ -129,7 +129,7 @@ We construct our dataset based on the prevailing nuScenes. The most central elem
 </center>
 
 <p align="center">
-  <img src="assets/stats.png">
+  <img src="assets/stats_.png">
 </p>
 
 
