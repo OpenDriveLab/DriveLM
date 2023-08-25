@@ -49,29 +49,29 @@ https://github.com/OpenDriveLab/DriveLM/assets/103363891/5081696a-e9cd-42a1-a22d
 - Structured-reasoning, multi-modality **Tree-of-Thought** testbench.
 
 
-  <div id="top" align="center">
-  <p align="center">
-    <img src="assets/tree.png">
-  </p>
-  </div>
+<div id="top" align="center">
+<p align="center">
+  <img src="assets/tree.png">
+</p>
+</div>
 
  
 #### In the view of full-stack autonomous driving
 - Completeness in functionality (covering **Perception**, **Prediction** and **Planning** QA pairs)
 
 
-  <p align="center">
-    <img src="assets/point_1.png">
-  </p>
+<p align="center">
+  <img src="assets/point_1.png">
+</p>
 
 
 - Reasoning for future events that does not even happened
   - Many **"What If"**-style questions, imagine the future by language
  
 
-  <p align="center">
-    <img src="assets/point_2.png">
-  </p>
+<p align="center">
+  <img src="assets/point_2.png">
+</p>
 
 - Task-driven Decomposition.
   - **One** scene-level text-goal into **Many** frame-level trajectory & planning-text
