@@ -57,7 +57,7 @@ https://github.com/OpenDriveLab/DriveLM/assets/103363891/5081696a-e9cd-42a1-a22d
 
  
 #### In the view of full-stack autonomous driving
-- 🛣 Completeness in functionality (covering **Perception**, **Prediction** and **Planning** QA pairs)
+- 🛣 Completeness in functionality (covering **Perception**, **Prediction** and **Planning** QA pairs).
 
 
 <p align="center">
@@ -65,8 +65,8 @@ https://github.com/OpenDriveLab/DriveLM/assets/103363891/5081696a-e9cd-42a1-a22d
 </p>
 
 
-- 🔜 Reasoning for future events that does not even happened
-  - Many **"What If"**-style questions, imagine the future by language
+- 🔜 Reasoning for future events that does not even happened.
+  - Many **"What If"**-style questions, imagine the future by language.
  
 
 <p align="center">
@@ -74,7 +74,7 @@ https://github.com/OpenDriveLab/DriveLM/assets/103363891/5081696a-e9cd-42a1-a22d
 </p>
 
 - ♻ Task-driven Decomposition.
-  - **One** scene-level text-goal into **Many** frame-level trajectory & planning-text
+  - **One** scene-level text-goal into **Many** frame-level trajectory & planning-text.
 
 
 
