@@ -46,7 +46,7 @@ https://github.com/OpenDriveLab/DriveLM/assets/103363891/5081696a-e9cd-42a1-a22d
 ## 🔥Highlights of DriveLM Dataset
 
 #### In the view of general Vision Language Model
-- Structured-reasoning, multi-modality **Tree-of-Thought** testbench.
+- 🌳 Structured-reasoning, multi-modality **Tree-of-Thought** testbench.
 
 
 <div id="top" align="center">
@@ -57,7 +57,7 @@ https://github.com/OpenDriveLab/DriveLM/assets/103363891/5081696a-e9cd-42a1-a22d
 
  
 #### In the view of full-stack autonomous driving
-- Completeness in functionality (covering **Perception**, **Prediction** and **Planning** QA pairs)
+- 🛣 Completeness in functionality (covering **Perception**, **Prediction** and **Planning** QA pairs)
 
 
 <p align="center">
@@ -65,7 +65,7 @@ https://github.com/OpenDriveLab/DriveLM/assets/103363891/5081696a-e9cd-42a1-a22d
 </p>
 
 
-- Reasoning for future events that does not even happened
+- 🔜 Reasoning for future events that does not even happened
   - Many **"What If"**-style questions, imagine the future by language
  
 
@@ -73,7 +73,7 @@ https://github.com/OpenDriveLab/DriveLM/assets/103363891/5081696a-e9cd-42a1-a22d
   <img src="assets/point_2.png">
 </p>
 
-- Task-driven Decomposition.
+- ♻ Task-driven Decomposition.
   - **One** scene-level text-goal into **Many** frame-level trajectory & planning-text
 
 
