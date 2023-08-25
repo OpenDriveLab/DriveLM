@@ -96,16 +96,19 @@ https://github.com/OpenDriveLab/DriveLM/assets/103363891/72f49215-9894-440f-a2d0
 
 ## Introduction
 
-DriveLM is a project of driving on language, which contains both `Dataset` and `Model`. Through DriveLM, we introduce the reasoning ability of large language model in autonomous driving (AD) to make decision and ensure explainable planning.
-
+DriveLM is a project of driving on language, which contains both `Dataset` and `Model`. Through DriveLM, we introduce the reasoning ability of large language model in autonomous driving (`AD`) to make decision and ensure explainable planning.
 
 Specifically, in the `Dataset` of DriveLM, we facilitates `Perception, Prediction and Planning (P3)` with human-written reasoning logic as connection. And in the `Model` part, we propose an AD visual-language model with tree-of-thought ability to produce better planning result. Currently, the dataset is released as demo and the model will be released in the future.
 
-### What's included in DriveLM dataset?
-We construct our dataset based on the prevailing nuScenes. The most central element of DriveLM is frame-based Q&A. Basically, we divide our Q&A pairs into three part: `Perception`, `Prediction` and `Planning`. `Perception` questions require the model to recognize objects in the scene. `Prediction` questions ask the model to predict the future status of important objects in the scene. `Planning` questions prompt the model to give reasonable planning actions and avoid dangerous ones.
+
+### What is Tree-of-thoughts testbench in AD?
+The most exciting part of the dataset is that the questions and answers (`QA`) in `P3` are connected in a tree-style structure, with QA pair as every nodes and objects' relationship as the edges. Compared to [language-only tree-of-thought](https://github.com/princeton-nlp/tree-of-thought-llm), we go a step further to multi-modality. The reason of doing this in AD domain is that AD tasks are well defined per stage, from raw sensor input to final control action.
+
+### What is included in DriveLM dataset?
+We construct our dataset based on the prevailing nuScenes. The most central element of DriveLM is frame-based `P3` `QA`. `Perception` questions require the model to recognize objects in the scene. `Prediction` questions ask the model to predict the future status of important objects in the scene. `Planning` questions prompt the model to give reasonable planning actions and avoid dangerous ones.
 
 
-### What's the annotation process?
+### How about the annotation process?
 
 1️⃣ Key frames selection. Given all frames in one clip, the annotator selects which are the key frames that need to annotate. The criteria is that those frames should involve changing of movement status (lane changing, sudden stop, start from stop).
 
