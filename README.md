@@ -55,6 +55,13 @@ https://github.com/OpenDriveLab/DriveLM/assets/103363891/5081696a-e9cd-42a1-a22d
 </p>
 </div>
 
+
+<div id="top" align="center">
+<p align="center">
+  <img src="assets/tree.png">
+</p>
+</div>
+
  
 #### In the view of full-stack autonomous driving
 - 🛣 Completeness in functionality (covering **Perception**, **Prediction** and **Planning** QA pairs).
