@@ -119,12 +119,12 @@ We construct our dataset based on the prevailing nuScenes. The most central elem
 
 <center>
   
-|  Dataset  | Base Dataset |      Language Form    |   Perspectives | Scale      |  Release?|
+| Language Dataset  | Base Dataset |      Language Form    |   Perspectives | Scale      |  Release?|
 |:---------:|:-------------:|:-------------:|:------:|:--------------------------------------------:|:----------:|
-| [BDD-X 2018](https://github.com/JinkyuKimUCB/explainable-deep-driving)  |  BDD  | Description | Planning description & Justification    | 8M frame,20k text   |**:heavy_check_mark:**|
-| [Talk2Car 2019](https://github.com/talk2car/Talk2Car)   |      nuScenes    | Description |  Goal point Description | 30k frame,10k text | **:heavy_check_mark:**|
-| [nuScenes-QA 2023](https://arxiv.org/abs/2305.14836)   |   nuScenes  | VQA |  Perception result     | 30k frame, 460k text| :x:|
-| **DriveLM 2023** | nuScenes| **:boom: VQA+Description** | **:boom:Perception, Prediction and Planning with Logic** | 30k frame, 600k text|**:heavy_check_mark:** Mid August|
+| [BDD-X 2018](https://github.com/JinkyuKimUCB/explainable-deep-driving)  |  [BDD](https://bdd-data.berkeley.edu/)  | Description | Planning description & Justification    | 8M frame,20k text   |**:heavy_check_mark:**|
+| [Talk2Car 2019](https://github.com/talk2car/Talk2Car)   |      [nuScenes](https://www.nuscenes.org/)    | Description |  Goal point Description | 30k frame,10k text | **:heavy_check_mark:**|
+| [nuScenes-QA 2023](https://arxiv.org/abs/2305.14836)   |   [nuScenes](https://www.nuscenes.org/)  | QA |  Perception result     | 30k frame, 460k text| :x:|
+| **DriveLM 2023** | [nuScenes](https://www.nuscenes.org/) | **:boom: QA + Scene Description** | **:boom:Perception, Prediction and Planning with Logic** | 30k frame, 600k text|**:heavy_check_mark:** |
 
 </center>
 
