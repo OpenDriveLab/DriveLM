@@ -99,7 +99,7 @@ DriveLM is a project of driving on language, which contains both `Dataset` and `
 Specifically, in the `Dataset` of DriveLM, we facilitates `Perception, Prediction and Planning (P3)` with human-written reasoning logic as connection. And in the `Model` part, we propose an AD visual-language model with tree-of-thought ability to produce better planning result. Currently, the dataset is released as demo and the model will be released in the future.
 
 
-### What is Tree-of-thoughts testbench in AD?
+### What is Tree-of-thoughts in AD?
 The most exciting part of the dataset is that the questions and answers (`QA`) in `P3` are connected in a tree-style structure, with QA pair as every nodes and objects' relationship as the edges. Compared to [language-only tree-of-thought](https://github.com/princeton-nlp/tree-of-thought-llm), we go a step further to multi-modality. The reason of doing this in AD domain is that AD tasks are well defined per stage, from raw sensor input to final control action.
 
 ### What is included in DriveLM dataset?
