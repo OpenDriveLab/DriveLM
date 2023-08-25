@@ -43,7 +43,7 @@ https://github.com/OpenDriveLab/DriveLM/assets/103363891/5081696a-e9cd-42a1-a22d
 
 
 
-## 🔥Highlights of DriveLM Dataset
+## 🔥 Highlights of DriveLM Dataset
 
 #### In the view of general Vision Language Model
 - 🌳 Structured-reasoning, multi-modality **Tree-of-Thought** testbench.
