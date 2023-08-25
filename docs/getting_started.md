@@ -2,7 +2,7 @@
 First, you should download [nuScenes](https://www.nuscenes.org/) first to get started. Next, you can download different versions of DriveLM. The following are the versions we have released.
 
 
-- `version-1.0` [Download in Github](https://github.com/OpenDriveLab/DriveLM), [Download in Huggingface](https://huggingface.co/datasets/OpenDrive/DriveLM)
+- `version-1.0` [Download in Google Drive](https://github.com/OpenDriveLab/DriveLM), [Download in Huggingface](https://huggingface.co/datasets/OpenDrive/DriveLM)
 ## Prepare dataset
 *We genetate custom annotation files which are different from mmdet3d's*
 ```
