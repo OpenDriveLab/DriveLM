@@ -1,24 +1,21 @@
 ## Download data
-To get started, you should download [nuScenes](https://www.nuscenes.org/) first. Next, you can download different versions of DriveLM. The following are the versions we have released.
+To get started, download nuScenes V1.0 full dataset data and CAN bus expansion data [HERE](https://www.nuscenes.org/download).
+
+Next, you should download the dataset of DriveLM. Note that to download the DriveLM dataset, you need fill out a google form and we will send you the download link afterwards.
 
 
-- `version-1.0` [Download in Google Drive](https://drive.google.com/file/d/1HTx7N1N00H8LfU4isovnFRfYhVUXSLUC/view?usp=drive_link), [Download in Huggingface](https://huggingface.co/datasets/OpenDrive/DriveLM)
+- `DriveLM version-1.0 demo` [Download Link]().
 ## Prepare dataset
-*We genetate custom annotation files which are different from mmdet3d's*
-```
-python tools/create_data.py nuscenes --root-path ./data/nuscenes --out-dir ./data/nuscenes --extra-tag nuscenes --version v1.0 --canbus ./data
-```
 
-Using the above code will generate `nuscenes_infos_temporal_{train,val}.pkl`.
+Follow the steps [HERE](https://github.com/fundamentalvision/BEVFormer/blob/master/docs/prepare_dataset.md) to prepare nuScenes dataset. Using the above code will generate `nuscenes_infos_temporal_{train,val}.pkl`.
 
 #### Folder structure.
 ```
 DriveLM
-├── models/
 ├── data/
-│   ├── DriveLM_dataset/
-│   │   ├── train/
-│   │   ├── val/
+│   ├── QA_dataset/
+│   │   ├── train.json
+│   │   ├── val.json
 │   ├── nuscenes/
 │   │   ├── maps/
 │   │   ├── samples/
@@ -31,30 +28,48 @@ DriveLM
 
 
 ### File structure
+
+The QA pairs are in the `{train,val}.json`. Below is the json file structure.
 ```
 train.json
 ├── scene_token:{
 │   ├── scene_description:
-│   ├──key_frame:{
-│   │   ├── timestamp:{
+│   ├── key_frames:{
+│   │   ├── CAM_FRONT_timestamp_1:{
+│   │   │   ├── Perception:{
+│   │   │   │   ├──q:["Q: XXX", ...]
+│   │   │   │   ├──a:["A: XXX", ...]
+│   │   │   │   ├──description:{
+│   │   │   │   │   ├── <c1>: <c1> is a moving car to the front of ego-car
+│   │   │   │   ├──}
+│   │   │   ├──}
+│   │   │   ├── Prediction and Planning:{
+│   │   │   │   ├──q:[]
+│   │   │   │   ├──a:[]
+│   │   │   ├──}
+│   │   ├── CAM_FRONT_timestamp_2:{
 │   │   │   ├── Perception:{
 │   │   │   │   ├──q:[]
 │   │   │   │   ├──a:[]
 │   │   │   │   ├──description:{
-│   │   │   │   │   ├──<c1>: <c1> is a moving car to the front of ego-car
+│   │   │   │   │   ├── <c1>: <c1> is a moving car to the front of ego-car
 │   │   │   │   ├──}
 │   │   │   ├──}
-│   │   │   ├── Prediction:{
+│   │   │   ├── Prediction and Planning:{
 │   │   │   │   ├──q:[]
 │   │   │   │   ├──a:[]
 │   │   │   ├──}
-│   │   │   ├── Planning:{
-│   │   │   │   ├──q:[]
-│   │   │   │   ├──a:[]
-│   │   │   ├──}
+│   │   ├── ... }
 │   │   ├──}
 │   ├──}
 ├──}
 ```
 
+- `scene_token` is the same as in nuScenes dataset.
+- Under `key_frames`, each key frames are identified by the CAM_FRONT timestampt, which is the same as the CAM_FRONT timestamp in nuScenes dataset.
+- `q` and `a` are python list, with each element a string of either `question` or `answer`.
+- The `description` under `Perception` is a mapping between `c tag` (i.e. \<c1\>) and its textual description of visual appearance.
+
 ## Evaluation
+
+To be announced in the future!
