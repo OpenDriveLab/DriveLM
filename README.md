@@ -70,7 +70,7 @@ https://github.com/OpenDriveLab/DriveLM/assets/103363891/5081696a-e9cd-42a1-a22d
  
 
 <p align="center">
-  <img src="assets/point_2.png">
+  <img src="assets/point_2.png" width=70%>
 </p>
 
 - ♻ Task-driven Decomposition.
