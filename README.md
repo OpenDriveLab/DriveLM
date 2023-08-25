@@ -123,7 +123,7 @@ We construct our dataset based on the prevailing nuScenes. The most central elem
 | [BDD-X 2018](https://github.com/JinkyuKimUCB/explainable-deep-driving)  |  BDD  | Description | Planning description & Justification    | 8M frame,20k text   |**:heavy_check_mark:**|
 | [Talk2Car 2019](https://github.com/talk2car/Talk2Car)   |      nuScenes    | Description |  Goal point Description | 30k frame,10k text | **:heavy_check_mark:**|
 | [nuScenes-QA 2023](https://arxiv.org/abs/2305.14836)   |   nuScenes  | VQA |  Perception result     | 30k frame, 460k text| :x:|
-| **DriveLM 2023** | nuScenes| **:boom: VQA+Description** | **:boom:Perception, Prediction and Planning Logic** | 30k frame, 600k text|**:heavy_check_mark:** Mid August|
+| **DriveLM 2023** | nuScenes| **:boom: VQA+Description** | **:boom:Perception, Prediction and Planning with Logic** | 30k frame, 600k text|**:heavy_check_mark:** Mid August|
 
 </center>
 
@@ -144,7 +144,7 @@ We construct our dataset based on the prevailing nuScenes. The most central elem
 
 
 ## License and Citation
-All assets  and code are under the [Apache 2.0 license](./LICENSE) unless specified otherwise. The data is under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Please consider citing our project if the data helps your research.
+All assets and code in this repository are under the [Apache 2.0 license](./LICENSE) unless specified otherwise. The data is under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Please consider citing our project if the dataset helps your research.
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
