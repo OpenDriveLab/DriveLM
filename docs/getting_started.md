@@ -27,7 +27,7 @@ DriveLM
 ```
 
 
-### File structure
+#### File structure
 
 The QA pairs are in the `{train,val}.json`. Below is the json file structure.
 ```
@@ -70,6 +70,12 @@ train.json
 - `scene_description` is a one-sentence summary of ego-vehicle behavior in the 20-seconds video clip (the notion of scene in nuScenes dataset).
 - `q` and `a` are python list, with each element a string of either `question` or `answer`.
 - The `description` under `Perception` is a mapping between `c tag` (i.e. \<c1\>) and its textual description of visual appearance.
+
+## Finetune BLIP-2 on DriveLM dataset
+
+To be released in one week!
+
+
 
 ## Evaluation
 

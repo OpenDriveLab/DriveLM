@@ -139,7 +139,8 @@ We construct our dataset based on the prevailing nuScenes. The most central elem
 ## Getting Start
 - [Download Data](/docs/getting_started.md#download-data)
 - [Prepare Dataset](/docs/getting_started.md#prepare-dataset)
-- [Evaluation](/docs/getting_started.md#evaluation) **(TBA in the future)**.
+- [Finetune BLIP-2](/docs/getting_started.md#finetune-blip-2-on-drivelm-dataset) **(TBA in one week)**
+- [Evaluation](/docs/getting_started.md#evaluation) **(TBA in the future)**
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
