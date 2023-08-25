@@ -1,7 +1,7 @@
 <div id="top" align="center">
 
 <p align="center">
-  <img src="assets/Title_DriveLM.jpg">
+  <img src="assets/title_DriveLM.jpg">
 </p>
     
 
