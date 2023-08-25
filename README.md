@@ -81,7 +81,7 @@ https://github.com/OpenDriveLab/DriveLM/assets/103363891/5081696a-e9cd-42a1-a22d
 </p>
 
 - ♻ Task-driven decomposition.
-  - **One** scene-level text goal into **many** frame-level trajectory & planning text descriptions.
+  - **One** scene-level text goal into **many** frame-level trajectories & planning text descriptions.
 
 <p align="center">
   <img src="assets/point_3.png">
@@ -104,9 +104,9 @@ https://github.com/OpenDriveLab/DriveLM/assets/103363891/5081696a-e9cd-42a1-a22d
 
 ## Introduction
 
-DriveLM is a project of driving on language, which contains both a `Dataset` and `Model`. Through DriveLM, we introduce the reasoning ability of Large Language Models in autonomous driving (`AD`) to make decisions and ensure explainable planning.
+DriveLM is a project of driving on language, which contains both a `Dataset` and a `Model`. Through DriveLM, we introduce the reasoning ability of Large Language Models in autonomous driving (`AD`) to make decisions and ensure explainable planning.
 
-Specifically, in the `Dataset` of DriveLM, we facilitate `Perception, Prediction and Planning (P3)` with human-written reasoning logic as a connection. In the `Model`, we propose an AD Vision Language Model with Tree-of-Thought ability to produce better planning results. Currently, a demo of the dataset has been released, and the full dataset and the model will be released in the future.
+Specifically, in the `Dataset` of DriveLM, we facilitate `Perception, Prediction, and Planning (P3)` with human-written reasoning logic as a connection. In the `Model`, we propose an AD Vision Language Model with the Tree-of-Thought ability to produce better planning results. Currently, a demo of the dataset has been released, and the full dataset and the model will be released in the future.
 
 ### What is Tree-of-Thoughts in AD?
 The most exciting aspect of the dataset is that the questions and answers (`QA`) in `P3` are connected in a tree-style structure, with QA pairs as every node, and objects' relationships as the edges. Compared to [language-only Tree-of-Thought](https://github.com/princeton-nlp/tree-of-thought-llm), we go a step further towards multi-modality. The reason for doing this in the AD domain is that AD tasks are well-defined per stage, from raw sensor input to final control action.
@@ -130,16 +130,16 @@ The most exciting aspect of the dataset is that the questions and answers (`QA`)
 
 
 ### What is included in the DriveLM dataset?
-We construct our dataset based on the prevailing nuScenes data. The most central element of DriveLM is frame-based `P3` `QA`. `Perception` questions require the model to recognize objects in the scene. `Prediction` questions ask the model to predict the future status of important objects in the scene. `Planning` questions prompt the model to give reasonable planning actions and avoid dangerous ones.
+We construct our dataset based on the prevailing nuScenes dataset. The most central element of DriveLM is frame-based `P3` `QA`. `Perception` questions require the model to recognize objects in the scene. `Prediction` questions ask the model to predict the future status of important objects in the scene. `Planning` questions prompt the model to give reasonable planning actions and avoid dangerous ones.
 
 
 ### How about the annotation process?
 
-1️⃣ Keyframe selection. Given all frames in one clip, the annotator selects the keyframes that need annotation. The criteria is that those frames should involve changes in ego-vehicle movement status (lane changes, sudden stops, start after a stop).
+1️⃣ Keyframe selection. Given all frames in one clip, the annotator selects the keyframes that need annotation. The criterion is that those frames should involve changes in ego-vehicle movement status (lane changes, sudden stops, start after a stop, etc.).
 
-2️⃣ Key objects selection. Given keyframes, the annotator needs to pick up key objects in the six surrounding images. The criteria is that those objects should be able to affect the action of the ego-vehicle (traffic signals, pedestrians crossing the road, other vehicles that move in the direction of the ego-vehicle).
+2️⃣ Key objects selection. Given keyframes, the annotator needs to pick up key objects in the six surrounding images. The criterion is that those objects should be able to affect the action of the ego-vehicle (traffic signals, pedestrians crossing the road, other vehicles that move in the direction of the ego-vehicle, etc.).
 
-3️⃣ Question and answer annotation. Given those key objects, we automatically generate questions regarding single or multiple objects about perception, prediction and planning. More details can be found in our demo data.
+3️⃣ Question and answer annotation. Given those key objects, we automatically generate questions regarding single or multiple objects about perception, prediction, and planning. More details can be found in our demo data.
 
 
 <p align="right">(<a href="#top">back to top</a>)</p>
@@ -155,7 +155,7 @@ We construct our dataset based on the prevailing nuScenes data. The most central
 
 
 ## License and Citation
-All assets and code in this repository are under the [Apache 2.0 license](./LICENSE) unless specified otherwise. The language data is under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Other datasets (including nuScenes) inherit their own distribution licenses. Please consider citing our project if the dataset helps your research.
+All assets and code in this repository are under the [Apache 2.0 license](./LICENSE) unless specified otherwise. The language data is under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Other datasets (including nuScenes) inherit their own distribution licenses. Please consider citing our project if it helps your research.
 
 ```BibTeX
 @misc{drivelm2023,
