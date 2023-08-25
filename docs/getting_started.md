@@ -4,7 +4,7 @@ To get started, download nuScenes V1.0 full dataset data and CAN bus expansion d
 Next, you should download the dataset of DriveLM. Note that to download the DriveLM dataset, you need fill out a google form and we will send you the download link afterwards.
 
 
-- `DriveLM version-1.0 demo` [Download Link]().
+- `DriveLM version-1.0 demo` [Download Link](https://docs.google.com/forms/d/e/1FAIpQLSeX6CR3u-15IV-TKx2uPv1wiKjydjZ__NNW98H4nR5JZtQa2Q/viewform).
 ## Prepare dataset
 
 Follow the steps [HERE](https://github.com/fundamentalvision/BEVFormer/blob/master/docs/prepare_dataset.md) to prepare nuScenes dataset. Using the above code will generate `nuscenes_infos_temporal_{train,val}.pkl`.
