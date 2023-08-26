@@ -5,6 +5,12 @@ Next, you should download the dataset of DriveLM. Note that to download the Driv
 
 
 - `DriveLM version-1.0 demo` [Download Link](https://docs.google.com/forms/d/e/1FAIpQLSeX6CR3u-15IV-TKx2uPv1wiKjydjZ__NNW98H4nR5JZtQa2Q/viewform).
+
+Our demo dataset contains a collection of questions and answers. The dataset is divided into two versions:
+
+- `not_refined_v1_0_train_demo.json`: In this file, questions and answers are not optimized using GPT. The answers tend to follow relatively fixed patterns, resulting in straightforward and less diverse responses.
+
+- `refined_v1_0_train_demo.json`: Unlike the previous file, questions and answers in this version have been optimized using GPT. This optimization enhances the diversity of Q&A pairs. Consequently, responses are not limited to simple and direct Q&A, but may include richer expressions and content.
 ## Prepare dataset
 
 Follow the steps [HERE](https://github.com/fundamentalvision/BEVFormer/blob/master/docs/prepare_dataset.md) to prepare nuScenes dataset. Using the above code will generate `nuscenes_infos_temporal_{train,val}.pkl`.
