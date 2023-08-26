@@ -111,7 +111,7 @@ The most exciting aspect of the dataset is that the questions and answers (`QA`)
 | Language Dataset  | Base Dataset |      Language Form    |   Perspectives | Scale      |  Release?|
 |:---------:|:-------------:|:-------------:|:------:|:--------------------------------------------:|:----------:|
 | [BDD-X 2018](https://github.com/JinkyuKimUCB/explainable-deep-driving)  |  [BDD](https://bdd-data.berkeley.edu/)  | Description | Planning Description & Justification    | 8M frames, 20k text strings   |**:heavy_check_mark:**|
-| [HAD HRI Advice 2019](https://usa.honda-ri.com/had)  |  [HDD](https://usa.honda-ri.com/hdd)  | Advice | Goal-oriented & stimulus-driven advice | ?? frames, 45k text strings   |**:heavy_check_mark:**|
+| [HAD HRI Advice 2019](https://usa.honda-ri.com/had)  |  [HDD](https://usa.honda-ri.com/hdd)  | Advice | Goal-oriented & stimulus-driven advice | 5,675 video clips, 45k text strings   |**:heavy_check_mark:**|
 | [Talk2Car 2019](https://github.com/talk2car/Talk2Car)   |      [nuScenes](https://www.nuscenes.org/)    | Description |  Goal Point Description | 30k frames, 10k text strings | **:heavy_check_mark:**|
 | [DRAMA 2022](https://usa.honda-ri.com/drama)   |    - | Description |  QA + Captions | 18k frames, 100k text strings | **:heavy_check_mark:**|
 | [nuScenes-QA 2023](https://arxiv.org/abs/2305.14836)   |   [nuScenes](https://www.nuscenes.org/)  | QA |  Perception Result     | 30k frames, 460k QA pairs| :x:|
