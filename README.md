@@ -49,18 +49,11 @@ https://github.com/OpenDriveLab/DriveLM/assets/103363891/5081696a-e9cd-42a1-a22d
 - 🌳 Structured reasoning, multi-modal **Tree-of-Thought** testbench.
 
 
-<div id="top" align="center">
-<p align="center">
-  <img src="assets/tree.gif">
-</p>
-</div>
 
 
-<div id="top" align="center">
-<p align="center">
-  <img src="assets/tree.png">
-</p>
-</div>
+https://github.com/OpenDriveLab/DriveLM/assets/103363891/b454df03-66bd-48dc-bd5f-74afc606feeb
+
+
 
  
 #### In the view of full-stack autonomous driving
