@@ -51,7 +51,10 @@
 
 
 
-https://github.com/OpenDriveLab/DriveLM/assets/103363891/b454df03-66bd-48dc-bd5f-74afc606feeb
+
+https://github.com/OpenDriveLab/DriveLM/assets/54334254/8efe43b2-739e-4acf-ba45-13655b34ff86
+
+
 
 
 
