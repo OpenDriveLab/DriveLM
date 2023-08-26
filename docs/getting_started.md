@@ -77,10 +77,6 @@ train.json
 - `q` and `a` are python list, with each element a string of either `question` or `answer`.
 - The `description` under `Perception` is a mapping between `c tag` (i.e. \<c1\>) and its textual description of visual appearance.
 
-## Finetune BLIP-2 on DriveLM dataset
-
-To be released in one week!
-
 
 
 ## Evaluation
