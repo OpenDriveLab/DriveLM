@@ -40,7 +40,7 @@ The QA pairs are in the `{train,val}.json`. Below is the json file structure.
 train.json
 ├── scene_token:{
 │   ├── scene_description:
-│   ├── key_frames:{
+│   ├── key_frame:{
 │   │   ├── CAM_FRONT_timestamp_1:{
 │   │   │   ├── Perception:{
 │   │   │   │   ├──q:["Q: XXX", ...]
