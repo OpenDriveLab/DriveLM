@@ -143,7 +143,6 @@ We construct our dataset based on the prevailing nuScenes dataset. The most cent
 ## Getting Started
 - [Download Data](/docs/getting_started.md#download-data)
 - [Prepare Dataset](/docs/getting_started.md#prepare-dataset)
-- [Finetune BLIP-2](/docs/getting_started.md#finetune-blip-2-on-drivelm-dataset) **(TBA in one week)**
 - [Evaluation](/docs/getting_started.md#evaluation) **(TBA in the future)**
 
 <p align="right">(<a href="#top">back to top</a>)</p>
