@@ -4,9 +4,10 @@
   <img src="assets/title.jpg">
 </p>
     
-
 **Drive on Language:** *Unlocking the future where autonomous driving meets the unlimited potential of language.*
+</div>
 
+<div id="top" align="center">
 <a href="#license-and-citation">
   <img alt="License: Apache2.0" src="https://img.shields.io/badge/license-Apache%202.0-blue.svg"/>
 </a>
@@ -14,8 +15,8 @@
 <a href="#getting-start">
   <img src="https://img.shields.io/badge/Latest%20release-v1.0-yellow"/>
 </a>
-
 </div>
+
 
 <div id="top" align="center">
 <a href="https://huggingface.co/datasets/OpenDrive/DriveLM" target="_blank">
@@ -27,7 +28,12 @@
 <a href="https://opendrivelab.com" target="_blank">
 <img src="https://img.shields.io/badge/contact%40opendrivelab.com-white?style=social&logo=gmail">
   </a>
+</div>
 
+<div id="top" align="center">
+<a>
+  <img src="https://img.shields.io/badge/Any%20comments%20welcome!-white?logo=google%20forms&label=Google%20Forms&labelColor=blue">
+</a>
 </div>
 
 
