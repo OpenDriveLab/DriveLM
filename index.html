@@ -1,0 +1,167 @@
+<!doctype html>
+<html lang="en">
+
+<style>  
+    .author-list {  
+        margin-top: 1rem;  
+        margin-bottom: 0.5rem;  
+        font-size: 1.4rem;
+    }  
+    .institution-list {  
+        margin-bottom: 1rem;  
+        margin-top: 1rem;
+        font-size: 1.2rem;
+    }  
+    .larger-text {  
+        font-size: 1.4rem;  
+    }  
+</style>  
+
+<head>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+
+    <!-- Favicon -->
+    <!-- <link rel="shortcut icon" href="./assets/images/favicon.ico" type="image/x-icon" /> -->
+
+    <!-- Libs CSS -->
+    <link rel="stylesheet" href="./assets/css/libs.bundle.css"/>
+    <link rel="stylesheet" href="./assets/css/all.css">
+
+    <!-- Main CSS -->
+    <link rel="stylesheet" href="./assets/css/index.bundle.css"/>
+
+    <!-- Title -->
+    <title>DriveLM</title>
+
+    <style>
+        .bg-picture {
+            background-image: url('./assets/images/front_page.png');
+            background-size: cover;
+            background-repeat: no-repeat;
+            padding: 20px;
+            color: white;
+        }
+    </style>
+
+</head>
+
+<body>
+
+
+<div class="offcanvas-wrap">
+
+    <!-- header -->
+    <section class="bg-picture">
+        <div class="container foreground mt-lg-5">
+            <div class="row justify-content-center">
+                <div class="col-xl-8 text-center">
+                    <h1 class="display-1 fw-bold">
+                        <b>DriveLM</b>
+                    </h1>
+                    <!--links-->
+                    <div class="row justify-content-center g-1">
+                        <div class="col-auto">
+                            <a href="https://github.com/OpenDriveLab/DriveLM" class="btn btn-outline-white rounded-pill">
+                                <i class="fa-brands fa-github"></i>
+                                GitHub
+                            </a>
+                        </div>
+                        <div class="col-auto">
+                            <a href="https://huggingface.co/datasets/OpenDrive/DriveLM" class="btn btn-outline-white rounded-pill">
+                                <i class="fa-solid fa-face-smiling-hands"></i>
+                                HuggingFace
+                            </a>
+                        </div>
+                    </div>
+                    <!--end-->
+                    <h4 class="fw-bold">
+                        <em>Unlocking the future where autonomous driving meets the unlimited potential of language</em>
+                    </h4>
+                </div>
+            </div>
+            <div class="author-list" align="center">
+                <a>DriveLM Contributors</a>&emsp;
+            </div>
+            <div class="institution-list" align="center">
+               OpenDriveLab & Autonomous Vision Group at Universität Tübingen
+            </div>
+   
+           
+            <!-- video -->
+            <div class="row justify-content-center">
+                <div class="col-xl-9 ">
+                    <div class="bottom-overlap" data-aos="fade-up" data-aos-delay="100">
+                        <embed src="assets/video/video-1.mp4" allowfullscreen="true" width="800" height="450">
+                    </div>
+                </div>
+            </div>
+            <!--video end-->
+
+        </div>
+    </section>
+    <!--header end-->
+
+    <!-- features -->
+    <section class="py-15 py-xl-5">
+        <div class="container mt-10">
+            <div class="row justify-content-center mb-6">
+                <div class="col-lg-8 text-center">
+                    <h2 class="fw-bold">
+                        Introduction
+                    </h2>
+                </div>
+            </div>
+            <div class="row justify-content-center">  
+                <p class="larger-text">  
+                    DriveLM is a project of driving on language, which contains both a Dataset and a Model. Through DriveLM, we introduce the reasoning ability of Large Language Models in autonomous driving (AD) to make decisions and ensure explainable planning.
+                    <br><br>
+                    Specifically, in the Dataset of DriveLM, we facilitate Perception, Prediction, and Planning (P3) with human-written reasoning logic as a connection. In the Model, we propose an AD Vision Language Model with the Tree-of-Thought ability to produce better planning results. Currently, a demo of the dataset has been released, and the full dataset and the model will be released in the future.
+                </p>  
+            </div>                  
+        </div>
+
+        <div class="row justify-content-center">
+            <iframe src="./sample.html" width="800" height="700"></iframe>
+        <div>
+
+        <div class="container mt-1">
+            <div class="row g-5">
+                <div class="col-md-6 col-lg-4 text-center aos-init aos-animate" data-aos="fade-up">
+                    <i class="fa-regular fa-tree fs-1 text-blue"></i>
+                    <h4 class="fs-5 mt-4">Tree of thought</h4>
+                    <p class="text-secondary mx-2">
+                        In DriveLM dataset, questions and answers (QA) are connected in a tree-style structure, with QA pairs as every node, and objects' relationships as the edges. Compared to language-only Tree-of-Thought, we go a step further towards multi-modality.
+                    </p>
+                    <!--                    <a href="" class="underline">Learn More</a>-->
+                </div>
+         
+                <div class="col-md-6 col-lg-4 text-center aos-init aos-animate" data-aos="fade-up" data-aos-delay="200">
+                    <i class="fa-duotone fa-cars fs-1 text-blue"></i>
+                    <h4 class="fs-5 mt-4">
+                        Perception, Prediction, Planning
+                    </h4>
+                    <p class="text-secondary mx-2">
+                        The most central element of DriveLM is frame-based P3 QA, where P3 stands for Perception, Prediction, and Planning. This allows us to achieve complete functionality in full-stack autonomous driving.
+                    </p>
+                    <!--                    <a href="" class="underline">Learn More</a>-->
+                </div>
+                <div class="col-md-6 col-lg-4 text-center aos-init aos-animate" data-aos="fade-up">
+                    <i class="fa-regular fa-thought-bubble fs-1 text-blue"></i>
+                    <h4 class="fs-5 mt-4">What if</h4>
+                    <p class="text-secondary mx-2">
+                       In DriveLM, we try to reason for future events that have not yet happened. The way we use is to ask many "What if"-style questions, which is a common way for humans to imagine the future by language.
+                    </p>
+                    <!--                    <a href="" class="underline">Learn More</a>-->
+                </div>
+            </div>
+        </div>
+    </section>
+
+</div>
+<!-- javascript -->
+<script src="./assets/js/vendor.bundle.js"></script>
+<script src="./assets/js/index.bundle.js"></script>
+</body>
+
+</html>
