@@ -123,7 +123,7 @@ The most exciting aspect of the dataset is that the questions and answers (`QA`)
 | [Talk2Car 2019](https://github.com/talk2car/Talk2Car)   |      [nuScenes](https://www.nuscenes.org/)    | Description |  Goal Point Description | 30k frames, 10k text strings | **:heavy_check_mark:**|
 | [DRAMA 2022](https://usa.honda-ri.com/drama)   |    - | Description |  QA + Captions | 18k frames, 100k text strings | **:heavy_check_mark:**|
 | [nuScenes-QA 2023](https://arxiv.org/abs/2305.14836)   |   [nuScenes](https://www.nuscenes.org/)  | QA |  Perception Result     | 30k frames, 460k generated QA pairs| :x:|
-| **DriveLM 2023** | [nuScenes](https://www.nuscenes.org/) | **:boom: QA + Scene Description** | **:boom:Perception, Prediction and Planning with Logic** | 30k frames, 300k annotated QA pairs |**:heavy_check_mark:** |
+| **DriveLM 2023** | [nuScenes](https://www.nuscenes.org/) | **:boom: QA + Scene Description** | **:boom:Perception, Prediction and Planning with Logic** | 30k frames, 360k annotated QA pairs |**:heavy_check_mark:** |
 
 </center>
 
