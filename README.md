@@ -19,6 +19,9 @@
 
 
 <div id="top" align="center">
+<a href="https://opendrivelab.github.io/DriveLM" target="_blank">
+    <img alt="Github Page" src="https://img.shields.io/badge/Project%20Page-white?logo=GitHub&color=green" />
+  </a>
 <a href="https://huggingface.co/datasets/OpenDrive/DriveLM" target="_blank">
     <img alt="Hugging Face" src="https://img.shields.io/badge/%F0%9F%A4%97%20Hugging%20Face-DriveLM-ffc107?color=ffc107&logoColor=white" />
   </a>
@@ -55,7 +58,7 @@ https://github.com/OpenDriveLab/DriveLM/assets/103363891/3e40f63a-4873-4e7b-9f9d
 ## 🔥 Highlights of the DriveLM Dataset
 
 #### In the view of general Vision Language Models
-- 🌳 Structured reasoning, multi-modal **Tree-of-Thought** testbench.
+- 🌳 Structured reasoning, multi-modal **Graph-of-Thought** testbench.
 
 
 https://github.com/OpenDriveLab/DriveLM/assets/103363891/f8018448-8a0a-4c50-9e0a-d5628147d4a8
@@ -104,10 +107,10 @@ https://github.com/OpenDriveLab/DriveLM/assets/103363891/f8018448-8a0a-4c50-9e0a
 
 DriveLM is a project of driving on language, which contains both a `Dataset` and a `Model`. Through DriveLM, we introduce the reasoning ability of Large Language Models in autonomous driving (**AD**) to make decisions and ensure explainable planning.
 
-Specifically, in the `Dataset` of DriveLM, we facilitate `Perception, Prediction, and Planning` (**P3**) with human-written reasoning logic as a connection. In the `Model`, we propose an AD Vision Language Model with the Tree-of-Thought ability to produce better planning results. Currently, a demo of the dataset has been released, and the full dataset and the model will be released in the future.
+Specifically, in the `Dataset` of DriveLM, we facilitate `Perception, Prediction, and Planning` (**P3**) with human-written reasoning logic as a connection. In the `Model`, we propose an AD Vision Language Model with the Graph-of-Thought ability to produce better planning results. Currently, a demo of the dataset has been released, and the full dataset and the model will be released in the future.
 
-### What is Tree-of-Thoughts in AD?
-The most exciting aspect of the dataset is that the questions and answers (`QA`) in `P3` are connected in a tree-style structure, with QA pairs as every node, and objects' relationships as the edges. Compared to [language-only Tree-of-Thought](https://github.com/princeton-nlp/tree-of-thought-llm), we go a step further towards multi-modality. The reason for doing this in the AD domain is that AD tasks are well-defined per stage, from raw sensor input to final control action.
+### What is Graph-of-Thoughts in AD?
+The most exciting aspect of the dataset is that the questions and answers (`QA`) in `P3` are connected in a graph-style structure, with QA pairs as every node, and objects' relationships as the edges. Compared to [language-only Tree-of-Thought](https://github.com/princeton-nlp/tree-of-thought-llm) or [Graph-of-Thought](https://arxiv.org/abs/2305.16582), we go a step further towards multi-modality. The reason for doing this in the AD domain is that AD tasks are well-defined per stage, from raw sensor input to final control action.
 
 ### 📊 Comparison and stats: the *first* language-driving dataset facilitating P3 and logic
 
@@ -119,8 +122,8 @@ The most exciting aspect of the dataset is that the questions and answers (`QA`)
 | [HAD HRI Advice 2019](https://usa.honda-ri.com/had)  |  [HDD](https://usa.honda-ri.com/hdd)  | Advice | Goal-oriented & stimulus-driven advice | 5,675 video clips, 45k text strings   |**:heavy_check_mark:**|
 | [Talk2Car 2019](https://github.com/talk2car/Talk2Car)   |      [nuScenes](https://www.nuscenes.org/)    | Description |  Goal Point Description | 30k frames, 10k text strings | **:heavy_check_mark:**|
 | [DRAMA 2022](https://usa.honda-ri.com/drama)   |    - | Description |  QA + Captions | 18k frames, 100k text strings | **:heavy_check_mark:**|
-| [nuScenes-QA 2023](https://arxiv.org/abs/2305.14836)   |   [nuScenes](https://www.nuscenes.org/)  | QA |  Perception Result     | 30k frames, 460k QA pairs| :x:|
-| **DriveLM 2023** | [nuScenes](https://www.nuscenes.org/) | **:boom: QA + Scene Description** | **:boom:Perception, Prediction and Planning with Logic** | 30k frames, 600k QA pairs |**:heavy_check_mark:** |
+| [nuScenes-QA 2023](https://arxiv.org/abs/2305.14836)   |   [nuScenes](https://www.nuscenes.org/)  | QA |  Perception Result     | 30k frames, 460k generated QA pairs| :x:|
+| **DriveLM 2023** | [nuScenes](https://www.nuscenes.org/) | **:boom: QA + Scene Description** | **:boom:Perception, Prediction and Planning with Logic** | 30k frames, 360k annotated QA pairs |**:heavy_check_mark:** |
 
 </center>
 
