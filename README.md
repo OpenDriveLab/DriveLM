@@ -19,6 +19,9 @@
 
 
 <div id="top" align="center">
+<a href="https://opendrivelab.github.io/DriveLM" target="_blank">
+    <img alt="Github Page" src="https://img.shields.io/badge/Project%20Page-white?logo=GitHub&color=green" />
+  </a>
 <a href="https://huggingface.co/datasets/OpenDrive/DriveLM" target="_blank">
     <img alt="Hugging Face" src="https://img.shields.io/badge/%F0%9F%A4%97%20Hugging%20Face-DriveLM-ffc107?color=ffc107&logoColor=white" />
   </a>
