@@ -41,6 +41,9 @@
             background-repeat: no-repeat;
             padding: 20px;
             color: white;
+            max-width: 100%;
+            height: auto;
+            display: flex;
         }
 
         .image-container {
@@ -60,15 +63,18 @@
             border: 0px solid #ccc;
             width: 65%;;
             margin: 0 auto; /* 居中对齐 */
+            white-space: pre-wrap;
+            word-wrap: break-word;
         }
 
         code {
             display: block; /* 使 <code> 元素成为块级元素 */
             background-color: #f4f4f4; /* 设置背景颜色 */
             border: 1px solid #ddd; /* 设置边框 */
-            padding: 1px; /* 设置内边距 */
+            padding: 0px; /* 设置内边距 */
             font-family: monospace;
         }
+        
     </style>
 
 </head>
@@ -121,10 +127,10 @@
             <div class="row justify-content-center">
                 <div class="text-center">
                     <div class="bottom-overlap" data-aos="fade-up" data-aos-delay="100">
-                       <embed src="https://www.youtube.com/embed/bwn3adFmnNo?si=8qmThY1yjEyo_G3I&vq=hd1080" allowfullscreen="true" width="1200" height="675">
+                        <iframe src="https://www.youtube.com/embed/bwn3adFmnNo?si=8qmThY1yjEyo_G3I&vq=hd1080" allowfullscreen="true" width="90%" height="675"></iframe>
                     </div>
                 </div>
-            </div>
+            </div>            
             <!--video end-->
 
         </div>
@@ -198,12 +204,12 @@
  
     <pre>
         <code>
-            @misc{drivelm2023,
-                title={DriveLM: Drive on Language},
-                author={DriveLM Contributors},
-                howpublished={\url{https://github.com/OpenDriveLab/DriveLM}},
-                year={2023}
-              }
+        @misc{drivelm2023,
+            title={DriveLM: Drive on Language},
+            author={DriveLM Contributors},
+            howpublished={\url{https://github.com/OpenDriveLab/DriveLM}},
+            year={2023}
+        }
         </code>
     </pre>
 
