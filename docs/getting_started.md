@@ -46,19 +46,19 @@ train.json
 │   │   │   │   ├──q:["Q: XXX", ...]
 │   │   │   │   ├──a:["A: XXX", ...]
 │   │   │   │   ├──description:{
-│   │   │   │   │   ├── <c1>: <c1> is a moving car to the front of ego-car
+│   │   │   │   │   ├── {"<c1,CAM_BACK_RIGHT,2014.0,953.0>": "<c1,CAM_BACK_RIGHT,2014.0,953.0> is a moving car to the back right of the ego car.", ...}
 │   │   │   │   ├──}
 │   │   │   ├──}
 │   │   │   ├── Prediction and Planning:{
-│   │   │   │   ├──q:[]
-│   │   │   │   ├──a:[]
+│   │   │   │   ├──q:["Q: Is <c1,CAM_BACK_RIGHT,2014.0,953.0> a traffic sign or a road barrier?", ...]
+│   │   │   │   ├──a:["A: Neither.", ...]
 │   │   │   ├──}
 │   │   ├── CAM_FRONT_timestamp_2:{
 │   │   │   ├── Perception:{
 │   │   │   │   ├──q:[]
 │   │   │   │   ├──a:[]
 │   │   │   │   ├──description:{
-│   │   │   │   │   ├── <c1>: <c1> is a moving car to the front of ego-car
+│   │   │   │   │   ├── {"<c1,CAM_FRONT,1362.2,782.9>": "<c1,CAM_FRONT,1362.2,782.9> is a moving car to the front of the ego car.", ...}
 │   │   │   │   ├──}
 │   │   │   ├──}
 │   │   │   ├── Prediction and Planning:{
@@ -72,10 +72,13 @@ train.json
 ```
 
 - `scene_token` is the same as in nuScenes dataset.
-- Under `key_frames`, each key frames are identified by the CAM_FRONT timestampt, which is the same as the CAM_FRONT timestamp in nuScenes dataset.
+- Under `key_frame`, each key frame are identified by the CAM_FRONT timestampt, which is the same as the CAM_FRONT timestamp in nuScenes dataset.
 - `scene_description` is a one-sentence summary of ego-vehicle behavior in the 20-seconds video clip (the notion of scene in nuScenes dataset).
 - `q` and `a` are python list, with each element a string of either `question` or `answer`.
-- The `description` under `Perception` is a mapping between `c tag` (i.e. \<c1\>) and its textual description of visual appearance.
+- The `description` under `Perception` is a mapping between `c tag` (i.e. \<c1,CAM_FRONT,1362.2,782.9\>) and its textual description of visual appearance.
+
+
+
 
 
 
