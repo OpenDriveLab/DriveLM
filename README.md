@@ -1,7 +1,7 @@
 <div id="top" align="center">
 
 <p align="center">
-  <img src="assets/title.jpg">
+  <img src="assets/images/repo/title.jpg">
 </p>
     
 **Drive on Language:** *Unlocking the future where autonomous driving meets the unlimited potential of language.*
@@ -69,7 +69,7 @@ https://github.com/OpenDriveLab/DriveLM/assets/103363891/f8018448-8a0a-4c50-9e0a
 
 
 <p align="center">
-  <img src="assets/point_1.png">
+  <img src="assets/images/repo/point_1.png">
 </p>
 
 
@@ -78,14 +78,14 @@ https://github.com/OpenDriveLab/DriveLM/assets/103363891/f8018448-8a0a-4c50-9e0a
  
 
 <p align="center">
-  <img src="assets/point_2.png" width=70%>
+  <img src="assets/images/repo/point_2.png" width=70%>
 </p>
 
 - ♻ Task-driven decomposition.
   - **One** scene-level text goal into **many** frame-level trajectories & planning text descriptions.
 
 <p align="center">
-  <img src="assets/point_3.png">
+  <img src="assets/images/repo/point_3.png">
 </p>
 
 
@@ -128,7 +128,7 @@ The most exciting aspect of the dataset is that the questions and answers (`QA`)
 </center>
 
 <p align="center">
-  <img src="assets/stats.png">
+  <img src="assets/images/repo/stats.png">
 </p>
 
 
