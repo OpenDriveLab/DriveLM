@@ -42,6 +42,18 @@
             padding: 20px;
             color: white;
         }
+
+        .image-container {
+            display: flex; /* 使用弹性布局 */
+            justify-content: center; /* 水平居中对齐 */
+            align-items: center; /* 垂直居中对齐 */
+        }
+
+        .image-container img {
+            max-width: 40%; /* 图片最大宽度为父容器的50% */
+            height: auto; /* 保持纵横比，自动计算高度 */
+            margin: 10px; /* 图片之间的间距 */
+        }
     </style>
 
 </head>
@@ -81,19 +93,12 @@
                         </div>
                     </div>
                     <!--end-->
-                    <h4 class="fw-bold">
+                    <h4 class="fw-bold mt-4">
                         <em>Unlocking the future where autonomous driving meets the unlimited potential of language</em>
                     </h4>
                 </div>
             </div>
-            <div class="author-list" align="center">
-                <a>DriveLM Contributors</a>&emsp;
-            </div>
-            <div class="institution-list" align="center">
-               OpenDriveLab & Autonomous Vision Group at University of Tübingen
-            </div>
-   
-           
+            
             <!-- video -->
             <div class="row justify-content-center">
                 <div class="text-center">
@@ -164,10 +169,15 @@
         </div>
     </section>
 
+    <div class="image-container">
+        <img src="assets/images/logo/opendrivelab.jpeg"></img>
+        <img src="assets/images/logo/tubingen.jpeg"></img>
+    </div>
+
 </div>
 <!-- javascript -->
-<script src="./assets/js/vendor.bundle.js"></script>
-<script src="./assets/js/index.bundle.js"></script>
+<script src="./assets/js/vendor.bundle.js" height="300" width="500"></script>
+<script src="./assets/js/index.bundle.js"  height="300" width="500"></script>
 </body>
 
 </html>
