@@ -77,7 +77,11 @@ train.json
 - `q` and `a` are python list, with each element a string of either `question` or `answer`.
 - The `description` under `Perception` is a mapping between `c tag` (i.e. \<c1,CAM_FRONT,1362.2,782.9\>) and its textual description of visual appearance.
 
-Note: The `c tag` label is used to indicate key objects selected during the annotation process that are meaningful for self-driving of the ego vehicle. These objects include not only those present in the ground truth but also objects that are not present in the ground truth, such as landmarks and traffic lights. Each key frame contains a minimum of three and a maximum of six key objects. The organization format of the `c tag` is `<cx,CAM_XXX,x,y>`, representing the index, the corresponding camera (CAM_XXX), the x-coordinate, and the y-coordinate. The x and y coordinates refer to the positions on the stitched image obtained by combining the outputs of six cameras. The resulting stitched image has dimensions of 2880*1040.
+**Note:** The `c tag` label is used to indicate key objects selected during the annotation process that are meaningful for self-driving of the ego vehicle. These objects include not only those present in the ground truth but also objects that are not present in the ground truth, such as landmarks and traffic lights. Each key frame contains a minimum of three and a maximum of six key objects. The organization format of the `c tag` is `<cx,CAM_XXX,x,y>`, representing the index, the corresponding camera (CAM_XXX), the x-coordinate, and the y-coordinate. The x and y coordinates refer to the positions on the stitched image obtained by combining the outputs of six cameras. The resulting stitched image has size of 2880*1040.
+
+<p align="center">
+  <img src="../assets/images/repo/image_example.png" width=90%>
+</p>
 
 
 
