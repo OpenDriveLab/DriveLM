@@ -132,7 +132,7 @@ The most exciting aspect of the dataset is that the questions and answers (`QA`)
 </center>
 
 <p align="center">
-  <img src="assets/images/repo/stats.png">
+  <img src="assets/images/repo/stats.jpeg">
 </p>
 
 
