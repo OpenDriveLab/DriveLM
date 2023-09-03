@@ -8,8 +8,8 @@
 </div>
 
 <div id="top" align="center">
-<a> <img src="https://img.shields.io/github/directory-file-count/opendrivelab/drivelm?label=Visitor"/>
-</a>
+
+![](https://komarev.com/ghpvc/?username=your-github-username)
   
 <a href="#license-and-citation">
   <img alt="License: Apache2.0" src="https://img.shields.io/badge/license-Apache%202.0-blue.svg"/>
