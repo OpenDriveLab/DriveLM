@@ -32,6 +32,9 @@
 <a href="https://twitter.com/OpenDriveLab" target="_blank">
     <img alt="Twitter Follow" src="https://img.shields.io/twitter/follow/OpenDriveLab?style=social&color=brightgreen&logo=twitter" />
   </a>
+<a href="https://twitter.com/AutoVisionGroup" target="_blank">
+    <img alt="Twitter Follow" src="https://img.shields.io/twitter/follow/Awesome Vision Group?style=social&color=brightgreen&logo=twitter" />
+  </a>
 <a href="https://opendrivelab.com" target="_blank">
 <img src="https://img.shields.io/badge/contact%40opendrivelab.com-white?style=social&logo=gmail">
   </a>
@@ -182,7 +185,7 @@ All assets and code in this repository are under the [Apache 2.0 license](./LICE
 - [Survey on BEV Perception](https://github.com/OpenDriveLab/BEVPerception-Survey-Recipe) | [BEVFormer](https://github.com/fundamentalvision/BEVFormer) | [OccNet](https://github.com/OpenDriveLab/OccNet)
 
 **Autonomous Vision Group**
-- [tuPlan garage](https://github.com/autonomousvision/tuplan_garage) | [CARLA garage](https://github.com/autonomousvision/carla_garage)
+- [tuPlan garage](https://github.com/autonomousvision/tuplan_garage) | [CARLA garage](https://github.com/autonomousvision/carla_garage) | [Survey on E2EAD](https://github.com/OpenDriveLab/End-to-end-Autonomous-Driving)
 - [PlanT](https://github.com/autonomousvision/plant) | [KING](https://github.com/autonomousvision/king)
 
 <p align="right">(<a href="#top">back to top</a>)</p>
