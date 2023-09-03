@@ -8,8 +8,6 @@
 </div>
 
 <div id="top" align="center">
-
-![](https://komarev.com/ghpvc/?username=your-github-username)
   
 <a href="#license-and-citation">
   <img alt="License: Apache2.0" src="https://img.shields.io/badge/license-Apache%202.0-blue.svg"/>
@@ -44,6 +42,8 @@
 <a href="https://docs.google.com/forms/d/e/1FAIpQLSfm8k7LjITLRdXgbURxk46dq5Q2n8qGoRX0nWqQNE1U_322wQ/viewform?usp=sf_link" target="_blank">
   <img src="https://img.shields.io/badge/Any%20comments%20welcome!-white?logo=google%20forms&label=Google%20Forms&labelColor=blue">
 </a>
+
+ [![Page Views Count](https://badges.toozhao.com/badges/01H9CR01K73G1S0AKDMF1ABC73/green.svg)](https://badges.toozhao.com/stats/01H9CR01K73G1S0AKDMF1ABC73 "Get your own page views count badge on badges.toozhao.com")
 </div>
 
 
