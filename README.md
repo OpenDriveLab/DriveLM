@@ -47,13 +47,6 @@
 </div>
 
 
-<div id="top" align="center">
-<p align="center">
- 
-</p>
-</div>
-
-
 
 https://github.com/OpenDriveLab/DriveLM/assets/103363891/3e40f63a-4873-4e7b-9f9d-4bfd254360e8
 
