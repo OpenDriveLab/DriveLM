@@ -43,7 +43,7 @@
   <img src="https://img.shields.io/badge/Any%20comments%20welcome!-white?logo=google%20forms&label=Google%20Forms&labelColor=blue">
 </a>
 
- [![Page Views Count](https://badges.toozhao.com/badges/01H9CR01K73G1S0AKDMF1ABC73/green.svg)](https://badges.toozhao.com/stats/01H9CR01K73G1S0AKDMF1ABC73 "Get your own page views count badge on badges.toozhao.com")
+ [![Page Views Count](https://badges.toozhao.com/badges/01H9CR01K73G1S0AKDMF1ABC73/blue.svg)](https://badges.toozhao.com/stats/01H9CR01K73G1S0AKDMF1ABC73 "Get your own page views count badge on badges.toozhao.com")
 </div>
 
 
