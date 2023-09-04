@@ -33,12 +33,14 @@
 <a href="https://twitter.com/AutoVisionGroup" target="_blank">
     <img alt="Twitter Follow" src="https://img.shields.io/twitter/follow/Awesome Vision Group?style=social&color=brightgreen&logo=twitter" />
   </a>
-<a href="https://opendrivelab.com" target="_blank">
-<img src="https://img.shields.io/badge/contact%40opendrivelab.com-white?style=social&logo=gmail">
-  </a>
+
 </div>
 
 <div id="top" align="center">
+<a href="https://opendrivelab.com" target="_blank">
+  <img src="https://img.shields.io/badge/contact%40opendrivelab.com-white?style=social&logo=gmail">
+</a>
+
 <a href="https://docs.google.com/forms/d/e/1FAIpQLSfm8k7LjITLRdXgbURxk46dq5Q2n8qGoRX0nWqQNE1U_322wQ/viewform?usp=sf_link" target="_blank">
   <img src="https://img.shields.io/badge/Any%20comments%20welcome!-white?logo=google%20forms&label=Google%20Forms&labelColor=blue">
 </a>
