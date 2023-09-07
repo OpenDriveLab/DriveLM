@@ -109,7 +109,7 @@ https://github.com/OpenDriveLab/DriveLM/assets/103363891/f8018448-8a0a-4c50-9e0a
 
 DriveLM is an autonomous driving (**AD**) dataset incorporating linguistic information. Through DriveLM, we want to connect large language models and autonomous driving systems, and eventually introduce the reasoning ability of Large Language Models in autonomous driving (**AD**) to make decisions and ensure explainable planning.
 
-Specifically, in DriveLM, we facilitate `Perception, Prediction, and Planning` (**P3**) with human-written reasoning logic as a connection. To take it a step further, we leverate the ideo of Graph-of-Thought (GoT) to connect the QA pairs in a graph-style structure and use "What if"-style questions to reason about future events that have not happened.
+Specifically, in DriveLM, we facilitate `Perception, Prediction, and Planning` (**P3**) with human-written reasoning logic as a connection. To take it a step further, we leverate the ideo of Graph-of-Thought (**GoT**) to connect the QA pairs in a graph-style structure and use "What if"-style questions to reason about future events that have not happened.
 
 Currently, a demo of the dataset has been released, and the full dataset and the model will be released in the future.
 
