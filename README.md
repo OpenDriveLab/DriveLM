@@ -107,9 +107,9 @@ https://github.com/OpenDriveLab/DriveLM/assets/103363891/f8018448-8a0a-4c50-9e0a
 
 ## Introduction
 
-DriveLM is a project of driving on language, which contains both a `Dataset` and a `Model`. Through DriveLM, we introduce the reasoning ability of Large Language Models in autonomous driving (**AD**) to make decisions and ensure explainable planning.
+DriveLM is an autonomous driving (**AD**) dataset incorporating linguistic information. Through DriveLM, we want to connect large language models and autonomous driving systems, and eventually introduce the reasoning ability of Large Language Models in autonomous driving (**AD**) to make decisions and ensure explainable planning.
 
-Specifically, in the `Dataset` of DriveLM, we facilitate `Perception, Prediction, and Planning` (**P3**) with human-written reasoning logic as a connection. In the `Model`, we propose an AD Vision Language Model with the Graph-of-Thought ability to produce better planning results. Currently, a demo of the dataset has been released, and the full dataset and the model will be released in the future.
+Specifically, in DriveLM, we facilitate `Perception, Prediction, and Planning` (**P3**) with human-written reasoning logic as a connection.  Currently, a demo of the dataset has been released, and the full dataset and the model will be released in the future.
 
 ### What is Graph-of-Thoughts in AD?
 The most exciting aspect of the dataset is that the questions and answers (`QA`) in `P3` are connected in a graph-style structure, with QA pairs as every node, and objects' relationships as the edges. Compared to [language-only Tree-of-Thought](https://github.com/princeton-nlp/tree-of-thought-llm) or [Graph-of-Thought](https://arxiv.org/abs/2305.16582), we go a step further towards multi-modality. The reason for doing this in the AD domain is that AD tasks are well-defined per stage, from raw sensor input to final control action.
@@ -142,7 +142,7 @@ We construct our dataset based on the prevailing nuScenes dataset. The most cent
 
 1️⃣ Keyframe selection. Given all frames in one clip, the annotator selects the keyframes that need annotation. The criterion is that those frames should involve changes in ego-vehicle movement status (lane changes, sudden stops, start after a stop, etc.).
 
-2️⃣ Key objects selection. Given keyframes, the annotator needs to pick up key objects in the six surrounding images. The criterion is that those objects should be able to affect the action of the ego-vehicle (traffic signals, pedestrians crossing the road, other vehicles that move in the direction of the ego-vehicle, etc.).
+2️⃣ Key objects selection. Given keyframes, the annotator needs to pick up key objects in the six surrounding images. The criterion is that those objects should be able to affect the action of the ego vehicle (traffic signals, pedestrians crossing the road, other vehicles that move in the direction of the ego vehicle, etc.).
 
 3️⃣ Question and answer annotation. Given those key objects, we automatically generate questions regarding single or multiple objects about perception, prediction, and planning. More details can be found in our demo data.
 
