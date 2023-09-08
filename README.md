@@ -49,10 +49,7 @@
 </div>
 
 
-
-https://github.com/OpenDriveLab/DriveLM/assets/103363891/3e40f63a-4873-4e7b-9f9d-4bfd254360e8
-
-
+https://github.com/OpenDriveLab/DriveLM/assets/103363891/67495435-4a32-4614-8d83-71b5c8b66443
 
 <!-- > demo scene token: cc8c0bf57f984915a77078b10eb33198 -->
 
