@@ -148,10 +148,10 @@ DriveLM attempts to address some of the challenges faced by the community.
   - [x] DriveLM-nuScenes
   - [ ] DriveLM-CARLA
 - [ ] DriveLM-Metrics
-  - [ ] GPT-score.
+  - [ ] GPT-score
 - [ ] DriveLM-Agent
-  - [ ] Inference code on DriveLM-nuScenes.
-  - [ ] Inference code on DriveLM-CARLA.
+  - [ ] Inference code on DriveLM-nuScenes
+  - [ ] Inference code on DriveLM-CARLA
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
@@ -171,7 +171,7 @@ The most exciting aspect of the dataset is that the questions and answers (`QA`)
 
 Its key difference to prior VQA tasks for AD is the availability of logical dependencies between QAs, which can be used to guide the answering process. -->
 
-### 📊 Comparison and Stats: <a name="comparison"></a>
+### 📊 Comparison and Stats <a name="comparison"></a>
 **DriveLM-Data** is the *first* language-driving dataset facilitating the full stack of driving tasks with graph-structured logical dependencies.
 <!-- <center>
   
