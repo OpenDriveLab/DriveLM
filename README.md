@@ -119,7 +119,8 @@ To get started with DriveLM:
 
 ## Current Endeavors and Future Directions  <a name="timeline"></a>
 > - The advent of GPT-style multimodal models in real-world applications motivates the study of the role of language in driving.
-> - Date below reflects the arXiv submission date
+> - Date below reflects the arXiv submission date.
+> - If there is any missing work, please reach out to us!
 
 <p align="center">
   <img src="assets/images/repo/drivelm_timeline_v2.jpg">
