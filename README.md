@@ -6,7 +6,7 @@
     
 **DriveLM:** *Driving with **G**raph **V**isual **Q**uestion **A**nswering*
 
-Download our GVQA dataset [**HERE**](docs/data_prep_nus.md)
+Download dataset [**HERE**](docs/data_prep_nus.md) (serves as Official source for `Autonomous Driving Challenge 2024`)
 </div>
 
 <div id="top" align="center">
@@ -44,7 +44,7 @@ https://github.com/OpenDriveLab/DriveLM-new/assets/54334254/ad8be86e-e2a4-4420-8
 
 <!-- 🔥 **The key insight** is that with our proposed suite, we obtain a suitable proxy task to mimic the human reasoning process during driving.  -->
 
-🏁 **DriveLM** will serve as a main track in the **CVPR 2024 Autonomous Driving Challenge**.
+🏁 **DriveLM** will serve as a main track in the **`CVPR 2024 Autonomous Driving Challenge`**. For further details, please [stay tuned](https://opendrivelab.com/AD24Challenge.html)!
 
 <p align="center">
   <img src="assets/images/repo/drivelm_teaser.jpg">
@@ -118,9 +118,8 @@ To get started with DriveLM:
 
 
 ## Current Endeavors and Future Directions  <a name="timeline"></a>
-The advent of GPT-style multimodal models in real-world applications motivates the study of the role of language in driving. 
-
-> Date below reflects the arXiv submission date
+> - The advent of GPT-style multimodal models in real-world applications motivates the study of the role of language in driving.
+> - Date below reflects the arXiv submission date
 
 <p align="center">
   <img src="assets/images/repo/drivelm_timeline_v2.jpg">
@@ -140,7 +139,8 @@ DriveLM attempts to address some of the challenges faced by the community.
 
 - **`[2023/08/25]`** DriveLM-nuScenes demo released.
 - **`[2023/12/21]`** DriveLM-nuScenes full `v1.0` and paper released.
-<!-- - **`[2023/12/20]`** DriveLM-Agent inference code and paper released. -->
+- **`[Early 2024]`** DriveLM-Agent inference code and paper released.
+- **`Note:`** The training code would be (or not) available at a latter time without specific schedule.
 
 ### TODO List <a name="todolist"></a>
 
@@ -228,7 +228,7 @@ We collect data using CARLA 0.9.14 in the Leaderboard 2.0 framework with a privi
 All assets and code in this repository are under the [Apache 2.0 license](./LICENSE) unless specified otherwise. The language data is under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Other datasets (including nuScenes) inherit their own distribution licenses. Please consider citing our paper and project if they help your research.
 
 ```BibTeX
-@article{drivelm_paper2023,
+@article{sima2023drivelm,
   title={DriveLM: Driving with Graph Visual Question Answering},
   author={Sima, Chonghao and Renz, Katrin and Chitta, Kashyap and Chen, Li and Zhang, Hanxue and Xie, Chengen and Luo, Ping and Geiger, Andreas and Li, Hongyang},
   journal={arXiv preprint arXiv:xxxx.xxxxx},
@@ -237,7 +237,7 @@ All assets and code in this repository are under the [Apache 2.0 license](./LICE
 ```
 
 ```BibTeX
-@misc{drivelm_repo2023,
+@misc{contributors2023drivelmrepo,
   title={DriveLM: Driving with Graph Visual Question Answering},
   author={DriveLM contributors},
   howpublished={\url{https://github.com/OpenDriveLab/DriveLM}},
