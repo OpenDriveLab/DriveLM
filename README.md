@@ -97,8 +97,7 @@ https://github.com/OpenDriveLab/DriveLM-new/assets/75412366/78c32442-73c8-4f1d-a
 5. [DriveLM-Data](#drivelmdata)
    - [Comparison and Stats](#comparison)
    - [GVQA Details](docs/gvqa.md)
-   - [Dataset Features](docs/data_details.md/#features)
-   - [Annotation Details](docs/data_details.md/#annotation)
+   - [Annotation and Features](docs/data_details.md)
 6. [License and Citation](#licenseandcitation)
 7. [Other Resources](#otherresources)
 
