@@ -139,8 +139,8 @@ DriveLM attempts to address some of the challenges faced by the community.
 ### News <a name="news"></a>
 
 - **`[2023/08/25]`** DriveLM-nuScenes demo released.
-- **`[2023/12/21]`** DriveLM-nuScenes full `v1.0` and paper released.
-- **`[Early 2024]`** DriveLM-Agent inference code and paper released.
+- **`[2023/12/22]`** DriveLM-nuScenes full `v1.0` and [paper](https://arxiv.org/abs/2312.14150) released.
+- **`[Early 2024]`** DriveLM-Agent inference code.
 - **`Note:`** The training code would be (or not) available at a latter time without specific schedule.
 
 ### TODO List <a name="todolist"></a>
