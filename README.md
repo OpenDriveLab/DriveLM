@@ -232,7 +232,7 @@ All assets and code in this repository are under the [Apache 2.0 license](./LICE
 @article{sima2023drivelm,
   title={DriveLM: Driving with Graph Visual Question Answering},
   author={Sima, Chonghao and Renz, Katrin and Chitta, Kashyap and Chen, Li and Zhang, Hanxue and Xie, Chengen and Luo, Ping and Geiger, Andreas and Li, Hongyang},
-  journal={arXiv preprint arXiv:xxxx.xxxxx},
+  journal={arXiv preprint arXiv:2312.14150},
   year={2023}
 }
 ```
