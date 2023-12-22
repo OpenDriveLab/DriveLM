@@ -15,6 +15,10 @@ Download dataset [**HERE**](docs/data_prep_nus.md) (serves as Official source fo
   <img alt="License: Apache2.0" src="https://img.shields.io/badge/license-Apache%202.0-blue.svg"/>
 </a>
 
+<a href="https://arxiv.org/abs/2312.14150">
+  <img alt="arXiv" src="https://img.shields.io/badge/arXiv-2312.14150-b31b1b.svg"/>
+</a>
+
 <a href="#getting-start">
   <img src="https://img.shields.io/badge/Latest%20release-v1.0-yellow"/>
 </a>
