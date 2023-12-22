@@ -127,7 +127,7 @@ To get started with DriveLM:
 > - If there is any missing work, please reach out to us!
 
 <p align="center">
-  <img src="assets/images/repo/drivelm_timeline_v2.jpg">
+  <img src="assets/images/repo/drivelm_timeline_v3.jpg">
 </p>
 
 DriveLM attempts to address some of the challenges faced by the community.
