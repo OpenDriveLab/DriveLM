@@ -11,21 +11,10 @@ Download dataset [**HERE**](docs/data_prep_nus.md) (serves as Official source fo
 
 <div id="top" align="center">
   
-<a href="#licenseandcitation">
-  <img alt="License: Apache2.0" src="https://img.shields.io/badge/license-Apache%202.0-blue.svg"/>
-</a>
-
-<a href="https://arxiv.org/abs/2312.14150">
-  <img alt="arXiv" src="https://img.shields.io/badge/arXiv-2312.14150-b31b1b.svg"/>
-</a>
-
-<a href="#getting-start">
-  <img src="https://img.shields.io/badge/Latest%20release-v1.0-yellow"/>
-</a>
-
-<a href="https://huggingface.co/datasets/OpenDrive/DriveLM" target="_blank">
-    <img alt="Hugging Face" src="https://img.shields.io/badge/%F0%9F%A4%97%20Hugging%20Face-DriveLM-ffc107?color=ffc107&logoColor=white" />
-  </a>
+[![License: Apache2.0](https://img.shields.io/badge/license-Apache%202.0-blue.svg)](#licenseandcitation)
+[![arXiv](https://img.shields.io/badge/arXiv-2312.14150-b31b1b.svg)](https://arxiv.org/abs/2312.14150)
+[![](https://img.shields.io/badge/Latest%20release-v1.0-yellow)](#gettingstarted)
+[![Hugging Face](https://img.shields.io/badge/%F0%9F%A4%97%20Hugging%20Face-DriveLM-ffc107?color=ffc107&logoColor=white)](https://huggingface.co/datasets/OpenDrive/DriveLM)
 
 <!-- <a href="https://opendrivelab.github.io/DriveLM" target="_blank">
     <img alt="Github Page" src="https://img.shields.io/badge/Project%20Page-white?logo=GitHub&color=green" />
