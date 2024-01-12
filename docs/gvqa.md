@@ -3,4 +3,4 @@ The most exciting aspect of the dataset is that the questions and answers (`QA p
 
 Its key difference to prior VQA tasks for AD is the availability of logical dependencies between QAs, which can be used to guide the answering process. Below is a demo video illustrating the idea.
 
-https://github.com/OpenDriveLab/DriveLM-new/assets/75412366/78c32442-73c8-4f1d-ab69-34c15e7060af
+https://github.com/OpenDriveLab/DriveLM/assets/54334254/988472a8-d7b9-4685-b4b8-7a0e77f68265
