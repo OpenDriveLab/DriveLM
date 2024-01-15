@@ -27,7 +27,9 @@ Download dataset [**HERE**](docs/data_prep_nus.md) (serves as Official source fo
 
 <!-- > above is old demo video. demo scene token: cc8c0bf57f984915a77078b10eb33198 -->
 
-https://github.com/OpenDriveLab/DriveLM/assets/54334254/c611f53e-6c86-49f3-930c-b05edcecf14a
+<!-- https://github.com/OpenDriveLab/DriveLM/assets/54334254/c611f53e-6c86-49f3-930c-b05edcecf14a -->
+
+https://github.com/OpenDriveLab/DriveLM/assets/54334254/6a6ed0ec-2f77-426a-8632-736a9fd57929
 
 <!-- > above is new demo video. demo scene token: cc8c0bf57f984915a77078b10eb33198 -->
 
