@@ -10,7 +10,8 @@ Download dataset [**HERE**](docs/data_prep_nus.md) (serves as Official source fo
 </div>
 
 <div id="top" align="center">
-  
+
+[![](https://img.shields.io/badge/Project%20Page-8A2BE2)](https://opendrivelab.com/DriveLM/)
 [![License: Apache2.0](https://img.shields.io/badge/license-Apache%202.0-blue.svg)](#licenseandcitation)
 [![arXiv](https://img.shields.io/badge/arXiv-2312.14150-b31b1b.svg)](https://arxiv.org/abs/2312.14150)
 [![](https://img.shields.io/badge/Latest%20release-v1.0-yellow)](#gettingstarted)
