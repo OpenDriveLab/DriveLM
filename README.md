@@ -39,7 +39,7 @@ https://github.com/OpenDriveLab/DriveLM/assets/54334254/cddea8d6-9f6e-4e7e-b926-
 
 <!-- 🔥 **The key insight** is that with our proposed suite, we obtain a suitable proxy task to mimic the human reasoning process during driving.  -->
 
-🏁 **DriveLM** will serve as a main track in the **`CVPR 2024 Autonomous Driving Challenge`**. For further details, please [stay tuned](https://opendrivelab.com/AD24Challenge.html)!
+🏁 **DriveLM** serves as a main track in the [**`CVPR 2024 Autonomous Driving Challenge`**](https://opendrivelab.com/challenge2024/#driving_with_language). Everything you need for the challenge is [HERE](https://github.com/OpenDriveLab/DriveLM/tree/main/challenge), including baseline, test data and submission format and evaluation pipeline!
 
 <p align="center">
   <img src="assets/images/repo/drivelm_teaser.jpg">
