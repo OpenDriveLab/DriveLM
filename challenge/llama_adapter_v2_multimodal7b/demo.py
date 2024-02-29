@@ -44,6 +44,7 @@ with open(args.data, 'r') as f:
 
 for data_item in tqdm(data_all):
     filename = data_item['image']
+    ids = data_item['id']
     question = data_item['conversations'][0]['value']
     answer = data_item['conversations'][1]['value']
     
@@ -65,7 +66,7 @@ for data_item in tqdm(data_all):
     result = model.generate(image, [prompt], temperature=0.2, top_p=0.1)[0]
     print(result)
 
-    data_dict.append({'question':question, 'gt_answer':answer, 'answer':result})
+    data_dict.append({'id': ids, 'question':question, 'gt_answer':answer, 'answer':result})
 
 with open(args.output, "w") as f:
     json.dump(data_dict, f, indent=4)  
