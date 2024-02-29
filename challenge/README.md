@@ -15,7 +15,8 @@
 Download the full DriveLM data [v1_0_train_nus.json](https://drive.google.com/file/d/1LK7pYHytv64neN1626u6eTQBy1Uf4IQH/view?usp=sharing), and the demo train DriveLM data [train_sample.json](https://drive.google.com/file/d/1pDikp6xoZGdyUS75qCqCM-Bh5-DWLyj-/view?usp=drive_link).
 The code can run on both full and sampled data, and we provide the entire process of running on the demo train data as follows:
 
-Prepare test data by running
+Follow the steps below to get the test data format as well as data for the baseline model.
+
 ### Extract Data
 
 Extract fundamental question-and-answer (QA) pairs from the training dataset. 
