@@ -1,0 +1,77 @@
+[
+    {
+        "question": "<image>\nWhat are the important objects in the current scene? Those objects will be considered for the future reasoning and driving decision.",
+        "gt_answer": "There is a brown SUV to the back of the ego vehicle, a black sedan to the back of the ego vehicle, and a green light to the front of the ego vehicle. The IDs of these objects are <c1,CAM_BACK,1088.3,497.5>, <c2,CAM_BACK,864.2,468.3>, and <c3,CAM_FRONT,1043.2,82.2>.",
+        "answer": "In the current scene, there are several important objects that need to be considered for the future reasoning and driving decision. These objects include a car driving down the street, a traffic light, a stop sign, a street sign, and a building. The car's position and speed, as well as the traffic light's status, are crucial factors in determining the driver's next move. The stop sign and street sign provide information about the street's name and any potential restrictions or directions. The building in the background adds context to the scene, providing a sense of the surroundings and the environment in which the car is driving."
+    },
+    {
+        "question": "<image>\nWhat is the moving status of object <c1,CAM_BACK,1088.3,497.5>? Please select the correct answer from the following options: A. Going ahead. B. Turn right. C. Turn left. D. Stopped.",
+        "gt_answer": "C",
+        "answer": "The moving status of object <c1,CAM_BACK,1088.3,497.5> is \"Stopped.\""
+    },
+    {
+        "question": "<image>\nWhat object should the ego vehicle notice first when the ego vehicle is getting to the next possible location? What is the state of the object that is first noticed by the ego vehicle and what action should the ego vehicle take? What object should the ego vehicle notice second when the ego vehicle is getting to the next possible location? What is the state of the object perceived by the ego vehicle as second and what action should the ego vehicle take? What object should the ego vehicle notice third? What is the state of the object perceived by the ego vehicle as third and what action should the ego vehicle take?",
+        "gt_answer": "Firstly notice that <c3,CAM_FRONT,1043.2,82.2>. The object is a traffic sign, so the ego vehicle should keep going ahead at the same speed. Secondly notice that <c1,CAM_BACK,1088.3,497.5>. The object is turning left, so the ego vehicle should keep going ahead at the same speed. Thirdly notice that <c2,CAM_BACK,864.2,468.3>. The object is going ahead, so the ego vehicle should keep going ahead at the same speed.",
+        "answer": "1. The ego vehicle should notice the traffic light first when getting to the next possible location. The traffic light is in the middle of the road, and it is important for the ego vehicle to pay attention to it to ensure safe navigation.2. The state of the traffic light is red, indicating that the ego vehicle should stop at the intersection. The ego vehicle should come to a complete stop and wait for the traffic light to change to green before proceeding.3. The ego vehicle should notice the traffic light second when getting to the next possible location. The traffic light is still in the middle of the road, and it is important for the ego vehicle to pay attention to it to ensure safe navigation.4. The state of the traffic light is red, indicating that the ego vehicle should stop at the intersection. The ego vehicle should come to a complete stop and wait for the traffic light to change to green before proceeding.5. The ego vehicle should notice the traffic light third when getting to the next possible location. The traffic light is still in the middle of the road, and it is important for the ego vehicle to pay attention to it to ensure safe navigation.6. The state of the traffic light is red"
+    },
+    {
+        "question": "<image>\nIs <c1,CAM_BACK,1088.3,497.5> a traffic sign or a road barrier?",
+        "gt_answer": "No.",
+        "answer": "The traffic sign is located on the side of the road, and it is not a road barrier."
+    },
+    {
+        "question": "<image>\nWhat actions could the ego vehicle take based on <c1,CAM_BACK,1088.3,497.5>? Why take this action and what's the probability?",
+        "gt_answer": "The action is to keep going at the same speed. The reason is to follow the traffic rules, which has a high probability.",
+        "answer": "Based on the given coordinates, the ego vehicle could take the action of turning left at the intersection. The probability of this action is high, as the vehicle is already at the intersection and has the right-of-way. Turning left at the intersection is a common action for vehicles to take when they are approaching an intersection and need to make a left turn. The probability of this action is high because the vehicle is already at the intersection and has the right-of-way, which means it is more likely to turn left than to continue straight or turn right."
+    },
+    {
+        "question": "<image>\nWhat actions taken by the ego vehicle can lead to a collision with <c1,CAM_BACK,1088.3,497.5>?",
+        "gt_answer": "No such action will lead to a collision.",
+        "answer": "The ego vehicle can lead to a collision with <c1,CAM_BACK,1088.3,497.5> by not paying attention to the traffic light and failing to stop at the red light. The vehicle is driving through the intersection, which is a dangerous situation as it could collide with other vehicles or pedestrians. The driver should have stopped at the red light and waited for it to turn green before proceeding."
+    },
+    {
+        "question": "<image>\nIn this scenario, what are safe actions to take for the ego vehicle?",
+        "gt_answer": "Keep going at the same speed, decelerate gradually without braking.",
+        "answer": "In the image, the ego vehicle is driving through a rainy city street with a traffic light. To ensure safety, the driver should follow these actions:1. Maintain a safe distance from other vehicles: Keep a safe distance from other vehicles, especially if visibility is low due to the rain.2. Reduce speed: Slow down to allow for better visibility and to avoid hydroplaning.3. Use headlights: Turn on headlights to increase visibility for both the driver and other road users.4. Be cautious at intersections: Be extra vigilant at intersections, as visibility may be reduced, and other drivers may not be able to see you clearly.5. Be prepared for sudden stops: Anticipate the need to stop suddenly due to wet roads, and be prepared to react quickly.6. Avoid distractions: Avoid using cell phones, eating, or engaging in other activities that may distract the driver from the road conditions.By following these safety measures, the ego vehicle driver can ensure a safer and more comfortable driving experience in the rainy city street."
+    },
+    {
+        "question": "<image>\nPredict the behavior of the ego vehicle. Please select the correct answer from the following options: A. The ego vehicle is slightly steering to the right. The ego vehicle is driving slowly. B. The ego vehicle is going straight. The ego vehicle is driving fast. C. The ego vehicle is steering to the right. The ego vehicle is driving very fast. D. The ego vehicle is slightly steering to the right. The ego vehicle is driving fast.",
+        "gt_answer": "B",
+        "answer": "The ego vehicle is slightly steering to the right, and it is driving slowly."
+    },
+    {
+        "question": "<image>\nWhat are the important objects in the current scene? Those objects will be considered for the future reasoning and driving decision.",
+        "gt_answer": "There is a champagne-colored sedan to the back of the ego vehicle, a green light to the front of the ego vehicle, and a red light to the front left of the ego vehicle. The IDs of these objects are <c1,CAM_BACK,991.7,603.0>, <c2,CAM_FRONT,836.3,398.3>, and <c3,CAM_FRONT_LEFT,1075.5,382.8>.",
+        "answer": "In the current scene, there are several important objects that will be considered for the future reasoning and driving decision. These objects include a truck, a bus, a car, and a building. The truck and bus are parked on the street, while the car is driving down the road. The building is located on the right side of the street, and there are also some trees in the background. The presence of these objects and their positions in the scene will be taken into account when making future driving decisions, such as navigating around the parked vehicles, avoiding potential collisions, and ensuring safe driving conditions for all road users."
+    },
+    {
+        "question": "<image>\nWhat object should the ego vehicle notice first when the ego vehicle is getting to the next possible location? What is the state of the object that is first noticed by the ego vehicle and what action should the ego vehicle take? What object should the ego vehicle notice second when the ego vehicle is getting to the next possible location? What is the state of the object perceived by the ego vehicle as second and what action should the ego vehicle take? What object should the ego vehicle notice third? What is the state of the object perceived by the ego vehicle as third and what action should the ego vehicle take?",
+        "gt_answer": "Firstly, notice <c3,CAM_FRONT_LEFT,1075.5,382.8>. The object is a traffic sign, so the ego vehicle should continue at the same speed. Secondly, notice <c2,CAM_FRONT,836.3,398.3>. The object is a traffic sign, so the ego vehicle should accelerate and continue ahead. Thirdly, notice <c1,CAM_BACK,991.7,603.0>. The object is stationary, so the ego vehicle should continue ahead at the same speed.",
+        "answer": "1. The ego vehicle should notice the traffic light first, as it is the first object in the image. The traffic light is in the process of changing from red to green, indicating that the vehicle should proceed with caution.2. The ego vehicle should notice the truck next, as it is the second object in the image. The truck is stopped at the intersection, and the ego vehicle should be cautious when approaching the intersection to ensure it does not collide with the truck.3. The ego vehicle should notice the bus next, as it is the third object in the image. The bus is stopped at the intersection, and the ego vehicle should be cautious when approaching the intersection to ensure it does not collide with the bus.4. The ego vehicle should notice the traffic light next, as it is the fourth object in the image. The traffic light is in the process of changing from green to red, indicating that the vehicle should stop at the intersection.5. The ego vehicle should notice the truck next, as it is the fifth object in the image. The truck is stopped at the intersection, and the ego vehicle should be cautious when approaching the intersection to ensure it"
+    },
+    {
+        "question": "<image>\nIs <c1,CAM_BACK,991.7,603.0> a traffic sign or a road barrier?",
+        "gt_answer": "No.",
+        "answer": "The image shows a traffic sign, not a road barrier."
+    },
+    {
+        "question": "<image>\nWhat actions could the ego vehicle take based on <c1,CAM_BACK,991.7,603.0>? Why take this action and what's the probability?",
+        "gt_answer": "The action is to keep stationary, the reason is to follow the traffic rules, high.",
+        "answer": "Based on the given coordinates, the ego vehicle could take the action of turning left at the intersection. The probability of this action is high, as the vehicle is already at the intersection and has the right-of-way. Turning left would allow the vehicle to continue its journey on the road, avoiding any potential collisions with other vehicles or pedestrians."
+    },
+    {
+        "question": "<image>\nWhat actions taken by the ego vehicle can lead to a collision with <c1,CAM_BACK,991.7,603.0>?",
+        "gt_answer": "Back up.",
+        "answer": "The ego vehicle can lead to a collision with <c1,CAM_BACK,991.7,603.0> by not paying attention to the traffic light and failing to stop at the red light. The ego vehicle is driving through the intersection, and if it does not stop at the red light, it could collide with the other vehicle. This is a common cause of accidents at intersections, as drivers often fail to follow traffic rules and regulations."
+    },
+    {
+        "question": "<image>\nIn this scenario, what are safe actions to take for the ego vehicle?",
+        "gt_answer": "Keep going at the same speed, decelerate gradually without braking.",
+        "answer": "In the image, the ego vehicle is driving through a rainy city street. To ensure safety, the driver should take the following actions:1. Maintain a safe distance from other vehicles: In wet conditions, the stopping distance increases, so it is essential to leave a safe distance between the ego vehicle and other vehicles on the road.2. Reduce speed: Driving at a slower speed helps to maintain better control of the vehicle and allows for better reaction time in case of sudden changes in road conditions.3. Use headlights: Turn on the headlights to increase visibility for both the driver and other road users.4. Be cautious of pedestrians: Rainy weather can make it more difficult for pedestrians to see and be seen, so the driver should be extra vigilant and maintain a safe speed when approaching intersections or crosswalks.5. Avoid sudden braking or acceleration: Sudden changes in speed or direction can lead to loss of control and increased risk of accidents.6. Be prepared for hydroplaning: If the vehicle starts to hydroplane, the driver should gently apply the brakes and steer in the direction of the skid to regain control"
+    },
+    {
+        "question": "<image>\nPredict the behavior of the ego vehicle. Please select the correct answer from the following options: A. The ego vehicle is steering to the left. The ego vehicle is driving fast. B. The ego vehicle is slightly steering to the left. The ego vehicle is driving with normal speed. C. The ego vehicle is going straight. The ego vehicle is driving slowly. D. The ego vehicle is going straight. The ego vehicle is driving fast.",
+        "gt_answer": "C",
+        "answer": "The ego vehicle is driving fast, as it is steering to the left and going straight."
+    }
+]

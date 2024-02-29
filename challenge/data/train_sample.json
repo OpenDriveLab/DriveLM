@@ -1,0 +1,1476 @@
+{
+    "f0f120e4d4b0441da90ec53b16ee169d": {
+        "scene_description": "The ego vehicle proceeds through the intersection, continuing along the current roadway.",
+        "key_frames": {
+            "4a0798f849ca477ab18009c3a20b7df2": {
+                "key_object_infos": {
+                    "<c1,CAM_BACK,1088.3,497.5>": {
+                        "Category": "Vehicle",
+                        "Status": "Moving",
+                        "Visual_description": "Brown SUV.",
+                        "2d_bbox": [
+                            966.6,
+                            403.3,
+                            1224.1,
+                            591.7
+                        ]
+                    },
+                    "<c2,CAM_BACK,864.2,468.3>": {
+                        "Category": "Vehicle",
+                        "Status": "Moving",
+                        "Visual_description": "Black sedan.",
+                        "2d_bbox": [
+                            816.7,
+                            431.6,
+                            917.2,
+                            505.0
+                        ]
+                    },
+                    "<c3,CAM_FRONT,1043.2,82.2>": {
+                        "Category": "Traffic element",
+                        "Status": null,
+                        "Visual_description": "Green light.",
+                        "2d_bbox": [
+                            676.4,
+                            0.0,
+                            1452.6,
+                            171.5
+                        ]
+                    }
+                },
+                "QA": {
+                    "perception": [
+                        {
+                            "Q": "What are objects to the front right of the ego car?",
+                            "A": "There are many barriers and one construction vehicle to the front right of the ego car.",
+                            "C": null,
+                            "con_up": null,
+                            "con_down": null,
+                            "cluster": null,
+                            "layer": null
+                        },
+                        {
+                            "Q": "What are objects to the front left of the ego car?",
+                            "A": "There is one truck and one barrier to the front left of the ego car.",
+                            "C": null,
+                            "con_up": null,
+                            "con_down": null,
+                            "cluster": null,
+                            "layer": null
+                        },
+                        {
+                            "Q": "What is the status of the truck that is to the front left of the ego car?",
+                            "A": "One truck is moving.",
+                            "C": null,
+                            "con_up": null,
+                            "con_down": null,
+                            "cluster": null,
+                            "layer": null
+                        },
+                        {
+                            "Q": "What are objects to the back left of the ego car?",
+                            "A": "There are two barriers, many trucks, two trailers, and one car to the back left of the ego car.",
+                            "C": null,
+                            "con_up": null,
+                            "con_down": null,
+                            "cluster": null,
+                            "layer": null
+                        },
+                        {
+                            "Q": "What is the status of the trucks that are to the back left of the ego car?",
+                            "A": "Many trucks are parked.",
+                            "C": null,
+                            "con_up": null,
+                            "con_down": null,
+                            "cluster": null,
+                            "layer": null
+                        },
+                        {
+                            "Q": "What is the status of the construction vehicle that is to the front right of the ego car?",
+                            "A": "The construction vehicle to the front right of the ego car is parked.",
+                            "C": null,
+                            "con_up": null,
+                            "con_down": null,
+                            "cluster": null,
+                            "layer": null
+                        },
+                        {
+                            "Q": "What are objects to the front of the ego car?",
+                            "A": "There are many obstacles in front of the ego car.",
+                            "C": null,
+                            "con_up": null,
+                            "con_down": null,
+                            "cluster": null,
+                            "layer": null
+                        },
+                        {
+                            "Q": "What is the status of the trailers that are to the back left of the ego car?",
+                            "A": "Two trailers are parked.",
+                            "C": null,
+                            "con_up": null,
+                            "con_down": null,
+                            "cluster": null,
+                            "layer": null
+                        },
+                        {
+                            "Q": "What are objects to the back of the ego car?",
+                            "A": "There are two cars, one truck, and one barrier to the back of the ego car.",
+                            "C": null,
+                            "con_up": null,
+                            "con_down": null,
+                            "cluster": null,
+                            "layer": null
+                        },
+                        {
+                            "Q": "What is the status of the cars that are to the back of the ego car?",
+                            "A": "Two cars are moving.",
+                            "C": null,
+                            "con_up": null,
+                            "con_down": null,
+                            "cluster": null,
+                            "layer": null
+                        },
+                        {
+                            "Q": "What is the status of the car that is to the back left of the ego car?",
+                            "A": "One car is moving.",
+                            "C": null,
+                            "con_up": null,
+                            "con_down": null,
+                            "cluster": null,
+                            "layer": null
+                        },
+                        {
+                            "Q": "What is the status of the truck that is to the back of the ego car?",
+                            "A": "One truck is parked.",
+                            "C": null,
+                            "con_up": null,
+                            "con_down": null,
+                            "cluster": null,
+                            "layer": null
+                        },
+                        {
+                            "Q": "What are objects to the back right of the ego car?",
+                            "A": "There are two trailers to the back right of the ego car.",
+                            "C": null,
+                            "con_up": null,
+                            "con_down": null,
+                            "cluster": null,
+                            "layer": null
+                        },
+                        {
+                            "Q": "What is the status of the trailers that are to the back right of the ego car?",
+                            "A": "One of the trailers is parked, and one is moving.",
+                            "C": null,
+                            "con_up": null,
+                            "con_down": null,
+                            "cluster": null,
+                            "layer": null
+                        },
+                        {
+                            "Q": "Are there barriers to the front right of the ego car?",
+                            "A": "Yes.",
+                            "C": null,
+                            "con_up": null,
+                            "con_down": null,
+                            "cluster": null,
+                            "layer": null
+                        },
+                        {
+                            "Q": "Are there standing pedestrians to the front right of the ego car?",
+                            "A": "No.",
+                            "C": null,
+                            "con_up": null,
+                            "con_down": null,
+                            "cluster": null,
+                            "layer": null
+                        },
+                        {
+                            "Q": "Are there parked trailers to the front right of the ego car?",
+                            "A": "No.",
+                            "C": null,
+                            "con_up": null,
+                            "con_down": null,
+                            "cluster": null,
+                            "layer": null
+                        },
+                        {
+                            "Q": "Are there barriers to the front of the ego car?",
+                            "A": "Yes.",
+                            "C": null,
+                            "con_up": null,
+                            "con_down": null,
+                            "cluster": null,
+                            "layer": null
+                        },
+                        {
+                            "Q": "Are there parked trucks to the back left of the ego car?",
+                            "A": "Yes.",
+                            "C": null,
+                            "con_up": null,
+                            "con_down": null,
+                            "cluster": null,
+                            "layer": null
+                        },
+                        {
+                            "Q": "Are there parked trailers to the back right of the ego car?",
+                            "A": "Yes.",
+                            "C": null,
+                            "con_up": null,
+                            "con_down": null,
+                            "cluster": null,
+                            "layer": null
+                        },
+                        {
+                            "Q": "Are there barriers to the front left of the ego car?",
+                            "A": "Yes.",
+                            "C": null,
+                            "con_up": null,
+                            "con_down": null,
+                            "cluster": null,
+                            "layer": null
+                        },
+                        {
+                            "Q": "Are there parked construction vehicles to the front right of the ego car?",
+                            "A": "Yes.",
+                            "C": null,
+                            "con_up": null,
+                            "con_down": null,
+                            "cluster": null,
+                            "layer": null
+                        },
+                        {
+                            "Q": "Please describe the current scene.",
+                            "A": "There are two moving cars behind the ego car and two barriers in front of it.",
+                            "C": null,
+                            "con_up": null,
+                            "con_down": null,
+                            "cluster": null,
+                            "layer": null
+                        },
+                        {
+                            "Q": "What is the relative positioning of the important objects in the current scene?",
+                            "A": "<c2,CAM_BACK,864.2,468.3> is at the back of <c1,CAM_BACK,1088.3,497.5>.",
+                            "C": null,
+                            "con_up": null,
+                            "con_down": null,
+                            "cluster": null,
+                            "layer": null
+                        },
+                        {
+                            "Q": "Is there any traffic element in the front view?",
+                            "A": "Yes, there are some traffic elements in the front view.",
+                            "C": null,
+                            "con_up": null,
+                            "con_down": null,
+                            "cluster": null,
+                            "layer": null
+                        },
+                        {
+                            "Q": "Identify all the traffic elements in the front view, categorize them, determine their status, and predict the bounding box around each one. The output should be a list formatted as (c, s, x1, y1, x2, y2), where c represents the category, s denotes the status, and x1, y1, x2, y2 are the offsets of the top-left and bottom-right corners of the box relative to the center point.",
+                            "A": "There are two traffic elements in the front view. The information of these traffic elements is [(traffic light, green, 674.86, 0.14, 723.33, 109.18), (traffic light, green, 1018.98, 7.19, 1071.77, 125.6)].",
+                            "C": null,
+                            "con_up": null,
+                            "con_down": null,
+                            "cluster": null,
+                            "layer": null
+                        },
+                        {
+                            "Q": "Which lanes are each important object on in the scene?",
+                            "A": "<c1,CAM_BACK,1088.3,497.5> is in the left lane, and <c2,CAM_BACK,864.2,468.3> is in the ego lane.",
+                            "C": null,
+                            "con_up": null,
+                            "con_down": null,
+                            "cluster": null,
+                            "layer": null
+                        },
+                        {
+                            "Q": "What are the important objects in the current scene? Those objects will be considered for the future reasoning and driving decision.",
+                            "A": "There is a brown SUV to the back of the ego vehicle, a black sedan to the back of the ego vehicle, and a green light to the front of the ego vehicle. The IDs of these objects are <c1,CAM_BACK,1088.3,497.5>, <c2,CAM_BACK,864.2,468.3>, and <c3,CAM_FRONT,1043.2,82.2>.",
+                            "C": null,
+                            "con_up": null,
+                            "con_down": null,
+                            "cluster": null,
+                            "layer": null
+                        },
+                        {
+                            "Q": "What is the observed status of object <c1,CAM_BACK,1088.3,497.5>?",
+                            "A": "Moving.",
+                            "C": null,
+                            "con_up": null,
+                            "con_down": null,
+                            "cluster": null,
+                            "layer": null
+                        },
+                        {
+                            "Q": "What is the moving status of object <c1,CAM_BACK,1088.3,497.5>?",
+                            "A": "Turn left.",
+                            "C": null,
+                            "con_up": null,
+                            "con_down": null,
+                            "cluster": null,
+                            "layer": null
+                        },
+                        {
+                            "Q": "What is the observed status of object <c2,CAM_BACK,864.2,468.3>?",
+                            "A": "Moving.",
+                            "C": null,
+                            "con_up": null,
+                            "con_down": null,
+                            "cluster": null,
+                            "layer": null
+                        },
+                        {
+                            "Q": "What is the moving status of object <c2,CAM_BACK,864.2,468.3>?",
+                            "A": "Going ahead.",
+                            "C": null,
+                            "con_up": null,
+                            "con_down": null,
+                            "cluster": null,
+                            "layer": null
+                        },
+                        {
+                            "Q": "What is the visual description of <c1,CAM_BACK,1088.3,497.5>?",
+                            "A": "Brown SUV.",
+                            "C": null,
+                            "con_up": null,
+                            "con_down": null,
+                            "cluster": null,
+                            "layer": null
+                        },
+                        {
+                            "Q": "What is the visual description of <c2,CAM_BACK,864.2,468.3>?",
+                            "A": "Black sedan.",
+                            "C": null,
+                            "con_up": null,
+                            "con_down": null,
+                            "cluster": null,
+                            "layer": null
+                        },
+                        {
+                            "Q": "What is the visual description of <c3,CAM_FRONT,1043.2,82.2>?",
+                            "A": "Green light.",
+                            "C": null,
+                            "con_up": null,
+                            "con_down": null,
+                            "cluster": null,
+                            "layer": null
+                        }
+                    ],
+                    "prediction": [
+                        {
+                            "Q": "Is <c1,CAM_BACK,1088.3,497.5> a traffic sign or a road barrier?",
+                            "A": "No.",
+                            "C": null,
+                            "con_up": null,
+                            "con_down": null,
+                            "cluster": null,
+                            "layer": null
+                        },
+                        {
+                            "Q": "Which object is most likely to be occluded by <c1,CAM_BACK,1088.3,497.5>? Would this object affect the ego vehicle? Based on this object, what action of the ego vehicle is dangerous?",
+                            "A": "None, no, none.",
+                            "C": null,
+                            "con_up": null,
+                            "con_down": null,
+                            "cluster": null,
+                            "layer": null
+                        },
+                        {
+                            "Q": "Would <c1,CAM_BACK,1088.3,497.5> be in the moving direction of the ego vehicle?",
+                            "A": "No.",
+                            "C": null,
+                            "con_up": null,
+                            "con_down": null,
+                            "cluster": null,
+                            "layer": null
+                        },
+                        {
+                            "Q": "What is the future state of <c1,CAM_BACK,1088.3,497.5>?",
+                            "A": "Turn left.",
+                            "C": null,
+                            "con_up": null,
+                            "con_down": null,
+                            "cluster": null,
+                            "layer": null
+                        },
+                        {
+                            "Q": "Is <c2,CAM_BACK,864.2,468.3> a traffic sign or a road barrier?",
+                            "A": "No.",
+                            "C": null,
+                            "con_up": null,
+                            "con_down": null,
+                            "cluster": null,
+                            "layer": null
+                        },
+                        {
+                            "Q": "Which object is most likely to be occluded by <c2,CAM_BACK,864.2,468.3>? Would this object affect the ego vehicle? Based on this object, what action of the ego vehicle is dangerous?",
+                            "A": "None, no, none.",
+                            "C": null,
+                            "con_up": null,
+                            "con_down": null,
+                            "cluster": null,
+                            "layer": null
+                        },
+                        {
+                            "Q": "Would <c2,CAM_BACK,864.2,468.3> be in the moving direction of the ego vehicle?",
+                            "A": "No.",
+                            "C": null,
+                            "con_up": null,
+                            "con_down": null,
+                            "cluster": null,
+                            "layer": null
+                        },
+                        {
+                            "Q": "What is the future state of <c2,CAM_BACK,864.2,468.3>?",
+                            "A": "Turn left.",
+                            "C": null,
+                            "con_up": null,
+                            "con_down": null,
+                            "cluster": null,
+                            "layer": null
+                        },
+                        {
+                            "Q": "Is <c3,CAM_FRONT,1043.2,82.2> a traffic sign or a road barrier?",
+                            "A": "Yes.",
+                            "C": null,
+                            "con_up": null,
+                            "con_down": null,
+                            "cluster": null,
+                            "layer": null
+                        },
+                        {
+                            "Q": "Would <c3,CAM_FRONT,1043.2,82.2> be in the moving direction of the ego vehicle?",
+                            "A": "Yes.",
+                            "C": null,
+                            "con_up": null,
+                            "con_down": null,
+                            "cluster": null,
+                            "layer": null
+                        },
+                        {
+                            "Q": "What does <c3,CAM_FRONT,1043.2,82.2> mean?",
+                            "A": "Please proceed.",
+                            "C": null,
+                            "con_up": null,
+                            "con_down": null,
+                            "cluster": null,
+                            "layer": null
+                        },
+                        {
+                            "Q": "In this scenario, what object is most likely to consider <c3,CAM_FRONT,1043.2,82.2>?",
+                            "A": "The ego vehicle.",
+                            "C": null,
+                            "con_up": null,
+                            "con_down": null,
+                            "cluster": null,
+                            "layer": null
+                        },
+                        {
+                            "Q": "What object should the ego vehicle notice first when the ego vehicle is getting to the next possible location? What is the state of the object that is first noticed by the ego vehicle and what action should the ego vehicle take? What object should the ego vehicle notice second when the ego vehicle is getting to the next possible location? What is the state of the object perceived by the ego vehicle as second and what action should the ego vehicle take? What object should the ego vehicle notice third? What is the state of the object perceived by the ego vehicle as third and what action should the ego vehicle take?",
+                            "A": "Firstly notice that <c3,CAM_FRONT,1043.2,82.2>. The object is a traffic sign, so the ego vehicle should keep going ahead at the same speed. Secondly notice that <c1,CAM_BACK,1088.3,497.5>. The object is turning left, so the ego vehicle should keep going ahead at the same speed. Thirdly notice that <c2,CAM_BACK,864.2,468.3>. The object is going ahead, so the ego vehicle should keep going ahead at the same speed.",
+                            "C": null,
+                            "con_up": null,
+                            "con_down": null,
+                            "cluster": null,
+                            "layer": null
+                        },
+                        {
+                            "Q": "Are <c1,CAM_BACK,1088.3,497.5> and <c2,CAM_BACK,864.2,468.3> traffic signs?",
+                            "A": "Neither is a traffic sign.",
+                            "C": null,
+                            "con_up": null,
+                            "con_down": null,
+                            "cluster": null,
+                            "layer": null
+                        },
+                        {
+                            "Q": "Will <c1,CAM_BACK,1088.3,497.5> be in the moving direction of <c2,CAM_BACK,864.2,468.3>?",
+                            "A": "No.",
+                            "C": null,
+                            "con_up": null,
+                            "con_down": null,
+                            "cluster": null,
+                            "layer": null
+                        },
+                        {
+                            "Q": "Will <c1,CAM_BACK,1088.3,497.5> change its motion state based on <c2,CAM_BACK,864.2,468.3>?",
+                            "A": "No.",
+                            "C": null,
+                            "con_up": null,
+                            "con_down": null,
+                            "cluster": null,
+                            "layer": null
+                        },
+                        {
+                            "Q": "Based on the observations of <c2,CAM_BACK,864.2,468.3>, what are possible actions to be taken by <c1,CAM_BACK,1088.3,497.5>? What is the reason?",
+                            "A": "The action is to turn left, the reason is there is no safety issue.",
+                            "C": null,
+                            "con_up": null,
+                            "con_down": null,
+                            "cluster": null,
+                            "layer": null
+                        },
+                        {
+                            "Q": "What object would consider <c1,CAM_BACK,1088.3,497.5> to be most relevant to its decision?",
+                            "A": "<c2,CAM_BACK,864.2,468.3>.",
+                            "C": null,
+                            "con_up": null,
+                            "con_down": null,
+                            "cluster": null,
+                            "layer": null
+                        },
+                        {
+                            "Q": "What object would consider <c2,CAM_BACK,864.2,468.3> to be most relevant to its decision?",
+                            "A": "None.",
+                            "C": null,
+                            "con_up": null,
+                            "con_down": null,
+                            "cluster": null,
+                            "layer": null
+                        },
+                        {
+                            "Q": "Are <c1,CAM_BACK,1088.3,497.5> and <c3,CAM_FRONT,1043.2,82.2> traffic signs?",
+                            "A": "Only one of the boxes is a traffic sign.",
+                            "C": null,
+                            "con_up": null,
+                            "con_down": null,
+                            "cluster": null,
+                            "layer": null
+                        },
+                        {
+                            "Q": "Will <c3,CAM_FRONT,1043.2,82.2> be in the moving direction of <c1,CAM_BACK,1088.3,497.5>?",
+                            "A": "No.",
+                            "C": null,
+                            "con_up": null,
+                            "con_down": null,
+                            "cluster": null,
+                            "layer": null
+                        },
+                        {
+                            "Q": "Would <c1,CAM_BACK,1088.3,497.5> take <c3,CAM_FRONT,1043.2,82.2> into account?",
+                            "A": "Yes.",
+                            "C": null,
+                            "con_up": null,
+                            "con_down": null,
+                            "cluster": null,
+                            "layer": null
+                        },
+                        {
+                            "Q": "What object would consider <c1,CAM_BACK,1088.3,497.5> to be most relevant to its decision?",
+                            "A": "<c2,CAM_BACK,864.2,468.3>.",
+                            "C": null,
+                            "con_up": null,
+                            "con_down": null,
+                            "cluster": null,
+                            "layer": null
+                        },
+                        {
+                            "Q": "What object would consider <c3,CAM_FRONT,1043.2,82.2> to be most relevant to its decision?",
+                            "A": "The ego vehicle.",
+                            "C": null,
+                            "con_up": null,
+                            "con_down": null,
+                            "cluster": null,
+                            "layer": null
+                        },
+                        {
+                            "Q": "Except for the ego vehicle, what object would consider <c3,CAM_FRONT,1043.2,82.2> to be most relevant to its decision?",
+                            "A": "<c1,CAM_BACK,1088.3,497.5>.",
+                            "C": null,
+                            "con_up": null,
+                            "con_down": null,
+                            "cluster": null,
+                            "layer": null
+                        },
+                        {
+                            "Q": "What kind of traffic sign is <c3,CAM_FRONT,1043.2,82.2>?",
+                            "A": "Traffic light.",
+                            "C": null,
+                            "con_up": null,
+                            "con_down": null,
+                            "cluster": null,
+                            "layer": null
+                        }
+                    ],
+                    "planning": [
+                        {
+                            "Q": "Is <c1,CAM_BACK,1088.3,497.5> an object that the ego vehicle should consider in the current scene?",
+                            "A": "No.",
+                            "C": null,
+                            "con_up": null,
+                            "con_down": null,
+                            "cluster": null,
+                            "layer": null
+                        },
+                        {
+                            "Q": "What actions could the ego vehicle take based on <c1,CAM_BACK,1088.3,497.5>? Why take this action and what's the probability?",
+                            "A": "The action is to keep going at the same speed. The reason is to follow the traffic rules, which has a high probability.",
+                            "C": null,
+                            "con_up": null,
+                            "con_down": null,
+                            "cluster": null,
+                            "layer": null
+                        },
+                        {
+                            "Q": "What is the probability of colliding with <c1,CAM_BACK,1088.3,497.5> after the ego vehicle goes straight and keeps the same speed?",
+                            "A": "Low.",
+                            "C": null,
+                            "con_up": null,
+                            "con_down": null,
+                            "cluster": null,
+                            "layer": null
+                        },
+                        {
+                            "Q": "What actions taken by the ego vehicle can lead to a collision with <c1,CAM_BACK,1088.3,497.5>?",
+                            "A": "No such action will lead to a collision.",
+                            "C": null,
+                            "con_up": null,
+                            "con_down": null,
+                            "cluster": null,
+                            "layer": null
+                        },
+                        {
+                            "Q": "Is <c2,CAM_BACK,864.2,468.3> an object that the ego vehicle should consider in the current scene?",
+                            "A": "No.",
+                            "C": null,
+                            "con_up": null,
+                            "con_down": null,
+                            "cluster": null,
+                            "layer": null
+                        },
+                        {
+                            "Q": "What actions could the ego vehicle take based on <c2,CAM_BACK,864.2,468.3>? Why take this action and what's the probability?",
+                            "A": "The action is to keep going at the same speed. The reason is to follow the traffic rules, which has a high probability.",
+                            "C": null,
+                            "con_up": null,
+                            "con_down": null,
+                            "cluster": null,
+                            "layer": null
+                        },
+                        {
+                            "Q": "What is the probability of colliding with <c2,CAM_BACK,864.2,468.3> after the ego vehicle accelerates and goes straight?",
+                            "A": "Low.",
+                            "C": null,
+                            "con_up": null,
+                            "con_down": null,
+                            "cluster": null,
+                            "layer": null
+                        },
+                        {
+                            "Q": "What actions taken by the ego vehicle can lead to a collision with <c2,CAM_BACK,864.2,468.3>?",
+                            "A": "Back up.",
+                            "C": null,
+                            "con_up": null,
+                            "con_down": null,
+                            "cluster": null,
+                            "layer": null
+                        },
+                        {
+                            "Q": "Is it necessary for the ego vehicle to take <c3,CAM_FRONT,1043.2,82.2> into account?",
+                            "A": "Yes.",
+                            "C": null,
+                            "con_up": null,
+                            "con_down": null,
+                            "cluster": null,
+                            "layer": null
+                        },
+                        {
+                            "Q": "Based on <c3,CAM_FRONT,1043.2,82.2> in this scene, what is the most possible action of the ego vehicle?",
+                            "A": "Keep going at the same speed.",
+                            "C": null,
+                            "con_up": null,
+                            "con_down": null,
+                            "cluster": null,
+                            "layer": null
+                        },
+                        {
+                            "Q": "What is the traffic signal that the ego vehicle should pay attention to?",
+                            "A": "Green light.",
+                            "C": null,
+                            "con_up": null,
+                            "con_down": null,
+                            "cluster": null,
+                            "layer": null
+                        },
+                        {
+                            "Q": "What is the target action of the ego vehicle?",
+                            "A": "Go straight.",
+                            "C": null,
+                            "con_up": null,
+                            "con_down": null,
+                            "cluster": null,
+                            "layer": null
+                        },
+                        {
+                            "Q": "In this scenario, what are safe actions to take for the ego vehicle?",
+                            "A": "Keep going at the same speed, decelerate gradually without braking.",
+                            "C": null,
+                            "con_up": null,
+                            "con_down": null,
+                            "cluster": null,
+                            "layer": null
+                        },
+                        {
+                            "Q": "In this scenario, what are dangerous actions to take for the ego vehicle?",
+                            "A": "Back up, turn right.",
+                            "C": null,
+                            "con_up": null,
+                            "con_down": null,
+                            "cluster": null,
+                            "layer": null
+                        },
+                        {
+                            "Q": "What is the priority of the objects that the ego vehicle should consider?(in descending order)",
+                            "A": "<c3,CAM_FRONT,1043.2,82.2>, <c1,CAM_BACK,1088.3,497.5>, <c2,CAM_BACK,864.2,468.3>.",
+                            "C": null,
+                            "con_up": null,
+                            "con_down": null,
+                            "cluster": null,
+                            "layer": null
+                        },
+                        {
+                            "Q": "Based on the observation of <c3,CAM_FRONT,1043.2,82.2>, what actions may <c1,CAM_BACK,1088.3,497.5> take?",
+                            "A": "Turn left.",
+                            "C": null,
+                            "con_up": null,
+                            "con_down": null,
+                            "cluster": null,
+                            "layer": null
+                        },
+                        {
+                            "Q": "What will affect driving judgment in this scene?",
+                            "A": "Water droplets on the glass will affect visibility.",
+                            "C": null,
+                            "con_up": null,
+                            "con_down": null,
+                            "cluster": null,
+                            "layer": null
+                        }
+                    ],
+                    "behavior": [
+                        {
+                            "Q": "Predict the behavior of the ego vehicle.",
+                            "A": "The ego vehicle is going straight. The ego vehicle is driving fast.",
+                            "C": null,
+                            "con_up": null,
+                            "con_down": null,
+                            "cluster": null,
+                            "layer": null
+                        }
+                    ]
+                },
+                "image_paths": {
+                    "CAM_FRONT": "../nuscenes/samples/CAM_FRONT/n008-2018-09-18-13-10-39-0400__CAM_FRONT__1537291010612404.jpg",
+                    "CAM_FRONT_LEFT": "../nuscenes/samples/CAM_FRONT_LEFT/n008-2018-09-18-13-10-39-0400__CAM_FRONT_LEFT__1537291010604799.jpg",
+                    "CAM_FRONT_RIGHT": "../nuscenes/samples/CAM_FRONT_RIGHT/n008-2018-09-18-13-10-39-0400__CAM_FRONT_RIGHT__1537291010620482.jpg",
+                    "CAM_BACK": "../nuscenes/samples/CAM_BACK/n008-2018-09-18-13-10-39-0400__CAM_BACK__1537291010637558.jpg",
+                    "CAM_BACK_LEFT": "../nuscenes/samples/CAM_BACK_LEFT/n008-2018-09-18-13-10-39-0400__CAM_BACK_LEFT__1537291010647405.jpg",
+                    "CAM_BACK_RIGHT": "../nuscenes/samples/CAM_BACK_RIGHT/n008-2018-09-18-13-10-39-0400__CAM_BACK_RIGHT__1537291010628113.jpg"
+                }
+            },
+            "ffd1bdf020d145759224c629b501d2b2": {
+                "key_object_infos": {
+                    "<c1,CAM_BACK,991.7,603.0>": {
+                        "Category": "Vehicle",
+                        "Status": "Stationary",
+                        "Visual_description": "Champagne-colored sedan.",
+                        "2d_bbox": [
+                            769.2,
+                            409.7,
+                            1240.1,
+                            796.3
+                        ]
+                    },
+                    "<c2,CAM_FRONT,836.3,398.3>": {
+                        "Category": "Traffic element",
+                        "Status": null,
+                        "Visual_description": "Green light.",
+                        "2d_bbox": [
+                            710.5,
+                            303.0,
+                            976.8,
+                            493.6
+                        ]
+                    },
+                    "<c3,CAM_FRONT_LEFT,1075.5,382.8>": {
+                        "Category": "Traffic element",
+                        "Status": null,
+                        "Visual_description": "Red light.",
+                        "2d_bbox": [
+                            923.5,
+                            257.2,
+                            1245.2,
+                            508.4
+                        ]
+                    }
+                },
+                "QA": {
+                    "perception": [
+                        {
+                            "Q": "What are objects to the back left of the ego car?",
+                            "A": "There are many trucks, one car, two barriers, and one traffic cone to the back left of the ego car.",
+                            "C": null,
+                            "con_up": null,
+                            "con_down": null,
+                            "cluster": null,
+                            "layer": null
+                        },
+                        {
+                            "Q": "What is the status of the trucks that are to the back left of the ego car?",
+                            "A": "Many trucks are parked, and one is moving.",
+                            "C": null,
+                            "con_up": null,
+                            "con_down": null,
+                            "cluster": null,
+                            "layer": null
+                        },
+                        {
+                            "Q": "What are objects to the front left of the ego car?",
+                            "A": "There is one car, three barriers, one trailer, and three trucks to the front left of the ego car.",
+                            "C": null,
+                            "con_up": null,
+                            "con_down": null,
+                            "cluster": null,
+                            "layer": null
+                        },
+                        {
+                            "Q": "What is the status of the car that is to the front left of the ego car?",
+                            "A": "One car is parked.",
+                            "C": null,
+                            "con_up": null,
+                            "con_down": null,
+                            "cluster": null,
+                            "layer": null
+                        },
+                        {
+                            "Q": "What is the status of the car that is to the back left of the ego car?",
+                            "A": "One car is parked.",
+                            "C": null,
+                            "con_up": null,
+                            "con_down": null,
+                            "cluster": null,
+                            "layer": null
+                        },
+                        {
+                            "Q": "What are objects to the back of the ego car?",
+                            "A": "There is one pedestrian, one bus, and two cars behind the ego car.",
+                            "C": null,
+                            "con_up": null,
+                            "con_down": null,
+                            "cluster": null,
+                            "layer": null
+                        },
+                        {
+                            "Q": "What is the status of the pedestrian that is to the back of the ego car?",
+                            "A": "The pedestrian to the back of the ego car is moving.",
+                            "C": null,
+                            "con_up": null,
+                            "con_down": null,
+                            "cluster": null,
+                            "layer": null
+                        },
+                        {
+                            "Q": "What are objects to the front of the ego car?",
+                            "A": "There is one barrier in front of the ego car.",
+                            "C": null,
+                            "con_up": null,
+                            "con_down": null,
+                            "cluster": null,
+                            "layer": null
+                        },
+                        {
+                            "Q": "What is the status of the trailer that is to the front left of the ego car?",
+                            "A": "The trailer to the front left of the ego car is parked.",
+                            "C": null,
+                            "con_up": null,
+                            "con_down": null,
+                            "cluster": null,
+                            "layer": null
+                        },
+                        {
+                            "Q": "What is the status of the bus that is to the back of the ego car?",
+                            "A": "One bus is stopped.",
+                            "C": null,
+                            "con_up": null,
+                            "con_down": null,
+                            "cluster": null,
+                            "layer": null
+                        },
+                        {
+                            "Q": "What is the status of the cars that are to the back of the ego car?",
+                            "A": "One of the cars is parked, and the other is moving.",
+                            "C": null,
+                            "con_up": null,
+                            "con_down": null,
+                            "cluster": null,
+                            "layer": null
+                        },
+                        {
+                            "Q": "What is the status of the trucks that are to the front left of the ego car?",
+                            "A": "Three trucks are parked.",
+                            "C": null,
+                            "con_up": null,
+                            "con_down": null,
+                            "cluster": null,
+                            "layer": null
+                        },
+                        {
+                            "Q": "Are there moving cars to the back right of the ego car?",
+                            "A": "No.",
+                            "C": null,
+                            "con_up": null,
+                            "con_down": null,
+                            "cluster": null,
+                            "layer": null
+                        },
+                        {
+                            "Q": "Are there barriers to the front right of the ego car?",
+                            "A": "No.",
+                            "C": null,
+                            "con_up": null,
+                            "con_down": null,
+                            "cluster": null,
+                            "layer": null
+                        },
+                        {
+                            "Q": "Are there motorcycles without riders to the back of the ego car?",
+                            "A": "No.",
+                            "C": null,
+                            "con_up": null,
+                            "con_down": null,
+                            "cluster": null,
+                            "layer": null
+                        },
+                        {
+                            "Q": "Are there traffic cones to the front left of the ego car?",
+                            "A": "No.",
+                            "C": null,
+                            "con_up": null,
+                            "con_down": null,
+                            "cluster": null,
+                            "layer": null
+                        },
+                        {
+                            "Q": "Are there barriers to the front of the ego car?",
+                            "A": "Yes.",
+                            "C": null,
+                            "con_up": null,
+                            "con_down": null,
+                            "cluster": null,
+                            "layer": null
+                        },
+                        {
+                            "Q": "Are there bicycles with riders to the front left of the ego car?",
+                            "A": "No.",
+                            "C": null,
+                            "con_up": null,
+                            "con_down": null,
+                            "cluster": null,
+                            "layer": null
+                        },
+                        {
+                            "Q": "Are there parked cars to the front left of the ego car?",
+                            "A": "Yes.",
+                            "C": null,
+                            "con_up": null,
+                            "con_down": null,
+                            "cluster": null,
+                            "layer": null
+                        },
+                        {
+                            "Q": "Are there parked trailers to the front left of the ego car?",
+                            "A": "Yes.",
+                            "C": null,
+                            "con_up": null,
+                            "con_down": null,
+                            "cluster": null,
+                            "layer": null
+                        },
+                        {
+                            "Q": "Are there parked trucks to the front left of the ego car?",
+                            "A": "Yes.",
+                            "C": null,
+                            "con_up": null,
+                            "con_down": null,
+                            "cluster": null,
+                            "layer": null
+                        },
+                        {
+                            "Q": "Are there barriers to the front left of the ego car?",
+                            "A": "Yes.",
+                            "C": null,
+                            "con_up": null,
+                            "con_down": null,
+                            "cluster": null,
+                            "layer": null
+                        },
+                        {
+                            "Q": "Are there traffic cones to the back left of the ego car?",
+                            "A": "Yes.",
+                            "C": null,
+                            "con_up": null,
+                            "con_down": null,
+                            "cluster": null,
+                            "layer": null
+                        },
+                        {
+                            "Q": "Are there parked trucks to the back left of the ego car?",
+                            "A": "Yes.",
+                            "C": null,
+                            "con_up": null,
+                            "con_down": null,
+                            "cluster": null,
+                            "layer": null
+                        },
+                        {
+                            "Q": "Are there barriers to the back left of the ego car?",
+                            "A": "Yes.",
+                            "C": null,
+                            "con_up": null,
+                            "con_down": null,
+                            "cluster": null,
+                            "layer": null
+                        },
+                        {
+                            "Q": "Please describe the current scene.",
+                            "A": "There is one moving car behind the ego car, one parked car behind the ego car, and one stopped bus behind the ego car.",
+                            "C": null,
+                            "con_up": null,
+                            "con_down": null,
+                            "cluster": null,
+                            "layer": null
+                        },
+                        {
+                            "Q": "Is there any traffic element in the front view?",
+                            "A": "Yes, there are traffic elements in the front view.",
+                            "C": null,
+                            "con_up": null,
+                            "con_down": null,
+                            "cluster": null,
+                            "layer": null
+                        },
+                        {
+                            "Q": "Identify all the traffic elements in the front view, categorize them, determine their status, and predict the bounding box around each one. The output should be a list formatted as (c, s, x1, y1, x2, y2), where c represents the category, s denotes the status, and x1, y1, x2, y2 are the offsets of the top-left and bottom-right corners of the box relative to the center point.",
+                            "A": "There are many traffic elements in the front view. The information of these traffic elements is [(traffic light, green, 13.19, 382.76, 39.21, 427.96), (traffic light, unknown, 255.86, 274.14, 279.25, 324.67), (traffic light, unknown, 388.89, 266.58, 413.72, 318.86), (traffic light, green, 713.29, 306.48, 731.57, 345.14), (traffic light, green, 826.91, 313.56, 844.49, 351.52), (traffic light, unknown, 399.02, 400.97, 412.73, 429.78)].",
+                            "C": null,
+                            "con_up": null,
+                            "con_down": null,
+                            "cluster": null,
+                            "layer": null
+                        },
+                        {
+                            "Q": "Which lanes are each important object on in the scene?",
+                            "A": "<c1,CAM_BACK,991.7,603.0> is on the ego lane.",
+                            "C": null,
+                            "con_up": null,
+                            "con_down": null,
+                            "cluster": null,
+                            "layer": null
+                        },
+                        {
+                            "Q": "What are the important objects in the current scene? Those objects will be considered for the future reasoning and driving decision.",
+                            "A": "There is a champagne-colored sedan to the back of the ego vehicle, a green light to the front of the ego vehicle, and a red light to the front left of the ego vehicle. The IDs of these objects are <c1,CAM_BACK,991.7,603.0>, <c2,CAM_FRONT,836.3,398.3>, and <c3,CAM_FRONT_LEFT,1075.5,382.8>.",
+                            "C": null,
+                            "con_up": null,
+                            "con_down": null,
+                            "cluster": null,
+                            "layer": null
+                        },
+                        {
+                            "Q": "What is the observed status of object <c1,CAM_BACK,991.7,603.0>?",
+                            "A": "Stationary.",
+                            "C": null,
+                            "con_up": null,
+                            "con_down": null,
+                            "cluster": null,
+                            "layer": null
+                        },
+                        {
+                            "Q": "What is the visual description of <c1,CAM_BACK,991.7,603.0>?",
+                            "A": "Champagne-colored sedan.",
+                            "C": null,
+                            "con_up": null,
+                            "con_down": null,
+                            "cluster": null,
+                            "layer": null
+                        },
+                        {
+                            "Q": "What is the visual description of <c2,CAM_FRONT,836.3,398.3>?",
+                            "A": "Green light.",
+                            "C": null,
+                            "con_up": null,
+                            "con_down": null,
+                            "cluster": null,
+                            "layer": null
+                        },
+                        {
+                            "Q": "What is the visual description of <c3,CAM_FRONT_LEFT,1075.5,382.8>?",
+                            "A": "Red light.",
+                            "C": null,
+                            "con_up": null,
+                            "con_down": null,
+                            "cluster": null,
+                            "layer": null
+                        }
+                    ],
+                    "prediction": [
+                        {
+                            "Q": "Is <c1,CAM_BACK,991.7,603.0> a traffic sign or a road barrier?",
+                            "A": "No.",
+                            "C": null,
+                            "con_up": null,
+                            "con_down": null,
+                            "cluster": null,
+                            "layer": null
+                        },
+                        {
+                            "Q": "Would <c1,CAM_BACK,991.7,603.0> be in the moving direction of the ego vehicle?",
+                            "A": "No.",
+                            "C": null,
+                            "con_up": null,
+                            "con_down": null,
+                            "cluster": null,
+                            "layer": null
+                        },
+                        {
+                            "Q": "What is the future state of <c1,CAM_BACK,991.7,603.0>?",
+                            "A": "Keep going straight.",
+                            "C": null,
+                            "con_up": null,
+                            "con_down": null,
+                            "cluster": null,
+                            "layer": null
+                        },
+                        {
+                            "Q": "Is <c2,CAM_FRONT,836.3,398.3> a traffic sign or a road barrier?",
+                            "A": "Yes.",
+                            "C": null,
+                            "con_up": null,
+                            "con_down": null,
+                            "cluster": null,
+                            "layer": null
+                        },
+                        {
+                            "Q": "Would <c2,CAM_FRONT,836.3,398.3> be in the moving direction of the ego vehicle?",
+                            "A": "Yes.",
+                            "C": null,
+                            "con_up": null,
+                            "con_down": null,
+                            "cluster": null,
+                            "layer": null
+                        },
+                        {
+                            "Q": "What does <c2,CAM_FRONT,836.3,398.3> mean?",
+                            "A": "Please proceed.",
+                            "C": null,
+                            "con_up": null,
+                            "con_down": null,
+                            "cluster": null,
+                            "layer": null
+                        },
+                        {
+                            "Q": "In this scenario, what object is most likely to consider <c2,CAM_FRONT,836.3,398.3>?",
+                            "A": "The ego vehicle.",
+                            "C": null,
+                            "con_up": null,
+                            "con_down": null,
+                            "cluster": null,
+                            "layer": null
+                        },
+                        {
+                            "Q": "Is <c3,CAM_FRONT_LEFT,1075.5,382.8> a traffic sign or a road barrier?",
+                            "A": "Yes.",
+                            "C": null,
+                            "con_up": null,
+                            "con_down": null,
+                            "cluster": null,
+                            "layer": null
+                        },
+                        {
+                            "Q": "Would <c3,CAM_FRONT_LEFT,1075.5,382.8> be in the moving direction of the ego vehicle?",
+                            "A": "No.",
+                            "C": null,
+                            "con_up": null,
+                            "con_down": null,
+                            "cluster": null,
+                            "layer": null
+                        },
+                        {
+                            "Q": "What does <c3,CAM_FRONT_LEFT,1075.5,382.8> mean?",
+                            "A": "Please wait.",
+                            "C": null,
+                            "con_up": null,
+                            "con_down": null,
+                            "cluster": null,
+                            "layer": null
+                        },
+                        {
+                            "Q": "In this scenario, what object is most likely to consider <c3,CAM_FRONT_LEFT,1075.5,382.8>?",
+                            "A": "None.",
+                            "C": null,
+                            "con_up": null,
+                            "con_down": null,
+                            "cluster": null,
+                            "layer": null
+                        },
+                        {
+                            "Q": "What object should the ego vehicle notice first when the ego vehicle is getting to the next possible location? What is the state of the object that is first noticed by the ego vehicle and what action should the ego vehicle take? What object should the ego vehicle notice second when the ego vehicle is getting to the next possible location? What is the state of the object perceived by the ego vehicle as second and what action should the ego vehicle take? What object should the ego vehicle notice third? What is the state of the object perceived by the ego vehicle as third and what action should the ego vehicle take?",
+                            "A": "Firstly, notice <c3,CAM_FRONT_LEFT,1075.5,382.8>. The object is a traffic sign, so the ego vehicle should continue at the same speed. Secondly, notice <c2,CAM_FRONT,836.3,398.3>. The object is a traffic sign, so the ego vehicle should accelerate and continue ahead. Thirdly, notice <c1,CAM_BACK,991.7,603.0>. The object is stationary, so the ego vehicle should continue ahead at the same speed.",
+                            "C": null,
+                            "con_up": null,
+                            "con_down": null,
+                            "cluster": null,
+                            "layer": null
+                        },
+                        {
+                            "Q": "Are <c3,CAM_FRONT_LEFT,1075.5,382.8> and <c1,CAM_BACK,991.7,603.0> traffic signs?",
+                            "A": "Only one of the boxes is a traffic sign.",
+                            "C": null,
+                            "con_up": null,
+                            "con_down": null,
+                            "cluster": null,
+                            "layer": null
+                        },
+                        {
+                            "Q": "Will <c3,CAM_FRONT_LEFT,1075.5,382.8> be in the moving direction of <c1,CAM_BACK,991.7,603.0>?",
+                            "A": "No.",
+                            "C": null,
+                            "con_up": null,
+                            "con_down": null,
+                            "cluster": null,
+                            "layer": null
+                        },
+                        {
+                            "Q": "Would <c1,CAM_BACK,991.7,603.0> take <c3,CAM_FRONT_LEFT,1075.5,382.8> into account?",
+                            "A": "No.",
+                            "C": null,
+                            "con_up": null,
+                            "con_down": null,
+                            "cluster": null,
+                            "layer": null
+                        },
+                        {
+                            "Q": "What object would consider <c3,CAM_FRONT_LEFT,1075.5,382.8> to be most relevant to its decision?",
+                            "A": "None.",
+                            "C": null,
+                            "con_up": null,
+                            "con_down": null,
+                            "cluster": null,
+                            "layer": null
+                        },
+                        {
+                            "Q": "What object would consider <c1,CAM_BACK,991.7,603.0> to be most relevant to its decision?",
+                            "A": "None.",
+                            "C": null,
+                            "con_up": null,
+                            "con_down": null,
+                            "cluster": null,
+                            "layer": null
+                        },
+                        {
+                            "Q": "Are <c2,CAM_FRONT,836.3,398.3> and <c3,CAM_FRONT_LEFT,1075.5,382.8> traffic signs?",
+                            "A": "Both are traffic signs.",
+                            "C": null,
+                            "con_up": null,
+                            "con_down": null,
+                            "cluster": null,
+                            "layer": null
+                        },
+                        {
+                            "Q": "What object would consider <c2,CAM_FRONT,836.3,398.3> to be most relevant to its decision?",
+                            "A": "The ego vehicle.",
+                            "C": null,
+                            "con_up": null,
+                            "con_down": null,
+                            "cluster": null,
+                            "layer": null
+                        },
+                        {
+                            "Q": "Except for the ego vehicle, what object would consider <c2,CAM_FRONT,836.3,398.3> to be most relevant to its decision?",
+                            "A": "<c1,CAM_BACK,991.7,603.0>.",
+                            "C": null,
+                            "con_up": null,
+                            "con_down": null,
+                            "cluster": null,
+                            "layer": null
+                        },
+                        {
+                            "Q": "What object would consider <c3,CAM_FRONT_LEFT,1075.5,382.8> to be most relevant to its decision?",
+                            "A": "None.",
+                            "C": null,
+                            "con_up": null,
+                            "con_down": null,
+                            "cluster": null,
+                            "layer": null
+                        },
+                        {
+                            "Q": "What kind of traffic sign is <c2,CAM_FRONT,836.3,398.3>?",
+                            "A": "Traffic light.",
+                            "C": null,
+                            "con_up": null,
+                            "con_down": null,
+                            "cluster": null,
+                            "layer": null
+                        },
+                        {
+                            "Q": "What kind of traffic sign is <c3,CAM_FRONT_LEFT,1075.5,382.8>?",
+                            "A": "Traffic light.",
+                            "C": null,
+                            "con_up": null,
+                            "con_down": null,
+                            "cluster": null,
+                            "layer": null
+                        }
+                    ],
+                    "planning": [
+                        {
+                            "Q": "Is <c1,CAM_BACK,991.7,603.0> an object that the ego vehicle should consider in the current scene?",
+                            "A": "No.",
+                            "C": null,
+                            "con_up": null,
+                            "con_down": null,
+                            "cluster": null,
+                            "layer": null
+                        },
+                        {
+                            "Q": "What actions could the ego vehicle take based on <c1,CAM_BACK,991.7,603.0>? Why take this action and what's the probability?",
+                            "A": "The action is to keep stationary, the reason is to follow the traffic rules, high.",
+                            "C": null,
+                            "con_up": null,
+                            "con_down": null,
+                            "cluster": null,
+                            "layer": null
+                        },
+                        {
+                            "Q": "What is the probability of colliding with <c1,CAM_BACK,991.7,603.0> after the ego vehicle goes straight and keeps the same speed?",
+                            "A": "Low.",
+                            "C": null,
+                            "con_up": null,
+                            "con_down": null,
+                            "cluster": null,
+                            "layer": null
+                        },
+                        {
+                            "Q": "What actions taken by the ego vehicle can lead to a collision with <c1,CAM_BACK,991.7,603.0>?",
+                            "A": "Back up.",
+                            "C": null,
+                            "con_up": null,
+                            "con_down": null,
+                            "cluster": null,
+                            "layer": null
+                        },
+                        {
+                            "Q": "Is it necessary for the ego vehicle to take <c2,CAM_FRONT,836.3,398.3> into account?",
+                            "A": "Yes.",
+                            "C": null,
+                            "con_up": null,
+                            "con_down": null,
+                            "cluster": null,
+                            "layer": null
+                        },
+                        {
+                            "Q": "Based on <c2,CAM_FRONT,836.3,398.3> in this scene, what is the most possible action of the ego vehicle?",
+                            "A": "Keep going at the same speed.",
+                            "C": null,
+                            "con_up": null,
+                            "con_down": null,
+                            "cluster": null,
+                            "layer": null
+                        },
+                        {
+                            "Q": "Is it necessary for the ego vehicle to take <c3,CAM_FRONT_LEFT,1075.5,382.8> into account?",
+                            "A": "Yes.",
+                            "C": null,
+                            "con_up": null,
+                            "con_down": null,
+                            "cluster": null,
+                            "layer": null
+                        },
+                        {
+                            "Q": "Based on <c3,CAM_FRONT_LEFT,1075.5,382.8> in this scene, what is the most possible action of the ego vehicle?",
+                            "A": "Decelerate gradually without braking.",
+                            "C": null,
+                            "con_up": null,
+                            "con_down": null,
+                            "cluster": null,
+                            "layer": null
+                        },
+                        {
+                            "Q": "What is the traffic signal that the ego vehicle should pay attention to?",
+                            "A": "Green light.",
+                            "C": null,
+                            "con_up": null,
+                            "con_down": null,
+                            "cluster": null,
+                            "layer": null
+                        },
+                        {
+                            "Q": "What is the target action of the ego vehicle?",
+                            "A": "Go straight.",
+                            "C": null,
+                            "con_up": null,
+                            "con_down": null,
+                            "cluster": null,
+                            "layer": null
+                        },
+                        {
+                            "Q": "In this scenario, what are safe actions to take for the ego vehicle?",
+                            "A": "Keep going at the same speed, decelerate gradually without braking.",
+                            "C": null,
+                            "con_up": null,
+                            "con_down": null,
+                            "cluster": null,
+                            "layer": null
+                        },
+                        {
+                            "Q": "In this scenario, what are dangerous actions to take for the ego vehicle?",
+                            "A": "Backing up, turning left, turning right, and changing to the right lane are dangerous actions for the ego vehicle in this scenario.",
+                            "C": null,
+                            "con_up": null,
+                            "con_down": null,
+                            "cluster": null,
+                            "layer": null
+                        },
+                        {
+                            "Q": "What is the priority of the objects that the ego vehicle should consider?(in descending order)",
+                            "A": "<c3,CAM_FRONT_LEFT,1075.5,382.8>, <c2,CAM_FRONT,836.3,398.3>, <c1,CAM_BACK,991.7,603.0>.",
+                            "C": null,
+                            "con_up": null,
+                            "con_down": null,
+                            "cluster": null,
+                            "layer": null
+                        },
+                        {
+                            "Q": "Will water droplets on the glass affect the driver's line of sight?",
+                            "A": "Yes, water droplets on the glass can affect the driver's line of sight. Slow down when the road is slippery on rainy days.",
+                            "C": null,
+                            "con_up": null,
+                            "con_down": null,
+                            "cluster": null,
+                            "layer": null
+                        }
+                    ],
+                    "behavior": [
+                        {
+                            "Q": "Predict the behavior of the ego vehicle.",
+                            "A": "The ego vehicle is going straight. The ego vehicle is driving slowly.",
+                            "C": null,
+                            "con_up": null,
+                            "con_down": null,
+                            "cluster": null,
+                            "layer": null
+                        }
+                    ]
+                },
+                "image_paths": {
+                    "CAM_FRONT": "../nuscenes/samples/CAM_FRONT/n008-2018-09-18-13-10-39-0400__CAM_FRONT__1537291002262404.jpg",
+                    "CAM_FRONT_LEFT": "../nuscenes/samples/CAM_FRONT_LEFT/n008-2018-09-18-13-10-39-0400__CAM_FRONT_LEFT__1537291002254799.jpg",
+                    "CAM_FRONT_RIGHT": "../nuscenes/samples/CAM_FRONT_RIGHT/n008-2018-09-18-13-10-39-0400__CAM_FRONT_RIGHT__1537291002270482.jpg",
+                    "CAM_BACK": "../nuscenes/samples/CAM_BACK/n008-2018-09-18-13-10-39-0400__CAM_BACK__1537291002287558.jpg",
+                    "CAM_BACK_LEFT": "../nuscenes/samples/CAM_BACK_LEFT/n008-2018-09-18-13-10-39-0400__CAM_BACK_LEFT__1537291002297405.jpg",
+                    "CAM_BACK_RIGHT": "../nuscenes/samples/CAM_BACK_RIGHT/n008-2018-09-18-13-10-39-0400__CAM_BACK_RIGHT__1537291002278113.jpg"
+                }
+            }
+        }
+    }
+}
