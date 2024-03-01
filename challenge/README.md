@@ -123,7 +123,7 @@ We implement diverse evaluation metrics tailored to different question types as 
 ### Setup
 Install the language-evaluation package
 
-Following [https://github.com/bckim92/language-evaluation](https://github.com/bckim92/language-evaluation) (skip the first step if related libraries are already installed)
+Following [https://github.com/bckim92/language-evaluation](https://github.com/bckim92/language-evaluation) (skip the FIRST STEP if related libraries are already installed)
 
 ```bash
 # FIRST STEP
