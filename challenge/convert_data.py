@@ -4,9 +4,13 @@ import random
 
 
 def rule_based1(question, answer):
-    rule = ["Going ahead.", "Turn right.", "Turn left.", "Stopped."]
-    question += f" Please select the correct answer from the following options: A. {rule[0]} B. {rule[1]} C. {rule[2]} D. {rule[3]}"
-    idx = rule.index(answer)
+    rule = ["Going ahead.", "Turn right.", "Turn left.", "Stopped.", "Back up.", "Reverse parking."]
+    rule.remove(answer)
+    choices = random.sample(rule, 3)
+    choices.append(answer)
+    random.shuffle(choices)
+    idx = choices.index(answer)
+    question += f" Please select the correct answer from the following options: A. {choices[0]} B. {choices[1]} C. {choices[2]} D. {choices[3]}"
     mapping = {0: "A", 1: "B", 2: "C", 3: "D"}
     return {"Q": question, "A": mapping[idx]}
 
