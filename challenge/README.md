@@ -1,13 +1,13 @@
 ### TL;DR
 * The purpose of this folder is to facilitate our CVPR 2024 challenge. Initially, we will use a small subset of training data (**demo train** in the following text) as an illustrative example, demonstrating how to obtain the **test data format** and the submission format, how to train the baseline and infer the baseline, and go through the evaluation pipeline. 
 
-* For the purpose of the new **test data format**, it is essential that our primary intention is to creat a specific test data format preventing possible cheating. 
+* For the purpose of the new **test data format**, it is essential that our primary intention is to create a specific test data format preventing possible cheating. 
 
 <!-- > * Subsequently, we will demonstrate the process of conducting evaluations, encompassing the baseline methodology. -->
 
 * For better illustration, we provide [google slides](https://docs.google.com/presentation/d/1bicxoR_L3t05p5xw-qZM0Dj5KdJhjynqLM0Rck0qdcI/edit?usp=sharing) for your reference. 
 
-* **Official annoucement about the DriveLM challenge is maintained in this folder**. Please raise an issue in the repo if you find anything unclear.
+* **Official announcement about the DriveLM challenge is maintained in this folder**. Please raise an issue in the repo if you find anything unclear.
 
 ## How to Prepare Data
 
@@ -21,7 +21,7 @@ Follow the steps below to get the test data format as well as data for the basel
 
 Extract fundamental question-and-answer (QA) pairs from the training dataset. 
 
-**Note that** the number and the content of thefundamental QA pairs might change in the test server, but we ensure that **all the question types are limited in our provided test data format**. That being said, the question types are within 1) multi-choice question; 2) conversation question; 3) yes/no questions;
+**Note that** the number and the content of the fundamental QA pairs might change in the test server, but we ensure that **all the question types are limited in our provided test data format**. That being said, the question types are within 1) multi-choice question; 2) conversation question; 3) yes/no questions;
 
 ```bash
 # The following script assumes that you download the train data json under ./challenge/data
