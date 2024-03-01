@@ -103,11 +103,11 @@ if __name__ == '__main__':
     
     with open(args.root_path1, 'r') as f :#, \    
         pred_file = json.load(f)
+    pred_file = {pred_file[i]["id"]: pred_file[i] for i in range(len(pred_file))}
     
     with open(args.root_path2, 'r') as f:
         test_file = json.load(f)
 
-    global_qa = -1
     evaluation = evaluation_suit()
     output = {"accuracy": [], "chatgpt": [], "language": [], "match": []}
     for scene_id in test_file.keys():
@@ -117,13 +117,13 @@ if __name__ == '__main__':
             frame_data_qa = scene_data[frame_id]['QA']
             first_flag = True
 
-            for qa in (frame_data_qa["perception"] + frame_data_qa["prediction"] + frame_data_qa["planning"] + frame_data_qa["behavior"]):
-                global_qa += 1
+            for i, qa in enumerate(frame_data_qa["perception"] + frame_data_qa["prediction"] + frame_data_qa["planning"] + frame_data_qa["behavior"]):
                 question = qa['Q']
                 GT = qa['A']
                 tag = qa['tag']
-                predict = pred_file[global_qa]["answer"]
-                assert pred_file[global_qa]["gt_answer"] == GT, print(pred_file[global_qa]["gt_answer"], GT)
+                idx = scene_id + "_" + frame_id + "_" + str(i)
+                predict = pred_file[idx]["answer"]
+                assert pred_file[idx]["gt_answer"] == GT, print(pred_file[idx]["gt_answer"], GT)
                 if first_flag:
                     first_flag = False
                     evaluation.set_graph(predict, GT)
