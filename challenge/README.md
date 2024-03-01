@@ -21,7 +21,7 @@ Follow the steps below to get the test data format as well as data for the basel
 
 Extract fundamental question-and-answer (QA) pairs from the training dataset. 
 
-**Note that** the number and the content of the fundamental QA pairs might change in the test server, but we ensure that **all the question types are limited in our provided test data format**. That being said, the question types are within 1) multi-choice question; 2) conversation question; 3) yes/no questions;
+**Note that** the number and the content of the fundamental QA pairs might change in the test server, but we ensure that **all the question types are limited in our provided test data format**. That being said, the question types are within 1) multi-choice question; 2) conversation question; 3) yes/no question;
 
 ```bash
 # The following script assumes that you download the train data json under ./challenge/data
@@ -30,7 +30,7 @@ mkdir data
 mv train_sample.json data/train_sample.json
 python extract_data.py
 ```
-Then we will get the test.json in challenge folder. The example of test.json can be found in [test.json](test.json)
+Then we will get the test.json in the challenge folder. The example of test.json can be found in [test.json](test.json)
 
 ### Convert Data
 
@@ -79,11 +79,11 @@ pip install -r requirements.txt
 
 ### Train baseline
 You should modify the [finetune_data_config.yaml](llama_adapter_v2_multimodal7b/finetune_data_config.yaml#L2) to specify the datasets for fine-tuning. 
-The format of datasets refer to [test_v2.json](test_v2.json). 
+The format of datasets refers to [test_v2.json](test_v2.json). 
 
 The pre-trained checkpoint can be downloaded in [ckpts](https://github.com/OpenGVLab/LLaMA-Adapter/releases/tag/v.2.0.0).
 
-First prepare the [nuscenes](https://www.nuscenes.org/) dataset which can refer to [BEVFormer](https://github.com/fundamentalvision/BEVFormer/blob/master/docs/prepare_dataset.md). 
+First, prepare the [nuscenes](https://www.nuscenes.org/) dataset which can refer to [BEVFormer](https://github.com/fundamentalvision/BEVFormer/blob/master/docs/prepare_dataset.md). 
 ```bash
 data/nuscenes                                    
 ├── samples                           
@@ -121,9 +121,9 @@ Then we will get the [llama-adapter-DriveLM.json](llama-adapter-DriveLM.json), w
 We implement diverse evaluation metrics tailored to different question types as mentioned [above](https://github.com/OpenDriveLab/DriveLM-private/blob/test/challenge/README.md?plain=1#L19).
 
 ### Setup
-Intall the language-evaluation package
+Install the language-evaluation package
 
-Following [https://github.com/bckim92/language-evaluation](https://github.com/bckim92/language-evaluation) (skip first step if related libraries are already installed)
+Following [https://github.com/bckim92/language-evaluation](https://github.com/bckim92/language-evaluation) (skip the first step if related libraries are already installed)
 
 ```bash
 # FIRST STEP
@@ -160,7 +160,7 @@ python evaluation.py --root_path1 ./llama-adapter-DriveLM.json --root_path2 ./te
 ```
 
 ### Results
-The zero-shot results of baseline on the sampled data is as follows:
+The zero-shot results of baseline on the sampled data are as follows:
 ```
 accuracy:  0.0
 chatgpt:  78.5
