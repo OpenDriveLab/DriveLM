@@ -16,12 +16,13 @@
 [![License: Apache2.0](https://img.shields.io/badge/license-Apache%202.0-blue.svg)](#licenseandcitation)
 [![arXiv](https://img.shields.io/badge/arXiv-2312.14150-b31b1b.svg)](https://arxiv.org/abs/2312.14150)
 [![](https://img.shields.io/badge/Latest%20release-v1.0-yellow)](#gettingstarted)
-<!-- [![Hugging Face](https://img.shields.io/badge/%F0%9F%A4%97%20Hugging%20Face-DriveLM-ffc107?color=ffc107&logoColor=white)](https://huggingface.co/datasets/OpenDrive/DriveLM) -->
 [![Hugging Face](https://img.shields.io/badge/%F0%9F%A4%97%20Hugging%20Face-DriveLM-ffc107?color=ffc107&logoColor=white)](https://huggingface.co/spaces/AGC2024/driving-with-language-2024)
 
 <!-- <a href="https://opendrivelab.github.io/DriveLM" target="_blank">
     <img alt="Github Page" src="https://img.shields.io/badge/Project%20Page-white?logo=GitHub&color=green" />
   </a> -->
+
+<!-- [![Hugging Face](https://img.shields.io/badge/%F0%9F%A4%97%20Hugging%20Face-DriveLM-ffc107?color=ffc107&logoColor=white)](https://huggingface.co/datasets/OpenDrive/DriveLM) -->
 
 </div>
 
