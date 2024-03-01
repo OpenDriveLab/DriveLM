@@ -84,6 +84,15 @@ The format of datasets refers to [test_v2.json](test_v2.json).
 The pre-trained checkpoint can be downloaded in [ckpts](https://github.com/OpenGVLab/LLaMA-Adapter/releases/tag/v.2.0.0).
 
 First, prepare the [nuscenes](https://www.nuscenes.org/) dataset which can refer to [BEVFormer](https://github.com/fundamentalvision/BEVFormer/blob/master/docs/prepare_dataset.md). 
+
+We also provide the sampled nuscenes images under challenge/data. If you just want to run through the sampled data. Please follow the instructions below.
+
+```bash
+# The following script assumes that you prepare the nuscenes under ./challenge/llama_adapter_v2_multimodal7b
+mkdir -p data/nuscenes
+mv ../data/samples data/nuscenes
+```
+
 ```bash
 data/nuscenes                                    
 ├── samples                           
