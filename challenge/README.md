@@ -1,5 +1,5 @@
 ### TL;DR
-* The purpose of this folder is to facilitate our CVPR 2024 challenge. Initially, we will use a small subset of training data (**demo train** in the following text) as an illustrative example, demonstrating how to obtain the **test data format**, train the baseline, infer the baseline and go through the evaluation pipeline. 
+* The purpose of this folder is to facilitate our CVPR 2024 challenge. Initially, we will use a small subset of training data (**demo train** in the following text) as an illustrative example, demonstrating how to obtain the **test data format** and the submission format, how to train the baseline and infer the baseline, and go through the evaluation pipeline. 
 
 * For the purpose of the new **test data format**, it is essential that our primary intention is to creat a specific test data format preventing possible cheating. 
 
