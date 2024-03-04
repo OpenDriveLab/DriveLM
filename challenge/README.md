@@ -43,7 +43,7 @@ python convert_data.py
 ```
 Then we will get the test_v1.json in challenge folder. The example of test_v1.json can be found in [test_v1.json](test_v1.json)
 
-We use llama-adapter v2 as our baseline. If we want to convert data into llama-adapter format:
+We use llama-adapter v2 as our baseline. If you want to convert data into llama-adapter format:
 ```bash
 # The following script assumes that you prepare the test_v1.json under ./challenge
 # make sure you are under ./challenge
