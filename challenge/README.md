@@ -14,11 +14,11 @@
 ### DriveLM
 Download the full DriveLM data as follows:
 
-| DriveLM-nuScenes version-1.0|
-|:-------:|
-| [Google Drive](https://drive.google.com/file/d/1LK7pYHytv64neN1626u6eTQBy1Uf4IQH/view?usp=sharing) |
-|[Baidu Netdisk](https://pan.baidu.com/s/1PAdotDY0MN3nkz8w_XhDsw?pwd=l4wf) |
-|[HuggingFace](https://huggingface.co/datasets/OpenDriveLab/DriveLM/blob/main/v1_0_train_nus.json)
+| nuScenes subset images | DriveLM-nuScenes version-1.0|
+|:-------:|:-------:|
+| [Google Drive](https://drive.google.com/file/d/1DeosPGYeM2gXSChjMODGsQChZyYDmaUz/view?usp=sharing) | [Google Drive](https://drive.google.com/file/d/1LK7pYHytv64neN1626u6eTQBy1Uf4IQH/view?usp=sharing) |
+|[Baidu Netdisk](https://pan.baidu.com/s/11xvxPzUY5xTIsJQrYFogqg?pwd=mk95)|[Baidu Netdisk](https://pan.baidu.com/s/1PAdotDY0MN3nkz8w_XhDsw?pwd=l4wf) |
+|[HuggingFace](https://huggingface.co/datasets/OpenDriveLab/DriveLM/blob/main/drivelm_nus_imgs_train.zip)|[HuggingFace](https://huggingface.co/datasets/OpenDriveLab/DriveLM/blob/main/v1_0_train_nus.json)
 
 and the demo train DriveLM data [train_sample.json](https://drive.google.com/file/d/1pDikp6xoZGdyUS75qCqCM-Bh5-DWLyj-/view?usp=drive_link).
 
