@@ -12,15 +12,40 @@
 ## How to Prepare Data
 
 ### DriveLM
-Download the full DriveLM data as follows:
+We provide three options for you to prepare the dataset:
+1. If you just want to run through the demo. 
+We provide the demo train DriveLM data [train_sample.json](data/train_sample.json) and the [sampled images](llama_adapter_v2_multimodal7b/data/nuscenes) in the repo.
 
-| DriveLM-nuScenes version-1.0|
-|:-------:|
-| [Google Drive](https://drive.google.com/file/d/1LK7pYHytv64neN1626u6eTQBy1Uf4IQH/view?usp=sharing) |
-|[Baidu Netdisk](https://pan.baidu.com/s/1PAdotDY0MN3nkz8w_XhDsw?pwd=l4wf) |
-|[HuggingFace](https://huggingface.co/datasets/OpenDriveLab/DriveLM/blob/main/v1_0_train_nus.json)
+2. If you already have nuscenes dataset similar with the [bevformer](https://github.com/fundamentalvision/BEVFormer/blob/master/docs/prepare_dataset.md). Then you just need to
+```bash
+rm -rf llama_adapter_v2_multimodal7b/data/nuscenes
+ln -s /path/to/your/nuscenes llama_adapter_v2_multimodal7b/data/
+```
 
-and the demo train DriveLM data [train_sample.json](https://drive.google.com/file/d/1pDikp6xoZGdyUS75qCqCM-Bh5-DWLyj-/view?usp=drive_link).
+3. If you do not have the nuscenes dataset, but you want to run through the whole DriveLM dataset. Then you need to Download the following dataset.
+
+| nuScenes subset images | DriveLM-nuScenes version-1.0|
+|:-------:|:-------:|
+| [Google Drive](https://drive.google.com/file/d/1DeosPGYeM2gXSChjMODGsQChZyYDmaUz/view?usp=sharing) | [Google Drive](https://drive.google.com/file/d/1LK7pYHytv64neN1626u6eTQBy1Uf4IQH/view?usp=sharing) |
+|[Baidu Netdisk](https://pan.baidu.com/s/11xvxPzUY5xTIsJQrYFogqg?pwd=mk95)|[Baidu Netdisk](https://pan.baidu.com/s/1PAdotDY0MN3nkz8w_XhDsw?pwd=l4wf) |
+|[HuggingFace](https://huggingface.co/datasets/OpenDriveLab/DriveLM/blob/main/drivelm_nus_imgs_train.zip)|[HuggingFace](https://huggingface.co/datasets/OpenDriveLab/DriveLM/blob/main/v1_0_train_nus.json)
+
+Please follow the instructions below.
+```bash
+# The following script assumes that you prepare the nuscenes under ./challenge/llama_adapter_v2_multimodal7b
+mv ../drivelm_nus_imgs_train.zip .
+unzip drivelm_nus_imgs_train.zip
+mv nuscenes data
+```
+Then the format of the data will be the same as the following.
+```bash
+data/nuscenes                                    
+├── samples
+│   ├── CAM_FRONT_LEFT                          
+│   │   ├── n015-2018-11-21-19-58-31+0800__CAM_FRONT_LEFT__1542801707504844.jpg 
+│   │   ├── n015-2018-11-21-19-58-31+0800__CAM_FRONT_LEFT__1542801708004844.jpg
+```
+
 
 Follow the steps below to get the test data format as well as data for the baseline model.
 
@@ -89,30 +114,6 @@ You should modify the [finetune_data_config.yaml](llama_adapter_v2_multimodal7b/
 The format of datasets refers to [test_v2.json](test_v2.json). 
 
 The pre-trained checkpoint can be downloaded in [ckpts](https://github.com/OpenGVLab/LLaMA-Adapter/releases/tag/v.2.0.0).
-
-First, prepare the [nuscenes](https://www.nuscenes.org/) dataset which can refer to [BEVFormer](https://github.com/fundamentalvision/BEVFormer/blob/master/docs/prepare_dataset.md). 
-
-We also provide the sampled nuscenes images under challenge/data. If you just want to run through the sampled data. Please follow the instructions below.
-
-```bash
-# The following script assumes that you prepare the nuscenes under ./challenge/llama_adapter_v2_multimodal7b
-mkdir -p data/nuscenes
-mv ../data/samples data/nuscenes
-```
-
-```bash
-data/nuscenes                                    
-├── samples
-│   ├── CAM_FRONT_LEFT                          
-│   │   ├── n015-2018-11-21-19-58-31+0800__CAM_FRONT_LEFT__1542801707504844.jpg 
-│   │   ├── n015-2018-11-21-19-58-31+0800__CAM_FRONT_LEFT__1542801708004844.jpg
-```
-
-Then link the nuscenes dataset under the folder llama_adapter_v2_multimodal7b/data/. 
-```bash
-# The following script assumes that you prepare the nuscenes under ./challenge
-ln -s nuscenes llama_adapter_v2_multimodal7b/data
-```
 
 Then we can train baseline as follows. 
 ```bash
