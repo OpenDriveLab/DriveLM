@@ -95,9 +95,10 @@ mv ../data/samples data/nuscenes
 
 ```bash
 data/nuscenes                                    
-├── samples                           
-│   ├── n015-2018-11-21-19-58-31+0800__CAM_FRONT_LEFT__1542801707504844.jpg 
-│   ├── n015-2018-11-21-19-58-31+0800__CAM_FRONT_LEFT__1542801708004844.jpg
+├── samples
+│   ├── CAM_FRONT_LEFT                          
+│   │   ├── n015-2018-11-21-19-58-31+0800__CAM_FRONT_LEFT__1542801707504844.jpg 
+│   │   ├── n015-2018-11-21-19-58-31+0800__CAM_FRONT_LEFT__1542801708004844.jpg
 ```
 
 Then link the nuscenes dataset under the folder llama_adapter_v2_multimodal7b/data/. 
