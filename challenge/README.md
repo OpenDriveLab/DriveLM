@@ -181,10 +181,10 @@ python evaluation.py --root_path1 ./output.json --root_path2 ./test_eval.json
 The zero-shot results of baseline on the sampled data are as follows:
 ```
 accuracy:  0.0
-chatgpt:  78.5
-match:  23.75
-language score:  {'val/Bleu_1': 0.029183757177883535, 'val/Bleu_2': 0.00017003737042789148, 'val/Bleu_3': 3.066026234534233e-05, 'val/Bleu_4': 1.3024512157157705e-05, 'val/ROUGE_L': 0.05928706665796174, 'val/CIDEr': 0.05818698178494484}
-final score:  0.36633034231114403
+chatgpt:  65.11111111111111
+match:  28.25
+language score:  {'val/Bleu_1': 0.0495223110147729, 'val/Bleu_2': 0.00021977465683011536, 'val/Bleu_3': 3.6312541763196866e-05, 'val/Bleu_4': 1.4776149283286042e-05, 'val/ROUGE_L': 0.08383567940883102, 'val/CIDEr': 0.09901486412073952}
+final score:  0.3240234750718823
 ```
 
 
