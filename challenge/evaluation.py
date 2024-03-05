@@ -97,8 +97,8 @@ class evaluation_suit():
 if __name__ == '__main__':
     # get args
     parser = argparse.ArgumentParser(description='Evaluation')
-    parser.add_argument('--root_path1', type=str, default="./llama-adapter-DriveLM.json", help='path to prediction file')
-    parser.add_argument('--root_path2', type=str, default="./test_v1.json", help='path to test file')
+    parser.add_argument('--root_path1', type=str, default="./output.json", help='path to prediction file')
+    parser.add_argument('--root_path2', type=str, default="./test_eval.json", help='path to test file')
     args = parser.parse_args()
     
     with open(args.root_path1, 'r') as f :#, \    
