@@ -1,0 +1,1388 @@
+[
+    {
+        "id": "f0f120e4d4b0441da90ec53b16ee169d_4a0798f849ca477ab18009c3a20b7df2_0",
+        "image": [
+            "data/nuscenes/samples/CAM_FRONT/n008-2018-09-18-13-10-39-0400__CAM_FRONT__1537291010612404.jpg",
+            "data/nuscenes/samples/CAM_FRONT_LEFT/n008-2018-09-18-13-10-39-0400__CAM_FRONT_LEFT__1537291010604799.jpg",
+            "data/nuscenes/samples/CAM_FRONT_RIGHT/n008-2018-09-18-13-10-39-0400__CAM_FRONT_RIGHT__1537291010620482.jpg",
+            "data/nuscenes/samples/CAM_BACK/n008-2018-09-18-13-10-39-0400__CAM_BACK__1537291010637558.jpg",
+            "data/nuscenes/samples/CAM_BACK_LEFT/n008-2018-09-18-13-10-39-0400__CAM_BACK_LEFT__1537291010647405.jpg",
+            "data/nuscenes/samples/CAM_BACK_RIGHT/n008-2018-09-18-13-10-39-0400__CAM_BACK_RIGHT__1537291010628113.jpg"
+        ],
+        "conversations": [
+            {
+                "from": "human",
+                "value": "<image>\nWhat are the important objects in the current scene? Those objects will be considered for the future reasoning and driving decision."
+            },
+            {
+                "from": "gpt",
+                "value": "There is a brown SUV to the back of the ego vehicle, a black sedan to the back of the ego vehicle, and a green light to the front of the ego vehicle. The IDs of these objects are <c1,CAM_BACK,1088.3,497.5>, <c2,CAM_BACK,864.2,468.3>, and <c3,CAM_FRONT,1043.2,82.2>."
+            }
+        ]
+    },
+    {
+        "id": "f0f120e4d4b0441da90ec53b16ee169d_4a0798f849ca477ab18009c3a20b7df2_1",
+        "image": [
+            "data/nuscenes/samples/CAM_FRONT/n008-2018-09-18-13-10-39-0400__CAM_FRONT__1537291010612404.jpg",
+            "data/nuscenes/samples/CAM_FRONT_LEFT/n008-2018-09-18-13-10-39-0400__CAM_FRONT_LEFT__1537291010604799.jpg",
+            "data/nuscenes/samples/CAM_FRONT_RIGHT/n008-2018-09-18-13-10-39-0400__CAM_FRONT_RIGHT__1537291010620482.jpg",
+            "data/nuscenes/samples/CAM_BACK/n008-2018-09-18-13-10-39-0400__CAM_BACK__1537291010637558.jpg",
+            "data/nuscenes/samples/CAM_BACK_LEFT/n008-2018-09-18-13-10-39-0400__CAM_BACK_LEFT__1537291010647405.jpg",
+            "data/nuscenes/samples/CAM_BACK_RIGHT/n008-2018-09-18-13-10-39-0400__CAM_BACK_RIGHT__1537291010628113.jpg"
+        ],
+        "conversations": [
+            {
+                "from": "human",
+                "value": "<image>\nWhat is the moving status of object <c1,CAM_BACK,1088.3,497.5>? Please select the correct answer from the following options: A. Going ahead. B. Stopped. C. Back up. D. Turn left."
+            },
+            {
+                "from": "gpt",
+                "value": "D"
+            }
+        ]
+    },
+    {
+        "id": "f0f120e4d4b0441da90ec53b16ee169d_4a0798f849ca477ab18009c3a20b7df2_2",
+        "image": [
+            "data/nuscenes/samples/CAM_FRONT/n008-2018-09-18-13-10-39-0400__CAM_FRONT__1537291010612404.jpg",
+            "data/nuscenes/samples/CAM_FRONT_LEFT/n008-2018-09-18-13-10-39-0400__CAM_FRONT_LEFT__1537291010604799.jpg",
+            "data/nuscenes/samples/CAM_FRONT_RIGHT/n008-2018-09-18-13-10-39-0400__CAM_FRONT_RIGHT__1537291010620482.jpg",
+            "data/nuscenes/samples/CAM_BACK/n008-2018-09-18-13-10-39-0400__CAM_BACK__1537291010637558.jpg",
+            "data/nuscenes/samples/CAM_BACK_LEFT/n008-2018-09-18-13-10-39-0400__CAM_BACK_LEFT__1537291010647405.jpg",
+            "data/nuscenes/samples/CAM_BACK_RIGHT/n008-2018-09-18-13-10-39-0400__CAM_BACK_RIGHT__1537291010628113.jpg"
+        ],
+        "conversations": [
+            {
+                "from": "human",
+                "value": "<image>\nWhat object should the ego vehicle notice first when the ego vehicle is getting to the next possible location? What is the state of the object that is first noticed by the ego vehicle and what action should the ego vehicle take? What object should the ego vehicle notice second when the ego vehicle is getting to the next possible location? What is the state of the object perceived by the ego vehicle as second and what action should the ego vehicle take? What object should the ego vehicle notice third? What is the state of the object perceived by the ego vehicle as third and what action should the ego vehicle take?"
+            },
+            {
+                "from": "gpt",
+                "value": "Firstly notice that <c3,CAM_FRONT,1043.2,82.2>. The object is a traffic sign, so the ego vehicle should keep going ahead at the same speed. Secondly notice that <c1,CAM_BACK,1088.3,497.5>. The object is turning left, so the ego vehicle should keep going ahead at the same speed. Thirdly notice that <c2,CAM_BACK,864.2,468.3>. The object is going ahead, so the ego vehicle should keep going ahead at the same speed."
+            }
+        ]
+    },
+    {
+        "id": "f0f120e4d4b0441da90ec53b16ee169d_4a0798f849ca477ab18009c3a20b7df2_3",
+        "image": [
+            "data/nuscenes/samples/CAM_FRONT/n008-2018-09-18-13-10-39-0400__CAM_FRONT__1537291010612404.jpg",
+            "data/nuscenes/samples/CAM_FRONT_LEFT/n008-2018-09-18-13-10-39-0400__CAM_FRONT_LEFT__1537291010604799.jpg",
+            "data/nuscenes/samples/CAM_FRONT_RIGHT/n008-2018-09-18-13-10-39-0400__CAM_FRONT_RIGHT__1537291010620482.jpg",
+            "data/nuscenes/samples/CAM_BACK/n008-2018-09-18-13-10-39-0400__CAM_BACK__1537291010637558.jpg",
+            "data/nuscenes/samples/CAM_BACK_LEFT/n008-2018-09-18-13-10-39-0400__CAM_BACK_LEFT__1537291010647405.jpg",
+            "data/nuscenes/samples/CAM_BACK_RIGHT/n008-2018-09-18-13-10-39-0400__CAM_BACK_RIGHT__1537291010628113.jpg"
+        ],
+        "conversations": [
+            {
+                "from": "human",
+                "value": "<image>\nIs <c1,CAM_BACK,1088.3,497.5> a traffic sign or a road barrier?"
+            },
+            {
+                "from": "gpt",
+                "value": "No."
+            }
+        ]
+    },
+    {
+        "id": "f0f120e4d4b0441da90ec53b16ee169d_4a0798f849ca477ab18009c3a20b7df2_4",
+        "image": [
+            "data/nuscenes/samples/CAM_FRONT/n008-2018-09-18-13-10-39-0400__CAM_FRONT__1537291010612404.jpg",
+            "data/nuscenes/samples/CAM_FRONT_LEFT/n008-2018-09-18-13-10-39-0400__CAM_FRONT_LEFT__1537291010604799.jpg",
+            "data/nuscenes/samples/CAM_FRONT_RIGHT/n008-2018-09-18-13-10-39-0400__CAM_FRONT_RIGHT__1537291010620482.jpg",
+            "data/nuscenes/samples/CAM_BACK/n008-2018-09-18-13-10-39-0400__CAM_BACK__1537291010637558.jpg",
+            "data/nuscenes/samples/CAM_BACK_LEFT/n008-2018-09-18-13-10-39-0400__CAM_BACK_LEFT__1537291010647405.jpg",
+            "data/nuscenes/samples/CAM_BACK_RIGHT/n008-2018-09-18-13-10-39-0400__CAM_BACK_RIGHT__1537291010628113.jpg"
+        ],
+        "conversations": [
+            {
+                "from": "human",
+                "value": "<image>\nWhat actions could the ego vehicle take based on <c1,CAM_BACK,1088.3,497.5>? Why take this action and what's the probability?"
+            },
+            {
+                "from": "gpt",
+                "value": "The action is to keep going at the same speed. The reason is to follow the traffic rules, which has a high probability."
+            }
+        ]
+    },
+    {
+        "id": "f0f120e4d4b0441da90ec53b16ee169d_4a0798f849ca477ab18009c3a20b7df2_5",
+        "image": [
+            "data/nuscenes/samples/CAM_FRONT/n008-2018-09-18-13-10-39-0400__CAM_FRONT__1537291010612404.jpg",
+            "data/nuscenes/samples/CAM_FRONT_LEFT/n008-2018-09-18-13-10-39-0400__CAM_FRONT_LEFT__1537291010604799.jpg",
+            "data/nuscenes/samples/CAM_FRONT_RIGHT/n008-2018-09-18-13-10-39-0400__CAM_FRONT_RIGHT__1537291010620482.jpg",
+            "data/nuscenes/samples/CAM_BACK/n008-2018-09-18-13-10-39-0400__CAM_BACK__1537291010637558.jpg",
+            "data/nuscenes/samples/CAM_BACK_LEFT/n008-2018-09-18-13-10-39-0400__CAM_BACK_LEFT__1537291010647405.jpg",
+            "data/nuscenes/samples/CAM_BACK_RIGHT/n008-2018-09-18-13-10-39-0400__CAM_BACK_RIGHT__1537291010628113.jpg"
+        ],
+        "conversations": [
+            {
+                "from": "human",
+                "value": "<image>\nWhat actions taken by the ego vehicle can lead to a collision with <c1,CAM_BACK,1088.3,497.5>?"
+            },
+            {
+                "from": "gpt",
+                "value": "No such action will lead to a collision."
+            }
+        ]
+    },
+    {
+        "id": "f0f120e4d4b0441da90ec53b16ee169d_4a0798f849ca477ab18009c3a20b7df2_6",
+        "image": [
+            "data/nuscenes/samples/CAM_FRONT/n008-2018-09-18-13-10-39-0400__CAM_FRONT__1537291010612404.jpg",
+            "data/nuscenes/samples/CAM_FRONT_LEFT/n008-2018-09-18-13-10-39-0400__CAM_FRONT_LEFT__1537291010604799.jpg",
+            "data/nuscenes/samples/CAM_FRONT_RIGHT/n008-2018-09-18-13-10-39-0400__CAM_FRONT_RIGHT__1537291010620482.jpg",
+            "data/nuscenes/samples/CAM_BACK/n008-2018-09-18-13-10-39-0400__CAM_BACK__1537291010637558.jpg",
+            "data/nuscenes/samples/CAM_BACK_LEFT/n008-2018-09-18-13-10-39-0400__CAM_BACK_LEFT__1537291010647405.jpg",
+            "data/nuscenes/samples/CAM_BACK_RIGHT/n008-2018-09-18-13-10-39-0400__CAM_BACK_RIGHT__1537291010628113.jpg"
+        ],
+        "conversations": [
+            {
+                "from": "human",
+                "value": "<image>\nIn this scenario, what are safe actions to take for the ego vehicle?"
+            },
+            {
+                "from": "gpt",
+                "value": "Keep going at the same speed, decelerate gradually without braking."
+            }
+        ]
+    },
+    {
+        "id": "f0f120e4d4b0441da90ec53b16ee169d_4a0798f849ca477ab18009c3a20b7df2_7",
+        "image": [
+            "data/nuscenes/samples/CAM_FRONT/n008-2018-09-18-13-10-39-0400__CAM_FRONT__1537291010612404.jpg",
+            "data/nuscenes/samples/CAM_FRONT_LEFT/n008-2018-09-18-13-10-39-0400__CAM_FRONT_LEFT__1537291010604799.jpg",
+            "data/nuscenes/samples/CAM_FRONT_RIGHT/n008-2018-09-18-13-10-39-0400__CAM_FRONT_RIGHT__1537291010620482.jpg",
+            "data/nuscenes/samples/CAM_BACK/n008-2018-09-18-13-10-39-0400__CAM_BACK__1537291010637558.jpg",
+            "data/nuscenes/samples/CAM_BACK_LEFT/n008-2018-09-18-13-10-39-0400__CAM_BACK_LEFT__1537291010647405.jpg",
+            "data/nuscenes/samples/CAM_BACK_RIGHT/n008-2018-09-18-13-10-39-0400__CAM_BACK_RIGHT__1537291010628113.jpg"
+        ],
+        "conversations": [
+            {
+                "from": "human",
+                "value": "<image>\nPredict the behavior of the ego vehicle. Please select the correct answer from the following options: A. The ego vehicle is slightly steering to the left. The ego vehicle is driving fast. B. The ego vehicle is going straight. The ego vehicle is driving fast. C. The ego vehicle is slightly steering to the left. The ego vehicle is driving with normal speed. D. The ego vehicle is going straight. The ego vehicle is driving with normal speed."
+            },
+            {
+                "from": "gpt",
+                "value": "B"
+            }
+        ]
+    },
+    {
+        "id": "f0f120e4d4b0441da90ec53b16ee169d_ffd1bdf020d145759224c629b501d2b2_0",
+        "image": [
+            "data/nuscenes/samples/CAM_FRONT/n008-2018-09-18-13-10-39-0400__CAM_FRONT__1537291002262404.jpg",
+            "data/nuscenes/samples/CAM_FRONT_LEFT/n008-2018-09-18-13-10-39-0400__CAM_FRONT_LEFT__1537291002254799.jpg",
+            "data/nuscenes/samples/CAM_FRONT_RIGHT/n008-2018-09-18-13-10-39-0400__CAM_FRONT_RIGHT__1537291002270482.jpg",
+            "data/nuscenes/samples/CAM_BACK/n008-2018-09-18-13-10-39-0400__CAM_BACK__1537291002287558.jpg",
+            "data/nuscenes/samples/CAM_BACK_LEFT/n008-2018-09-18-13-10-39-0400__CAM_BACK_LEFT__1537291002297405.jpg",
+            "data/nuscenes/samples/CAM_BACK_RIGHT/n008-2018-09-18-13-10-39-0400__CAM_BACK_RIGHT__1537291002278113.jpg"
+        ],
+        "conversations": [
+            {
+                "from": "human",
+                "value": "<image>\nWhat are the important objects in the current scene? Those objects will be considered for the future reasoning and driving decision."
+            },
+            {
+                "from": "gpt",
+                "value": "There is a champagne-colored sedan to the back of the ego vehicle, a green light to the front of the ego vehicle, and a red light to the front left of the ego vehicle. The IDs of these objects are <c1,CAM_BACK,991.7,603.0>, <c2,CAM_FRONT,836.3,398.3>, and <c3,CAM_FRONT_LEFT,1075.5,382.8>."
+            }
+        ]
+    },
+    {
+        "id": "f0f120e4d4b0441da90ec53b16ee169d_ffd1bdf020d145759224c629b501d2b2_1",
+        "image": [
+            "data/nuscenes/samples/CAM_FRONT/n008-2018-09-18-13-10-39-0400__CAM_FRONT__1537291002262404.jpg",
+            "data/nuscenes/samples/CAM_FRONT_LEFT/n008-2018-09-18-13-10-39-0400__CAM_FRONT_LEFT__1537291002254799.jpg",
+            "data/nuscenes/samples/CAM_FRONT_RIGHT/n008-2018-09-18-13-10-39-0400__CAM_FRONT_RIGHT__1537291002270482.jpg",
+            "data/nuscenes/samples/CAM_BACK/n008-2018-09-18-13-10-39-0400__CAM_BACK__1537291002287558.jpg",
+            "data/nuscenes/samples/CAM_BACK_LEFT/n008-2018-09-18-13-10-39-0400__CAM_BACK_LEFT__1537291002297405.jpg",
+            "data/nuscenes/samples/CAM_BACK_RIGHT/n008-2018-09-18-13-10-39-0400__CAM_BACK_RIGHT__1537291002278113.jpg"
+        ],
+        "conversations": [
+            {
+                "from": "human",
+                "value": "<image>\nWhat object should the ego vehicle notice first when the ego vehicle is getting to the next possible location? What is the state of the object that is first noticed by the ego vehicle and what action should the ego vehicle take? What object should the ego vehicle notice second when the ego vehicle is getting to the next possible location? What is the state of the object perceived by the ego vehicle as second and what action should the ego vehicle take? What object should the ego vehicle notice third? What is the state of the object perceived by the ego vehicle as third and what action should the ego vehicle take?"
+            },
+            {
+                "from": "gpt",
+                "value": "Firstly, notice <c3,CAM_FRONT_LEFT,1075.5,382.8>. The object is a traffic sign, so the ego vehicle should continue at the same speed. Secondly, notice <c2,CAM_FRONT,836.3,398.3>. The object is a traffic sign, so the ego vehicle should accelerate and continue ahead. Thirdly, notice <c1,CAM_BACK,991.7,603.0>. The object is stationary, so the ego vehicle should continue ahead at the same speed."
+            }
+        ]
+    },
+    {
+        "id": "f0f120e4d4b0441da90ec53b16ee169d_ffd1bdf020d145759224c629b501d2b2_2",
+        "image": [
+            "data/nuscenes/samples/CAM_FRONT/n008-2018-09-18-13-10-39-0400__CAM_FRONT__1537291002262404.jpg",
+            "data/nuscenes/samples/CAM_FRONT_LEFT/n008-2018-09-18-13-10-39-0400__CAM_FRONT_LEFT__1537291002254799.jpg",
+            "data/nuscenes/samples/CAM_FRONT_RIGHT/n008-2018-09-18-13-10-39-0400__CAM_FRONT_RIGHT__1537291002270482.jpg",
+            "data/nuscenes/samples/CAM_BACK/n008-2018-09-18-13-10-39-0400__CAM_BACK__1537291002287558.jpg",
+            "data/nuscenes/samples/CAM_BACK_LEFT/n008-2018-09-18-13-10-39-0400__CAM_BACK_LEFT__1537291002297405.jpg",
+            "data/nuscenes/samples/CAM_BACK_RIGHT/n008-2018-09-18-13-10-39-0400__CAM_BACK_RIGHT__1537291002278113.jpg"
+        ],
+        "conversations": [
+            {
+                "from": "human",
+                "value": "<image>\nIs <c1,CAM_BACK,991.7,603.0> a traffic sign or a road barrier?"
+            },
+            {
+                "from": "gpt",
+                "value": "No."
+            }
+        ]
+    },
+    {
+        "id": "f0f120e4d4b0441da90ec53b16ee169d_ffd1bdf020d145759224c629b501d2b2_3",
+        "image": [
+            "data/nuscenes/samples/CAM_FRONT/n008-2018-09-18-13-10-39-0400__CAM_FRONT__1537291002262404.jpg",
+            "data/nuscenes/samples/CAM_FRONT_LEFT/n008-2018-09-18-13-10-39-0400__CAM_FRONT_LEFT__1537291002254799.jpg",
+            "data/nuscenes/samples/CAM_FRONT_RIGHT/n008-2018-09-18-13-10-39-0400__CAM_FRONT_RIGHT__1537291002270482.jpg",
+            "data/nuscenes/samples/CAM_BACK/n008-2018-09-18-13-10-39-0400__CAM_BACK__1537291002287558.jpg",
+            "data/nuscenes/samples/CAM_BACK_LEFT/n008-2018-09-18-13-10-39-0400__CAM_BACK_LEFT__1537291002297405.jpg",
+            "data/nuscenes/samples/CAM_BACK_RIGHT/n008-2018-09-18-13-10-39-0400__CAM_BACK_RIGHT__1537291002278113.jpg"
+        ],
+        "conversations": [
+            {
+                "from": "human",
+                "value": "<image>\nWhat actions could the ego vehicle take based on <c1,CAM_BACK,991.7,603.0>? Why take this action and what's the probability?"
+            },
+            {
+                "from": "gpt",
+                "value": "The action is to keep stationary, the reason is to follow the traffic rules, high."
+            }
+        ]
+    },
+    {
+        "id": "f0f120e4d4b0441da90ec53b16ee169d_ffd1bdf020d145759224c629b501d2b2_4",
+        "image": [
+            "data/nuscenes/samples/CAM_FRONT/n008-2018-09-18-13-10-39-0400__CAM_FRONT__1537291002262404.jpg",
+            "data/nuscenes/samples/CAM_FRONT_LEFT/n008-2018-09-18-13-10-39-0400__CAM_FRONT_LEFT__1537291002254799.jpg",
+            "data/nuscenes/samples/CAM_FRONT_RIGHT/n008-2018-09-18-13-10-39-0400__CAM_FRONT_RIGHT__1537291002270482.jpg",
+            "data/nuscenes/samples/CAM_BACK/n008-2018-09-18-13-10-39-0400__CAM_BACK__1537291002287558.jpg",
+            "data/nuscenes/samples/CAM_BACK_LEFT/n008-2018-09-18-13-10-39-0400__CAM_BACK_LEFT__1537291002297405.jpg",
+            "data/nuscenes/samples/CAM_BACK_RIGHT/n008-2018-09-18-13-10-39-0400__CAM_BACK_RIGHT__1537291002278113.jpg"
+        ],
+        "conversations": [
+            {
+                "from": "human",
+                "value": "<image>\nWhat actions taken by the ego vehicle can lead to a collision with <c1,CAM_BACK,991.7,603.0>?"
+            },
+            {
+                "from": "gpt",
+                "value": "Back up."
+            }
+        ]
+    },
+    {
+        "id": "f0f120e4d4b0441da90ec53b16ee169d_ffd1bdf020d145759224c629b501d2b2_5",
+        "image": [
+            "data/nuscenes/samples/CAM_FRONT/n008-2018-09-18-13-10-39-0400__CAM_FRONT__1537291002262404.jpg",
+            "data/nuscenes/samples/CAM_FRONT_LEFT/n008-2018-09-18-13-10-39-0400__CAM_FRONT_LEFT__1537291002254799.jpg",
+            "data/nuscenes/samples/CAM_FRONT_RIGHT/n008-2018-09-18-13-10-39-0400__CAM_FRONT_RIGHT__1537291002270482.jpg",
+            "data/nuscenes/samples/CAM_BACK/n008-2018-09-18-13-10-39-0400__CAM_BACK__1537291002287558.jpg",
+            "data/nuscenes/samples/CAM_BACK_LEFT/n008-2018-09-18-13-10-39-0400__CAM_BACK_LEFT__1537291002297405.jpg",
+            "data/nuscenes/samples/CAM_BACK_RIGHT/n008-2018-09-18-13-10-39-0400__CAM_BACK_RIGHT__1537291002278113.jpg"
+        ],
+        "conversations": [
+            {
+                "from": "human",
+                "value": "<image>\nIn this scenario, what are safe actions to take for the ego vehicle?"
+            },
+            {
+                "from": "gpt",
+                "value": "Keep going at the same speed, decelerate gradually without braking."
+            }
+        ]
+    },
+    {
+        "id": "f0f120e4d4b0441da90ec53b16ee169d_ffd1bdf020d145759224c629b501d2b2_6",
+        "image": [
+            "data/nuscenes/samples/CAM_FRONT/n008-2018-09-18-13-10-39-0400__CAM_FRONT__1537291002262404.jpg",
+            "data/nuscenes/samples/CAM_FRONT_LEFT/n008-2018-09-18-13-10-39-0400__CAM_FRONT_LEFT__1537291002254799.jpg",
+            "data/nuscenes/samples/CAM_FRONT_RIGHT/n008-2018-09-18-13-10-39-0400__CAM_FRONT_RIGHT__1537291002270482.jpg",
+            "data/nuscenes/samples/CAM_BACK/n008-2018-09-18-13-10-39-0400__CAM_BACK__1537291002287558.jpg",
+            "data/nuscenes/samples/CAM_BACK_LEFT/n008-2018-09-18-13-10-39-0400__CAM_BACK_LEFT__1537291002297405.jpg",
+            "data/nuscenes/samples/CAM_BACK_RIGHT/n008-2018-09-18-13-10-39-0400__CAM_BACK_RIGHT__1537291002278113.jpg"
+        ],
+        "conversations": [
+            {
+                "from": "human",
+                "value": "<image>\nPredict the behavior of the ego vehicle. Please select the correct answer from the following options: A. The ego vehicle is slightly steering to the right. The ego vehicle is driving very fast. B. The ego vehicle is steering to the left. The ego vehicle is driving fast. C. The ego vehicle is steering to the left. The ego vehicle is driving with normal speed. D. The ego vehicle is going straight. The ego vehicle is driving slowly."
+            },
+            {
+                "from": "gpt",
+                "value": "D"
+            }
+        ]
+    },
+    {
+        "id": "f0f120e4d4b0441da90ec53b16ee169d_d9075c2a5f864a2b8abf41e703f4cf1c_0",
+        "image": [
+            "data/nuscenes/samples/CAM_FRONT/n008-2018-09-18-13-10-39-0400__CAM_FRONT__1537291005162404.jpg",
+            "data/nuscenes/samples/CAM_FRONT_LEFT/n008-2018-09-18-13-10-39-0400__CAM_FRONT_LEFT__1537291005154799.jpg",
+            "data/nuscenes/samples/CAM_FRONT_RIGHT/n008-2018-09-18-13-10-39-0400__CAM_FRONT_RIGHT__1537291005170482.jpg",
+            "data/nuscenes/samples/CAM_BACK/n008-2018-09-18-13-10-39-0400__CAM_BACK__1537291005187558.jpg",
+            "data/nuscenes/samples/CAM_BACK_LEFT/n008-2018-09-18-13-10-39-0400__CAM_BACK_LEFT__1537291005197405.jpg",
+            "data/nuscenes/samples/CAM_BACK_RIGHT/n008-2018-09-18-13-10-39-0400__CAM_BACK_RIGHT__1537291005178113.jpg"
+        ],
+        "conversations": [
+            {
+                "from": "human",
+                "value": "<image>\nWhat are the important objects in the current scene? Those objects will be considered for the future reasoning and driving decision."
+            },
+            {
+                "from": "gpt",
+                "value": "There is a white sedan to the front left of the ego vehicle, a gray sedan to the back of the ego vehicle, and a green light to the front of the ego vehicle. The IDs of these objects are <c1,CAM_FRONT_LEFT,231.5,472.1>, <c2,CAM_BACK,966.7,580.0>, and <c3,CAM_FRONT,864.5,293.6>."
+            }
+        ]
+    },
+    {
+        "id": "f0f120e4d4b0441da90ec53b16ee169d_d9075c2a5f864a2b8abf41e703f4cf1c_1",
+        "image": [
+            "data/nuscenes/samples/CAM_FRONT/n008-2018-09-18-13-10-39-0400__CAM_FRONT__1537291005162404.jpg",
+            "data/nuscenes/samples/CAM_FRONT_LEFT/n008-2018-09-18-13-10-39-0400__CAM_FRONT_LEFT__1537291005154799.jpg",
+            "data/nuscenes/samples/CAM_FRONT_RIGHT/n008-2018-09-18-13-10-39-0400__CAM_FRONT_RIGHT__1537291005170482.jpg",
+            "data/nuscenes/samples/CAM_BACK/n008-2018-09-18-13-10-39-0400__CAM_BACK__1537291005187558.jpg",
+            "data/nuscenes/samples/CAM_BACK_LEFT/n008-2018-09-18-13-10-39-0400__CAM_BACK_LEFT__1537291005197405.jpg",
+            "data/nuscenes/samples/CAM_BACK_RIGHT/n008-2018-09-18-13-10-39-0400__CAM_BACK_RIGHT__1537291005178113.jpg"
+        ],
+        "conversations": [
+            {
+                "from": "human",
+                "value": "<image>\nWhat is the moving status of object <c1,CAM_FRONT_LEFT,231.5,472.1>? Please select the correct answer from the following options: A. Stopped. B. Going ahead. C. Turn right. D. Turn left."
+            },
+            {
+                "from": "gpt",
+                "value": "B"
+            }
+        ]
+    },
+    {
+        "id": "f0f120e4d4b0441da90ec53b16ee169d_d9075c2a5f864a2b8abf41e703f4cf1c_2",
+        "image": [
+            "data/nuscenes/samples/CAM_FRONT/n008-2018-09-18-13-10-39-0400__CAM_FRONT__1537291005162404.jpg",
+            "data/nuscenes/samples/CAM_FRONT_LEFT/n008-2018-09-18-13-10-39-0400__CAM_FRONT_LEFT__1537291005154799.jpg",
+            "data/nuscenes/samples/CAM_FRONT_RIGHT/n008-2018-09-18-13-10-39-0400__CAM_FRONT_RIGHT__1537291005170482.jpg",
+            "data/nuscenes/samples/CAM_BACK/n008-2018-09-18-13-10-39-0400__CAM_BACK__1537291005187558.jpg",
+            "data/nuscenes/samples/CAM_BACK_LEFT/n008-2018-09-18-13-10-39-0400__CAM_BACK_LEFT__1537291005197405.jpg",
+            "data/nuscenes/samples/CAM_BACK_RIGHT/n008-2018-09-18-13-10-39-0400__CAM_BACK_RIGHT__1537291005178113.jpg"
+        ],
+        "conversations": [
+            {
+                "from": "human",
+                "value": "<image>\nWhat object should the ego vehicle notice first when the ego vehicle is getting to the next possible location? What is the state of the object that is first noticed by the ego vehicle and what action should the ego vehicle take? What object should the ego vehicle notice second when the ego vehicle is getting to the next possible location? What is the state of the object perceived by the ego vehicle as second and what action should the ego vehicle take? What object should the ego vehicle notice third? What is the state of the object perceived by the ego vehicle as third and what action should the ego vehicle take?"
+            },
+            {
+                "from": "gpt",
+                "value": "Firstly notice that <c3,CAM_FRONT,864.5,293.6>; the object is a traffic sign, so the ego vehicle should continue going ahead at the same speed. Secondly, notice that <c1,CAM_FRONT_LEFT,231.5,472.1>; the object is going ahead, so the ego vehicle should continue going ahead at the same speed. Thirdly, notice that <c2,CAM_BACK,966.7,580.0>; the object is going ahead, so the ego vehicle should continue going ahead at the same speed."
+            }
+        ]
+    },
+    {
+        "id": "f0f120e4d4b0441da90ec53b16ee169d_d9075c2a5f864a2b8abf41e703f4cf1c_3",
+        "image": [
+            "data/nuscenes/samples/CAM_FRONT/n008-2018-09-18-13-10-39-0400__CAM_FRONT__1537291005162404.jpg",
+            "data/nuscenes/samples/CAM_FRONT_LEFT/n008-2018-09-18-13-10-39-0400__CAM_FRONT_LEFT__1537291005154799.jpg",
+            "data/nuscenes/samples/CAM_FRONT_RIGHT/n008-2018-09-18-13-10-39-0400__CAM_FRONT_RIGHT__1537291005170482.jpg",
+            "data/nuscenes/samples/CAM_BACK/n008-2018-09-18-13-10-39-0400__CAM_BACK__1537291005187558.jpg",
+            "data/nuscenes/samples/CAM_BACK_LEFT/n008-2018-09-18-13-10-39-0400__CAM_BACK_LEFT__1537291005197405.jpg",
+            "data/nuscenes/samples/CAM_BACK_RIGHT/n008-2018-09-18-13-10-39-0400__CAM_BACK_RIGHT__1537291005178113.jpg"
+        ],
+        "conversations": [
+            {
+                "from": "human",
+                "value": "<image>\nIs <c1,CAM_FRONT_LEFT,231.5,472.1> a traffic sign or a road barrier?"
+            },
+            {
+                "from": "gpt",
+                "value": "No."
+            }
+        ]
+    },
+    {
+        "id": "f0f120e4d4b0441da90ec53b16ee169d_d9075c2a5f864a2b8abf41e703f4cf1c_4",
+        "image": [
+            "data/nuscenes/samples/CAM_FRONT/n008-2018-09-18-13-10-39-0400__CAM_FRONT__1537291005162404.jpg",
+            "data/nuscenes/samples/CAM_FRONT_LEFT/n008-2018-09-18-13-10-39-0400__CAM_FRONT_LEFT__1537291005154799.jpg",
+            "data/nuscenes/samples/CAM_FRONT_RIGHT/n008-2018-09-18-13-10-39-0400__CAM_FRONT_RIGHT__1537291005170482.jpg",
+            "data/nuscenes/samples/CAM_BACK/n008-2018-09-18-13-10-39-0400__CAM_BACK__1537291005187558.jpg",
+            "data/nuscenes/samples/CAM_BACK_LEFT/n008-2018-09-18-13-10-39-0400__CAM_BACK_LEFT__1537291005197405.jpg",
+            "data/nuscenes/samples/CAM_BACK_RIGHT/n008-2018-09-18-13-10-39-0400__CAM_BACK_RIGHT__1537291005178113.jpg"
+        ],
+        "conversations": [
+            {
+                "from": "human",
+                "value": "<image>\nWhat actions could the ego vehicle take based on <c1,CAM_FRONT_LEFT,231.5,472.1>? Why take this action and what's the probability?"
+            },
+            {
+                "from": "gpt",
+                "value": "The action is to keep going at the same speed, the reason is that there is no safety issue. The probability of this action is high."
+            }
+        ]
+    },
+    {
+        "id": "f0f120e4d4b0441da90ec53b16ee169d_d9075c2a5f864a2b8abf41e703f4cf1c_5",
+        "image": [
+            "data/nuscenes/samples/CAM_FRONT/n008-2018-09-18-13-10-39-0400__CAM_FRONT__1537291005162404.jpg",
+            "data/nuscenes/samples/CAM_FRONT_LEFT/n008-2018-09-18-13-10-39-0400__CAM_FRONT_LEFT__1537291005154799.jpg",
+            "data/nuscenes/samples/CAM_FRONT_RIGHT/n008-2018-09-18-13-10-39-0400__CAM_FRONT_RIGHT__1537291005170482.jpg",
+            "data/nuscenes/samples/CAM_BACK/n008-2018-09-18-13-10-39-0400__CAM_BACK__1537291005187558.jpg",
+            "data/nuscenes/samples/CAM_BACK_LEFT/n008-2018-09-18-13-10-39-0400__CAM_BACK_LEFT__1537291005197405.jpg",
+            "data/nuscenes/samples/CAM_BACK_RIGHT/n008-2018-09-18-13-10-39-0400__CAM_BACK_RIGHT__1537291005178113.jpg"
+        ],
+        "conversations": [
+            {
+                "from": "human",
+                "value": "<image>\nWhat actions taken by the ego vehicle can lead to a collision with <c1,CAM_FRONT_LEFT,231.5,472.1>?"
+            },
+            {
+                "from": "gpt",
+                "value": "No such action will lead to a collision."
+            }
+        ]
+    },
+    {
+        "id": "f0f120e4d4b0441da90ec53b16ee169d_d9075c2a5f864a2b8abf41e703f4cf1c_6",
+        "image": [
+            "data/nuscenes/samples/CAM_FRONT/n008-2018-09-18-13-10-39-0400__CAM_FRONT__1537291005162404.jpg",
+            "data/nuscenes/samples/CAM_FRONT_LEFT/n008-2018-09-18-13-10-39-0400__CAM_FRONT_LEFT__1537291005154799.jpg",
+            "data/nuscenes/samples/CAM_FRONT_RIGHT/n008-2018-09-18-13-10-39-0400__CAM_FRONT_RIGHT__1537291005170482.jpg",
+            "data/nuscenes/samples/CAM_BACK/n008-2018-09-18-13-10-39-0400__CAM_BACK__1537291005187558.jpg",
+            "data/nuscenes/samples/CAM_BACK_LEFT/n008-2018-09-18-13-10-39-0400__CAM_BACK_LEFT__1537291005197405.jpg",
+            "data/nuscenes/samples/CAM_BACK_RIGHT/n008-2018-09-18-13-10-39-0400__CAM_BACK_RIGHT__1537291005178113.jpg"
+        ],
+        "conversations": [
+            {
+                "from": "human",
+                "value": "<image>\nIn this scenario, what are safe actions to take for the ego vehicle?"
+            },
+            {
+                "from": "gpt",
+                "value": "Keep going at the same speed and brake suddenly."
+            }
+        ]
+    },
+    {
+        "id": "f0f120e4d4b0441da90ec53b16ee169d_d9075c2a5f864a2b8abf41e703f4cf1c_7",
+        "image": [
+            "data/nuscenes/samples/CAM_FRONT/n008-2018-09-18-13-10-39-0400__CAM_FRONT__1537291005162404.jpg",
+            "data/nuscenes/samples/CAM_FRONT_LEFT/n008-2018-09-18-13-10-39-0400__CAM_FRONT_LEFT__1537291005154799.jpg",
+            "data/nuscenes/samples/CAM_FRONT_RIGHT/n008-2018-09-18-13-10-39-0400__CAM_FRONT_RIGHT__1537291005170482.jpg",
+            "data/nuscenes/samples/CAM_BACK/n008-2018-09-18-13-10-39-0400__CAM_BACK__1537291005187558.jpg",
+            "data/nuscenes/samples/CAM_BACK_LEFT/n008-2018-09-18-13-10-39-0400__CAM_BACK_LEFT__1537291005197405.jpg",
+            "data/nuscenes/samples/CAM_BACK_RIGHT/n008-2018-09-18-13-10-39-0400__CAM_BACK_RIGHT__1537291005178113.jpg"
+        ],
+        "conversations": [
+            {
+                "from": "human",
+                "value": "<image>\nPredict the behavior of the ego vehicle. Please select the correct answer from the following options: A. The ego vehicle is slightly steering to the left. The ego vehicle is driving very fast. B. The ego vehicle is going straight. The ego vehicle is driving slowly. C. The ego vehicle is going straight. The ego vehicle is not moving. D. The ego vehicle is slightly steering to the right. The ego vehicle is driving with normal speed."
+            },
+            {
+                "from": "gpt",
+                "value": "B"
+            }
+        ]
+    },
+    {
+        "id": "f0f120e4d4b0441da90ec53b16ee169d_dfb8d8959b9944d69dcec6d05e419f04_0",
+        "image": [
+            "data/nuscenes/samples/CAM_FRONT/n008-2018-09-18-13-10-39-0400__CAM_FRONT__1537291013612404.jpg",
+            "data/nuscenes/samples/CAM_FRONT_LEFT/n008-2018-09-18-13-10-39-0400__CAM_FRONT_LEFT__1537291013604799.jpg",
+            "data/nuscenes/samples/CAM_FRONT_RIGHT/n008-2018-09-18-13-10-39-0400__CAM_FRONT_RIGHT__1537291013620482.jpg",
+            "data/nuscenes/samples/CAM_BACK/n008-2018-09-18-13-10-39-0400__CAM_BACK__1537291013637558.jpg",
+            "data/nuscenes/samples/CAM_BACK_LEFT/n008-2018-09-18-13-10-39-0400__CAM_BACK_LEFT__1537291013647405.jpg",
+            "data/nuscenes/samples/CAM_BACK_RIGHT/n008-2018-09-18-13-10-39-0400__CAM_BACK_RIGHT__1537291013628113.jpg"
+        ],
+        "conversations": [
+            {
+                "from": "human",
+                "value": "<image>\nWhat are the important objects in the current scene? Those objects will be considered for the future reasoning and driving decision."
+            },
+            {
+                "from": "gpt",
+                "value": "There is a golden sedan to the back of the ego vehicle, a black sedan car to the back of the ego vehicle, and a white truck to the back of the ego vehicle. The IDs of these objects are <c1,CAM_BACK,1568.3,505.0>, <c2,CAM_BACK,981.8,499.1>, and <c3,CAM_BACK,1290.0,472.5>."
+            }
+        ]
+    },
+    {
+        "id": "f0f120e4d4b0441da90ec53b16ee169d_dfb8d8959b9944d69dcec6d05e419f04_1",
+        "image": [
+            "data/nuscenes/samples/CAM_FRONT/n008-2018-09-18-13-10-39-0400__CAM_FRONT__1537291013612404.jpg",
+            "data/nuscenes/samples/CAM_FRONT_LEFT/n008-2018-09-18-13-10-39-0400__CAM_FRONT_LEFT__1537291013604799.jpg",
+            "data/nuscenes/samples/CAM_FRONT_RIGHT/n008-2018-09-18-13-10-39-0400__CAM_FRONT_RIGHT__1537291013620482.jpg",
+            "data/nuscenes/samples/CAM_BACK/n008-2018-09-18-13-10-39-0400__CAM_BACK__1537291013637558.jpg",
+            "data/nuscenes/samples/CAM_BACK_LEFT/n008-2018-09-18-13-10-39-0400__CAM_BACK_LEFT__1537291013647405.jpg",
+            "data/nuscenes/samples/CAM_BACK_RIGHT/n008-2018-09-18-13-10-39-0400__CAM_BACK_RIGHT__1537291013628113.jpg"
+        ],
+        "conversations": [
+            {
+                "from": "human",
+                "value": "<image>\nWhat is the moving status of object <c1,CAM_BACK,1568.3,505.0>? Please select the correct answer from the following options: A. Stopped. B. Turn left. C. Going ahead. D. Turn right."
+            },
+            {
+                "from": "gpt",
+                "value": "C"
+            }
+        ]
+    },
+    {
+        "id": "f0f120e4d4b0441da90ec53b16ee169d_dfb8d8959b9944d69dcec6d05e419f04_2",
+        "image": [
+            "data/nuscenes/samples/CAM_FRONT/n008-2018-09-18-13-10-39-0400__CAM_FRONT__1537291013612404.jpg",
+            "data/nuscenes/samples/CAM_FRONT_LEFT/n008-2018-09-18-13-10-39-0400__CAM_FRONT_LEFT__1537291013604799.jpg",
+            "data/nuscenes/samples/CAM_FRONT_RIGHT/n008-2018-09-18-13-10-39-0400__CAM_FRONT_RIGHT__1537291013620482.jpg",
+            "data/nuscenes/samples/CAM_BACK/n008-2018-09-18-13-10-39-0400__CAM_BACK__1537291013637558.jpg",
+            "data/nuscenes/samples/CAM_BACK_LEFT/n008-2018-09-18-13-10-39-0400__CAM_BACK_LEFT__1537291013647405.jpg",
+            "data/nuscenes/samples/CAM_BACK_RIGHT/n008-2018-09-18-13-10-39-0400__CAM_BACK_RIGHT__1537291013628113.jpg"
+        ],
+        "conversations": [
+            {
+                "from": "human",
+                "value": "<image>\nWhat object should the ego vehicle notice first when the ego vehicle is getting to the next possible location? What is the state of the object that is first noticed by the ego vehicle and what action should the ego vehicle take? What object should the ego vehicle notice second when the ego vehicle is getting to the next possible location? What is the state of the object perceived by the ego vehicle as second and what action should the ego vehicle take? What object should the ego vehicle notice third? What is the state of the object perceived by the ego vehicle as third and what action should the ego vehicle take?"
+            },
+            {
+                "from": "gpt",
+                "value": "Firstly notice that <c2,CAM_BACK,981.8,499.1>, the object is turning left, so the ego vehicle should keep going ahead at the same speed. Secondly notice that <c1,CAM_BACK,1568.3,505.0>, the object is going ahead, so the ego vehicle should keep going ahead at the same speed. Thirdly notice that <c3,CAM_BACK,1290.0,472.5>, it is stationary, so the ego vehicle should keep going ahead at the same speed."
+            }
+        ]
+    },
+    {
+        "id": "f0f120e4d4b0441da90ec53b16ee169d_dfb8d8959b9944d69dcec6d05e419f04_3",
+        "image": [
+            "data/nuscenes/samples/CAM_FRONT/n008-2018-09-18-13-10-39-0400__CAM_FRONT__1537291013612404.jpg",
+            "data/nuscenes/samples/CAM_FRONT_LEFT/n008-2018-09-18-13-10-39-0400__CAM_FRONT_LEFT__1537291013604799.jpg",
+            "data/nuscenes/samples/CAM_FRONT_RIGHT/n008-2018-09-18-13-10-39-0400__CAM_FRONT_RIGHT__1537291013620482.jpg",
+            "data/nuscenes/samples/CAM_BACK/n008-2018-09-18-13-10-39-0400__CAM_BACK__1537291013637558.jpg",
+            "data/nuscenes/samples/CAM_BACK_LEFT/n008-2018-09-18-13-10-39-0400__CAM_BACK_LEFT__1537291013647405.jpg",
+            "data/nuscenes/samples/CAM_BACK_RIGHT/n008-2018-09-18-13-10-39-0400__CAM_BACK_RIGHT__1537291013628113.jpg"
+        ],
+        "conversations": [
+            {
+                "from": "human",
+                "value": "<image>\nIs <c1,CAM_BACK,1568.3,505.0> a traffic sign or a road barrier?"
+            },
+            {
+                "from": "gpt",
+                "value": "No."
+            }
+        ]
+    },
+    {
+        "id": "f0f120e4d4b0441da90ec53b16ee169d_dfb8d8959b9944d69dcec6d05e419f04_4",
+        "image": [
+            "data/nuscenes/samples/CAM_FRONT/n008-2018-09-18-13-10-39-0400__CAM_FRONT__1537291013612404.jpg",
+            "data/nuscenes/samples/CAM_FRONT_LEFT/n008-2018-09-18-13-10-39-0400__CAM_FRONT_LEFT__1537291013604799.jpg",
+            "data/nuscenes/samples/CAM_FRONT_RIGHT/n008-2018-09-18-13-10-39-0400__CAM_FRONT_RIGHT__1537291013620482.jpg",
+            "data/nuscenes/samples/CAM_BACK/n008-2018-09-18-13-10-39-0400__CAM_BACK__1537291013637558.jpg",
+            "data/nuscenes/samples/CAM_BACK_LEFT/n008-2018-09-18-13-10-39-0400__CAM_BACK_LEFT__1537291013647405.jpg",
+            "data/nuscenes/samples/CAM_BACK_RIGHT/n008-2018-09-18-13-10-39-0400__CAM_BACK_RIGHT__1537291013628113.jpg"
+        ],
+        "conversations": [
+            {
+                "from": "human",
+                "value": "<image>\nWhat actions could the ego vehicle take based on <c1,CAM_BACK,1568.3,505.0>? Why take this action and what's the probability?"
+            },
+            {
+                "from": "gpt",
+                "value": "The action is to keep going at the same speed because there is no safety issue. The probability of taking this action is high."
+            }
+        ]
+    },
+    {
+        "id": "f0f120e4d4b0441da90ec53b16ee169d_dfb8d8959b9944d69dcec6d05e419f04_5",
+        "image": [
+            "data/nuscenes/samples/CAM_FRONT/n008-2018-09-18-13-10-39-0400__CAM_FRONT__1537291013612404.jpg",
+            "data/nuscenes/samples/CAM_FRONT_LEFT/n008-2018-09-18-13-10-39-0400__CAM_FRONT_LEFT__1537291013604799.jpg",
+            "data/nuscenes/samples/CAM_FRONT_RIGHT/n008-2018-09-18-13-10-39-0400__CAM_FRONT_RIGHT__1537291013620482.jpg",
+            "data/nuscenes/samples/CAM_BACK/n008-2018-09-18-13-10-39-0400__CAM_BACK__1537291013637558.jpg",
+            "data/nuscenes/samples/CAM_BACK_LEFT/n008-2018-09-18-13-10-39-0400__CAM_BACK_LEFT__1537291013647405.jpg",
+            "data/nuscenes/samples/CAM_BACK_RIGHT/n008-2018-09-18-13-10-39-0400__CAM_BACK_RIGHT__1537291013628113.jpg"
+        ],
+        "conversations": [
+            {
+                "from": "human",
+                "value": "<image>\nWhat actions taken by the ego vehicle can lead to a collision with <c1,CAM_BACK,1568.3,505.0>?"
+            },
+            {
+                "from": "gpt",
+                "value": "No such action will lead to a collision."
+            }
+        ]
+    },
+    {
+        "id": "f0f120e4d4b0441da90ec53b16ee169d_dfb8d8959b9944d69dcec6d05e419f04_6",
+        "image": [
+            "data/nuscenes/samples/CAM_FRONT/n008-2018-09-18-13-10-39-0400__CAM_FRONT__1537291013612404.jpg",
+            "data/nuscenes/samples/CAM_FRONT_LEFT/n008-2018-09-18-13-10-39-0400__CAM_FRONT_LEFT__1537291013604799.jpg",
+            "data/nuscenes/samples/CAM_FRONT_RIGHT/n008-2018-09-18-13-10-39-0400__CAM_FRONT_RIGHT__1537291013620482.jpg",
+            "data/nuscenes/samples/CAM_BACK/n008-2018-09-18-13-10-39-0400__CAM_BACK__1537291013637558.jpg",
+            "data/nuscenes/samples/CAM_BACK_LEFT/n008-2018-09-18-13-10-39-0400__CAM_BACK_LEFT__1537291013647405.jpg",
+            "data/nuscenes/samples/CAM_BACK_RIGHT/n008-2018-09-18-13-10-39-0400__CAM_BACK_RIGHT__1537291013628113.jpg"
+        ],
+        "conversations": [
+            {
+                "from": "human",
+                "value": "<image>\nIn this scenario, what are safe actions to take for the ego vehicle?"
+            },
+            {
+                "from": "gpt",
+                "value": "Keep going at the same speed, accelerate, and proceed ahead."
+            }
+        ]
+    },
+    {
+        "id": "f0f120e4d4b0441da90ec53b16ee169d_dfb8d8959b9944d69dcec6d05e419f04_7",
+        "image": [
+            "data/nuscenes/samples/CAM_FRONT/n008-2018-09-18-13-10-39-0400__CAM_FRONT__1537291013612404.jpg",
+            "data/nuscenes/samples/CAM_FRONT_LEFT/n008-2018-09-18-13-10-39-0400__CAM_FRONT_LEFT__1537291013604799.jpg",
+            "data/nuscenes/samples/CAM_FRONT_RIGHT/n008-2018-09-18-13-10-39-0400__CAM_FRONT_RIGHT__1537291013620482.jpg",
+            "data/nuscenes/samples/CAM_BACK/n008-2018-09-18-13-10-39-0400__CAM_BACK__1537291013637558.jpg",
+            "data/nuscenes/samples/CAM_BACK_LEFT/n008-2018-09-18-13-10-39-0400__CAM_BACK_LEFT__1537291013647405.jpg",
+            "data/nuscenes/samples/CAM_BACK_RIGHT/n008-2018-09-18-13-10-39-0400__CAM_BACK_RIGHT__1537291013628113.jpg"
+        ],
+        "conversations": [
+            {
+                "from": "human",
+                "value": "<image>\nPredict the behavior of the ego vehicle. Please select the correct answer from the following options: A. The ego vehicle is slightly steering to the left. The ego vehicle is driving slowly. B. The ego vehicle is slightly steering to the right. The ego vehicle is driving very fast. C. The ego vehicle is going straight. The ego vehicle is driving fast. D. The ego vehicle is steering to the left. The ego vehicle is driving with normal speed."
+            },
+            {
+                "from": "gpt",
+                "value": "C"
+            }
+        ]
+    },
+    {
+        "id": "54cdaaae372d421fa4734d66f51a8c48_542eaf1fc9b34895a9e55fab57cb4cf4_0",
+        "image": [
+            "data/nuscenes/samples/CAM_FRONT/n015-2018-08-03-15-00-36+0800__CAM_FRONT__1533280039162460.jpg",
+            "data/nuscenes/samples/CAM_FRONT_LEFT/n015-2018-08-03-15-00-36+0800__CAM_FRONT_LEFT__1533280039154844.jpg",
+            "data/nuscenes/samples/CAM_FRONT_RIGHT/n015-2018-08-03-15-00-36+0800__CAM_FRONT_RIGHT__1533280039170339.jpg",
+            "data/nuscenes/samples/CAM_BACK/n015-2018-08-03-15-00-36+0800__CAM_BACK__1533280039187525.jpg",
+            "data/nuscenes/samples/CAM_BACK_LEFT/n015-2018-08-03-15-00-36+0800__CAM_BACK_LEFT__1533280039197423.jpg",
+            "data/nuscenes/samples/CAM_BACK_RIGHT/n015-2018-08-03-15-00-36+0800__CAM_BACK_RIGHT__1533280039177893.jpg"
+        ],
+        "conversations": [
+            {
+                "from": "human",
+                "value": "<image>\nWhat are the important objects in the current scene? Those objects will be considered for the future reasoning and driving decision."
+            },
+            {
+                "from": "gpt",
+                "value": "There is a red car to the front of the ego vehicle, a white SUV to the front of the ego vehicle, a white sedan to the front of the ego vehicle, a black sedan to the front of the ego vehicle, and a red light to the front of the ego vehicle. The IDs of these objects are <c1,CAM_FRONT,714.3,503.6>, <c2,CAM_FRONT,993.3,503.3>, <c3,CAM_FRONT,1300.8,531.7>, <c4,CAM_FRONT,892.5,507.5>, and <c5,CAM_FRONT,712.6,361.8>."
+            }
+        ]
+    },
+    {
+        "id": "54cdaaae372d421fa4734d66f51a8c48_542eaf1fc9b34895a9e55fab57cb4cf4_1",
+        "image": [
+            "data/nuscenes/samples/CAM_FRONT/n015-2018-08-03-15-00-36+0800__CAM_FRONT__1533280039162460.jpg",
+            "data/nuscenes/samples/CAM_FRONT_LEFT/n015-2018-08-03-15-00-36+0800__CAM_FRONT_LEFT__1533280039154844.jpg",
+            "data/nuscenes/samples/CAM_FRONT_RIGHT/n015-2018-08-03-15-00-36+0800__CAM_FRONT_RIGHT__1533280039170339.jpg",
+            "data/nuscenes/samples/CAM_BACK/n015-2018-08-03-15-00-36+0800__CAM_BACK__1533280039187525.jpg",
+            "data/nuscenes/samples/CAM_BACK_LEFT/n015-2018-08-03-15-00-36+0800__CAM_BACK_LEFT__1533280039197423.jpg",
+            "data/nuscenes/samples/CAM_BACK_RIGHT/n015-2018-08-03-15-00-36+0800__CAM_BACK_RIGHT__1533280039177893.jpg"
+        ],
+        "conversations": [
+            {
+                "from": "human",
+                "value": "<image>\nWhat is the moving status of object <c1,CAM_FRONT,714.3,503.6>? Please select the correct answer from the following options: A. Stopped. B. Back up. C. Turn left. D. Going ahead."
+            },
+            {
+                "from": "gpt",
+                "value": "D"
+            }
+        ]
+    },
+    {
+        "id": "54cdaaae372d421fa4734d66f51a8c48_542eaf1fc9b34895a9e55fab57cb4cf4_2",
+        "image": [
+            "data/nuscenes/samples/CAM_FRONT/n015-2018-08-03-15-00-36+0800__CAM_FRONT__1533280039162460.jpg",
+            "data/nuscenes/samples/CAM_FRONT_LEFT/n015-2018-08-03-15-00-36+0800__CAM_FRONT_LEFT__1533280039154844.jpg",
+            "data/nuscenes/samples/CAM_FRONT_RIGHT/n015-2018-08-03-15-00-36+0800__CAM_FRONT_RIGHT__1533280039170339.jpg",
+            "data/nuscenes/samples/CAM_BACK/n015-2018-08-03-15-00-36+0800__CAM_BACK__1533280039187525.jpg",
+            "data/nuscenes/samples/CAM_BACK_LEFT/n015-2018-08-03-15-00-36+0800__CAM_BACK_LEFT__1533280039197423.jpg",
+            "data/nuscenes/samples/CAM_BACK_RIGHT/n015-2018-08-03-15-00-36+0800__CAM_BACK_RIGHT__1533280039177893.jpg"
+        ],
+        "conversations": [
+            {
+                "from": "human",
+                "value": "<image>\nIs <c1,CAM_FRONT,714.3,503.6> a traffic sign or a road barrier?"
+            },
+            {
+                "from": "gpt",
+                "value": "No."
+            }
+        ]
+    },
+    {
+        "id": "54cdaaae372d421fa4734d66f51a8c48_542eaf1fc9b34895a9e55fab57cb4cf4_3",
+        "image": [
+            "data/nuscenes/samples/CAM_FRONT/n015-2018-08-03-15-00-36+0800__CAM_FRONT__1533280039162460.jpg",
+            "data/nuscenes/samples/CAM_FRONT_LEFT/n015-2018-08-03-15-00-36+0800__CAM_FRONT_LEFT__1533280039154844.jpg",
+            "data/nuscenes/samples/CAM_FRONT_RIGHT/n015-2018-08-03-15-00-36+0800__CAM_FRONT_RIGHT__1533280039170339.jpg",
+            "data/nuscenes/samples/CAM_BACK/n015-2018-08-03-15-00-36+0800__CAM_BACK__1533280039187525.jpg",
+            "data/nuscenes/samples/CAM_BACK_LEFT/n015-2018-08-03-15-00-36+0800__CAM_BACK_LEFT__1533280039197423.jpg",
+            "data/nuscenes/samples/CAM_BACK_RIGHT/n015-2018-08-03-15-00-36+0800__CAM_BACK_RIGHT__1533280039177893.jpg"
+        ],
+        "conversations": [
+            {
+                "from": "human",
+                "value": "<image>\nWhat actions could the ego vehicle take based on <c1,CAM_FRONT,714.3,503.6>? Why take this action and what's the probability?"
+            },
+            {
+                "from": "gpt",
+                "value": "The action is to brake gently to a stop. The reason is to follow the traffic rules, and the probability is high."
+            }
+        ]
+    },
+    {
+        "id": "54cdaaae372d421fa4734d66f51a8c48_542eaf1fc9b34895a9e55fab57cb4cf4_4",
+        "image": [
+            "data/nuscenes/samples/CAM_FRONT/n015-2018-08-03-15-00-36+0800__CAM_FRONT__1533280039162460.jpg",
+            "data/nuscenes/samples/CAM_FRONT_LEFT/n015-2018-08-03-15-00-36+0800__CAM_FRONT_LEFT__1533280039154844.jpg",
+            "data/nuscenes/samples/CAM_FRONT_RIGHT/n015-2018-08-03-15-00-36+0800__CAM_FRONT_RIGHT__1533280039170339.jpg",
+            "data/nuscenes/samples/CAM_BACK/n015-2018-08-03-15-00-36+0800__CAM_BACK__1533280039187525.jpg",
+            "data/nuscenes/samples/CAM_BACK_LEFT/n015-2018-08-03-15-00-36+0800__CAM_BACK_LEFT__1533280039197423.jpg",
+            "data/nuscenes/samples/CAM_BACK_RIGHT/n015-2018-08-03-15-00-36+0800__CAM_BACK_RIGHT__1533280039177893.jpg"
+        ],
+        "conversations": [
+            {
+                "from": "human",
+                "value": "<image>\nWhat actions taken by the ego vehicle can lead to a collision with <c1,CAM_FRONT,714.3,503.6>?"
+            },
+            {
+                "from": "gpt",
+                "value": "Accelerate and go straight."
+            }
+        ]
+    },
+    {
+        "id": "54cdaaae372d421fa4734d66f51a8c48_542eaf1fc9b34895a9e55fab57cb4cf4_5",
+        "image": [
+            "data/nuscenes/samples/CAM_FRONT/n015-2018-08-03-15-00-36+0800__CAM_FRONT__1533280039162460.jpg",
+            "data/nuscenes/samples/CAM_FRONT_LEFT/n015-2018-08-03-15-00-36+0800__CAM_FRONT_LEFT__1533280039154844.jpg",
+            "data/nuscenes/samples/CAM_FRONT_RIGHT/n015-2018-08-03-15-00-36+0800__CAM_FRONT_RIGHT__1533280039170339.jpg",
+            "data/nuscenes/samples/CAM_BACK/n015-2018-08-03-15-00-36+0800__CAM_BACK__1533280039187525.jpg",
+            "data/nuscenes/samples/CAM_BACK_LEFT/n015-2018-08-03-15-00-36+0800__CAM_BACK_LEFT__1533280039197423.jpg",
+            "data/nuscenes/samples/CAM_BACK_RIGHT/n015-2018-08-03-15-00-36+0800__CAM_BACK_RIGHT__1533280039177893.jpg"
+        ],
+        "conversations": [
+            {
+                "from": "human",
+                "value": "<image>\nIn this scenario, what are safe actions to take for the ego vehicle?"
+            },
+            {
+                "from": "gpt",
+                "value": "Brake gently to a stop, brake suddenly, and slightly offset to the left."
+            }
+        ]
+    },
+    {
+        "id": "54cdaaae372d421fa4734d66f51a8c48_542eaf1fc9b34895a9e55fab57cb4cf4_6",
+        "image": [
+            "data/nuscenes/samples/CAM_FRONT/n015-2018-08-03-15-00-36+0800__CAM_FRONT__1533280039162460.jpg",
+            "data/nuscenes/samples/CAM_FRONT_LEFT/n015-2018-08-03-15-00-36+0800__CAM_FRONT_LEFT__1533280039154844.jpg",
+            "data/nuscenes/samples/CAM_FRONT_RIGHT/n015-2018-08-03-15-00-36+0800__CAM_FRONT_RIGHT__1533280039170339.jpg",
+            "data/nuscenes/samples/CAM_BACK/n015-2018-08-03-15-00-36+0800__CAM_BACK__1533280039187525.jpg",
+            "data/nuscenes/samples/CAM_BACK_LEFT/n015-2018-08-03-15-00-36+0800__CAM_BACK_LEFT__1533280039197423.jpg",
+            "data/nuscenes/samples/CAM_BACK_RIGHT/n015-2018-08-03-15-00-36+0800__CAM_BACK_RIGHT__1533280039177893.jpg"
+        ],
+        "conversations": [
+            {
+                "from": "human",
+                "value": "<image>\nPredict the behavior of the ego vehicle. Please select the correct answer from the following options: A. The ego vehicle is slightly steering to the right. The ego vehicle is driving slowly. B. The ego vehicle is slightly steering to the left. The ego vehicle is driving slowly. C. The ego vehicle is going straight. The ego vehicle is driving slowly. D. The ego vehicle is slightly steering to the left. The ego vehicle is driving with normal speed."
+            },
+            {
+                "from": "gpt",
+                "value": "C"
+            }
+        ]
+    },
+    {
+        "id": "54cdaaae372d421fa4734d66f51a8c48_1b45a97a0e5e49fe9cd345dd4bd729c3_0",
+        "image": [
+            "data/nuscenes/samples/CAM_FRONT/n015-2018-08-03-15-00-36+0800__CAM_FRONT__1533280042612460.jpg",
+            "data/nuscenes/samples/CAM_FRONT_LEFT/n015-2018-08-03-15-00-36+0800__CAM_FRONT_LEFT__1533280042604844.jpg",
+            "data/nuscenes/samples/CAM_FRONT_RIGHT/n015-2018-08-03-15-00-36+0800__CAM_FRONT_RIGHT__1533280042620339.jpg",
+            "data/nuscenes/samples/CAM_BACK/n015-2018-08-03-15-00-36+0800__CAM_BACK__1533280042637525.jpg",
+            "data/nuscenes/samples/CAM_BACK_LEFT/n015-2018-08-03-15-00-36+0800__CAM_BACK_LEFT__1533280042647423.jpg",
+            "data/nuscenes/samples/CAM_BACK_RIGHT/n015-2018-08-03-15-00-36+0800__CAM_BACK_RIGHT__1533280042627893.jpg"
+        ],
+        "conversations": [
+            {
+                "from": "human",
+                "value": "<image>\nWhat are the important objects in the current scene? Those objects will be considered for the future reasoning and driving decision."
+            },
+            {
+                "from": "gpt",
+                "value": "There is a white sedan car to the front of the ego vehicle, a blue sedan to the front right of the ego vehicle, a white sedan to the front right of the ego vehicle, a white van to the front of the ego vehicle, and a red light to the front of the ego vehicle. The IDs of these objects are <c1,CAM_FRONT,767.5,513.3>, <c2,CAM_FRONT_RIGHT,420.0,540.0>, <c3,CAM_FRONT_RIGHT,787.5,529.2>, <c4,CAM_FRONT,13.3,475.0>, and <c5,CAM_FRONT,710.5,340.9>."
+            }
+        ]
+    },
+    {
+        "id": "54cdaaae372d421fa4734d66f51a8c48_1b45a97a0e5e49fe9cd345dd4bd729c3_1",
+        "image": [
+            "data/nuscenes/samples/CAM_FRONT/n015-2018-08-03-15-00-36+0800__CAM_FRONT__1533280042612460.jpg",
+            "data/nuscenes/samples/CAM_FRONT_LEFT/n015-2018-08-03-15-00-36+0800__CAM_FRONT_LEFT__1533280042604844.jpg",
+            "data/nuscenes/samples/CAM_FRONT_RIGHT/n015-2018-08-03-15-00-36+0800__CAM_FRONT_RIGHT__1533280042620339.jpg",
+            "data/nuscenes/samples/CAM_BACK/n015-2018-08-03-15-00-36+0800__CAM_BACK__1533280042637525.jpg",
+            "data/nuscenes/samples/CAM_BACK_LEFT/n015-2018-08-03-15-00-36+0800__CAM_BACK_LEFT__1533280042647423.jpg",
+            "data/nuscenes/samples/CAM_BACK_RIGHT/n015-2018-08-03-15-00-36+0800__CAM_BACK_RIGHT__1533280042627893.jpg"
+        ],
+        "conversations": [
+            {
+                "from": "human",
+                "value": "<image>\nWhat is the moving status of object <c1,CAM_FRONT,767.5,513.3>? Please select the correct answer from the following options: A. Reverse parking. B. Back up. C. Turn right. D. Stopped."
+            },
+            {
+                "from": "gpt",
+                "value": "C"
+            }
+        ]
+    },
+    {
+        "id": "54cdaaae372d421fa4734d66f51a8c48_1b45a97a0e5e49fe9cd345dd4bd729c3_2",
+        "image": [
+            "data/nuscenes/samples/CAM_FRONT/n015-2018-08-03-15-00-36+0800__CAM_FRONT__1533280042612460.jpg",
+            "data/nuscenes/samples/CAM_FRONT_LEFT/n015-2018-08-03-15-00-36+0800__CAM_FRONT_LEFT__1533280042604844.jpg",
+            "data/nuscenes/samples/CAM_FRONT_RIGHT/n015-2018-08-03-15-00-36+0800__CAM_FRONT_RIGHT__1533280042620339.jpg",
+            "data/nuscenes/samples/CAM_BACK/n015-2018-08-03-15-00-36+0800__CAM_BACK__1533280042637525.jpg",
+            "data/nuscenes/samples/CAM_BACK_LEFT/n015-2018-08-03-15-00-36+0800__CAM_BACK_LEFT__1533280042647423.jpg",
+            "data/nuscenes/samples/CAM_BACK_RIGHT/n015-2018-08-03-15-00-36+0800__CAM_BACK_RIGHT__1533280042627893.jpg"
+        ],
+        "conversations": [
+            {
+                "from": "human",
+                "value": "<image>\nIs <c1,CAM_FRONT,767.5,513.3> a traffic sign or a road barrier?"
+            },
+            {
+                "from": "gpt",
+                "value": "No."
+            }
+        ]
+    },
+    {
+        "id": "54cdaaae372d421fa4734d66f51a8c48_1b45a97a0e5e49fe9cd345dd4bd729c3_3",
+        "image": [
+            "data/nuscenes/samples/CAM_FRONT/n015-2018-08-03-15-00-36+0800__CAM_FRONT__1533280042612460.jpg",
+            "data/nuscenes/samples/CAM_FRONT_LEFT/n015-2018-08-03-15-00-36+0800__CAM_FRONT_LEFT__1533280042604844.jpg",
+            "data/nuscenes/samples/CAM_FRONT_RIGHT/n015-2018-08-03-15-00-36+0800__CAM_FRONT_RIGHT__1533280042620339.jpg",
+            "data/nuscenes/samples/CAM_BACK/n015-2018-08-03-15-00-36+0800__CAM_BACK__1533280042637525.jpg",
+            "data/nuscenes/samples/CAM_BACK_LEFT/n015-2018-08-03-15-00-36+0800__CAM_BACK_LEFT__1533280042647423.jpg",
+            "data/nuscenes/samples/CAM_BACK_RIGHT/n015-2018-08-03-15-00-36+0800__CAM_BACK_RIGHT__1533280042627893.jpg"
+        ],
+        "conversations": [
+            {
+                "from": "human",
+                "value": "<image>\nWhat actions could the ego vehicle take based on <c1,CAM_FRONT,767.5,513.3>? Why take this action and what's the probability?"
+            },
+            {
+                "from": "gpt",
+                "value": "The action is to remain stationary. The reason for this action is to follow the traffic rules. The probability of this action is high."
+            }
+        ]
+    },
+    {
+        "id": "54cdaaae372d421fa4734d66f51a8c48_1b45a97a0e5e49fe9cd345dd4bd729c3_4",
+        "image": [
+            "data/nuscenes/samples/CAM_FRONT/n015-2018-08-03-15-00-36+0800__CAM_FRONT__1533280042612460.jpg",
+            "data/nuscenes/samples/CAM_FRONT_LEFT/n015-2018-08-03-15-00-36+0800__CAM_FRONT_LEFT__1533280042604844.jpg",
+            "data/nuscenes/samples/CAM_FRONT_RIGHT/n015-2018-08-03-15-00-36+0800__CAM_FRONT_RIGHT__1533280042620339.jpg",
+            "data/nuscenes/samples/CAM_BACK/n015-2018-08-03-15-00-36+0800__CAM_BACK__1533280042637525.jpg",
+            "data/nuscenes/samples/CAM_BACK_LEFT/n015-2018-08-03-15-00-36+0800__CAM_BACK_LEFT__1533280042647423.jpg",
+            "data/nuscenes/samples/CAM_BACK_RIGHT/n015-2018-08-03-15-00-36+0800__CAM_BACK_RIGHT__1533280042627893.jpg"
+        ],
+        "conversations": [
+            {
+                "from": "human",
+                "value": "<image>\nWhat actions taken by the ego vehicle can lead to a collision with <c1,CAM_FRONT,767.5,513.3>?"
+            },
+            {
+                "from": "gpt",
+                "value": "Accelerating and going straight."
+            }
+        ]
+    },
+    {
+        "id": "54cdaaae372d421fa4734d66f51a8c48_1b45a97a0e5e49fe9cd345dd4bd729c3_5",
+        "image": [
+            "data/nuscenes/samples/CAM_FRONT/n015-2018-08-03-15-00-36+0800__CAM_FRONT__1533280042612460.jpg",
+            "data/nuscenes/samples/CAM_FRONT_LEFT/n015-2018-08-03-15-00-36+0800__CAM_FRONT_LEFT__1533280042604844.jpg",
+            "data/nuscenes/samples/CAM_FRONT_RIGHT/n015-2018-08-03-15-00-36+0800__CAM_FRONT_RIGHT__1533280042620339.jpg",
+            "data/nuscenes/samples/CAM_BACK/n015-2018-08-03-15-00-36+0800__CAM_BACK__1533280042637525.jpg",
+            "data/nuscenes/samples/CAM_BACK_LEFT/n015-2018-08-03-15-00-36+0800__CAM_BACK_LEFT__1533280042647423.jpg",
+            "data/nuscenes/samples/CAM_BACK_RIGHT/n015-2018-08-03-15-00-36+0800__CAM_BACK_RIGHT__1533280042627893.jpg"
+        ],
+        "conversations": [
+            {
+                "from": "human",
+                "value": "<image>\nIn this scenario, what are safe actions to take for the ego vehicle?"
+            },
+            {
+                "from": "gpt",
+                "value": "Brake gently to a stop, slightly offset to the right, and slightly offset to the left."
+            }
+        ]
+    },
+    {
+        "id": "54cdaaae372d421fa4734d66f51a8c48_1b45a97a0e5e49fe9cd345dd4bd729c3_6",
+        "image": [
+            "data/nuscenes/samples/CAM_FRONT/n015-2018-08-03-15-00-36+0800__CAM_FRONT__1533280042612460.jpg",
+            "data/nuscenes/samples/CAM_FRONT_LEFT/n015-2018-08-03-15-00-36+0800__CAM_FRONT_LEFT__1533280042604844.jpg",
+            "data/nuscenes/samples/CAM_FRONT_RIGHT/n015-2018-08-03-15-00-36+0800__CAM_FRONT_RIGHT__1533280042620339.jpg",
+            "data/nuscenes/samples/CAM_BACK/n015-2018-08-03-15-00-36+0800__CAM_BACK__1533280042637525.jpg",
+            "data/nuscenes/samples/CAM_BACK_LEFT/n015-2018-08-03-15-00-36+0800__CAM_BACK_LEFT__1533280042647423.jpg",
+            "data/nuscenes/samples/CAM_BACK_RIGHT/n015-2018-08-03-15-00-36+0800__CAM_BACK_RIGHT__1533280042627893.jpg"
+        ],
+        "conversations": [
+            {
+                "from": "human",
+                "value": "<image>\nPredict the behavior of the ego vehicle. Please select the correct answer from the following options: A. The ego vehicle is going straight. The ego vehicle is not moving. B. The ego vehicle is steering to the left. The ego vehicle is driving very fast. C. The ego vehicle is steering to the right. The ego vehicle is driving slowly. D. The ego vehicle is steering to the right. The ego vehicle is driving fast."
+            },
+            {
+                "from": "gpt",
+                "value": "A"
+            }
+        ]
+    },
+    {
+        "id": "54cdaaae372d421fa4734d66f51a8c48_d5e16062410f4e329d31a881b28e5c1c_0",
+        "image": [
+            "data/nuscenes/samples/CAM_FRONT/n015-2018-08-03-15-00-36+0800__CAM_FRONT__1533280045112460.jpg",
+            "data/nuscenes/samples/CAM_FRONT_LEFT/n015-2018-08-03-15-00-36+0800__CAM_FRONT_LEFT__1533280045104844.jpg",
+            "data/nuscenes/samples/CAM_FRONT_RIGHT/n015-2018-08-03-15-00-36+0800__CAM_FRONT_RIGHT__1533280045120339.jpg",
+            "data/nuscenes/samples/CAM_BACK/n015-2018-08-03-15-00-36+0800__CAM_BACK__1533280045137525.jpg",
+            "data/nuscenes/samples/CAM_BACK_LEFT/n015-2018-08-03-15-00-36+0800__CAM_BACK_LEFT__1533280045147423.jpg",
+            "data/nuscenes/samples/CAM_BACK_RIGHT/n015-2018-08-03-15-00-36+0800__CAM_BACK_RIGHT__1533280045127893.jpg"
+        ],
+        "conversations": [
+            {
+                "from": "human",
+                "value": "<image>\nWhat are the important objects in the current scene? Those objects will be considered for the future reasoning and driving decision."
+            },
+            {
+                "from": "gpt",
+                "value": "There is a white truck to the front right of the ego vehicle, a white sedan to the front of the ego vehicle, a gray sedan to the front of the ego vehicle, a white sedan to the front right of the ego vehicle, and a no entry to the front of the ego vehicle. The IDs of these objects are <c1,CAM_FRONT_RIGHT,850.0,484.2>, <c2,CAM_FRONT,684.2,500.0>, <c3,CAM_FRONT,1180.8,541.7>, <c4,CAM_FRONT_RIGHT,338.3,540.0>, and <c5,CAM_FRONT,713.2,321.9>."
+            }
+        ]
+    },
+    {
+        "id": "54cdaaae372d421fa4734d66f51a8c48_d5e16062410f4e329d31a881b28e5c1c_1",
+        "image": [
+            "data/nuscenes/samples/CAM_FRONT/n015-2018-08-03-15-00-36+0800__CAM_FRONT__1533280045112460.jpg",
+            "data/nuscenes/samples/CAM_FRONT_LEFT/n015-2018-08-03-15-00-36+0800__CAM_FRONT_LEFT__1533280045104844.jpg",
+            "data/nuscenes/samples/CAM_FRONT_RIGHT/n015-2018-08-03-15-00-36+0800__CAM_FRONT_RIGHT__1533280045120339.jpg",
+            "data/nuscenes/samples/CAM_BACK/n015-2018-08-03-15-00-36+0800__CAM_BACK__1533280045137525.jpg",
+            "data/nuscenes/samples/CAM_BACK_LEFT/n015-2018-08-03-15-00-36+0800__CAM_BACK_LEFT__1533280045147423.jpg",
+            "data/nuscenes/samples/CAM_BACK_RIGHT/n015-2018-08-03-15-00-36+0800__CAM_BACK_RIGHT__1533280045127893.jpg"
+        ],
+        "conversations": [
+            {
+                "from": "human",
+                "value": "<image>\nWhat is the moving status of object <c1,CAM_FRONT_RIGHT,850.0,484.2>? Please select the correct answer from the following options: A. Reverse parking. B. Back up. C. Going ahead. D. Turn left."
+            },
+            {
+                "from": "gpt",
+                "value": "C"
+            }
+        ]
+    },
+    {
+        "id": "54cdaaae372d421fa4734d66f51a8c48_d5e16062410f4e329d31a881b28e5c1c_2",
+        "image": [
+            "data/nuscenes/samples/CAM_FRONT/n015-2018-08-03-15-00-36+0800__CAM_FRONT__1533280045112460.jpg",
+            "data/nuscenes/samples/CAM_FRONT_LEFT/n015-2018-08-03-15-00-36+0800__CAM_FRONT_LEFT__1533280045104844.jpg",
+            "data/nuscenes/samples/CAM_FRONT_RIGHT/n015-2018-08-03-15-00-36+0800__CAM_FRONT_RIGHT__1533280045120339.jpg",
+            "data/nuscenes/samples/CAM_BACK/n015-2018-08-03-15-00-36+0800__CAM_BACK__1533280045137525.jpg",
+            "data/nuscenes/samples/CAM_BACK_LEFT/n015-2018-08-03-15-00-36+0800__CAM_BACK_LEFT__1533280045147423.jpg",
+            "data/nuscenes/samples/CAM_BACK_RIGHT/n015-2018-08-03-15-00-36+0800__CAM_BACK_RIGHT__1533280045127893.jpg"
+        ],
+        "conversations": [
+            {
+                "from": "human",
+                "value": "<image>\nIs <c1,CAM_FRONT_RIGHT,850.0,484.2> a traffic sign or a road barrier?"
+            },
+            {
+                "from": "gpt",
+                "value": "No."
+            }
+        ]
+    },
+    {
+        "id": "54cdaaae372d421fa4734d66f51a8c48_d5e16062410f4e329d31a881b28e5c1c_3",
+        "image": [
+            "data/nuscenes/samples/CAM_FRONT/n015-2018-08-03-15-00-36+0800__CAM_FRONT__1533280045112460.jpg",
+            "data/nuscenes/samples/CAM_FRONT_LEFT/n015-2018-08-03-15-00-36+0800__CAM_FRONT_LEFT__1533280045104844.jpg",
+            "data/nuscenes/samples/CAM_FRONT_RIGHT/n015-2018-08-03-15-00-36+0800__CAM_FRONT_RIGHT__1533280045120339.jpg",
+            "data/nuscenes/samples/CAM_BACK/n015-2018-08-03-15-00-36+0800__CAM_BACK__1533280045137525.jpg",
+            "data/nuscenes/samples/CAM_BACK_LEFT/n015-2018-08-03-15-00-36+0800__CAM_BACK_LEFT__1533280045147423.jpg",
+            "data/nuscenes/samples/CAM_BACK_RIGHT/n015-2018-08-03-15-00-36+0800__CAM_BACK_RIGHT__1533280045127893.jpg"
+        ],
+        "conversations": [
+            {
+                "from": "human",
+                "value": "<image>\nWhat actions could the ego vehicle take based on <c1,CAM_FRONT_RIGHT,850.0,484.2>? Why take this action and what's the probability?"
+            },
+            {
+                "from": "gpt",
+                "value": "The action is to remain stationary. The reason for taking this action is to follow traffic rules. The probability of this action is high."
+            }
+        ]
+    },
+    {
+        "id": "54cdaaae372d421fa4734d66f51a8c48_d5e16062410f4e329d31a881b28e5c1c_4",
+        "image": [
+            "data/nuscenes/samples/CAM_FRONT/n015-2018-08-03-15-00-36+0800__CAM_FRONT__1533280045112460.jpg",
+            "data/nuscenes/samples/CAM_FRONT_LEFT/n015-2018-08-03-15-00-36+0800__CAM_FRONT_LEFT__1533280045104844.jpg",
+            "data/nuscenes/samples/CAM_FRONT_RIGHT/n015-2018-08-03-15-00-36+0800__CAM_FRONT_RIGHT__1533280045120339.jpg",
+            "data/nuscenes/samples/CAM_BACK/n015-2018-08-03-15-00-36+0800__CAM_BACK__1533280045137525.jpg",
+            "data/nuscenes/samples/CAM_BACK_LEFT/n015-2018-08-03-15-00-36+0800__CAM_BACK_LEFT__1533280045147423.jpg",
+            "data/nuscenes/samples/CAM_BACK_RIGHT/n015-2018-08-03-15-00-36+0800__CAM_BACK_RIGHT__1533280045127893.jpg"
+        ],
+        "conversations": [
+            {
+                "from": "human",
+                "value": "<image>\nWhat actions taken by the ego vehicle can lead to a collision with <c1,CAM_FRONT_RIGHT,850.0,484.2>?"
+            },
+            {
+                "from": "gpt",
+                "value": "Turning right and accelerating."
+            }
+        ]
+    },
+    {
+        "id": "54cdaaae372d421fa4734d66f51a8c48_d5e16062410f4e329d31a881b28e5c1c_5",
+        "image": [
+            "data/nuscenes/samples/CAM_FRONT/n015-2018-08-03-15-00-36+0800__CAM_FRONT__1533280045112460.jpg",
+            "data/nuscenes/samples/CAM_FRONT_LEFT/n015-2018-08-03-15-00-36+0800__CAM_FRONT_LEFT__1533280045104844.jpg",
+            "data/nuscenes/samples/CAM_FRONT_RIGHT/n015-2018-08-03-15-00-36+0800__CAM_FRONT_RIGHT__1533280045120339.jpg",
+            "data/nuscenes/samples/CAM_BACK/n015-2018-08-03-15-00-36+0800__CAM_BACK__1533280045137525.jpg",
+            "data/nuscenes/samples/CAM_BACK_LEFT/n015-2018-08-03-15-00-36+0800__CAM_BACK_LEFT__1533280045147423.jpg",
+            "data/nuscenes/samples/CAM_BACK_RIGHT/n015-2018-08-03-15-00-36+0800__CAM_BACK_RIGHT__1533280045127893.jpg"
+        ],
+        "conversations": [
+            {
+                "from": "human",
+                "value": "<image>\nIn this scenario, what are safe actions to take for the ego vehicle?"
+            },
+            {
+                "from": "gpt",
+                "value": "Brake gently to a stop, slightly offset to the left."
+            }
+        ]
+    },
+    {
+        "id": "54cdaaae372d421fa4734d66f51a8c48_d5e16062410f4e329d31a881b28e5c1c_6",
+        "image": [
+            "data/nuscenes/samples/CAM_FRONT/n015-2018-08-03-15-00-36+0800__CAM_FRONT__1533280045112460.jpg",
+            "data/nuscenes/samples/CAM_FRONT_LEFT/n015-2018-08-03-15-00-36+0800__CAM_FRONT_LEFT__1533280045104844.jpg",
+            "data/nuscenes/samples/CAM_FRONT_RIGHT/n015-2018-08-03-15-00-36+0800__CAM_FRONT_RIGHT__1533280045120339.jpg",
+            "data/nuscenes/samples/CAM_BACK/n015-2018-08-03-15-00-36+0800__CAM_BACK__1533280045137525.jpg",
+            "data/nuscenes/samples/CAM_BACK_LEFT/n015-2018-08-03-15-00-36+0800__CAM_BACK_LEFT__1533280045147423.jpg",
+            "data/nuscenes/samples/CAM_BACK_RIGHT/n015-2018-08-03-15-00-36+0800__CAM_BACK_RIGHT__1533280045127893.jpg"
+        ],
+        "conversations": [
+            {
+                "from": "human",
+                "value": "<image>\nPredict the behavior of the ego vehicle. Please select the correct answer from the following options: A. The ego vehicle is going straight. The ego vehicle is not moving. B. The ego vehicle is slightly steering to the left. The ego vehicle is driving slowly. C. The ego vehicle is steering to the left. The ego vehicle is driving very fast. D. The ego vehicle is steering to the right. The ego vehicle is driving very fast."
+            },
+            {
+                "from": "gpt",
+                "value": "A"
+            }
+        ]
+    },
+    {
+        "id": "54cdaaae372d421fa4734d66f51a8c48_7abe79e5d3d745bcb237a4b7e03d1577_0",
+        "image": [
+            "data/nuscenes/samples/CAM_FRONT/n015-2018-08-03-15-00-36+0800__CAM_FRONT__1533280048162460.jpg",
+            "data/nuscenes/samples/CAM_FRONT_LEFT/n015-2018-08-03-15-00-36+0800__CAM_FRONT_LEFT__1533280048154844.jpg",
+            "data/nuscenes/samples/CAM_FRONT_RIGHT/n015-2018-08-03-15-00-36+0800__CAM_FRONT_RIGHT__1533280048170339.jpg",
+            "data/nuscenes/samples/CAM_BACK/n015-2018-08-03-15-00-36+0800__CAM_BACK__1533280048187525.jpg",
+            "data/nuscenes/samples/CAM_BACK_LEFT/n015-2018-08-03-15-00-36+0800__CAM_BACK_LEFT__1533280048197442.jpg",
+            "data/nuscenes/samples/CAM_BACK_RIGHT/n015-2018-08-03-15-00-36+0800__CAM_BACK_RIGHT__1533280048177893.jpg"
+        ],
+        "conversations": [
+            {
+                "from": "human",
+                "value": "<image>\nWhat are the important objects in the current scene? Those objects will be considered for the future reasoning and driving decision."
+            },
+            {
+                "from": "gpt",
+                "value": "There is a white truck to the front of the ego vehicle, a white sedan to the front of the ego vehicle, a white van to the front of the ego vehicle, and a red light to the front of the ego vehicle. The IDs of these objects are <c1,CAM_FRONT,1458.3,492.5>, <c2,CAM_FRONT,889.2,515.8>, <c3,CAM_FRONT,107.5,480.8>, and <c4,CAM_FRONT,740.7,369.3>."
+            }
+        ]
+    },
+    {
+        "id": "54cdaaae372d421fa4734d66f51a8c48_7abe79e5d3d745bcb237a4b7e03d1577_1",
+        "image": [
+            "data/nuscenes/samples/CAM_FRONT/n015-2018-08-03-15-00-36+0800__CAM_FRONT__1533280048162460.jpg",
+            "data/nuscenes/samples/CAM_FRONT_LEFT/n015-2018-08-03-15-00-36+0800__CAM_FRONT_LEFT__1533280048154844.jpg",
+            "data/nuscenes/samples/CAM_FRONT_RIGHT/n015-2018-08-03-15-00-36+0800__CAM_FRONT_RIGHT__1533280048170339.jpg",
+            "data/nuscenes/samples/CAM_BACK/n015-2018-08-03-15-00-36+0800__CAM_BACK__1533280048187525.jpg",
+            "data/nuscenes/samples/CAM_BACK_LEFT/n015-2018-08-03-15-00-36+0800__CAM_BACK_LEFT__1533280048197442.jpg",
+            "data/nuscenes/samples/CAM_BACK_RIGHT/n015-2018-08-03-15-00-36+0800__CAM_BACK_RIGHT__1533280048177893.jpg"
+        ],
+        "conversations": [
+            {
+                "from": "human",
+                "value": "<image>\nWhat is the moving status of object <c1,CAM_FRONT,1458.3,492.5>? Please select the correct answer from the following options: A. Going ahead. B. Turn left. C. Stopped. D. Back up."
+            },
+            {
+                "from": "gpt",
+                "value": "A"
+            }
+        ]
+    },
+    {
+        "id": "54cdaaae372d421fa4734d66f51a8c48_7abe79e5d3d745bcb237a4b7e03d1577_2",
+        "image": [
+            "data/nuscenes/samples/CAM_FRONT/n015-2018-08-03-15-00-36+0800__CAM_FRONT__1533280048162460.jpg",
+            "data/nuscenes/samples/CAM_FRONT_LEFT/n015-2018-08-03-15-00-36+0800__CAM_FRONT_LEFT__1533280048154844.jpg",
+            "data/nuscenes/samples/CAM_FRONT_RIGHT/n015-2018-08-03-15-00-36+0800__CAM_FRONT_RIGHT__1533280048170339.jpg",
+            "data/nuscenes/samples/CAM_BACK/n015-2018-08-03-15-00-36+0800__CAM_BACK__1533280048187525.jpg",
+            "data/nuscenes/samples/CAM_BACK_LEFT/n015-2018-08-03-15-00-36+0800__CAM_BACK_LEFT__1533280048197442.jpg",
+            "data/nuscenes/samples/CAM_BACK_RIGHT/n015-2018-08-03-15-00-36+0800__CAM_BACK_RIGHT__1533280048177893.jpg"
+        ],
+        "conversations": [
+            {
+                "from": "human",
+                "value": "<image>\nIs <c1,CAM_FRONT,1458.3,492.5> a traffic sign or a road barrier?"
+            },
+            {
+                "from": "gpt",
+                "value": "No."
+            }
+        ]
+    },
+    {
+        "id": "54cdaaae372d421fa4734d66f51a8c48_7abe79e5d3d745bcb237a4b7e03d1577_3",
+        "image": [
+            "data/nuscenes/samples/CAM_FRONT/n015-2018-08-03-15-00-36+0800__CAM_FRONT__1533280048162460.jpg",
+            "data/nuscenes/samples/CAM_FRONT_LEFT/n015-2018-08-03-15-00-36+0800__CAM_FRONT_LEFT__1533280048154844.jpg",
+            "data/nuscenes/samples/CAM_FRONT_RIGHT/n015-2018-08-03-15-00-36+0800__CAM_FRONT_RIGHT__1533280048170339.jpg",
+            "data/nuscenes/samples/CAM_BACK/n015-2018-08-03-15-00-36+0800__CAM_BACK__1533280048187525.jpg",
+            "data/nuscenes/samples/CAM_BACK_LEFT/n015-2018-08-03-15-00-36+0800__CAM_BACK_LEFT__1533280048197442.jpg",
+            "data/nuscenes/samples/CAM_BACK_RIGHT/n015-2018-08-03-15-00-36+0800__CAM_BACK_RIGHT__1533280048177893.jpg"
+        ],
+        "conversations": [
+            {
+                "from": "human",
+                "value": "<image>\nWhat actions could the ego vehicle take based on <c1,CAM_FRONT,1458.3,492.5>? Why take this action and what's the probability?"
+            },
+            {
+                "from": "gpt",
+                "value": "The action is to remain stationary, the reason is to follow the traffic rules, high probability."
+            }
+        ]
+    },
+    {
+        "id": "54cdaaae372d421fa4734d66f51a8c48_7abe79e5d3d745bcb237a4b7e03d1577_4",
+        "image": [
+            "data/nuscenes/samples/CAM_FRONT/n015-2018-08-03-15-00-36+0800__CAM_FRONT__1533280048162460.jpg",
+            "data/nuscenes/samples/CAM_FRONT_LEFT/n015-2018-08-03-15-00-36+0800__CAM_FRONT_LEFT__1533280048154844.jpg",
+            "data/nuscenes/samples/CAM_FRONT_RIGHT/n015-2018-08-03-15-00-36+0800__CAM_FRONT_RIGHT__1533280048170339.jpg",
+            "data/nuscenes/samples/CAM_BACK/n015-2018-08-03-15-00-36+0800__CAM_BACK__1533280048187525.jpg",
+            "data/nuscenes/samples/CAM_BACK_LEFT/n015-2018-08-03-15-00-36+0800__CAM_BACK_LEFT__1533280048197442.jpg",
+            "data/nuscenes/samples/CAM_BACK_RIGHT/n015-2018-08-03-15-00-36+0800__CAM_BACK_RIGHT__1533280048177893.jpg"
+        ],
+        "conversations": [
+            {
+                "from": "human",
+                "value": "<image>\nWhat actions taken by the ego vehicle can lead to a collision with <c1,CAM_FRONT,1458.3,492.5>?"
+            },
+            {
+                "from": "gpt",
+                "value": "Moderate right turn."
+            }
+        ]
+    },
+    {
+        "id": "54cdaaae372d421fa4734d66f51a8c48_7abe79e5d3d745bcb237a4b7e03d1577_5",
+        "image": [
+            "data/nuscenes/samples/CAM_FRONT/n015-2018-08-03-15-00-36+0800__CAM_FRONT__1533280048162460.jpg",
+            "data/nuscenes/samples/CAM_FRONT_LEFT/n015-2018-08-03-15-00-36+0800__CAM_FRONT_LEFT__1533280048154844.jpg",
+            "data/nuscenes/samples/CAM_FRONT_RIGHT/n015-2018-08-03-15-00-36+0800__CAM_FRONT_RIGHT__1533280048170339.jpg",
+            "data/nuscenes/samples/CAM_BACK/n015-2018-08-03-15-00-36+0800__CAM_BACK__1533280048187525.jpg",
+            "data/nuscenes/samples/CAM_BACK_LEFT/n015-2018-08-03-15-00-36+0800__CAM_BACK_LEFT__1533280048197442.jpg",
+            "data/nuscenes/samples/CAM_BACK_RIGHT/n015-2018-08-03-15-00-36+0800__CAM_BACK_RIGHT__1533280048177893.jpg"
+        ],
+        "conversations": [
+            {
+                "from": "human",
+                "value": "<image>\nIn this scenario, what are safe actions to take for the ego vehicle?"
+            },
+            {
+                "from": "gpt",
+                "value": "Brake gently to a stop, slightly offset to the right."
+            }
+        ]
+    },
+    {
+        "id": "54cdaaae372d421fa4734d66f51a8c48_7abe79e5d3d745bcb237a4b7e03d1577_6",
+        "image": [
+            "data/nuscenes/samples/CAM_FRONT/n015-2018-08-03-15-00-36+0800__CAM_FRONT__1533280048162460.jpg",
+            "data/nuscenes/samples/CAM_FRONT_LEFT/n015-2018-08-03-15-00-36+0800__CAM_FRONT_LEFT__1533280048154844.jpg",
+            "data/nuscenes/samples/CAM_FRONT_RIGHT/n015-2018-08-03-15-00-36+0800__CAM_FRONT_RIGHT__1533280048170339.jpg",
+            "data/nuscenes/samples/CAM_BACK/n015-2018-08-03-15-00-36+0800__CAM_BACK__1533280048187525.jpg",
+            "data/nuscenes/samples/CAM_BACK_LEFT/n015-2018-08-03-15-00-36+0800__CAM_BACK_LEFT__1533280048197442.jpg",
+            "data/nuscenes/samples/CAM_BACK_RIGHT/n015-2018-08-03-15-00-36+0800__CAM_BACK_RIGHT__1533280048177893.jpg"
+        ],
+        "conversations": [
+            {
+                "from": "human",
+                "value": "<image>\nPredict the behavior of the ego vehicle. Please select the correct answer from the following options: A. The ego vehicle is going straight. The ego vehicle is driving slowly. B. The ego vehicle is going straight. The ego vehicle is not moving. C. The ego vehicle is slightly steering to the left. The ego vehicle is driving very fast. D. The ego vehicle is slightly steering to the right. The ego vehicle is driving with normal speed."
+            },
+            {
+                "from": "gpt",
+                "value": "B"
+            }
+        ]
+    },
+    {
+        "id": "54cdaaae372d421fa4734d66f51a8c48_0dd14c14cea14dc1b0c0c9b0c9c7c4c3_0",
+        "image": [
+            "data/nuscenes/samples/CAM_FRONT/n015-2018-08-03-15-00-36+0800__CAM_FRONT__1533280036162460.jpg",
+            "data/nuscenes/samples/CAM_FRONT_LEFT/n015-2018-08-03-15-00-36+0800__CAM_FRONT_LEFT__1533280036154844.jpg",
+            "data/nuscenes/samples/CAM_FRONT_RIGHT/n015-2018-08-03-15-00-36+0800__CAM_FRONT_RIGHT__1533280036170339.jpg",
+            "data/nuscenes/samples/CAM_BACK/n015-2018-08-03-15-00-36+0800__CAM_BACK__1533280036187525.jpg",
+            "data/nuscenes/samples/CAM_BACK_LEFT/n015-2018-08-03-15-00-36+0800__CAM_BACK_LEFT__1533280036197423.jpg",
+            "data/nuscenes/samples/CAM_BACK_RIGHT/n015-2018-08-03-15-00-36+0800__CAM_BACK_RIGHT__1533280036177893.jpg"
+        ],
+        "conversations": [
+            {
+                "from": "human",
+                "value": "<image>\nWhat are the important objects in the current scene? Those objects will be considered for the future reasoning and driving decision."
+            },
+            {
+                "from": "gpt",
+                "value": "There is a white sedan to the front of the ego vehicle, a white van to the front of the ego vehicle, a black sedan to the front of the ego vehicle, and a no entry to the front of the ego vehicle. The IDs of these objects are <c1,CAM_FRONT,1321.7,495.0>, <c2,CAM_FRONT,629.2,475.0>, <c3,CAM_FRONT,769.2,485.0>, and <c4,CAM_FRONT,688.8,371.7>."
+            }
+        ]
+    },
+    {
+        "id": "54cdaaae372d421fa4734d66f51a8c48_0dd14c14cea14dc1b0c0c9b0c9c7c4c3_1",
+        "image": [
+            "data/nuscenes/samples/CAM_FRONT/n015-2018-08-03-15-00-36+0800__CAM_FRONT__1533280036162460.jpg",
+            "data/nuscenes/samples/CAM_FRONT_LEFT/n015-2018-08-03-15-00-36+0800__CAM_FRONT_LEFT__1533280036154844.jpg",
+            "data/nuscenes/samples/CAM_FRONT_RIGHT/n015-2018-08-03-15-00-36+0800__CAM_FRONT_RIGHT__1533280036170339.jpg",
+            "data/nuscenes/samples/CAM_BACK/n015-2018-08-03-15-00-36+0800__CAM_BACK__1533280036187525.jpg",
+            "data/nuscenes/samples/CAM_BACK_LEFT/n015-2018-08-03-15-00-36+0800__CAM_BACK_LEFT__1533280036197423.jpg",
+            "data/nuscenes/samples/CAM_BACK_RIGHT/n015-2018-08-03-15-00-36+0800__CAM_BACK_RIGHT__1533280036177893.jpg"
+        ],
+        "conversations": [
+            {
+                "from": "human",
+                "value": "<image>\nWhat is the moving status of object <c1,CAM_FRONT,1321.7,495.0>? Please select the correct answer from the following options: A. Turn left. B. Turn right. C. Back up. D. Going ahead."
+            },
+            {
+                "from": "gpt",
+                "value": "D"
+            }
+        ]
+    },
+    {
+        "id": "54cdaaae372d421fa4734d66f51a8c48_0dd14c14cea14dc1b0c0c9b0c9c7c4c3_2",
+        "image": [
+            "data/nuscenes/samples/CAM_FRONT/n015-2018-08-03-15-00-36+0800__CAM_FRONT__1533280036162460.jpg",
+            "data/nuscenes/samples/CAM_FRONT_LEFT/n015-2018-08-03-15-00-36+0800__CAM_FRONT_LEFT__1533280036154844.jpg",
+            "data/nuscenes/samples/CAM_FRONT_RIGHT/n015-2018-08-03-15-00-36+0800__CAM_FRONT_RIGHT__1533280036170339.jpg",
+            "data/nuscenes/samples/CAM_BACK/n015-2018-08-03-15-00-36+0800__CAM_BACK__1533280036187525.jpg",
+            "data/nuscenes/samples/CAM_BACK_LEFT/n015-2018-08-03-15-00-36+0800__CAM_BACK_LEFT__1533280036197423.jpg",
+            "data/nuscenes/samples/CAM_BACK_RIGHT/n015-2018-08-03-15-00-36+0800__CAM_BACK_RIGHT__1533280036177893.jpg"
+        ],
+        "conversations": [
+            {
+                "from": "human",
+                "value": "<image>\nIs <c1,CAM_FRONT,1321.7,495.0> a traffic sign or a road barrier?"
+            },
+            {
+                "from": "gpt",
+                "value": "No."
+            }
+        ]
+    },
+    {
+        "id": "54cdaaae372d421fa4734d66f51a8c48_0dd14c14cea14dc1b0c0c9b0c9c7c4c3_3",
+        "image": [
+            "data/nuscenes/samples/CAM_FRONT/n015-2018-08-03-15-00-36+0800__CAM_FRONT__1533280036162460.jpg",
+            "data/nuscenes/samples/CAM_FRONT_LEFT/n015-2018-08-03-15-00-36+0800__CAM_FRONT_LEFT__1533280036154844.jpg",
+            "data/nuscenes/samples/CAM_FRONT_RIGHT/n015-2018-08-03-15-00-36+0800__CAM_FRONT_RIGHT__1533280036170339.jpg",
+            "data/nuscenes/samples/CAM_BACK/n015-2018-08-03-15-00-36+0800__CAM_BACK__1533280036187525.jpg",
+            "data/nuscenes/samples/CAM_BACK_LEFT/n015-2018-08-03-15-00-36+0800__CAM_BACK_LEFT__1533280036197423.jpg",
+            "data/nuscenes/samples/CAM_BACK_RIGHT/n015-2018-08-03-15-00-36+0800__CAM_BACK_RIGHT__1533280036177893.jpg"
+        ],
+        "conversations": [
+            {
+                "from": "human",
+                "value": "<image>\nWhat actions could the ego vehicle take based on <c1,CAM_FRONT,1321.7,495.0>? Why take this action and what's the probability?"
+            },
+            {
+                "from": "gpt",
+                "value": "The action is to keep going at the same speed, the reason being that there is no safety issue. The probability of this action is high."
+            }
+        ]
+    },
+    {
+        "id": "54cdaaae372d421fa4734d66f51a8c48_0dd14c14cea14dc1b0c0c9b0c9c7c4c3_4",
+        "image": [
+            "data/nuscenes/samples/CAM_FRONT/n015-2018-08-03-15-00-36+0800__CAM_FRONT__1533280036162460.jpg",
+            "data/nuscenes/samples/CAM_FRONT_LEFT/n015-2018-08-03-15-00-36+0800__CAM_FRONT_LEFT__1533280036154844.jpg",
+            "data/nuscenes/samples/CAM_FRONT_RIGHT/n015-2018-08-03-15-00-36+0800__CAM_FRONT_RIGHT__1533280036170339.jpg",
+            "data/nuscenes/samples/CAM_BACK/n015-2018-08-03-15-00-36+0800__CAM_BACK__1533280036187525.jpg",
+            "data/nuscenes/samples/CAM_BACK_LEFT/n015-2018-08-03-15-00-36+0800__CAM_BACK_LEFT__1533280036197423.jpg",
+            "data/nuscenes/samples/CAM_BACK_RIGHT/n015-2018-08-03-15-00-36+0800__CAM_BACK_RIGHT__1533280036177893.jpg"
+        ],
+        "conversations": [
+            {
+                "from": "human",
+                "value": "<image>\nWhat actions taken by the ego vehicle can lead to a collision with <c2,CAM_FRONT,629.2,475.0>?"
+            },
+            {
+                "from": "gpt",
+                "value": "Accelerating and going straight can lead to a collision with <c2,CAM_FRONT,629.2,475.0>."
+            }
+        ]
+    },
+    {
+        "id": "54cdaaae372d421fa4734d66f51a8c48_0dd14c14cea14dc1b0c0c9b0c9c7c4c3_5",
+        "image": [
+            "data/nuscenes/samples/CAM_FRONT/n015-2018-08-03-15-00-36+0800__CAM_FRONT__1533280036162460.jpg",
+            "data/nuscenes/samples/CAM_FRONT_LEFT/n015-2018-08-03-15-00-36+0800__CAM_FRONT_LEFT__1533280036154844.jpg",
+            "data/nuscenes/samples/CAM_FRONT_RIGHT/n015-2018-08-03-15-00-36+0800__CAM_FRONT_RIGHT__1533280036170339.jpg",
+            "data/nuscenes/samples/CAM_BACK/n015-2018-08-03-15-00-36+0800__CAM_BACK__1533280036187525.jpg",
+            "data/nuscenes/samples/CAM_BACK_LEFT/n015-2018-08-03-15-00-36+0800__CAM_BACK_LEFT__1533280036197423.jpg",
+            "data/nuscenes/samples/CAM_BACK_RIGHT/n015-2018-08-03-15-00-36+0800__CAM_BACK_RIGHT__1533280036177893.jpg"
+        ],
+        "conversations": [
+            {
+                "from": "human",
+                "value": "<image>\nIn this scenario, what are safe actions to take for the ego vehicle?"
+            },
+            {
+                "from": "gpt",
+                "value": "Brake gently to a stop, slightly offset to the left."
+            }
+        ]
+    },
+    {
+        "id": "54cdaaae372d421fa4734d66f51a8c48_0dd14c14cea14dc1b0c0c9b0c9c7c4c3_6",
+        "image": [
+            "data/nuscenes/samples/CAM_FRONT/n015-2018-08-03-15-00-36+0800__CAM_FRONT__1533280036162460.jpg",
+            "data/nuscenes/samples/CAM_FRONT_LEFT/n015-2018-08-03-15-00-36+0800__CAM_FRONT_LEFT__1533280036154844.jpg",
+            "data/nuscenes/samples/CAM_FRONT_RIGHT/n015-2018-08-03-15-00-36+0800__CAM_FRONT_RIGHT__1533280036170339.jpg",
+            "data/nuscenes/samples/CAM_BACK/n015-2018-08-03-15-00-36+0800__CAM_BACK__1533280036187525.jpg",
+            "data/nuscenes/samples/CAM_BACK_LEFT/n015-2018-08-03-15-00-36+0800__CAM_BACK_LEFT__1533280036197423.jpg",
+            "data/nuscenes/samples/CAM_BACK_RIGHT/n015-2018-08-03-15-00-36+0800__CAM_BACK_RIGHT__1533280036177893.jpg"
+        ],
+        "conversations": [
+            {
+                "from": "human",
+                "value": "<image>\nPredict the behavior of the ego vehicle. Please select the correct answer from the following options: A. The ego vehicle is slightly steering to the left. The ego vehicle is driving fast. B. The ego vehicle is steering to the left. The ego vehicle is driving very fast. C. The ego vehicle is slightly steering to the left. The ego vehicle is driving with normal speed. D. The ego vehicle is going straight. The ego vehicle is driving with normal speed."
+            },
+            {
+                "from": "gpt",
+                "value": "D"
+            }
+        ]
+    }
+]
