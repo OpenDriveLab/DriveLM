@@ -42,6 +42,6 @@ def convert2llama(root, dst):
 
 
 if __name__ == '__main__':
-    root = "test_v1.json"
-    dst = "test_v2.json"
+    root = "test_eval.json"
+    dst = "test_llama.json"
     convert2llama(root, dst)

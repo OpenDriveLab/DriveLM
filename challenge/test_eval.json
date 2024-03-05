@@ -17,8 +17,8 @@
                             ]
                         },
                         {
-                            "Q": "What is the moving status of object <c1,CAM_BACK,1088.3,497.5>?",
-                            "A": "Turn left.",
+                            "Q": "What is the moving status of object <c1,CAM_BACK,1088.3,497.5>? Please select the correct answer from the following options: A. Going ahead. B. Stopped. C. Back up. D. Turn left.",
+                            "A": "D",
                             "C": null,
                             "con_up": null,
                             "con_down": null,
@@ -95,8 +95,8 @@
                     ],
                     "behavior": [
                         {
-                            "Q": "Predict the behavior of the ego vehicle.",
-                            "A": "The ego vehicle is going straight. The ego vehicle is driving fast.",
+                            "Q": "Predict the behavior of the ego vehicle. Please select the correct answer from the following options: A. The ego vehicle is slightly steering to the left. The ego vehicle is driving fast. B. The ego vehicle is going straight. The ego vehicle is driving fast. C. The ego vehicle is slightly steering to the left. The ego vehicle is driving with normal speed. D. The ego vehicle is going straight. The ego vehicle is driving with normal speed.",
+                            "A": "B",
                             "C": null,
                             "con_up": null,
                             "con_down": null,
@@ -199,8 +199,8 @@
                     ],
                     "behavior": [
                         {
-                            "Q": "Predict the behavior of the ego vehicle.",
-                            "A": "The ego vehicle is going straight. The ego vehicle is driving slowly.",
+                            "Q": "Predict the behavior of the ego vehicle. Please select the correct answer from the following options: A. The ego vehicle is slightly steering to the right. The ego vehicle is driving very fast. B. The ego vehicle is steering to the left. The ego vehicle is driving fast. C. The ego vehicle is steering to the left. The ego vehicle is driving with normal speed. D. The ego vehicle is going straight. The ego vehicle is driving slowly.",
+                            "A": "D",
                             "C": null,
                             "con_up": null,
                             "con_down": null,
@@ -237,8 +237,8 @@
                             ]
                         },
                         {
-                            "Q": "What is the moving status of object <c1,CAM_FRONT_LEFT,231.5,472.1>?",
-                            "A": "Going ahead.",
+                            "Q": "What is the moving status of object <c1,CAM_FRONT_LEFT,231.5,472.1>? Please select the correct answer from the following options: A. Stopped. B. Going ahead. C. Turn right. D. Turn left.",
+                            "A": "B",
                             "C": null,
                             "con_up": null,
                             "con_down": null,
@@ -315,8 +315,8 @@
                     ],
                     "behavior": [
                         {
-                            "Q": "Predict the behavior of the ego vehicle.",
-                            "A": "The ego vehicle is going straight. The ego vehicle is driving slowly.",
+                            "Q": "Predict the behavior of the ego vehicle. Please select the correct answer from the following options: A. The ego vehicle is slightly steering to the left. The ego vehicle is driving very fast. B. The ego vehicle is going straight. The ego vehicle is driving slowly. C. The ego vehicle is going straight. The ego vehicle is not moving. D. The ego vehicle is slightly steering to the right. The ego vehicle is driving with normal speed.",
+                            "A": "B",
                             "C": null,
                             "con_up": null,
                             "con_down": null,
@@ -353,8 +353,8 @@
                             ]
                         },
                         {
-                            "Q": "What is the moving status of object <c1,CAM_BACK,1568.3,505.0>?",
-                            "A": "Going ahead.",
+                            "Q": "What is the moving status of object <c1,CAM_BACK,1568.3,505.0>? Please select the correct answer from the following options: A. Stopped. B. Turn left. C. Going ahead. D. Turn right.",
+                            "A": "C",
                             "C": null,
                             "con_up": null,
                             "con_down": null,
@@ -431,8 +431,8 @@
                     ],
                     "behavior": [
                         {
-                            "Q": "Predict the behavior of the ego vehicle.",
-                            "A": "The ego vehicle is going straight. The ego vehicle is driving fast.",
+                            "Q": "Predict the behavior of the ego vehicle. Please select the correct answer from the following options: A. The ego vehicle is slightly steering to the left. The ego vehicle is driving slowly. B. The ego vehicle is slightly steering to the right. The ego vehicle is driving very fast. C. The ego vehicle is going straight. The ego vehicle is driving fast. D. The ego vehicle is steering to the left. The ego vehicle is driving with normal speed.",
+                            "A": "C",
                             "C": null,
                             "con_up": null,
                             "con_down": null,
@@ -473,8 +473,8 @@
                             ]
                         },
                         {
-                            "Q": "What is the moving status of object <c1,CAM_FRONT,714.3,503.6>?",
-                            "A": "Going ahead.",
+                            "Q": "What is the moving status of object <c1,CAM_FRONT,714.3,503.6>? Please select the correct answer from the following options: A. Stopped. B. Back up. C. Turn left. D. Going ahead.",
+                            "A": "D",
                             "C": null,
                             "con_up": null,
                             "con_down": null,
@@ -539,8 +539,8 @@
                     ],
                     "behavior": [
                         {
-                            "Q": "Predict the behavior of the ego vehicle.",
-                            "A": "The ego vehicle is going straight. The ego vehicle is driving slowly.",
+                            "Q": "Predict the behavior of the ego vehicle. Please select the correct answer from the following options: A. The ego vehicle is slightly steering to the right. The ego vehicle is driving slowly. B. The ego vehicle is slightly steering to the left. The ego vehicle is driving slowly. C. The ego vehicle is going straight. The ego vehicle is driving slowly. D. The ego vehicle is slightly steering to the left. The ego vehicle is driving with normal speed.",
+                            "A": "C",
                             "C": null,
                             "con_up": null,
                             "con_down": null,
@@ -577,8 +577,8 @@
                             ]
                         },
                         {
-                            "Q": "What is the moving status of object <c1,CAM_FRONT,767.5,513.3>?",
-                            "A": "Turn right.",
+                            "Q": "What is the moving status of object <c1,CAM_FRONT,767.5,513.3>? Please select the correct answer from the following options: A. Reverse parking. B. Back up. C. Turn right. D. Stopped.",
+                            "A": "C",
                             "C": null,
                             "con_up": null,
                             "con_down": null,
@@ -643,8 +643,8 @@
                     ],
                     "behavior": [
                         {
-                            "Q": "Predict the behavior of the ego vehicle.",
-                            "A": "The ego vehicle is going straight. The ego vehicle is not moving.",
+                            "Q": "Predict the behavior of the ego vehicle. Please select the correct answer from the following options: A. The ego vehicle is going straight. The ego vehicle is not moving. B. The ego vehicle is steering to the left. The ego vehicle is driving very fast. C. The ego vehicle is steering to the right. The ego vehicle is driving slowly. D. The ego vehicle is steering to the right. The ego vehicle is driving fast.",
+                            "A": "A",
                             "C": null,
                             "con_up": null,
                             "con_down": null,
@@ -681,8 +681,8 @@
                             ]
                         },
                         {
-                            "Q": "What is the moving status of object <c1,CAM_FRONT_RIGHT,850.0,484.2>?",
-                            "A": "Going ahead.",
+                            "Q": "What is the moving status of object <c1,CAM_FRONT_RIGHT,850.0,484.2>? Please select the correct answer from the following options: A. Reverse parking. B. Back up. C. Going ahead. D. Turn left.",
+                            "A": "C",
                             "C": null,
                             "con_up": null,
                             "con_down": null,
@@ -747,8 +747,8 @@
                     ],
                     "behavior": [
                         {
-                            "Q": "Predict the behavior of the ego vehicle.",
-                            "A": "The ego vehicle is going straight. The ego vehicle is not moving.",
+                            "Q": "Predict the behavior of the ego vehicle. Please select the correct answer from the following options: A. The ego vehicle is going straight. The ego vehicle is not moving. B. The ego vehicle is slightly steering to the left. The ego vehicle is driving slowly. C. The ego vehicle is steering to the left. The ego vehicle is driving very fast. D. The ego vehicle is steering to the right. The ego vehicle is driving very fast.",
+                            "A": "A",
                             "C": null,
                             "con_up": null,
                             "con_down": null,
@@ -785,8 +785,8 @@
                             ]
                         },
                         {
-                            "Q": "What is the moving status of object <c1,CAM_FRONT,1458.3,492.5>?",
-                            "A": "Going ahead.",
+                            "Q": "What is the moving status of object <c1,CAM_FRONT,1458.3,492.5>? Please select the correct answer from the following options: A. Going ahead. B. Turn left. C. Stopped. D. Back up.",
+                            "A": "A",
                             "C": null,
                             "con_up": null,
                             "con_down": null,
@@ -851,8 +851,8 @@
                     ],
                     "behavior": [
                         {
-                            "Q": "Predict the behavior of the ego vehicle.",
-                            "A": "The ego vehicle is going straight. The ego vehicle is not moving.",
+                            "Q": "Predict the behavior of the ego vehicle. Please select the correct answer from the following options: A. The ego vehicle is going straight. The ego vehicle is driving slowly. B. The ego vehicle is going straight. The ego vehicle is not moving. C. The ego vehicle is slightly steering to the left. The ego vehicle is driving very fast. D. The ego vehicle is slightly steering to the right. The ego vehicle is driving with normal speed.",
+                            "A": "B",
                             "C": null,
                             "con_up": null,
                             "con_down": null,
@@ -889,8 +889,8 @@
                             ]
                         },
                         {
-                            "Q": "What is the moving status of object <c1,CAM_FRONT,1321.7,495.0>?",
-                            "A": "Going ahead.",
+                            "Q": "What is the moving status of object <c1,CAM_FRONT,1321.7,495.0>? Please select the correct answer from the following options: A. Turn left. B. Turn right. C. Back up. D. Going ahead.",
+                            "A": "D",
                             "C": null,
                             "con_up": null,
                             "con_down": null,
@@ -955,8 +955,8 @@
                     ],
                     "behavior": [
                         {
-                            "Q": "Predict the behavior of the ego vehicle.",
-                            "A": "The ego vehicle is going straight. The ego vehicle is driving with normal speed.",
+                            "Q": "Predict the behavior of the ego vehicle. Please select the correct answer from the following options: A. The ego vehicle is slightly steering to the left. The ego vehicle is driving fast. B. The ego vehicle is steering to the left. The ego vehicle is driving very fast. C. The ego vehicle is slightly steering to the left. The ego vehicle is driving with normal speed. D. The ego vehicle is going straight. The ego vehicle is driving with normal speed.",
+                            "A": "D",
                             "C": null,
                             "con_up": null,
                             "con_down": null,
