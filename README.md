@@ -109,6 +109,7 @@ https://github.com/OpenDriveLab/DriveLM-new/assets/75412366/78c32442-73c8-4f1d-a
 ## Getting Started <a name="gettingstarted"></a>
 To get started with DriveLM: 
 - [Prepare DriveLM-nuScenes](/docs/data_prep_nus.md)
+- [Challenge devkit](/challenge/)
 - [More content coming soon](#todolist)
 
 <p align="right">(<a href="#top">back to top</a>)</p>
