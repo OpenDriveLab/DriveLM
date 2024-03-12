@@ -14,6 +14,8 @@ class evaluation_suit():
     def __init__(self):
         self.language_eval = language_evaluation.CocoEvaluator(coco_types=["BLEU", "ROUGE_L", "CIDEr"])
         self.chatgpt_eval = ChatGPT()
+        self.GTs = []
+        self.answers = []
 
     def eval_acc(self, answer, GT):
         if answer == GT:
@@ -26,11 +28,11 @@ class evaluation_suit():
         scores = float(scores)
         return scores
 
-    def eval_language(self, answer, GT):
+    def eval_language(self):
         """
         return the dict evaluation results
         """
-        results_gen = self.language_eval.run_evaluation(answer, GT)
+        results_gen = self.language_eval.run_evaluation(self.answers, self.GTs)
         results_gen_dict = {
             f"val/{k}": v for k, v in results_gen.items()
         }
@@ -86,7 +88,8 @@ class evaluation_suit():
         if 1 in tag:
             scores["chatgpt"] = self.eval_chatGPT(answer, GT)
         if 2 in tag:
-            scores["language"] = self.eval_language(answer, GT)
+            self.GTs.append(GT)
+            self.answers.append(answer)
         if 3 in tag:
             outs1 = self.eval_match(answer, GT)
             outs2 = self.eval_chatGPT(answer, GT)
@@ -138,6 +141,7 @@ if __name__ == '__main__':
                             if key in res:
                                 output[key].append(res[key])
     
+    output["language"] = evaluation.eval_language()
     if len(output["accuracy"]) != 0:
         output["accuracy"] = sum(output["accuracy"]) / len(output["accuracy"])
         print("accuracy: ", output["accuracy"])
@@ -148,11 +152,7 @@ if __name__ == '__main__':
         output["match"] = sum(output["match"]) / len(output["match"])
         print("match: ", output["match"])
 
-    language_score = {}
-    if len(output["language"]) != 0:
-        for key in output["language"][0].keys():
-            language_score[key] = sum([x[key] for x in output["language"]]) / len(output["language"])
-    print("language score: ", language_score)
+    print("language score: ", output["language"])
     
     # Normalize to 0-1 and combine the scores: chatgpt, language, match, accuracy
     scores = []
@@ -164,13 +164,13 @@ if __name__ == '__main__':
 
     # language
     score = 0
-    for idx, key in enumerate(language_score.keys()):
+    for idx, key in enumerate(output["language"].keys()):
         if idx < 4:
-            score += language_score[key] / 4. / 3.
+            score += output["language"][key] / 4. / 3.
         elif idx == 4:
-            score += language_score[key] / 3. 
+            score += output["language"][key] / 3. 
         else:
-            score += language_score[key] / 10. / 3.
+            score += output["language"][key] / 10. / 3.
 
     scores.append(score)
     
