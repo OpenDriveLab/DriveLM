@@ -110,7 +110,7 @@ pip install -r requirements.txt
 ```
 
 ### Train baseline
-You should modify the [finetune_data_config.yaml](llama_adapter_v2_multimodal7b/finetune_data_config.yaml#L2) to specify the datasets for fine-tuning. 
+Here, we offer examples for fine-tuning the model. If you are interested in pretraining the model, you can find detailed information in the [llama-adapter](https://github.com/OpenGVLab/LLaMA-Adapter) repository. You should modify the [finetune_data_config.yaml](llama_adapter_v2_multimodal7b/finetune_data_config.yaml#L2) to specify the datasets for fine-tuning. 
 The format of datasets refers to [test_llama.json](test_llama.json). 
 
 The pre-trained checkpoint can be downloaded in [ckpts](https://github.com/OpenGVLab/LLaMA-Adapter/releases/tag/v.2.0.0). You can choose any one of them.
