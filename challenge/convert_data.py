@@ -4,7 +4,7 @@ import random
 
 
 def rule_based1(question, answer):
-    rule = ["Going ahead.", "Turn right.", "Turn left.", "Stopped.", "Back up.", "Reverse parking."]
+    rule = ["Going ahead.", "Turn right.", "Turn left.", "Stopped.", "Back up.", "Reverse parking.", "Drive backward."]
     rule.remove(answer)
     choices = random.sample(rule, 3)
     choices.append(answer)
