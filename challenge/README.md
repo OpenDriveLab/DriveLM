@@ -128,8 +128,9 @@ finetune_data_config.yaml /output/path
 
 ```bash
 # /path/to/llama_model_weights and /path/to/pre-trained/checkpoint.pth need to be modified by your path
+# num_processes is the number of the gpu you will use to infer the data.
 # make sure you are under ./challenge/llama_adapter_v2_multimodal7b
-python demo.py --llama_dir /path/to/llama_model_weights --checkpoint /path/to/pre-trained/checkpoint.pth --data ../test_llama.json  --output ../output.json
+python demo.py --llama_dir /path/to/llama_model_weights --checkpoint /path/to/pre-trained/checkpoint.pth --data ../test_llama.json  --output ../output.json --batch_size 4 --num_processes 8
 ```
 Then we will get the [output.json](output.json), which are the predicted answers used for evaluation purposes.
 
