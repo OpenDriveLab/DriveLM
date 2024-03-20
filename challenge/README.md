@@ -24,10 +24,10 @@ ln -s /path/to/your/nuscenes llama_adapter_v2_multimodal7b/data/
 
 3. If you do not have the nuscenes dataset, but you want to run through the whole DriveLM dataset. Then you need to Download the following dataset.
 
-| nuScenes subset images | DriveLM-nuScenes version-1.0|
+| nuScenes subset images | DriveLM-nuScenes version-1.1|
 |:-------:|:-------:|
-| [Google Drive](https://drive.google.com/file/d/1DeosPGYeM2gXSChjMODGsQChZyYDmaUz/view?usp=sharing) | [Google Drive](https://drive.google.com/file/d/1LK7pYHytv64neN1626u6eTQBy1Uf4IQH/view?usp=sharing) |
-|[Baidu Netdisk](https://pan.baidu.com/s/11xvxPzUY5xTIsJQrYFogqg?pwd=mk95)|[Baidu Netdisk](https://pan.baidu.com/s/1PAdotDY0MN3nkz8w_XhDsw?pwd=l4wf) |
+| [Google Drive](https://drive.google.com/file/d/1DeosPGYeM2gXSChjMODGsQChZyYDmaUz/view?usp=sharing) | [Google Drive](https://drive.google.com/file/d/1CvTPwChKvfnvrZ1Wr0ZNVqtibkkNeGgt/view?usp=sharing) |
+|[Baidu Netdisk](https://pan.baidu.com/s/11xvxPzUY5xTIsJQrYFogqg?pwd=mk95)|[Baidu Netdisk](链接: https://pan.baidu.com/s/1Vojg73jviguki0yvAB6nUg?pwd=73s8) |
 |[HuggingFace](https://huggingface.co/datasets/OpenDriveLab/DriveLM/blob/main/drivelm_nus_imgs_train.zip)|[HuggingFace](https://huggingface.co/datasets/OpenDriveLab/DriveLM/blob/main/v1_0_train_nus.json)
 
 Please follow the instructions below.
