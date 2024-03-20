@@ -28,7 +28,7 @@ ln -s /path/to/your/nuscenes llama_adapter_v2_multimodal7b/data/
 |:-------:|:-------:|
 | [Google Drive](https://drive.google.com/file/d/1DeosPGYeM2gXSChjMODGsQChZyYDmaUz/view?usp=sharing) | [Google Drive](https://drive.google.com/file/d/1CvTPwChKvfnvrZ1Wr0ZNVqtibkkNeGgt/view?usp=sharing) |
 |[Baidu Netdisk](https://pan.baidu.com/s/11xvxPzUY5xTIsJQrYFogqg?pwd=mk95)|[Baidu Netdisk](https://pan.baidu.com/s/1Vojg73jviguki0yvAB6nUg?pwd=73s8) |
-|[HuggingFace](https://huggingface.co/datasets/OpenDriveLab/DriveLM/blob/main/drivelm_nus_imgs_train.zip)|[HuggingFace](https://huggingface.co/datasets/OpenDriveLab/DriveLM/blob/main/v1_0_train_nus.json)
+|[HuggingFace](https://huggingface.co/datasets/OpenDriveLab/DriveLM/blob/main/drivelm_nus_imgs_train.zip)|[HuggingFace](https://huggingface.co/datasets/OpenDriveLab/DriveLM/blob/main/v1_1_train_nus.json)
 
 Please follow the instructions below.
 ```bash
