@@ -12,7 +12,7 @@ import json
 import argparse
 
 
-class ChatGPT:
+class GPTEvaluation:
     def __init__(self):
         openai.api_key = "you need to use your own openai key for evaluation on your local machine"
 
@@ -51,6 +51,6 @@ if __name__ == "__main__":
     prediction = "Keep going at the same speed."
     GT = "Keep going at the same speed, decelerate gradually without braking."
 
-    eval = ChatGPT()
+    eval = GPTEvaluation()
     scores = eval.forward(prediction, GT)
     print(scores)

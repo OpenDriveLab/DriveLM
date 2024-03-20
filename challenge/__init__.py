@@ -1,1 +1,1 @@
-from .chatgpt import ChatGPT
+from .gpt_eval import GPTEvaluation
