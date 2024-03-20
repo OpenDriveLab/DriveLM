@@ -7,13 +7,13 @@ import language_evaluation
 
 import sys
 sys.path.append(".")
-from chatgpt import ChatGPT
+from challenge.gpt_eval import GPTEvaluation
 
 
 class evaluation_suit():
     def __init__(self):
         self.language_eval = language_evaluation.CocoEvaluator(coco_types=["BLEU", "ROUGE_L", "CIDEr"])
-        self.chatgpt_eval = ChatGPT()
+        self.chatgpt_eval = GPTEvaluation()
         self.GTs = []
         self.answers = []
 
