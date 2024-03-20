@@ -14,7 +14,7 @@ import argparse
 
 class ChatGPT:
     def __init__(self):
-        openai.api_key = ""
+        openai.api_key = "you need to use your own openai key for evaluation on your local machine"
 
     def call_chatgpt(self, chatgpt_messages, max_tokens=40, model="gpt-3.5-turbo"):
         response = openai.chat.completions.create(
