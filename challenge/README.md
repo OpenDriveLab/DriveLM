@@ -170,7 +170,7 @@ The inputs required for evaluation are [output.json](output.json) and [test_eval
 
 1. Replace [root_path1](evaluation.py#L97) with the path of your models' output. The example of models' output can be found in [output](output.json).
 2. Replace [root_path2](evaluation.py#L101) with the path of test_eval.json. The example of test_eval.json can be found in [test_eval.json](test_eval.json)
-3. Replace [API-KEY](chatgpt.py#L17) with your own chatGPT api key.
+3. Replace [API-KEY](gpt_eval.py#L17) with your own chatGPT api key.
 
 ```bash
 # The following script assumes that you prepare the output.json and test_eval.json under ./challenge
