@@ -188,4 +188,39 @@ language score:  {'val/Bleu_1': 0.0495223110147729, 'val/Bleu_2': 0.000219774656
 final score:  0.3240234750718823
 ```
 
+## Submit to Test Server
 
+### Submission Instruction
+
+The competition server is held on [Hugging Face space](https://huggingface.co/spaces/AGC2024/driving-with-language-2024).
+
+1. Prepare your result
+
+    The `output.json` file you get above is for submission, rename the file to `submission.json`.
+
+    Please evaluate your result locally first before submitting to test server!
+
+2. Upload your result as **a Hugging Face model**
+
+    Click your profile picture on the top right of the Hugging Face website, and select `+ New Model`. Create a new model repository, and upload the `submission.json` file.
+    
+    Note that private models are also acceptable by the competition space.
+
+3. Submit your result and evaluate on test server
+
+    Go to [competition space](https://huggingface.co/spaces/AGC2024/driving-with-language-2024), click `New Submission` on the left panel. Paste the link of the Hugging Face model you created under `Hub model`. Then click `Submit`. 
+
+    <font color=red> Note: you can make up to 3 submissions per day. </font>
+
+
+### How to View My Submissions?
+
+You can check the evaluation status of your submissions in the `My submissions` tab on the left panel of the competition space. Wait for the `Status` column to become `SUCCESS`, and your public score will be shown.
+
+You can select a submission and click `Update Selected Submissions` on the bottom to update its evaluation status to the private leaderboard.
+
+### Will My Evaluation Results Be Visible to Others?
+
+The public leaderboard will be open with the best results of all teams about a week before the competition ends.
+
+**Note:** you can change your team name even after the competition ends. Thus, if you want to stay anonymous on the public leaderboard, you can first use a temporary team name and change it to your real team name after the competition ends.
