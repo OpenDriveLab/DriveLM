@@ -21,7 +21,7 @@ class GPTEvaluation:
             model=model, messages=chatgpt_messages, temperature=0.6, max_tokens=max_tokens
         )
         reply = response.choices[0].message.content
-        total_tokens = response["usage"]["total_tokens"]
+        total_tokens = response.usage.total_tokens
         return reply, total_tokens
     
     def prepare_chatgpt_message(self, prompt):
