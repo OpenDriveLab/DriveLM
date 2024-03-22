@@ -203,11 +203,26 @@ final score:  0.3240234750718823
 
 The competition server is held on [Hugging Face space](https://huggingface.co/spaces/AGC2024/driving-with-language-2024).
 
+Please evaluate `output.json` locally first before submitting to test server!
+
 1. Prepare your result
 
-    The `output.json` file you get above is for submission, rename the file to `submission.json`.
-
-    Please evaluate your result locally first before submitting to test server!
+    Open [prepare_submission.py](prepare_submission.py) and fill in the following information starting line 4:
+    ```
+    method = ""  # <str> -- name of the method
+    team = ""  # <str> -- name of the team, !!!identical to the Google Form!!!
+    authors = [""]  # <list> -- list of str, authors
+    email = ""  # <str> -- e-mail address
+    institution = ""  # <str> -- institution or company
+    country = ""  # <str> -- country or region
+    ```
+    While other fields can change between different submissions, make sure you <font color=red> always use your team name submitted on Google registration form for the `team` field, NOT the anonymous team name to be shown on the leaderboard</font>.
+    Then run this file:
+    ```bash
+    # make sure you are under ./challenge
+    python prepare_submission.py
+    ```
+    This will generate `submission.json` with your information and result. An [example](submission.json) is given in this folder. 
 
 2. Upload your result as **a Hugging Face model**
 
@@ -224,7 +239,7 @@ The competition server is held on [Hugging Face space](https://huggingface.co/sp
 
 ### How to View My Submissions?
 
-You can check the evaluation status of your submissions in the `My submissions` tab on the left panel of the competition space. Wait for the `Status` column to become `SUCCESS`, and your public score will be shown.
+You can check the evaluation status of your submissions in the `My submissions` tab on the left panel of the competition space. the `Status` column should show `PROCESSING`. Wait for it to become `SUCCESS`, and your public score will be shown.
 
 You can select a submission and click `Update Selected Submissions` on the bottom to update its evaluation status to the private leaderboard.
 
