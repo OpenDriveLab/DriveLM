@@ -17,11 +17,11 @@ class GPTEvaluation:
         openai.api_key = "you need to use your own openai key for evaluation on your local machine"
 
     def call_chatgpt(self, chatgpt_messages, max_tokens=40, model="gpt-3.5-turbo"):
-        response = openai.chat.completions.create(
+        response = openai.ChatCompletion.create(
             model=model, messages=chatgpt_messages, temperature=0.6, max_tokens=max_tokens
         )
-        reply = response.choices[0].message.content
-        total_tokens = response.usage.total_tokens
+        reply = response["choices"][0]["message"]["content"]
+        total_tokens = response["usage"]["total_tokens"]
         return reply, total_tokens
     
     def prepare_chatgpt_message(self, prompt):
