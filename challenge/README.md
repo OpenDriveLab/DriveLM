@@ -109,6 +109,15 @@ pip install -r requirements.txt
 └── tokenizer.model
 ```
 
+The cost related to finetuning and inference can be found below.
+
+| Process   | Data         | Data Quantity   | Frame | Setting        | VRAM Requirement | Training Time per Epoch | Inference Time for Data |
+| --------- | ------------ | --------------- | ----- | -------------- | ---------------- | ----------------------- | ----------------------- |
+| Finetune  | Training Set | 29,448 QA pairs | 4072  | Batch size = 4 | 34G              | 10 minutes              | -                       |
+| Inference | Training Set | 29,448 QA pairs | 4072  | Batch size = 8 | 35G              | -                       | Approximately 2 hours   |
+
+
+
 ### Train baseline
 Here, we offer examples for fine-tuning the model. If you are interested in pretraining the model, you can find detailed information in the [llama-adapter](https://github.com/OpenGVLab/LLaMA-Adapter) repository. You should modify the [finetune_data_config.yaml](llama_adapter_v2_multimodal7b/finetune_data_config.yaml#L2) to specify the datasets for fine-tuning. 
 The format of datasets refers to [test_llama.json](test_llama.json). 
