@@ -15,7 +15,7 @@ from .utils import sample_top_p, _download
 class LLaMA_adapter(nn.Module):
 
     def __init__(self, llama_ckpt_dir, llama_tokenizer,
-                 max_seq_len=512, max_batch_size=1,
+                 max_seq_len=512, max_batch_size=32,
                  clip_model='ViT-L/14',
                  v_embed_dim=768, v_depth=8,
                  v_num_heads=16, v_mlp_ratio=4.0,
@@ -313,7 +313,7 @@ def load(name, llama_dir, llama_type="7B", device="cuda" if torch.cuda.is_availa
 
     model = LLaMA_adapter(
         llama_ckpt_dir, llama_tokenzier_path,
-        max_seq_len=512, max_batch_size=1,
+        max_seq_len=512, max_batch_size=32,
         clip_model='ViT-L/14',
         v_embed_dim=768, v_depth=8,
         v_num_heads=16, v_mlp_ratio=4.0,
