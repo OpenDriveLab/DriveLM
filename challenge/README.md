@@ -58,8 +58,6 @@ Extract fundamental question-and-answer (QA) pairs from the training dataset.
 ```bash
 # The following script assumes that you download the train data json under ./challenge/data
 # make sure you are under ./challenge
-mkdir data
-mv train_sample.json data/train_sample.json
 python extract_data.py
 ```
 Then we will get the test.json in the challenge folder. The example of test.json can be found in [test.json](test.json)
@@ -237,14 +235,52 @@ Please evaluate `output.json` locally first before submitting to test server!
     <font color=red> Note: you can make up to 3 submissions per day. </font>
 
 
+## FAQ
+
 ### How to View My Submissions?
 
-You can check the evaluation status of your submissions in the `My submissions` tab on the left panel of the competition space. the `Status` column should show `PROCESSING`. Wait for it to become `SUCCESS`, and your public score will be shown.
+You can check the status of your submissions in the `My submissions` tab of the competition space.
 
-You can select a submission and click `Update Selected Submissions` on the bottom to update its evaluation status to the private leaderboard.
+Please refer to [these slides](https://docs.google.com/presentation/d/1bicxoR_L3t05p5xw-qZM0Dj5KdJhjynqLM0Rck0qdcI/edit?usp=sharing) for explaination of each score.
 
-### Will My Evaluation Results Be Visible to Others?
+You can select a submission and click `Update Selected Submissions` on the bottom to update its evaluation status to the private leaderboard. Please note that <font color=red>public score and private score are exactly the same</font> in our case. So please ignore the descriptions in `My Submissions` tab. 
+
+### Can I Submit Without Making My Submission Public?
+
+Of course. The competition space accepts Hugging Face private models. in fact, we recommend participants to submit as private models to keep their submissions private.
+
+### Will My Evaluation Status Be Visible to Others?
 
 The public leaderboard will be open with the best results of all teams about a week before the competition ends.
 
-**Note:** you can change your team name even after the competition ends. Thus, if you want to stay anonymous on the public leaderboard, you can first use a temporary team name and change it to your real team name after the competition ends.
+**Note that** you can change your team name even after the competition ends. Thus, if you want to stay anonymous on the public leaderboard, you can first use a temporary team name and change it to your real team name after the competition ends.
+
+### My evaluation status shows `Failed`, how can I get the error message?
+
+First, make sure your submission is in the correct format as in [submission preparation](#submission-preparation) and you upload the correct Hugging Face **model** link (in the format of `Username/model`) in `New Submission`.
+
+If you confirm that the submission format is correct, please contact the challenge host [Chonghao Sima](mailto:simachonghao@pjlab.org.cn) via email. Please include the **Submission ID** of the corresponding submission in the email. The Submission ID can be found in the `My Submissions` tab.
+
+```
+Email Subject:
+[CVPR DRIVELM] Failed submission - {Submission ID}
+Body:
+  Your Name: {}
+  Team Name: {}
+  Institution / Company: {}
+  Email: {}
+```
+
+
+### The submission page shows `Invalid Token`, what should I do?
+
+This means you are no longer logged in to the current competition space, or the space has automatically logged you out due to inactivity (more than a day). 
+
+Please refresh the page, click `Login with Hugging Face` at the bottom of the left panel, and resubmit.
+
+
+### I could not visit `My Submissions` page, what should I do?
+
+Chances are that you are not logged in to the current competition space. 
+
+Please refresh the page, click `Login with Hugging Face` at the bottom of the left panel.
