@@ -147,10 +147,10 @@ DriveLM attempts to address some of the challenges faced by the community.
 - [ ] DriveLM-Data
   - [x] DriveLM-nuScenes
   - [ ] DriveLM-CARLA
-- [ ] DriveLM-Metrics
-  - [ ] GPT-score
+- [x] DriveLM-Metrics
+  - [x] GPT-score
 - [ ] DriveLM-Agent
-  - [ ] Inference code on DriveLM-nuScenes
+  - [x] Inference code on DriveLM-nuScenes
   - [ ] Inference code on DriveLM-CARLA
 
 <p align="right">(<a href="#top">back to top</a>)</p>
