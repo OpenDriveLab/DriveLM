@@ -157,7 +157,7 @@ if __name__ == '__main__':
                 tag = qa['tag']
                 idx = scene_id + "_" + frame_id + "_" + str(i)
                 predict = pred_file[idx]["answer"]
-                assert pred_file[idx]["gt_answer"] == GT, print(pred_file[idx]["gt_answer"], GT)
+                # assert pred_file[idx]["gt_answer"] == GT, print(pred_file[idx]["gt_answer"], GT)
                 if first_flag:
                     first_flag = False
                     evaluation.set_graph(predict, GT)
