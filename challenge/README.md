@@ -24,11 +24,11 @@ ln -s /path/to/your/nuscenes llama_adapter_v2_multimodal7b/data/
 
 3. If you do not have the nuscenes dataset, but you want to run through the whole DriveLM dataset. Then you need to Download the following dataset.
 
-| nuScenes subset images | DriveLM-nuScenes version-1.1|
-|:-------:|:-------:|
-| [Google Drive](https://drive.google.com/file/d/1DeosPGYeM2gXSChjMODGsQChZyYDmaUz/view?usp=sharing) | [Google Drive](https://drive.google.com/file/d/1CvTPwChKvfnvrZ1Wr0ZNVqtibkkNeGgt/view?usp=sharing) |
-|[Baidu Netdisk](https://pan.baidu.com/s/11xvxPzUY5xTIsJQrYFogqg?pwd=mk95)|[Baidu Netdisk](https://pan.baidu.com/s/1Vojg73jviguki0yvAB6nUg?pwd=73s8) |
-|[HuggingFace](https://huggingface.co/datasets/OpenDriveLab/DriveLM/blob/main/drivelm_nus_imgs_train.zip)|[HuggingFace](https://huggingface.co/datasets/OpenDriveLab/DriveLM/blob/main/v1_1_train_nus.json)
+| nuScenes subset images | DriveLM-nuScenes version-1.1| DriveLM-nuScenes version-1.1 val |
+|:-------:|:-------:|:------:|
+| [Google Drive](https://drive.google.com/file/d/1DeosPGYeM2gXSChjMODGsQChZyYDmaUz/view?usp=sharing) | [Google Drive](https://drive.google.com/file/d/1CvTPwChKvfnvrZ1Wr0ZNVqtibkkNeGgt/view?usp=sharing) | [Google Drive](https://drive.google.com/file/d/1fsVP7jOpvChcpoXVdypaZ4HREX1gA7As/view?usp=sharing) |
+|[Baidu Netdisk](https://pan.baidu.com/s/11xvxPzUY5xTIsJQrYFogqg?pwd=mk95)|[Baidu Netdisk](https://pan.baidu.com/s/1Vojg73jviguki0yvAB6nUg?pwd=73s8) | [Baidu Netdisk](https://pan.baidu.com/s/1p01Szh5QTtSAzSXdhLCTwQ?pwd=h9hi) |
+|[HuggingFace](https://huggingface.co/datasets/OpenDriveLab/DriveLM/blob/main/drivelm_nus_imgs_train.zip)|[HuggingFace](https://huggingface.co/datasets/OpenDriveLab/DriveLM/blob/main/v1_1_train_nus.json) |[HuggingFace](https://huggingface.co/datasets/OpenDriveLab/DriveLM/blob/main/v1_1_val_nus_q_only.json) |
 
 Please follow the instructions below.
 ```bash
