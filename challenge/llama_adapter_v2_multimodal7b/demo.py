@@ -82,7 +82,7 @@ def worker(rank, gpu_id, args, data_dict):
         
         for i, result in enumerate(results):
             print(f"Thread {rank}: Result - {result}")
-            data_dict.append({'id': ids[i], 'question': questions[i], 'gt_answer': gt_answers[i], 'answer': result})
+            data_dict.append({'id': ids[i], 'question': questions[i], 'answer': result})
     
     print(f"Thread {rank} finished")
 
