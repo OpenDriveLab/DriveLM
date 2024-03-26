@@ -1,5 +1,7 @@
 ### TL;DR
 * The purpose of this folder is to facilitate our CVPR 2024 challenge. Initially, we will use a small subset of training data (**demo train** in the following text) as an illustrative example, demonstrating how to obtain the **test data format** and the submission format, how to train the baseline and infer the baseline, and go through the evaluation pipeline. 
+  
+* Thrilled to announce that the test server is online and the test questions are release! Check `DriveLM-nuScenes version-1.1 val` and [How-to-submit](#submit-to-test-server).
 
 * For the purpose of the new **test data format**, it is essential that our primary intention is to create a specific test data format preventing possible cheating. 
 
@@ -201,7 +203,7 @@ final score:  0.3240234750718823
 
 The competition server is held on [Hugging Face space](https://huggingface.co/spaces/AGC2024/driving-with-language-2024).
 
-Please evaluate `output.json` locally first before submitting to test server!
+Please infer your model on the `DriveLM-nuScenes version-1.1 val`(this is our test question and we will **NOT** release their GT answer) and get your output as `output.json`. You need to evaluate `output.json` locally first before submitting to test server!
 
 1. Prepare your result
 
