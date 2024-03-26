@@ -1,5 +1,5 @@
 ## Download data
-We kindly hope you to fill out the [form](https://docs.google.com/forms/d/e/1FAIpQLSeX6CR3u-15IV-TKx2uPv1wiKjydjZ__NNW98H4nR5JZtQa2Q/viewform) before downloading. To get started, download nuScenes subset image data and DriveLM-nuScenes QA json files below.
+We kindly hope you to fill out the [form](https://docs.google.com/forms/d/e/1FAIpQLSeX6CR3u-15IV-TKx2uPv1wiKjydjZ__NNW98H4nR5JZtQa2Q/viewform) before downloading. To get started, download nuScenes subset image data and DriveLM-nuScenes QA json files below. For v1.1 data, please visit the [DriveLM/challenge](https://github.com/OpenDriveLab/DriveLM/tree/main/challenge) folder.
 
 <!-- <a href="https://docs.google.com/forms/d/e/1FAIpQLSfm8k7LjITLRdXgbURxk46dq5Q2n8qGoRX0nWqQNE1U_322wQ/viewform?usp=sf_link" target="_blank">
   <img src="https://img.shields.io/badge/Any%20comments%20welcome!-white?logo=google%20forms&label=Google%20Forms&labelColor=blue">
