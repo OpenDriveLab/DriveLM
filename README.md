@@ -136,6 +136,7 @@ DriveLM attempts to address some of the challenges faced by the community.
 
 ### News <a name="news"></a>
 
+- **`[2024/03/25]`** Challenge test server is online and the test questions are released. [Chekc it out!](https://github.com/OpenDriveLab/DriveLM/tree/main/challenge)
 - **`[2024/02/29]`** Challenge repo release. Baseline, data and submission format, evaluation pipeline. [Have a look!](https://github.com/OpenDriveLab/DriveLM/tree/main/challenge)
 - **`[2023/08/25]`** DriveLM-nuScenes demo released.
 - **`[2023/12/22]`** DriveLM-nuScenes full `v1.0` and [paper](https://arxiv.org/abs/2312.14150) released.
