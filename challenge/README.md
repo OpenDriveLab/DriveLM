@@ -199,6 +199,8 @@ final score:  0.3240234750718823
 
 ## Submit to Test Server
 
+**Update Mar 26, 2024**: our test server is now open for submission!
+
 ### Submission Instruction
 
 The competition server is held on [Hugging Face space](https://huggingface.co/spaces/AGC2024/driving-with-language-2024).
@@ -236,9 +238,6 @@ Please infer your model on the `DriveLM-nuScenes version-1.1 val`(this is our te
 
     <font color=red> Note: you can make up to 3 submissions per day. </font>
 
-
-## FAQ
-
 ### How to View My Submissions?
 
 You can check the status of your submissions in the `My submissions` tab of the competition space.
@@ -246,6 +245,14 @@ You can check the status of your submissions in the `My submissions` tab of the 
 Please refer to [these slides](https://docs.google.com/presentation/d/1bicxoR_L3t05p5xw-qZM0Dj5KdJhjynqLM0Rck0qdcI/edit?usp=sharing) for explaination of each score.
 
 You can select a submission and click `Update Selected Submissions` on the bottom to update its evaluation status to the private leaderboard. Please note that <font color=red>public score and private score are exactly the same</font> in our case. So please ignore the descriptions in `My Submissions` tab. 
+
+## FAQ
+
+### The `New Submission` page shows `Invalid Token` when I click `Submit`, what should I do?
+
+This means you are no longer logged in to the current competition space, or the space has automatically logged you out due to inactivity (more than a day). 
+
+Please refresh the page, click `Login with Hugging Face` at the bottom of the left panel, and resubmit.
 
 ### Can I Submit Without Making My Submission Public?
 
@@ -272,14 +279,6 @@ Body:
   Institution / Company: {}
   Email: {}
 ```
-
-
-### The submission page shows `Invalid Token`, what should I do?
-
-This means you are no longer logged in to the current competition space, or the space has automatically logged you out due to inactivity (more than a day). 
-
-Please refresh the page, click `Login with Hugging Face` at the bottom of the left panel, and resubmit.
-
 
 ### I could not visit `My Submissions` page, what should I do?
 
