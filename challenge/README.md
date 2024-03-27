@@ -149,7 +149,7 @@ Then we will get the [output.json](output.json), which are the predicted answers
 We implement diverse evaluation metrics tailored to different question types as mentioned [above](https://github.com/OpenDriveLab/DriveLM-private/blob/test/challenge/README.md?plain=1#L19).
 
 ### Setup
-Install the language-evaluation package
+Install the language-evaluation package.
 
 Following [https://github.com/bckim92/language-evaluation](https://github.com/bckim92/language-evaluation) (skip the FIRST STEP if related libraries are already installed)
 
