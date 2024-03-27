@@ -199,11 +199,10 @@ final score:  0.3240234750718823
 
 ## Submit to Test Server
 
-**Update Mar 26, 2024**: our test server is now open for submission!
-
 ### Submission Instruction
 
-The competition server is held on [Hugging Face space](https://huggingface.co/spaces/AGC2024/driving-with-language-2024).
+The competition server is held on [Hugging Face space](https://huggingface.co/spaces/AGC2024/driving-with-language-2024). Our test server is now open for submission!
+
 
 Please infer your model on the `DriveLM-nuScenes version-1.1 val`(this is our test question and we will **NOT** release their GT answer) and get your output as `output.json`. You need to evaluate `output.json` locally first before submitting to test server!
 
