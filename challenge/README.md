@@ -284,3 +284,16 @@ Body:
 Chances are that you are not logged in to the current competition space. 
 
 Please refresh the page, click `Login with Hugging Face` at the bottom of the left panel.
+
+
+
+## Citation
+Please consider citing our project if they help your competition and research.
+```
+@misc{contributors2023drivelmrepo,
+  title={DriveLM: Driving with Graph Visual Question Answering},
+  author={DriveLM contributors},
+  howpublished={\url{https://github.com/OpenDriveLab/DriveLM}},
+  year={2023}
+}
+```
