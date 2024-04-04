@@ -28,9 +28,9 @@ ln -s /path/to/your/nuscenes llama_adapter_v2_multimodal7b/data/
 
 | nuScenes subset images | DriveLM-nuScenes version-1.1| DriveLM-nuScenes version-1.1 val |
 |:-------:|:-------:|:------:|
-| [Google Drive](https://drive.google.com/file/d/1DeosPGYeM2gXSChjMODGsQChZyYDmaUz/view?usp=sharing) | [Google Drive](https://drive.google.com/file/d/1CvTPwChKvfnvrZ1Wr0ZNVqtibkkNeGgt/view?usp=sharing) | [Google Drive](https://drive.google.com/file/d/1fsVP7jOpvChcpoXVdypaZ4HREX1gA7As/view?usp=sharing) |
-|[Baidu Netdisk](https://pan.baidu.com/s/11xvxPzUY5xTIsJQrYFogqg?pwd=mk95)|[Baidu Netdisk](https://pan.baidu.com/s/1Vojg73jviguki0yvAB6nUg?pwd=73s8) | [Baidu Netdisk](https://pan.baidu.com/s/1p01Szh5QTtSAzSXdhLCTwQ?pwd=h9hi) |
-|[HuggingFace](https://huggingface.co/datasets/OpenDriveLab/DriveLM/blob/main/drivelm_nus_imgs_train.zip)|[HuggingFace](https://huggingface.co/datasets/OpenDriveLab/DriveLM/blob/main/v1_1_train_nus.json) |[HuggingFace](https://huggingface.co/datasets/OpenDriveLab/DriveLM/blob/main/v1_1_val_nus_q_only.json) |
+| [Google Drive Train](https://drive.google.com/file/d/1DeosPGYeM2gXSChjMODGsQChZyYDmaUz/view?usp=sharing)  & [Google Drive Val](https://drive.google.com/file/d/18f8ygNxGZWat-crUjroYuQbd39Sk9xCo/view?usp=sharing) | [Google Drive](https://drive.google.com/file/d/1CvTPwChKvfnvrZ1Wr0ZNVqtibkkNeGgt/view?usp=sharing) | [Google Drive](https://drive.google.com/file/d/1fsVP7jOpvChcpoXVdypaZ4HREX1gA7As/view?usp=sharing) |
+|[Baidu Netdisk Train](https://pan.baidu.com/s/11xvxPzUY5xTIsJQrYFogqg?pwd=mk95) & [Baidu Netdisk Val](https://pan.baidu.com/s/1mUbHmtc4c5WhUQACW8_Blw?pwd=54vz) |[Baidu Netdisk](https://pan.baidu.com/s/1Vojg73jviguki0yvAB6nUg?pwd=73s8) | [Baidu Netdisk](https://pan.baidu.com/s/1p01Szh5QTtSAzSXdhLCTwQ?pwd=h9hi) |
+|[HuggingFace Train](https://huggingface.co/datasets/OpenDriveLab/DriveLM/blob/main/drivelm_nus_imgs_train.zip) & [HuggingFace Val](https://huggingface.co/datasets/OpenDriveLab/DriveLM/blob/main/drivelm_nus_imgs_val.zip) |[HuggingFace](https://huggingface.co/datasets/OpenDriveLab/DriveLM/blob/main/v1_1_train_nus.json) |[HuggingFace](https://huggingface.co/datasets/OpenDriveLab/DriveLM/blob/main/v1_1_val_nus_q_only.json) |
 
 Please follow the instructions below.
 ```bash
