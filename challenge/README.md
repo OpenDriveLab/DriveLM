@@ -286,6 +286,10 @@ Chances are that you are not logged in to the current competition space.
 Please refresh the page, click `Login with Hugging Face` at the bottom of the left panel.
 
 
+### Finally, which dataset do we submit to the competition?
+
+Please refrain from using demo data. Instead, utilize the [validation data](https://drive.google.com/file/d/1fsVP7jOpvChcpoXVdypaZ4HREX1gA7As/view?usp=sharing)  for inference and submission to the evaluation server.
+
 
 ## Citation
 Please consider citing our project if they help your competition and research.
