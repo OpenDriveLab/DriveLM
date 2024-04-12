@@ -302,7 +302,7 @@ Please consider citing our project and staring our [huggingface repo](https://hu
 }
 ```
 
-```
+```BibTeX
 @misc{contributors2023drivelmrepo,
   title={DriveLM: Driving with Graph Visual Question Answering},
   author={DriveLM contributors},
