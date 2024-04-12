@@ -292,7 +292,16 @@ Please refrain from using demo data. Instead, utilize the [validation data](http
 
 
 ## Citation
-Please consider citing our project if they help your competition and research.
+Please consider citing our project and staring our [huggingface repo](https://huggingface.co/spaces/AGC2024/driving-with-language-2024) if they help your competition and research.
+```BibTeX
+@article{sima2023drivelm,
+  title={DriveLM: Driving with Graph Visual Question Answering},
+  author={Sima, Chonghao and Renz, Katrin and Chitta, Kashyap and Chen, Li and Zhang, Hanxue and Xie, Chengen and Luo, Ping and Geiger, Andreas and Li, Hongyang},
+  journal={arXiv preprint arXiv:2312.14150},
+  year={2023}
+}
+```
+
 ```
 @misc{contributors2023drivelmrepo,
   title={DriveLM: Driving with Graph Visual Question Answering},
