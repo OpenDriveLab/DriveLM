@@ -190,11 +190,34 @@ python evaluation.py --root_path1 ./output.json --root_path2 ./test_eval.json
 ### Results
 The zero-shot results of baseline on the sampled data are as follows:
 ```
-accuracy:  0.0
-chatgpt:  65.11111111111111
-match:  28.25
-language score:  {'val/Bleu_1': 0.0495223110147729, 'val/Bleu_2': 0.00021977465683011536, 'val/Bleu_3': 3.6312541763196866e-05, 'val/Bleu_4': 1.4776149283286042e-05, 'val/ROUGE_L': 0.08383567940883102, 'val/CIDEr': 0.09901486412073952}
-final score:  0.3240234750718823
+"accuracy":  0.0
+"chatgpt":  65.11111111111111
+"match":  28.25
+"language score":  {
+  'val/Bleu_1': 0.0495223110147729, 
+  'val/Bleu_2': 0.00021977465683011536, 
+  'val/Bleu_3': 3.6312541763196866e-05, 
+  'val/Bleu_4': 1.4776149283286042e-05, 
+  'val/ROUGE_L': 0.08383567940883102, 
+  'val/CIDEr': 0.09901486412073952
+}
+"final_score":  0.3240234750718823
+```
+
+The zero-shot results of baseline on the test data are as follows:
+```
+"accuracy": 0.0
+"chatgpt": 67.7535896248263, 
+"match": 18.83
+"language score": {
+  "test/Bleu_1": 0.2382764794460423,
+  "test/Bleu_2": 0.09954243471154352,
+  "test/Bleu_3": 0.03670697545241351,
+  "test/Bleu_4": 0.011298629095627342,
+  "test/ROUGE_L": 0.1992858115225957,
+  "test/CIDEr": 0.0074352082312374385
+}
+"final_score": 0.32843094354141145
 ```
 
 ## Submit to Test Server
