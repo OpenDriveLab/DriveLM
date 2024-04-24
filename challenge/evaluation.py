@@ -59,10 +59,10 @@ class evaluation_suit():
             answer = self.match["match"]["answer"][i]
             GT = self.match["match"]["GT"][i]
             matched = self.match_result(answer, GT)
-            GT_nums = re.findall(r'\d+\.\d+', GT)
-            GT_nums = np.array([list(map(float, x.split()))[0] for x in GT_nums]).reshape(-1, 2)
-            GT_nums = [list(i) for i in GT_nums]
-            outs1.append(len(matched) / len(GT_nums) * 100)
+            pred_nums = re.findall(r'\d+\.\d+', answer)
+            pred_nums = np.array([list(map(float, x.split()))[0] for x in pred_nums]).reshape(-1, 2)
+            pred_nums = [list(i) for i in pred_nums]
+            outs1.append(len(matched) / len(pred_nums) * 100)
         
         outs1 = sum(outs1) / len(outs1)
         outs2 = self.eval_chatGPT(self.match["GPT"])
