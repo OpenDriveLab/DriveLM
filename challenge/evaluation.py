@@ -87,9 +87,6 @@ class evaluation_suit():
         answer_nums = np.array([list(map(float, x.split()))[0] for x in answer_nums]).reshape(-1, 2)
         GT_nums = np.array([list(map(float, x.split()))[0] for x in GT_nums]).reshape(-1, 2)
 
-        if len(answer_nums) == 0:
-            return [], 0
-
         matched_out = []
         true_positives = 0
         false_positives = 0
@@ -111,9 +108,9 @@ class evaluation_suit():
                 false_positives += 1
             
         false_negatives = len(GT_nums) - true_positives
-        precision = true_positives / (true_positives + false_positives)
-        recall = true_positives / (true_positives + false_negatives)
-        F1 = 2 * precision * recall / (precision + recall)
+        precision = true_positives / (true_positives + false_positives + 1e-8)
+        recall = true_positives / (true_positives + false_negatives + 1e-8)
+        F1 = 2 * precision * recall / (precision + recall + 1e-8)
 
         return matched_out, F1
 
