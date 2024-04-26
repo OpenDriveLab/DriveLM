@@ -95,6 +95,7 @@ class evaluation_suit():
         for pred in answer_nums:
             closest_distance = float('inf')
             closest_gt = None
+            closest_id = None
             for i, gt in enumerate(GT_nums):
                 distance = np.sum(np.abs(pred - gt))
                 if distance < closest_distance:
