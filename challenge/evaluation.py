@@ -58,11 +58,8 @@ class evaluation_suit():
         for i in range(len(self.match["match"]["answer"])):
             answer = self.match["match"]["answer"][i]
             GT = self.match["match"]["GT"][i]
-            matched = self.match_result(answer, GT)
-            pred_nums = re.findall(r'\d+\.\d+', answer)
-            pred_nums = np.array([list(map(float, x.split()))[0] for x in pred_nums]).reshape(-1, 2)
-            pred_nums = [list(i) for i in pred_nums]
-            outs1.append(len(matched) / len(pred_nums) * 100)
+            _, F1_score = self.match_result(answer, GT)
+            outs1.append(F1_score * 100)
         
         outs1 = sum(outs1) / len(outs1)
         outs2 = self.eval_chatGPT(self.match["GPT"])
@@ -90,18 +87,38 @@ class evaluation_suit():
         answer_nums = np.array([list(map(float, x.split()))[0] for x in answer_nums]).reshape(-1, 2)
         GT_nums = np.array([list(map(float, x.split()))[0] for x in GT_nums]).reshape(-1, 2)
 
-        matched_out = []
-        for ans in answer_nums:
-            for gt in GT_nums:
-                distance = np.sum(np.abs(ans - gt))
-                if distance < 16:
-                    matched_out.append(gt)
-                    break
+        if len(answer_nums) == 0:
+            return [], 0
 
-        return matched_out
+        matched_out = []
+        true_positives = 0
+        false_positives = 0
+        false_negatives = 0
+        for pred in answer_nums:
+            closest_distance = float('inf')
+            closest_gt = None
+            for gt in GT_nums:
+                distance = np.sum(np.abs(pred - gt))
+                if distance < closest_distance:
+                    closest_distance = distance
+                    closest_gt = gt
+
+            if closest_distance < 16:
+                true_positives += 1
+                matched_out.append(closest_gt)   
+                gt.remove(closest_gt)
+            else:
+                false_positives += 1
+            
+        false_negatives = len(GT_nums) - true_positives
+        precision = true_positives / (true_positives + false_positives)
+        recall = true_positives / (true_positives + false_negatives)
+        F1 = 2 * precision * recall / (precision + recall)
+
+        return matched_out, F1
 
     def set_graph(self, answer, GT):
-        self.graph = self.match_result(answer, GT)
+        self.graph, _ = self.match_result(answer, GT)
         self.graph = [list(i) for i in self.graph]
 
     def forward(self, tag, answer, GT):
