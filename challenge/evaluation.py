@@ -86,9 +86,7 @@ class evaluation_suit():
         # transform string into float
         answer_nums = np.array([list(map(float, x.split()))[0] for x in answer_nums]).reshape(-1, 2)
         GT_nums = np.array([list(map(float, x.split()))[0] for x in GT_nums]).reshape(-1, 2)
-
-        if len(answer_nums) == 0:
-            return [], 0
+        length = len(GT_nums)
 
         matched_out = []
         true_positives = 0
@@ -97,23 +95,25 @@ class evaluation_suit():
         for pred in answer_nums:
             closest_distance = float('inf')
             closest_gt = None
-            for gt in GT_nums:
+            closest_id = None
+            for i, gt in enumerate(GT_nums):
                 distance = np.sum(np.abs(pred - gt))
                 if distance < closest_distance:
                     closest_distance = distance
                     closest_gt = gt
+                    closest_id = i
 
             if closest_distance < 16:
                 true_positives += 1
-                matched_out.append(closest_gt)   
-                GT_nums.remove(closest_gt)
+                matched_out.append(closest_gt)  
+                GT_nums = np.delete(GT_nums, closest_id, axis=0) 
             else:
                 false_positives += 1
             
-        false_negatives = len(GT_nums) - true_positives
-        precision = true_positives / (true_positives + false_positives)
-        recall = true_positives / (true_positives + false_negatives)
-        F1 = 2 * precision * recall / (precision + recall)
+        false_negatives = length - true_positives
+        precision = true_positives / (true_positives + false_positives + 1e-8)
+        recall = true_positives / (true_positives + false_negatives + 1e-8)
+        F1 = 2 * precision * recall / (precision + recall + 1e-8)
 
         return matched_out, F1
 
