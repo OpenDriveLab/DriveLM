@@ -106,7 +106,7 @@ class evaluation_suit():
             if closest_distance < 16:
                 true_positives += 1
                 matched_out.append(closest_gt)   
-                gt.remove(closest_gt)
+                GT_nums.remove(closest_gt)
             else:
                 false_positives += 1
             
