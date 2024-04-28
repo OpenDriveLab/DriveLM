@@ -84,6 +84,8 @@ class evaluation_suit():
         answer_nums = re.findall(r'\d+\.\d+', answer)
         GT_nums = re.findall(r'\d+\.\d+', GT)
         # transform string into float
+        if len(answer_nums) % 2 != 0:
+            answer_nums = answer_nums[:-1]
         answer_nums = np.array([list(map(float, x.split()))[0] for x in answer_nums]).reshape(-1, 2)
         GT_nums = np.array([list(map(float, x.split()))[0] for x in GT_nums]).reshape(-1, 2)
         length = len(GT_nums)
