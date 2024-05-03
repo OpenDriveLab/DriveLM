@@ -58,11 +58,8 @@ class evaluation_suit():
         for i in range(len(self.match["match"]["answer"])):
             answer = self.match["match"]["answer"][i]
             GT = self.match["match"]["GT"][i]
-            matched = self.match_result(answer, GT)
-            GT_nums = re.findall(r'\d+\.\d+', GT)
-            GT_nums = np.array([list(map(float, x.split()))[0] for x in GT_nums]).reshape(-1, 2)
-            GT_nums = [list(i) for i in GT_nums]
-            outs1.append(len(matched) / len(GT_nums) * 100)
+            _, F1_score = self.match_result(answer, GT)
+            outs1.append(F1_score * 100)
         
         outs1 = sum(outs1) / len(outs1)
         outs2 = self.eval_chatGPT(self.match["GPT"])
@@ -87,21 +84,43 @@ class evaluation_suit():
         answer_nums = re.findall(r'\d+\.\d+', answer)
         GT_nums = re.findall(r'\d+\.\d+', GT)
         # transform string into float
+        if len(answer_nums) % 2 != 0:
+            answer_nums = answer_nums[:-1]
         answer_nums = np.array([list(map(float, x.split()))[0] for x in answer_nums]).reshape(-1, 2)
         GT_nums = np.array([list(map(float, x.split()))[0] for x in GT_nums]).reshape(-1, 2)
+        length = len(GT_nums)
 
         matched_out = []
-        for ans in answer_nums:
-            for gt in GT_nums:
-                distance = np.sum(np.abs(ans - gt))
-                if distance < 16:
-                    matched_out.append(gt)
-                    break
+        true_positives = 0
+        false_positives = 0
+        false_negatives = 0
+        for pred in answer_nums:
+            closest_distance = float('inf')
+            closest_gt = None
+            closest_id = None
+            for i, gt in enumerate(GT_nums):
+                distance = np.sum(np.abs(pred - gt))
+                if distance < closest_distance:
+                    closest_distance = distance
+                    closest_gt = gt
+                    closest_id = i
 
-        return matched_out
+            if closest_distance < 16:
+                true_positives += 1
+                matched_out.append(closest_gt)  
+                GT_nums = np.delete(GT_nums, closest_id, axis=0) 
+            else:
+                false_positives += 1
+            
+        false_negatives = length - true_positives
+        precision = true_positives / (true_positives + false_positives + 1e-8)
+        recall = true_positives / (true_positives + false_negatives + 1e-8)
+        F1 = 2 * precision * recall / (precision + recall + 1e-8)
+
+        return matched_out, F1
 
     def set_graph(self, answer, GT):
-        self.graph = self.match_result(answer, GT)
+        self.graph, _ = self.match_result(answer, GT)
         self.graph = [list(i) for i in self.graph]
 
     def forward(self, tag, answer, GT):

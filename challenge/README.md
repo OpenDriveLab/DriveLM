@@ -308,6 +308,10 @@ Chances are that you are not logged in to the current competition space.
 
 Please refresh the page, click `Login with Hugging Face` at the bottom of the left panel.
 
+### If I encounter a reshape error, what should I do?
+
+You should first refer to this [location](https://github.com/OpenDriveLab/DriveLM/blob/main/challenge/evaluation.py#L89). Most of the reshape errors occur here.
+
 
 ### Finally, which dataset do we submit to the competition?
 
