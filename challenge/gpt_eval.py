@@ -1,4 +1,3 @@
-import openai
 import pickle
 import pdb
 import numpy as np
@@ -6,18 +5,19 @@ import torch
 import json
 import argparse
 from multiprocessing import Pool
+from openai import OpenAI
 
 
 class GPTEvaluation:
     def __init__(self):
-        openai.api_key = "you need to use your own openai key for evaluation on your local machine"
+        self.client = OpenAI(api_key="you need to use your own openai key for evaluation on your local machine")
 
     def call_chatgpt(self, chatgpt_messages, max_tokens=40, model="gpt-3.5-turbo"):
-        response = openai.ChatCompletion.create(
+        response = self.client.chat.completions.create(
             model=model, messages=chatgpt_messages, temperature=0.6, max_tokens=max_tokens
         )
-        reply = response["choices"][0]["message"]["content"]
-        total_tokens = response["usage"]["total_tokens"]
+        reply = response.choices[0].message.content
+        total_tokens = response.usage.total_tokens
         return reply, total_tokens
     
     def prepare_chatgpt_message(self, prompt):
