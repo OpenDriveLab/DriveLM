@@ -278,7 +278,7 @@ Please refresh the page, click `Login with Hugging Face` at the bottom of the le
 
 ### Can I Submit Without Making My Submission Public?
 
-Of course. The competition space accepts Hugging Face private models. in fact, we recommend participants to submit as private models to keep their submissions private.
+Of course. The competition space accepts Hugging Face private models. In fact, we recommend participants to submit as private models to keep their submissions private.
 
 ### Will My Evaluation Status Be Visible to Others?
 
@@ -290,17 +290,7 @@ The public leaderboard will be open with the best results of all teams about a w
 
 First, make sure your submission is in the correct format as in [submission preparation](#submission-preparation) and you upload the correct Hugging Face **model** link (in the format of `Username/model`) in `New Submission`.
 
-If you confirm that the submission format is correct, please contact the challenge host [Chonghao Sima](mailto:simachonghao@pjlab.org.cn) via email. Please include the **Submission ID** of the corresponding submission in the email. The Submission ID can be found in the `My Submissions` tab.
-
-```
-Email Subject:
-[CVPR DRIVELM] Failed submission - {Submission ID}
-Body:
-  Your Name: {}
-  Team Name: {}
-  Institution / Company: {}
-  Email: {}
-```
+The error message is listed under `Submission Comment` column under `My Submissions` tab.
 
 ### I could not visit `My Submissions` page, what should I do?
 
@@ -315,7 +305,26 @@ You should first refer to this [location](https://github.com/OpenDriveLab/DriveL
 
 ### Finally, which dataset do we submit to the competition?
 
-Please refrain from using demo data. Instead, utilize the [validation data](https://drive.google.com/file/d/1fsVP7jOpvChcpoXVdypaZ4HREX1gA7As/view?usp=sharing)  for inference and submission to the evaluation server.
+Please refrain from using demo data. Instead, utilize the [validation data](https://drive.google.com/file/d/1fsVP7jOpvChcpoXVdypaZ4HREX1gA7As/view?usp=sharing) for inference and submission to the evaluation server.
+
+### I encountered KeyError: 'b789de07180846cc972118ee6d1fb027_b0e6fd5561454b2789c853e5350557a8_0' in my Submission Comment, what should I do?
+If you saw a random UUID in Submission Comment, the error happens on [this line](https://github.com/OpenDriveLab/DriveLM/blob/030265cb243dd5b88bd0e20130c1a72e68bcf14e/challenge/evaluation.py#L178), you can try to reproduce this error locally. Most likely, this is due to not using the validation data we mentioned above.
+
+### My submission is stuck at `Processing`, what should I do?
+This is likely due to server error on Hugging Face side, please wait for a while and submit again. If this error persists, contact our challenge host below.
+
+### My error information is not listed here, what should I do?
+If you confirm that the submission format is correct, please contact the challenge host [Chonghao Sima](mailto:simachonghao@pjlab.org.cn) via email. Please include the **Submission ID** of the corresponding submission in the email. The Submission ID can be found in the `My Submissions` tab.
+
+```
+Email Subject:
+[CVPR DRIVELM] Failed submission - {Submission ID}
+Body:
+  Your Name: {}
+  Team Name: {}
+  Institution / Company: {}
+  Email: {}
+```
 
 
 ## Citation
