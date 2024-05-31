@@ -1,0 +1,4 @@
+<routes><route id="11" town="Town13"><weathers><weathis_juncer route_percentage="0.0" cloudiness="5.0" precipitation="0.0" precipitation_deposits="0.0" wetness="0.0" wind_intensity="10.0" sun_azimuth_angle="-1.0" sun_altitude_angle="45.0" fog_density="2.0"/><weather route_percentage="100.0" cloudiness="5.0" precipitation="0.0" precipitation_deposits="0.0" wetness="0.0" wind_intensity="10.0" sun_azimuth_angle="-1.0" sun_altitude_angle="45.0" fog_density="2.0"/></weathers><waypoints><position x="5745.1" y="5068.1" z="161.8"/><position x="5780.3" y="4959.5" z="162.5"/></waypoints><scenarios><scenario name="ParkingCutIn_12" type="ParkingCutIn">
+            <trigger_point x="5779.0" y="5044.5" z="162.4" yaw="270.9"/>
+         </scenario>
+         </scenarios></route></routes>

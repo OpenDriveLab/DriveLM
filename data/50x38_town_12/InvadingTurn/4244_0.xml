@@ -1,0 +1,6 @@
+<routes><route id="81" town="Town12"><weathers><weathis_juncer cloudiness="5.0" fog_density="2.0" precipitation="0.0" precipitation_deposits="0.0" route_percentage="0.0" sun_altitude_angle="45.0" sun_azimuth_angle="-1.0" wetness="0.0" wind_intensity="10.0" /><weather cloudiness="5.0" fog_density="2.0" precipitation="0.0" precipitation_deposits="0.0" route_percentage="100.0" sun_altitude_angle="45.0" sun_azimuth_angle="-1.0" wetness="0.0" wind_intensity="10.0" /></weathers><waypoints><position x="987.5" y="4914.9" z="371.2" /><position x="1032.2" y="4794.8" z="370.4" /><position x="1051.0" y="4786.7" z="370.4" /></waypoints><scenarios><scenario name="InvadingTurn_4" type="InvadingTurn">
+            <trigger_point x="987.5" y="4894.2" yaw="-90.0" z="371.1" />
+            <distance value="90" />
+            <offset value="0.3" />
+         </scenario>
+         </scenarios></route></routes>

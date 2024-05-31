@@ -1,0 +1,62 @@
+<routes>
+  <route id="0" town="Town10HD">
+    <waypoints><position x="106.479805" y="-22.654198" z="0.000000" />
+    <position x="79.240005" y="-65.699600" z="0.000000" />
+    <position x="27.811243" y="-64.408333" z="0.000000" />
+  </waypoints><scenarios /></route>
+  <route id="1" town="Town10HD">
+    <waypoints><position x="7.411115" y="-60.900002" z="0.000000" />
+    <position x="57.412540" y="-57.420425" z="0.000000" />
+    <position x="98.321304" y="-41.413155" z="0.000000" />
+  </waypoints><scenarios /></route>
+  <route id="2" town="Town10HD">
+    <waypoints><position x="-0.190755" y="137.209961" z="0.000000" />
+    <position x="49.788311" y="141.130264" z="0.000000" />
+    <position x="96.104416" y="121.452866" z="0.000000" />
+  </waypoints><scenarios /></route>
+  <route id="3" town="Town10HD">
+    <waypoints><position x="-27.800329" y="-61.284046" z="0.000000" />
+    <position x="22.218863" y="-57.406048" z="0.000000" />
+    <position x="71.877014" y="-60.348789" z="0.000000" />
+  </waypoints><scenarios /></route>
+  <route id="4" town="Town10HD">
+    <waypoints><position x="106.396484" y="-4.449376" z="0.000000" />
+    <position x="96.705452" y="-55.038555" z="0.000000" />
+    <position x="46.029888" y="-64.415779" z="0.000000" />
+  </waypoints><scenarios /></route>
+  <route id="5" town="Town10HD">
+    <waypoints><position x="19.350212" y="137.459961" z="0.000000" />
+    <position x="69.994003" y="140.898361" z="0.000000" />
+    <position x="104.445442" y="103.155632" z="0.000000" />
+  </waypoints><scenarios /></route>
+  <route id="6" town="Town10HD">
+    <waypoints><position x="102.300583" y="82.914726" z="0.000000" />
+    <position x="84.219009" y="123.954063" z="0.000000" />
+    <position x="39.299477" y="134.071487" z="0.000000" />
+  </waypoints><scenarios /></route>
+  <route id="7" town="Town10HD">
+    <waypoints><position x="-28.560221" y="137.035614" z="0.000000" />
+    <position x="21.418753" y="140.971588" z="0.000000" />
+    <position x="71.726570" y="137.093262" z="0.000000" />
+  </waypoints><scenarios /></route>
+  <route id="8" town="Town10HD">
+    <waypoints><position x="106.429962" y="-9.358066" z="0.000000" />
+    <position x="92.515091" y="-58.690834" z="0.000000" />
+    <position x="41.121502" y="-64.413773" z="0.000000" />
+  </waypoints><scenarios /></route>
+  <route id="9" town="Town10HD">
+    <waypoints><position x="-5.338221" y="-61.050095" z="0.000000" />
+    <position x="44.681526" y="-57.415226" z="0.000000" />
+    <position x="90.852585" y="-50.949448" z="0.000000" />
+  </waypoints><scenarios /></route>
+  <route id="10" town="Town10HD">
+    <waypoints><position x="-71.269684" y="132.314896" z="0.000000" />
+    <position x="-100.387123" y="98.446709" z="0.000000" />
+    <position x="-107.308868" y="50.649052" z="0.000000" />
+  </waypoints><scenarios /></route>
+  <route id="11" town="Town10HD">
+    <waypoints><position x="-110.732994" y="43.860245" z="0.000000" />
+    <position x="-112.363022" y="94.966545" z="0.000000" />
+    <position x="-78.748825" y="133.618118" z="0.000000" />
+  </waypoints><scenarios /></route>
+</routes>

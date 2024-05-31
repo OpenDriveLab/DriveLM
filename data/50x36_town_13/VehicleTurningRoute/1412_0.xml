@@ -1,0 +1,4 @@
+<routes><route id="16" town="Town13"><weathers><weathis_juncer route_percentage="0.0" cloudiness="5.0" precipitation="0.0" precipitation_deposits="0.0" wetness="0.0" wind_intensity="10.0" sun_azimuth_angle="-1.0" sun_altitude_angle="45.0" fog_density="2.0"/><weather route_percentage="100.0" cloudiness="5.0" precipitation="0.0" precipitation_deposits="0.0" wetness="0.0" wind_intensity="10.0" sun_azimuth_angle="-1.0" sun_altitude_angle="45.0" fog_density="2.0"/></weathers><waypoints><position x="-1452.9" y="-91.2" z="154.5"/><position x="-1506.8" y="-143.8" z="155.0"/><position x="-1560.1" y="-143.6" z="155.7"/></waypoints><scenarios><scenario name="VehicleTurningRoute_1" type="VehicleTurningRoute">
+            <trigger_point x="-1453.1" y="-111.6" z="154.5" yaw="269.2"/>
+         </scenario>
+         </scenarios></route></routes>

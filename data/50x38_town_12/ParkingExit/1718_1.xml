@@ -1,0 +1,7 @@
+<routes><route id="33" town="Town12"><weathers><weathis_juncer cloudiness="5.0" fog_density="2.0" precipitation="0.0" precipitation_deposits="0.0" route_percentage="0.0" sun_altitude_angle="45.0" sun_azimuth_angle="-1.0" wetness="0.0" wind_intensity="10.0" /><weather cloudiness="5.0" fog_density="2.0" precipitation="0.0" precipitation_deposits="0.0" route_percentage="100.0" sun_altitude_angle="45.0" sun_azimuth_angle="-1.0" wetness="0.0" wind_intensity="10.0" /></weathers><waypoints><position x="1080.4" y="4141.4" z="366.6" /><position x="1088.3" y="4092.1" z="366.9" /></waypoints><scenarios><scenario name="ParkingExit_1" type="ParkingExit">
+            <trigger_point x="1080.4" y="4141.4" yaw="279.0" z="366.6" />
+            <direction value="right" />
+            <front_vehicle_distance value="9" />
+            <behind_vehicle_distance value="9" />
+         </scenario>
+         </scenarios></route></routes>

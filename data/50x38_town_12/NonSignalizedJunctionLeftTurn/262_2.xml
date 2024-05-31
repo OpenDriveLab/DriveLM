@@ -1,0 +1,6 @@
+<routes><route id="4" town="Town12"><weathers><weathis_juncer cloudiness="5.0" fog_density="2.0" precipitation="0.0" precipitation_deposits="0.0" route_percentage="0.0" sun_altitude_angle="45.0" sun_azimuth_angle="-1.0" wetness="0.0" wind_intensity="10.0" /><weather cloudiness="5.0" fog_density="2.0" precipitation="0.0" precipitation_deposits="0.0" route_percentage="100.0" sun_altitude_angle="45.0" sun_azimuth_angle="-1.0" wetness="0.0" wind_intensity="10.0" /></weathers><waypoints><position x="1985.0" y="2129.7" z="361.4" /><position x="1952.9" y="2062.8" z="360.9" /><position x="1918.4" y="2062.8" z="361.4" /></waypoints><scenarios><scenario name="NonSignalizedJunctionLeftTurn_1" type="NonSignalizedJunctionLeftTurn">
+            <trigger_point x="1984.9" y="2109.0" yaw="270.1" z="361.1" />
+            <flow_speed value="10" />
+            <source_dist_interval from="25" to="60" />
+         </scenario>
+         </scenarios></route></routes>

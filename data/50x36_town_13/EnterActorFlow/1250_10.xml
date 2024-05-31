@@ -1,0 +1,8 @@
+<routes><route id="13" town="Town13"><weathers><weathis_juncer route_percentage="0.0" cloudiness="5.0" precipitation="0.0" precipitation_deposits="0.0" wetness="0.0" wind_intensity="10.0" sun_azimuth_angle="-1.0" sun_altitude_angle="45.0" fog_density="2.0"/><weather route_percentage="100.0" cloudiness="5.0" precipitation="0.0" precipitation_deposits="0.0" wetness="0.0" wind_intensity="10.0" sun_azimuth_angle="-1.0" sun_altitude_angle="45.0" fog_density="2.0"/></weathers><waypoints><position x="1169.0" y="1055.5" z="157.0"/><position x="1166.3" y="1059.8" z="157.0"/><position x="1150.9" y="1103.6" z="157.0"/><position x="1149.9" y="1119.4" z="157.0"/><position x="1151.2" y="1136.0" z="157.0"/><position x="1162.2" y="1170.4" z="157.0"/><position x="1173.9" y="1189.1" z="157.0"/><position x="1253.4" y="1401.8" z="148.7"/><position x="1255.9" y="1465.1" z="148.7"/><position x="1258.9" y="1489.8" z="148.7"/><position x="1257.4" y="1580.2" z="148.7"/></waypoints><scenarios><scenario name="EnterActorFlow_1" type="EnterActorFlow">
+            <trigger_point x="1195.3" y="1233.4" z="157.0" yaw="70.6"/>
+            <start_actor_flow x="1260.0" y="1258.4" z="148.8"/>
+            <end_actor_flow x="1256.6" y="1620.2" z="148.7"/>
+            <flow_speed value="17"/>
+            <source_dist_interval from="20" to="75"/>
+         </scenario>
+         </scenarios></route></routes>

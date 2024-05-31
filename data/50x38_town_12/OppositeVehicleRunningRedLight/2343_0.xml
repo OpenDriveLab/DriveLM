@@ -1,0 +1,5 @@
+<routes><route id="43" town="Town12"><weathers><weathis_juncer cloudiness="5.0" fog_density="2.0" precipitation="0.0" precipitation_deposits="0.0" route_percentage="0.0" sun_altitude_angle="45.0" sun_azimuth_angle="-1.0" wetness="0.0" wind_intensity="10.0" /><weather cloudiness="5.0" fog_density="2.0" precipitation="0.0" precipitation_deposits="0.0" route_percentage="100.0" sun_altitude_angle="45.0" sun_azimuth_angle="-1.0" wetness="0.0" wind_intensity="10.0" /></weathers><waypoints><position x="2536.5" y="4619.9" z="363.9" /><position x="2555.7" y="4503.5" z="362.3" /></waypoints><scenarios><scenario name="OppositeVehicleRunningRedLight_2" type="OppositeVehicleRunningRedLight">
+            <trigger_point x="2539.8" y="4599.8" yaw="279.4" z="363.6" />
+            <direction value="left" />
+         </scenario>
+         </scenarios></route></routes>

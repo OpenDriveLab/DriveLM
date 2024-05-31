@@ -1,0 +1,57 @@
+# @package _group_
+- env_id: Endless-v0
+  env_configs:
+    carla_map: Town06
+    num_zombie_vehicles: [0, 160]
+    num_zombie_walkers: [0, 160]
+    weather_group: dynamic_1.0
+  gpu: [0]
+- env_id: Endless-v0
+  env_configs:
+    carla_map: Town07
+    num_zombie_vehicles: [0, 160]
+    num_zombie_walkers: [0, 160]
+    weather_group: dynamic_1.0
+  gpu: [0]
+- env_id: Endless-v0
+  env_configs:
+    carla_map: Town01
+    num_zombie_vehicles: [0, 150]
+    num_zombie_walkers: [0, 300]
+    weather_group: dynamic_1.0
+  gpu: [0]
+- env_id: Endless-v0
+  env_configs:
+    carla_map: Town02
+    num_zombie_vehicles: [0, 100]
+    num_zombie_walkers: [0, 200]
+    weather_group: dynamic_1.0
+  gpu: [0]
+- env_id: Endless-v0
+  env_configs:
+    carla_map: Town03
+    num_zombie_vehicles: [0, 120]
+    num_zombie_walkers: [0, 120]
+    weather_group: dynamic_1.0
+  gpu: [0]
+- env_id: Endless-v0
+  env_configs:
+    carla_map: Town04
+    num_zombie_vehicles: [0, 160]
+    num_zombie_walkers: [0, 160]
+    weather_group: dynamic_1.0
+  gpu: [0]
+- env_id: Endless-v0
+  env_configs:
+    carla_map: Town05
+    num_zombie_vehicles: [0, 160]
+    num_zombie_walkers: [0, 160]
+    weather_group: dynamic_1.0
+  gpu: [0]
+- env_id: Endless-v0
+  env_configs:
+    carla_map: Town10HD
+    num_zombie_vehicles: [0, 160]
+    num_zombie_walkers: [0, 160]
+    weather_group: dynamic_1.0
+  gpu: [0]

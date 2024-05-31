@@ -1,0 +1,252 @@
+<routes>
+  <route id="0" town="Town04">
+    <waypoints><position x="27.286945" y="-287.515137" z="0.000000" />
+    <position x="51.849396" y="-327.189453" z="0.000000" />
+    <position x="91.481674" y="-351.819580" z="0.000000" />
+  </waypoints><scenarios /></route>
+  <route id="1" town="Town04">
+    <waypoints><position x="27.286945" y="-287.515137" z="0.000000" />
+    <position x="49.372410" y="-329.662201" z="0.000000" />
+    <position x="91.481674" y="-351.819580" z="0.000000" />
+  </waypoints><scenarios /></route>
+  <route id="2" town="Town04">
+    <waypoints><position x="160.525177" y="-389.139679" z="0.000000" />
+    <position x="109.622353" y="-378.092194" z="0.000000" />
+    <position x="59.483593" y="-361.005798" z="0.000000" />
+  </waypoints><scenarios /></route>
+  <route id="3" town="Town04">
+    <waypoints><position x="160.525177" y="-389.139679" z="0.000000" />
+    <position x="109.622353" y="-378.092194" z="0.000000" />
+    <position x="57.463120" y="-363.863739" z="0.000000" />
+  </waypoints><scenarios /></route>
+  <route id="4" town="Town04">
+    <waypoints><position x="160.555771" y="-392.639526" z="0.000000" />
+    <position x="109.622353" y="-378.092194" z="0.000000" />
+    <position x="59.483593" y="-361.005798" z="0.000000" />
+  </waypoints><scenarios /></route>
+  <route id="5" town="Town04">
+    <waypoints><position x="193.860748" y="-392.362122" z="0.000000" />
+    <position x="143.291946" y="-384.894287" z="0.000000" />
+    <position x="92.092613" y="-375.314514" z="0.000000" />
+  </waypoints><scenarios /></route>
+  <route id="6" town="Town04">
+    <waypoints><position x="193.887009" y="-395.862030" z="0.000000" />
+    <position x="142.958679" y="-388.378387" z="0.000000" />
+    <position x="90.705734" y="-378.528015" z="0.000000" />
+  </waypoints><scenarios /></route>
+  <route id="7" town="Town04">
+    <waypoints><position x="15.748459" y="66.012764" z="0.000000" />
+    <position x="12.001511" y="16.044773" z="0.000000" />
+    <position x="15.305256" y="-33.968578" z="0.000000" />
+  </waypoints><scenarios /></route>
+  <route id="8" town="Town04">
+    <waypoints><position x="15.748459" y="66.012764" z="0.000000" />
+    <position x="5.001565" y="16.072245" z="0.000000" />
+    <position x="15.305256" y="-33.968578" z="0.000000" />
+  </waypoints><scenarios /></route>
+  <route id="9" town="Town04">
+    <waypoints><position x="12.248504" y="66.030426" z="0.000000" />
+    <position x="5.001565" y="16.072245" z="0.000000" />
+    <position x="8.305309" y="-33.941105" z="0.000000" />
+  </waypoints><scenarios /></route>
+  <route id="10" town="Town04">
+    <waypoints><position x="12.248504" y="66.030426" z="0.000000" />
+    <position x="5.001565" y="16.072245" z="0.000000" />
+    <position x="15.305256" y="-33.968578" z="0.000000" />
+  </waypoints><scenarios /></route>
+  <route id="11" town="Town04">
+    <waypoints><position x="8.748549" y="66.048088" z="0.000000" />
+    <position x="5.001565" y="16.072245" z="0.000000" />
+    <position x="11.805283" y="-33.954842" z="0.000000" />
+  </waypoints><scenarios /></route>
+  <route id="12" town="Town04">
+    <waypoints><position x="-9.246634" y="-47.142326" z="0.000000" />
+    <position x="-5.550433" y="2.843554" z="0.000000" />
+    <position x="-8.818192" y="52.866566" z="0.000000" />
+  </waypoints><scenarios /></route>
+  <route id="13" town="Town04">
+    <waypoints><position x="-514.229675" y="177.521729" z="0.000000" />
+    <position x="-504.749115" y="227.560333" z="0.000000" />
+    <position x="-507.674103" y="279.855011" z="0.000000" />
+  </waypoints><scenarios /></route>
+  <route id="14" town="Town04">
+    <waypoints><position x="-487.250031" y="240.891403" z="0.000000" />
+    <position x="-493.325684" y="191.001907" z="0.000000" />
+    <position x="-482.501373" y="141.031128" z="0.000000" />
+  </waypoints><scenarios /></route>
+  <route id="15" town="Town04">
+    <waypoints><position x="248.691177" y="-364.230194" z="0.000000" />
+    <position x="293.915588" y="-360.798798" z="0.000000" />
+    <position x="331.973633" y="-336.488739" z="0.000000" />
+  </waypoints><scenarios /></route>
+  <route id="16" town="Town04">
+    <waypoints><position x="248.673141" y="-367.730164" z="0.000000" />
+    <position x="295.023682" y="-364.118774" z="0.000000" />
+    <position x="331.973633" y="-336.488739" z="0.000000" />
+  </waypoints><scenarios /></route>
+  <route id="17" town="Town04">
+    <waypoints><position x="248.673141" y="-367.730164" z="0.000000" />
+    <position x="295.023682" y="-364.118774" z="0.000000" />
+    <position x="334.124512" y="-339.249847" z="0.000000" />
+  </waypoints><scenarios /></route>
+  <route id="18" town="Town04">
+    <waypoints><position x="406.612610" y="-180.926132" z="0.000000" />
+    <position x="403.635162" y="-230.959976" z="0.000000" />
+    <position x="398.849365" y="-282.972290" z="0.000000" />
+  </waypoints><scenarios /></route>
+  <route id="19" town="Town04">
+    <waypoints><position x="413.612244" y="-180.852997" z="0.000000" />
+    <position x="403.635162" y="-230.959976" z="0.000000" />
+    <position x="398.849365" y="-282.972290" z="0.000000" />
+  </waypoints><scenarios /></route>
+  <route id="20" town="Town04">
+    <waypoints><position x="413.612244" y="-180.852997" z="0.000000" />
+    <position x="410.634796" y="-230.886841" z="0.000000" />
+    <position x="405.476990" y="-285.225006" z="0.000000" />
+  </waypoints><scenarios /></route>
+  <route id="21" town="Town04">
+    <waypoints><position x="413.612244" y="-180.852997" z="0.000000" />
+    <position x="403.635162" y="-230.959976" z="0.000000" />
+    <position x="405.476990" y="-285.225006" z="0.000000" />
+  </waypoints><scenarios /></route>
+  <route id="22" town="Town04">
+    <waypoints><position x="-412.645660" y="5.873983" z="0.000000" />
+    <position x="-466.915710" y="21.021837" z="0.000000" />
+    <position x="-507.475006" y="63.040855" z="0.000000" />
+  </waypoints><scenarios /></route>
+  <route id="23" town="Town04">
+    <waypoints><position x="-412.645660" y="5.873983" z="0.000000" />
+    <position x="-465.167053" y="24.053701" z="0.000000" />
+    <position x="-507.475006" y="63.040855" z="0.000000" />
+  </waypoints><scenarios /></route>
+  <route id="24" town="Town04">
+    <waypoints><position x="-412.623169" y="9.373911" z="0.000000" />
+    <position x="-463.418396" y="27.085566" z="0.000000" />
+    <position x="-507.475006" y="63.040855" z="0.000000" />
+  </waypoints><scenarios /></route>
+  <route id="25" town="Town04">
+    <waypoints><position x="-482.730286" y="177.717590" z="0.000000" />
+    <position x="-492.918121" y="127.653038" z="0.000000" />
+    <position x="-487.226440" y="79.948669" z="0.000000" />
+  </waypoints><scenarios /></route>
+  <route id="26" town="Town04">
+    <waypoints><position x="-482.730286" y="177.717590" z="0.000000" />
+    <position x="-492.918121" y="127.653038" z="0.000000" />
+    <position x="-480.439270" y="81.661652" z="0.000000" />
+  </waypoints><scenarios /></route>
+  <route id="27" town="Town04">
+    <waypoints><position x="215.650040" y="-364.197845" z="0.000000" />
+    <position x="265.224701" y="-374.045563" z="0.000000" />
+    <position x="308.512695" y="-354.961365" z="0.000000" />
+  </waypoints><scenarios /></route>
+  <route id="28" town="Town04">
+    <waypoints><position x="215.676300" y="-367.697754" z="0.000000" />
+    <position x="264.878601" y="-370.562714" z="0.000000" />
+    <position x="307.026031" y="-351.792786" z="0.000000" />
+  </waypoints><scenarios /></route>
+  <route id="29" town="Town04">
+    <waypoints><position x="215.702560" y="-371.197662" z="0.000000" />
+    <position x="265.224701" y="-374.045563" z="0.000000" />
+    <position x="309.999359" y="-358.129944" z="0.000000" />
+  </waypoints><scenarios /></route>
+  <route id="30" town="Town04">
+    <waypoints><position x="-508.250000" y="240.940414" z="0.000000" />
+    <position x="-497.520538" y="291.714783" z="0.000000" />
+    <position x="-482.560944" y="342.270691" z="0.000000" />
+  </waypoints><scenarios /></route>
+  <route id="31" town="Town04">
+    <waypoints><position x="7.138682" y="283.724243" z="0.000000" />
+    <position x="5.816612" y="230.215775" z="0.000000" />
+    <position x="12.823222" y="179.918976" z="0.000000" />
+  </waypoints><scenarios /></route>
+  <route id="32" town="Town04">
+    <waypoints><position x="3.791791" y="282.700378" z="0.000000" />
+    <position x="5.816612" y="230.215775" z="0.000000" />
+    <position x="9.323267" y="179.936646" z="0.000000" />
+  </waypoints><scenarios /></route>
+  <route id="33" town="Town04">
+    <waypoints><position x="3.791791" y="282.700378" z="0.000000" />
+    <position x="9.312996" y="230.374847" z="0.000000" />
+    <position x="16.323177" y="179.901321" z="0.000000" />
+  </waypoints><scenarios /></route>
+  <route id="34" town="Town04">
+    <waypoints><position x="-8.371396" y="141.405426" z="0.000000" />
+    <position x="-4.619128" y="191.387146" z="0.000000" />
+    <position x="-8.973960" y="240.427490" z="0.000000" />
+  </waypoints><scenarios /></route>
+  <route id="35" town="Town04">
+    <waypoints><position x="-11.871351" y="141.423096" z="0.000000" />
+    <position x="-4.619128" y="191.387146" z="0.000000" />
+    <position x="-15.937088" y="239.709961" z="0.000000" />
+  </waypoints><scenarios /></route>
+  <route id="36" town="Town04">
+    <waypoints><position x="-11.871351" y="141.423096" z="0.000000" />
+    <position x="-4.619128" y="191.387146" z="0.000000" />
+    <position x="-12.455523" y="240.068726" z="0.000000" />
+  </waypoints><scenarios /></route>
+  <route id="37" town="Town04">
+    <waypoints><position x="-357.554260" y="37.020386" z="0.003727" />
+    <position x="-307.672119" y="33.534492" z="0.542922" />
+    <position x="-257.676880" y="37.101528" z="1.995481" />
+  </waypoints><scenarios /></route>
+  <route id="38" town="Town04">
+    <waypoints><position x="-357.554260" y="37.020386" z="0.003727" />
+    <position x="-307.662720" y="26.534498" z="0.542922" />
+    <position x="-257.676880" y="37.101528" z="1.995481" />
+  </waypoints><scenarios /></route>
+  <route id="39" town="Town04">
+    <waypoints><position x="-120.804749" y="5.785016" z="8.752373" />
+    <position x="-170.818771" y="16.217968" z="6.241576" />
+    <position x="-220.804657" y="5.650937" z="3.649614" />
+  </waypoints><scenarios /></route>
+  <route id="40" town="Town04">
+    <waypoints><position x="-120.809441" y="9.285013" z="8.752373" />
+    <position x="-170.818771" y="16.217968" z="6.241576" />
+    <position x="-220.804657" y="5.650937" z="3.649614" />
+  </waypoints><scenarios /></route>
+  <route id="41" town="Town04">
+    <waypoints><position x="-120.809441" y="9.285013" z="8.752373" />
+    <position x="-170.814087" y="12.717971" z="6.241576" />
+    <position x="-220.809341" y="9.150934" z="3.649614" />
+  </waypoints><scenarios /></route>
+  <route id="42" town="Town04">
+    <waypoints><position x="-120.809441" y="9.285013" z="8.752373" />
+    <position x="-170.818771" y="16.217968" z="6.241576" />
+    <position x="-220.809341" y="9.150934" z="3.649614" />
+  </waypoints><scenarios /></route>
+  <route id="43" town="Town04">
+    <waypoints><position x="-120.814133" y="12.785010" z="8.752373" />
+    <position x="-170.818771" y="16.217968" z="6.241576" />
+    <position x="-220.804657" y="5.650937" z="3.649614" />
+  </waypoints><scenarios /></route>
+  <route id="44" town="Town04">
+    <waypoints><position x="-120.814133" y="12.785010" z="8.752373" />
+    <position x="-170.818771" y="16.217968" z="6.241576" />
+    <position x="-220.814041" y="12.650931" z="3.649614" />
+  </waypoints><scenarios /></route>
+  <route id="45" town="Town04">
+    <waypoints><position x="-67.637650" y="30.356327" z="9.841582" />
+    <position x="-17.647522" y="27.011292" z="10.697704" />
+    <position x="32.323647" y="34.214249" z="11.000000" />
+  </waypoints><scenarios /></route>
+  <route id="46" town="Town04">
+    <waypoints><position x="-67.647034" y="37.356319" z="9.841582" />
+    <position x="-17.647522" y="27.011292" z="10.697704" />
+    <position x="32.337856" y="30.714279" z="11.000000" />
+  </waypoints><scenarios /></route>
+  <route id="47" town="Town04">
+    <waypoints><position x="128.199142" y="31.500187" z="10.049263" />
+    <position x="178.251602" y="28.854053" z="8.169394" />
+    <position x="228.065125" y="40.205887" z="5.360391" />
+  </waypoints><scenarios /></route>
+  <route id="48" town="Town04">
+    <waypoints><position x="128.199142" y="31.500187" z="10.049263" />
+    <position x="178.251602" y="28.854053" z="8.169394" />
+    <position x="228.184586" y="33.206905" z="5.360391" />
+  </waypoints><scenarios /></route>
+  <route id="49" town="Town04">
+    <waypoints><position x="66.357063" y="6.352209" z="10.990581" />
+    <position x="16.314835" y="16.649105" z="11.000000" />
+    <position x="-33.670544" y="12.946115" z="10.421673" />
+  </waypoints><scenarios /></route>
+</routes>

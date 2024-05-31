@@ -1,0 +1,4 @@
+<routes><route id="0" town="Town13"><weathers><weathis_juncer route_percentage="0.0" cloudiness="5.0" precipitation="0.0" precipitation_deposits="0.0" wetness="0.0" wind_intensity="10.0" sun_azimuth_angle="-1.0" sun_altitude_angle="45.0" fog_density="2.0"/><weather route_percentage="100.0" cloudiness="5.0" precipitation="0.0" precipitation_deposits="0.0" wetness="0.0" wind_intensity="10.0" sun_azimuth_angle="-1.0" sun_altitude_angle="45.0" fog_density="2.0"/></weathers><waypoints><position x="2807.8" y="1058.6" z="167.5"/><position x="2714.2" y="1023.4" z="166.2"/></waypoints><scenarios><scenario name="BlockedIntersection_7" type="BlockedIntersection">
+            <trigger_point x="2787.7" y="1059.3" z="167.2" yaw="178.0"/>
+         </scenario>
+         </scenarios></route></routes>
