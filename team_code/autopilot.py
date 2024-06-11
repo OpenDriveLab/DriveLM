@@ -1557,9 +1557,9 @@ class AutoPilot(autonomous_agent_local.AutonomousAgent):
             nearby_pedestrians, nearby_pedestrian_ids)
 
         # Compute the target speed with respect to the red light
-        target_speed_red_light = self.ego_agent_affected_by_red_light(ego_speed, distance_to_next_traffic_light,
-                                                                      next_traffic_light, route_points,
-                                                                      initial_target_speed)
+        target_speed_red_light = self.ego_agent_affected_by_red_light(ego_vehicle_location, ego_speed, 
+                                        distance_to_next_traffic_light, next_traffic_light, route_points, 
+                                        initial_target_speed)
 
         # Update the object causing the most speed reduction
         if speed_reduced_by_obj is None or speed_reduced_by_obj[0] > target_speed_red_light:
@@ -1570,7 +1570,7 @@ class AutoPilot(autonomous_agent_local.AutonomousAgent):
 
         # Compute the target speed with respect to the stop sign
         target_speed_stop_sign = self.ego_agent_affected_by_stop_sign(ego_vehicle_location, ego_speed, next_stop_sign,
-                                                                      initial_target_speed)
+                                                                      initial_target_speed, actor_list)
         # Update the object causing the most speed reduction
         if speed_reduced_by_obj is None or speed_reduced_by_obj[0] > target_speed_stop_sign:
             speed_reduced_by_obj = [
@@ -1742,12 +1742,13 @@ class AutoPilot(autonomous_agent_local.AutonomousAgent):
 
         return nearby_pedestrians_bbs, nearby_pedestrian_ids
 
-    def ego_agent_affected_by_red_light(self, ego_vehicle_speed, distance_to_traffic_light, next_traffic_light,
-                                        route_points, target_speed):
+    def ego_agent_affected_by_red_light(self, ego_vehicle_location, ego_vehicle_speed, distance_to_traffic_light, 
+                                        next_traffic_light, route_points, target_speed):
         """
         Handles the behavior of the ego vehicle when approaching a traffic light.
 
         Args:
+            ego_vehicle_location (carla.Location): The ego vehicle location.
             ego_vehicle_speed (float): The current speed of the ego vehicle in m/s.
             distance_to_traffic_light (float): The distance from the ego vehicle to the next traffic light.
             next_traffic_light (carla.TrafficLight or None): The next traffic light in the route.
@@ -1757,22 +1758,54 @@ class AutoPilot(autonomous_agent_local.AutonomousAgent):
         Returns:
             float: The adjusted target speed for the ego vehicle.
         """
-        if self.visualize and next_traffic_light is not None:
-            # Visualize the traffic light and its bounding box
-            traffic_light_color = self.config.red_traffic_light_color \
-                if next_traffic_light.state == carla.TrafficLightState.Green else self.config.green_traffic_light_color
-            traffic_light_location = carla.Location(
-                x=route_points[int(self.config.points_per_meter * distance_to_traffic_light)][0],
-                y=route_points[int(self.config.points_per_meter * distance_to_traffic_light)][1],
-                z=route_points[int(self.config.points_per_meter * distance_to_traffic_light)][2])
-            traffic_light_bounding_box = carla.BoundingBox(traffic_light_location,
-                                                           next_traffic_light.trigger_volume.extent)
 
-            self._world.debug.draw_box(box=traffic_light_bounding_box,
-                                       rotation=next_traffic_light.get_transform().rotation,
-                                       thickness=0.1,
-                                       color=traffic_light_color,
-                                       life_time=self.config.draw_life_time)
+        self.close_traffic_lights.clear()
+
+        for light, center, waypoints in self.list_traffic_lights:
+
+            center_loc = carla.Location(center)
+            if center_loc.distance(ego_vehicle_location) > self.config.light_radius:
+                continue
+
+            for wp in waypoints:
+                # * 0.9 to make the box slightly smaller than the street to prevent overlapping boxes.
+                length_bounding_box = carla.Vector3D((wp.lane_width / 2.0) * 0.9, light.trigger_volume.extent.y,
+                                                                                         light.trigger_volume.extent.z)
+                length_bounding_box = carla.Vector3D(1.5, 1.5, 0.5)
+
+                bounding_box = carla.BoundingBox(wp.transform.location, length_bounding_box)
+
+                gloabl_rot = light.get_transform().rotation
+                bounding_box.rotation = carla.Rotation(pitch=gloabl_rot.pitch,
+                                                       yaw=gloabl_rot.yaw,
+                                                       roll=gloabl_rot.roll)
+
+                affects_ego = next_traffic_light is not None and light.id==next_traffic_light.id
+
+                self.close_traffic_lights.append([bounding_box, light.state, light.id, affects_ego])
+
+                if self.visualize == 1:
+                    if light.state == carla.libcarla.TrafficLightState.Red:
+                        color = carla.Color(255, 0, 0, 255)
+                    elif light.state == carla.libcarla.TrafficLightState.Yellow:
+                        color = carla.Color(255, 255, 0, 255)
+                    elif light.state == carla.libcarla.TrafficLightState.Green:
+                        color = carla.Color(0, 255, 0, 255)
+                    elif light.state == carla.libcarla.TrafficLightState.Off:
+                        color = carla.Color(0, 0, 0, 255)
+                    else:  # unknown
+                        color = carla.Color(0, 0, 255, 255)
+
+                    self._world.debug.draw_box(box=bounding_box,
+                                                    rotation=bounding_box.rotation,
+                                                    thickness=0.1,
+                                                    color=color,
+                                                    life_time=0.051)
+
+                    self._world.debug.draw_point(wp.transform.location + carla.Location(z=light.trigger_volume.location.z),
+                                                                             size=0.1,
+                                                                             color=color,
+                                                                             life_time=(1.0 / self.config.carla_fps)+1e-6)
 
         if next_traffic_light is None or next_traffic_light.state == carla.TrafficLightState.Green:
             # No traffic light or green light, continue with the current target speed
@@ -1791,7 +1824,8 @@ class AutoPilot(autonomous_agent_local.AutonomousAgent):
 
         return target_speed
 
-    def ego_agent_affected_by_stop_sign(self, ego_vehicle_location, ego_vehicle_speed, next_stop_sign, target_speed):
+    def ego_agent_affected_by_stop_sign(self, ego_vehicle_location, ego_vehicle_speed, next_stop_sign, target_speed, 
+                                        actor_list):
         """
         Handles the behavior of the ego vehicle when approaching a stop sign.
 
@@ -1800,24 +1834,34 @@ class AutoPilot(autonomous_agent_local.AutonomousAgent):
             ego_vehicle_speed (float): The current speed of the ego vehicle in m/s.
             next_stop_sign (carla.TrafficSign or None): The next stop sign in the route.
             target_speed (float): The target speed for the ego vehicle.
+            actor_list (list): A list of all actors (vehicles, pedestrians, etc.) in the simulation.
 
         Returns:
             float: The adjusted target speed for the ego vehicle.
         """
-        if self.visualize and next_stop_sign is not None:
-            # Visualize the stop sign and its bounding box
-            stop_sign_color = self.config.cleared_stop_sign_color if self.cleared_stop_sign \
-                                                                    else self.config.uncleared_stop_sign_color
+        self.close_stop_signs.clear()
+        stop_signs = self.get_nearby_object(ego_vehicle_location, actor_list.filter('*traffic.stop*'), self.config.light_radius)
+        
+        for stop_sign in stop_signs:
+            center_bb_stop_sign = stop_sign.get_transform().transform(stop_sign.trigger_volume.location)
+            wp = self.world_map.get_waypoint(center_bb_stop_sign)
+            stop_sign_extent = carla.Vector3D(1.5, 1.5, 0.5)
+            bounding_box_stop_sign = carla.BoundingBox(center_bb_stop_sign, stop_sign_extent)
+            rotation_stop_sign = stop_sign.get_transform().rotation
+            bounding_box_stop_sign.rotation = carla.Rotation(pitch=rotation_stop_sign.pitch,
+                                                             yaw=rotation_stop_sign.yaw,
+                                                             roll=rotation_stop_sign.roll)
 
-            stop_sign_center = next_stop_sign.get_transform().transform(next_stop_sign.trigger_volume.location)
-            stop_sign_bounding_box = carla.BoundingBox(stop_sign_center, next_stop_sign.trigger_volume.extent)
-            stop_sign_bounding_box.rotation = next_stop_sign.get_transform().rotation
+            affects_ego = (next_stop_sign is not None and next_stop_sign.id==stop_sign.id and not self.cleared_stop_sign)
+            self.close_stop_signs.append([bounding_box_stop_sign, stop_sign.id, affects_ego])
 
-            self._world.debug.draw_box(box=stop_sign_bounding_box,
-                                       rotation=stop_sign_bounding_box.rotation,
-                                       thickness=0.1,
-                                       color=stop_sign_color,
-                                       life_time=self.config.draw_life_time)
+            if self.visualize:
+                color = carla.Color(0, 1, 0) if affects_ego else carla.Color(1, 0, 0)
+                self._world.debug.draw_box(box=bounding_box_stop_sign,
+                                                                     rotation=bounding_box_stop_sign.rotation,
+                                                                     thickness=0.1,
+                                                                     color=color,
+                                                                     life_time=(1.0 / self.config.carla_fps)+1e-6)
 
         if next_stop_sign is None:
             # No stop sign, continue with the current target speed
