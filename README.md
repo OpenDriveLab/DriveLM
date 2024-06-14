@@ -2,7 +2,7 @@
 PDM-Lite: A Rule-Based Planner for CARLA Leaderboard 2.0
 </h1>
 
-[![PDM-Lite](https://i.ytimg.com/vi/uic3xwcOQ9w/maxresdefault.jpg)](https://www.youtube.com/watch?v=uic3xwcOQ9w "PDM-Lite")
+[![PDM-Lite on Youtube](docs/thumbnail_video.png)](https://www.youtube.com/watch?v=uic3xwcOQ9w "PDM-Lite")
 
 PDM-Lite is a rule-based privileged expert system achieving state-of-the-art performance on the CARLA Leaderboard 2.0. Leveraging components like the Intelligent Driver Model and the Kinematic bicycle model, PDM-Lite navigates all 38 scenarios. This open-source system sets a robust baseline, showcasing interpretable performance and enabling efficient data collection for imitation learning. See below for its performance across various CARLA Leaderboard 2.0 datasets:
 
