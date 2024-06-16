@@ -13,7 +13,7 @@ Dataset | #Seeds | RC (%) | IS | DS |
 | Validation | 3 | 85.9 | 0.46 | 44.3 |
 | Training | 1 | 98.8 | 0.49 | 48.5 |
 
-Find more details in the accompanying [report.pdf](doc/report.pdf).
+Find more details in the accompanying [report.pdf](docs/report.pdf).
 
 ## Contents
 
