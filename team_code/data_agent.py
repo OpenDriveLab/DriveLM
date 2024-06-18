@@ -1147,8 +1147,8 @@ class DataAgent(AutoPilot):
         results.append(weather_info)
         
         try:
-            next_is_junction = next_lane_wps[0].is_junction
-            next_junction_id = next_lane_wps[0].junction_id
+            next_is_junction = next_lane_wps_ego[0].is_junction
+            next_junction_id = next_lane_wps_ego[0].junction_id
         except:
             next_is_junction = None
             next_junction_id = None
