@@ -7,7 +7,7 @@
 **DriveLM:** *Driving with **G**raph **V**isual **Q**uestion **A**nswering*
 
 <!-- Download dataset [**HERE**](docs/data_prep_nus.md) (serves as Official source for `Autonomous Driving Challenge 2024`) -->
-`Autonomous Driving Challenge 2024` **Driving-with-Language track** is [activated](https://github.com/OpenDriveLab/DriveLM/tree/main/challenge)!
+`Autonomous Driving Challenge 2024` **Driving-with-Language track** [Leaderboard](https://opendrivelab.com/challenge2024/#driving_with_language). Will re-open soon for research purpose.
 </div>
 
 <div id="top" align="center">
