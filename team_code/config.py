@@ -170,8 +170,6 @@ class GlobalConfig:
         self.idm_acceleration_exponent = 4.
         # Minimum extent for pedestrian during bbs forecasting
         self.pedestrian_minimum_extent = 1.5
-        # Factor to increase the ego vehicles bbs during forecasting when speed < extent_ego_bbs_speed_threshold
-        self.slow_speed_extent_factor_ego = 0.95
         # Factor to increase the ego vehicles bbs in driving direction during forecasting
         # when speed > extent_ego_bbs_speed_threshold
         self.high_speed_extent_factor_ego_x = 1.3
@@ -184,7 +182,7 @@ class GlobalConfig:
         self.forecast_length_lane_change = 1.1
         # Forecast length in seconds when not near a lane change
         self.default_forecast_length = 2.0
-        # Extent factor of forecasted bbs of the ego vehicle
+        # Factor to increase the ego vehicles bbs during forecasting when speed < extent_ego_bbs_speed_threshold
         self.slow_speed_extent_factor_ego = 1.
         # Speed threshold to select which factor is used during other vehicle bbs forecasting
         self.extent_other_vehicles_bbs_speed_threshold = 1.
