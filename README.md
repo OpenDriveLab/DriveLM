@@ -83,7 +83,7 @@ https://github.com/OpenDriveLab/DriveLM-new/assets/75412366/78c32442-73c8-4f1d-a
 
 <!-- > above is graph VQA demo video.  -->
 
-### News <a name="news"></a>
+## News <a name="news"></a>
 
 - **`[2024/07/01]`** DriveLM got accepted to ECCV! Congrats to the team!
 - **`[2024/06/01]`** Challenge ended up! [See the final leaderboard](https://opendrivelab.com/challenge2024/#driving_with_language).
