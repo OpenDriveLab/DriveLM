@@ -83,14 +83,23 @@ https://github.com/OpenDriveLab/DriveLM-new/assets/75412366/78c32442-73c8-4f1d-a
 
 <!-- > above is graph VQA demo video.  -->
 
+### News <a name="news"></a>
+
+- **`[2024/07/01]`** DriveLM got accepted to ECCV! Congrats to the team!
+- **`[2024/06/01]`** Challenge ended up! [See the final leaderboard](https://opendrivelab.com/challenge2024/#driving_with_language).
+- **`[2024/03/25]`** Challenge test server is online and the test questions are released. [Chekc it out!](https://github.com/OpenDriveLab/DriveLM/tree/main/challenge)
+- **`[2024/02/29]`** Challenge repo release. Baseline, data and submission format, evaluation pipeline. [Have a look!](https://github.com/OpenDriveLab/DriveLM/tree/main/challenge)
+- **`[2023/08/25]`** DriveLM-nuScenes demo released.
+- **`[2023/12/22]`** DriveLM-nuScenes full `v1.0` and [paper](https://arxiv.org/abs/2312.14150) released.
+- **`[Early 2024]`** DriveLM-Agent inference code.
+- **`Note:`** We plan to release a simple, flexible training code that supports multi-view inputs as a starter kit for the AD challenge (stay tuned for details).
+
 ## Table of Contents
 1. [Highlights](#highlight)
 2. [Getting Started](#gettingstarted)
    - [Prepare DriveLM-nuScenes](docs/data_prep_nus.md)  
 3. [Current Endeavors and Future Horizons](#timeline)
-4. [News and TODO List](#newsandtodolist)
-   - [News](#news)
-   - [TODO List](#todolist)
+4. [TODO List](#newsandtodolist)
 5. [DriveLM-Data](#drivelmdata)
    - [Comparison and Stats](#comparison)
    - [GVQA Details](docs/gvqa.md)
@@ -132,18 +141,7 @@ DriveLM attempts to address some of the challenges faced by the community.
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
-## News and TODO List <a name="newsandtodolist"></a>
-
-### News <a name="news"></a>
-
-- **`[2024/07/01]`** DriveLM got accepted to ECCV! Congrats to the team!
-- **`[2024/06/01]`** Challenge ended up! [See the final leaderboard](https://opendrivelab.com/challenge2024/#driving_with_language).
-- **`[2024/03/25]`** Challenge test server is online and the test questions are released. [Chekc it out!](https://github.com/OpenDriveLab/DriveLM/tree/main/challenge)
-- **`[2024/02/29]`** Challenge repo release. Baseline, data and submission format, evaluation pipeline. [Have a look!](https://github.com/OpenDriveLab/DriveLM/tree/main/challenge)
-- **`[2023/08/25]`** DriveLM-nuScenes demo released.
-- **`[2023/12/22]`** DriveLM-nuScenes full `v1.0` and [paper](https://arxiv.org/abs/2312.14150) released.
-- **`[Early 2024]`** DriveLM-Agent inference code.
-- **`Note:`** We plan to release a simple, flexible training code that supports multi-view inputs as a starter kit for the AD challenge (stay tuned for details).
+## TODO List <a name="newsandtodolist"></a>
 
 ### TODO List <a name="todolist"></a>
 
