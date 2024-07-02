@@ -136,7 +136,7 @@ DriveLM attempts to address some of the challenges faced by the community.
 
 ### News <a name="news"></a>
 
-- **`[2024/06/01]`** DriveLM got accepted to ECCV! Congrats to the team!
+- **`[2024/07/01]`** DriveLM got accepted to ECCV! Congrats to the team!
 - **`[2024/06/01]`** Challenge ended up! [See the final leaderboard](https://opendrivelab.com/challenge2024/#driving_with_language).
 - **`[2024/03/25]`** Challenge test server is online and the test questions are released. [Chekc it out!](https://github.com/OpenDriveLab/DriveLM/tree/main/challenge)
 - **`[2024/02/29]`** Challenge repo release. Baseline, data and submission format, evaluation pipeline. [Have a look!](https://github.com/OpenDriveLab/DriveLM/tree/main/challenge)
