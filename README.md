@@ -143,8 +143,6 @@ DriveLM attempts to address some of the challenges faced by the community.
 
 ## TODO List <a name="newsandtodolist"></a>
 
-### TODO List <a name="todolist"></a>
-
 - [ ] DriveLM-Data
   - [x] DriveLM-nuScenes
   - [ ] DriveLM-CARLA
