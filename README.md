@@ -91,8 +91,8 @@ https://github.com/OpenDriveLab/DriveLM-new/assets/75412366/78c32442-73c8-4f1d-a
 - **`[2024/02/29]`** Challenge repo release. Baseline, data and submission format, evaluation pipeline. [Have a look!](https://github.com/OpenDriveLab/DriveLM/tree/main/challenge)
 - **`[2023/08/25]`** DriveLM-nuScenes demo released.
 - **`[2023/12/22]`** DriveLM-nuScenes full `v1.0` and [paper](https://arxiv.org/abs/2312.14150) released.
-- **`[Early 2024]`** DriveLM-Agent inference code.
-- **`Note:`** We plan to release a simple, flexible training code that supports multi-view inputs as a starter kit for the AD challenge (stay tuned for details).
+<!-- > - **`[Early 2024]`** DriveLM-Agent inference code.  -->
+<!-- > - **`Note:`** We plan to release a simple, flexible training code that supports multi-view inputs as a starter kit for the AD challenge (stay tuned for details).  -->
 
 ## Table of Contents
 1. [Highlights](#highlight)
