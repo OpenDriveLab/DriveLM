@@ -1,5 +1,7 @@
+
+
 ### TL;DR
-* The purpose of this folder is to facilitate our CVPR 2024 challenge. Initially, we will use a small subset of training data (**demo train** in the following text) as an illustrative example, demonstrating how to obtain the **test data format** and the submission format, how to train the baseline and infer the baseline, and go through the evaluation pipeline. 
+* The purpose of this folder is to facilitate valid submission to DriveLM official test server. Initially, we will use a small subset of training data (**demo train** in the following text) as an illustrative example, demonstrating how to obtain the **test data format** and the submission format, how to train the baseline and infer the baseline, and go through the evaluation pipeline. 
   
 * Thrilled to announce that the test server is online and the test questions are release! Check `DriveLM-nuScenes version-1.1 val` and [How-to-submit](#submit-to-test-server).
 
@@ -318,7 +320,7 @@ If you confirm that the submission format is correct, please contact the challen
 
 ```
 Email Subject:
-[CVPR DRIVELM] Failed submission - {Submission ID}
+[OFFICIAL DRIVELM] Failed submission - {Submission ID}
 Body:
   Your Name: {}
   Team Name: {}
