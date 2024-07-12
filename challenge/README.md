@@ -226,7 +226,7 @@ The zero-shot results of baseline on the test data are as follows:
 
 ### Submission Instruction
 
-The competition server is held on [Hugging Face space](https://huggingface.co/spaces/AGC2024/driving-with-language-2024). Our test server is now open for submission!
+The competition server is held on [Hugging Face space](https://huggingface.co/spaces/AGC2024/driving-with-language-official). Our test server is now open for submission!
 
 
 Please infer your model on the `DriveLM-nuScenes version-1.1 val`(this is our test question and we will **NOT** release their GT answer) and get your output as `output.json`. You need to evaluate `output.json` locally first before submitting to test server!
@@ -258,7 +258,7 @@ Please infer your model on the `DriveLM-nuScenes version-1.1 val`(this is our te
 
 3. Submit your result and evaluate on test server
 
-    Go to [competition space](https://huggingface.co/spaces/AGC2024/driving-with-language-2024), click `New Submission` on the left panel. Paste the link of the Hugging Face model you created under `Hub model`. Then click `Submit`. 
+    Go to [competition space](https://huggingface.co/spaces/AGC2024/driving-with-language-official), click `New Submission` on the left panel. Paste the link of the Hugging Face model you created under `Hub model`. Then click `Submit`. 
 
     <font color=red> Note: you can make up to 3 submissions per day. </font>
 
@@ -330,7 +330,7 @@ Body:
 
 
 ## Citation
-Please consider citing our project and staring our [huggingface repo](https://huggingface.co/spaces/AGC2024/driving-with-language-2024) if they help your competition and research.
+Please consider citing our project and staring our [huggingface repo](https://huggingface.co/spaces/AGC2024/driving-with-language-official) if they help your competition and research.
 ```BibTeX
 @article{sima2023drivelm,
   title={DriveLM: Driving with Graph Visual Question Answering},
