@@ -12,7 +12,6 @@ Dataset | #Seeds | RC (%) | IS | DS |
 | Validation \\{routes 3,13} |	3 | 95.5 | 0.51 |49.3 |
 | Validation | 3 | 85.9 | 0.46 | 44.3 |
 | Training | 1 | 98.8 | 0.49 | 48.5 |
-| Bench2Drive | 3 | 99.8 | 89.1 | 89.1 |
 
 Find more details in the accompanying [report.pdf](docs/report.pdf).
 
@@ -90,9 +89,35 @@ In particular, we would like to thank the following repository for its contribut
 
 We also thank the creators of the numerous pip libraries we use. Complex projects like this would not be feasible without your contribution.
 
-## License
+## License and Citation <a name="licenseandcitation"></a>
+All assets and code in this repository are under the [Apache 2.0 license](./LICENSE) unless specified otherwise. The language data is under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Other datasets (including nuScenes) inherit their own distribution licenses. Please consider citing our paper and project if they help your research.
 
-This project is licensed under the MIT License.
+```BibTeX
+@article{sima2023drivelm,
+  title={DriveLM: Driving with Graph Visual Question Answering},
+  author={Sima, Chonghao and Renz, Katrin and Chitta, Kashyap and Chen, Li and Zhang, Hanxue and Xie, Chengen and Luo, Ping and Geiger, Andreas and Li, Hongyang},
+  journal={arXiv preprint arXiv:2312.14150},
+  year={2023}
+}
+```
+
+```BibTeX
+@misc{contributors2023drivelmrepo,
+  title={DriveLM: Driving with Graph Visual Question Answering},
+  author={DriveLM contributors},
+  howpublished={\url{https://github.com/OpenDriveLab/DriveLM}},
+  year={2023}
+}
+```
+
+```BibTeX
+@misc{contributors2023drivelmrepo,
+  author       = {Bei{\ss}wenger, Jens},
+  title        = {{PDM-Lite}: A Rule-Based Planner for CARLA Leaderboard 2.0},
+  year         = {2024},
+  howpublished = {\url{[https://github.com/OpenDriveLab/DriveLM/tree/DriveLM-CARLA](https://github.com/OpenDriveLab/DriveLM/blob/DriveLM-CARLA/docs/report.pdf)}}
+}
+```
 
 ## Contributing
 
