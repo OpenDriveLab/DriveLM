@@ -453,6 +453,27 @@ class DataAgent(AutoPilot):
         relative_pos = t_u.get_relative_transform(ego_matrix, ego_matrix)
 
         ego_wp = self.world_map.get_waypoint(self._vehicle.get_location(), project_to_road=True, lane_type=carla.libcarla.LaneType.Any)
+        
+        # to compute lane_relative_to_ego for walkers and other cars we first have to precompute some in which direction the opposite lane is & the width of the center lane
+        left_wp, right_wp = ego_wp.get_left_lane(), ego_wp.get_right_lane()
+        left_decreasing_lane_id = left_wp is not None and left_wp.lane_id < ego_wp.lane_id or right_wp is not None and right_wp.lane_id > ego_wp.lane_id
+        
+        remove_lanes_for_lane_relative_to_ego = 1
+        wp = ego_wp
+        is_opposite = False
+        while True:
+            flag = ego_wp.lane_id > 0 and left_decreasing_lane_id or ego_wp.lane_id < 0 and not left_decreasing_lane_id
+            if is_opposite:
+                flag = not flag
+            wp = wp.get_left_lane() if flag else wp.get_right_lane()
+            
+            is_opposite = ego_wp.lane_id * wp.lane_id < 0
+                
+            if wp is None or wp.lane_type == carla.LaneType.Driving and ego_wp.lane_id * wp.lane_id < 0:
+                break
+            
+            if wp.lane_type != carla.LaneType.Driving:
+                remove_lanes_for_lane_relative_to_ego += 1
 
         # how far is next junction
         next_wps = self._wps_next_until_lane_end(ego_wp)
@@ -680,14 +701,18 @@ class DataAgent(AutoPilot):
 
                     if vehicle_wp.road_id == ego_wp.road_id:
                         same_road_as_ego = True
+
                         direction = vehicle_wp.lane_id / abs(vehicle_wp.lane_id)
                         if direction == ego_lane_direction:
                             same_direction_as_ego = True
-                        if same_direction_as_ego:
-                            lane_relative_to_ego = abs(vehicle_wp.lane_id - lane_id_left_most_lane_same_direction)
-                        else:
-                            lane_relative_to_ego = -1 *  abs(vehicle_wp.lane_id - lane_id_right_most_lane_opposite_direction) - 1
-                        lane_relative_to_ego = lane_relative_to_ego - ego_lane_number
+
+                        lane_relative_to_ego = vehicle_wp.lane_id - ego_wp.lane_id
+                        lane_relative_to_ego *= -1 if left_decreasing_lane_id else 1
+                        
+                        if not same_direction_as_ego:
+                            lane_relative_to_ego += remove_lanes_for_lane_relative_to_ego * (1 if lane_relative_to_ego < 0 else -1)
+                        
+                        lane_relative_to_ego = -lane_relative_to_ego
 
                     vehicle_extent_list = [vehicle_extent.x, vehicle_extent.y, vehicle_extent.z]
                     yaw = np.deg2rad(vehicle_rotation.yaw)
@@ -816,14 +841,18 @@ class DataAgent(AutoPilot):
                 
                 if walker_wp.road_id == ego_wp.road_id:
                     same_road_as_ego = True
+
                     direction = walker_wp.lane_id / abs(walker_wp.lane_id)
                     if direction == ego_lane_direction:
                         same_direction_as_ego = True
-                    if same_direction_as_ego:
-                        lane_relative_to_ego = abs(walker_wp.lane_id - lane_id_left_most_lane_same_direction)
-                    else:
-                        lane_relative_to_ego = -1 * abs(walker_wp.lane_id - lane_id_right_most_lane_opposite_direction) - 1
-                    lane_relative_to_ego = lane_relative_to_ego - ego_lane_number
+
+                    lane_relative_to_ego = walker_wp.lane_id - ego_wp.lane_id
+                    lane_relative_to_ego *= -1 if left_decreasing_lane_id else 1
+                    
+                    if not same_direction_as_ego:
+                        lane_relative_to_ego += remove_lanes_for_lane_relative_to_ego * (1 if lane_relative_to_ego < 0 else -1)
+                    
+                    lane_relative_to_ego = -lane_relative_to_ego
                 
 
                 result = {
@@ -934,14 +963,18 @@ class DataAgent(AutoPilot):
             try:
                 if traffic_light_wp.road_id == ego_wp.road_id:
                     same_road_as_ego = True
+
                     direction = traffic_light_wp.lane_id / abs(traffic_light_wp.lane_id)
                     if direction == ego_lane_direction:
                         same_direction_as_ego = True
-                    if same_direction_as_ego:
-                        lane_relative_to_ego = abs(traffic_light_wp.lane_id - lane_id_left_most_lane_same_direction)
-                    else:
-                        lane_relative_to_ego = -1 * abs(traffic_light_wp.lane_id - lane_id_right_most_lane_opposite_direction) - 1
-                    lane_relative_to_ego = lane_relative_to_ego - ego_lane_number
+
+                    lane_relative_to_ego = traffic_light_wp.lane_id - ego_wp.lane_id
+                    lane_relative_to_ego *= -1 if left_decreasing_lane_id else 1
+                    
+                    if not same_direction_as_ego:
+                        lane_relative_to_ego += remove_lanes_for_lane_relative_to_ego * (1 if lane_relative_to_ego < 0 else -1)
+                    
+                    lane_relative_to_ego = -lane_relative_to_ego
             except:
                 pass
             
@@ -1003,14 +1036,18 @@ class DataAgent(AutoPilot):
             
             if stop_sign_wp.road_id == ego_wp.road_id:
                 same_road_as_ego = True
+
                 direction = stop_sign_wp.lane_id / abs(stop_sign_wp.lane_id)
                 if direction == ego_lane_direction:
                     same_direction_as_ego = True
-                if same_direction_as_ego:
-                    lane_relative_to_ego = abs(stop_sign_wp.lane_id - lane_id_left_most_lane_same_direction)
-                else:
-                    lane_relative_to_ego = -1 * abs(stop_sign_wp.lane_id - lane_id_right_most_lane_opposite_direction) - 1
-                lane_relative_to_ego = lane_relative_to_ego - ego_lane_number
+
+                lane_relative_to_ego = stop_sign_wp.lane_id - ego_wp.lane_id
+                lane_relative_to_ego *= -1 if left_decreasing_lane_id else 1
+                
+                if not same_direction_as_ego:
+                    lane_relative_to_ego += remove_lanes_for_lane_relative_to_ego * (1 if lane_relative_to_ego < 0 else -1)
+                
+                lane_relative_to_ego = -lane_relative_to_ego
             
             result = {
                     'class': 'stop_sign_vqa',
@@ -1053,14 +1090,18 @@ class DataAgent(AutoPilot):
                 same_direction_as_ego = False
                 if static_wp.road_id == ego_wp.road_id:
                     same_road_as_ego = True
+                    
                     direction = static_wp.lane_id / abs(static_wp.lane_id)
                     if direction == ego_lane_direction:
                         same_direction_as_ego = True
-                    if same_direction_as_ego:
-                        lane_relative_to_ego = abs(static_wp.lane_id - lane_id_left_most_lane_same_direction)
-                    else:
-                        lane_relative_to_ego = -1 * abs(static_wp.lane_id - lane_id_right_most_lane_opposite_direction) - 1
-                    lane_relative_to_ego = lane_relative_to_ego - ego_lane_number
+
+                    lane_relative_to_ego = static_wp.lane_id - ego_wp.lane_id
+                    lane_relative_to_ego *= -1 if left_decreasing_lane_id else 1
+                    
+                    if not same_direction_as_ego:
+                        lane_relative_to_ego += remove_lanes_for_lane_relative_to_ego * (1 if lane_relative_to_ego < 0 else -1)
+                    
+                    lane_relative_to_ego = -lane_relative_to_ego
 
 
                 if static.type_id == 'static.prop.mesh':
