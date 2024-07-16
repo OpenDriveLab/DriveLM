@@ -111,7 +111,7 @@ All assets and code in this repository are under the [Apache 2.0 license](./LICE
 ```
 
 ```BibTeX
-@misc{contributors2023drivelmrepo,
+@misc{contributors2024pdmlite,
   title        = {{PDM-Lite}: A Rule-Based Planner for CARLA Leaderboard 2.0},
   author       = {Bei{\ss}wenger, Jens},
   howpublished = {\url{https://github.com/OpenDriveLab/DriveLM/blob/DriveLM-CARLA/docs/report.pdf}},
