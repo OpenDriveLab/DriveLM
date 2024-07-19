@@ -30,11 +30,11 @@ Find more details in the accompanying [report.pdf](docs/report.pdf).
 Clone the repository, set up CARLA Leaderboard 2.0, and create the conda environment:
 
 ```Shell
-git clone git@github.com:Jens21/PDM-Lite.git
+git clone git@github.com:OpenDriveLab/DriveLM.git
 cd PDM-Lite
 chmod +x setup_pdm_lite.sh
 ./setup_pdm_lite.sh
-conda env create -f environment.yml
+conda env create -f environment_pdm_lite.yml
 conda activate pdm_lite
 ```
 Before running the code, you need to add the following paths to your system's `PYTHONPATH` environment variable:
@@ -44,7 +44,7 @@ export CARLA_ROOT=/path/to/CARLA/root
 export WORK_DIR=/path/to/pdm_lite
 export PYTHONPATH=$PYTHONPATH:${CARLA_ROOT}/PythonAPI
 export PYTHONPATH=$PYTHONPATH:${CARLA_ROOT}/PythonAPI/carla
-export PYTHONPATH=$PYTHONPATH:$CARLA_ROOT/PythonAPI/carla/dist/carla-0.9.10-py3.7-linux-x86_64.egg
+export PYTHONPATH=$PYTHONPATH:${CARLA_ROOT}/PythonAPI/carla/dist/carla-0.9.14-py3.7-linux-x86_64.egg
 export SCENARIO_RUNNER_ROOT=${WORK_DIR}/scenario_runner
 export LEADERBOARD_ROOT=${WORK_DIR}/leaderboard
 export PYTHONPATH="${CARLA_ROOT}/PythonAPI/carla/":"${SCENARIO_RUNNER_ROOT}":"${LEADERBOARD_ROOT}":${PYTHONPATH}
