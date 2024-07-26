@@ -12,6 +12,7 @@ Dataset | #Seeds | RC (%) | IS | DS |
 | Validation \\{routes 3,13} |	3 | 95.5 | 0.51 |49.3 |
 | Validation | 3 | 85.9 | 0.46 | 44.3 |
 | Training | 1 | 98.8 | 0.49 | 48.5 |
+| Bench2Drive | 3 | 99.8 | 89.3 | 89.2 |
 
 Find more details in the accompanying [report.pdf](docs/report.pdf).
 
