@@ -82,7 +82,7 @@ Note that generating a dataset with a single computer can be slow. For faster da
 one might use the more advanced script [start_expert_slurm_dynports](start_expert_slurm_dynports.py), which constantly checks jobs for failure and resubmits them in case. It also uses dynamic port allocation.
 
 ## Graph Visual Question Answering (GVQA)
-We provide a GVQA dataset, featuring 215,631 frames across 1,759 routes with 100% completion and zero infractions. All scripts to reproduce the following can be found [HERE](vqa_dataset).
+We provide a GVQA dataset, featuring 214,631 frames across 1,759 routes with 100% completion and zero infractions. All scripts to reproduce the following can be found [HERE](vqa_dataset).
 
 ### Quick Start
 
