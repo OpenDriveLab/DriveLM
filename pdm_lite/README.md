@@ -81,39 +81,6 @@ cd $WORK_DIR
 Note that generating a dataset with a single computer can be slow. For faster data generation, you should use multiple GPUs. We provide a Python script for SLURM clusters in [start_expert_slurm](start_expert_slurm.py), which works similarly to the evaluation script. Depending on the users permissions on the slurm cluster, 
 one might use the more advanced script [start_expert_slurm_dynports](start_expert_slurm_dynports.py), which constantly checks jobs for failure and resubmits them in case. It also uses dynamic port allocation.
 
-## Graph Visual Question Answering (GVQA)
-We provide a GVQA dataset, featuring 214,631 frames across 1,759 routes with 100% completion and zero infractions. All scripts to reproduce the following can be found [HERE](vqa_dataset).
-
-### Quick Start
-
-1. Download the PDM-Lite dataset (330+ GB extracted):
-```
-bash download_pdm_lite.sh
-```
-2. Get DriveLM-VGQA labels and keyframes:
-```
-wget https://huggingface.co/datasets/OpenDriveLab/DriveLM/resolve/main/drivelm_carla_keyframes.txt
-wget https://huggingface.co/datasets/OpenDriveLab/DriveLM/resolve/main/drivelm_carla_vqas.zip
-unzip drivelm_carla_vqas.zip
-```
-### Custom Dataset Generation (Optional)
-
-Extract keyframes:
-```
-python3 extract_keyframes_drivelm_carla.py --path-dataset /path/to/data --path-keyframes /path/to/save/keyframes.txt
-```
-
-Generate Graph-VQAs:
-```
-python3 generate_qas_drivelm_carla.py --path-keyframes /path/to/keyframes.txt --data-directory /path/to/data --output-graph-directory /path/to/output
-```
-
-Optional arguments:
-- ```--sample-frame-mode```: Specify how to select frames, choose from 'all', 'keyframes', or 'uniform'.
-- ```--sample-uniform-interval```: Specify interval for uniform sampling.
-- ```--save-examples```: Save example images for debugging.
-- ```--visualize-projection```: Visualize object centers in images.
-
 ## Acknowledgements
 
 Open-source code like this is built on the shoulders of other open-source repositories.
