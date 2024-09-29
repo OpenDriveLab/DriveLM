@@ -6,7 +6,9 @@
     
 **DriveLM:** *Driving with **G**raph **V**isual **Q**uestion **A**nswering*
 
-## Introduction
+</div>
+
+## Highlights
  
 🔥 We present datasets (**DriveLM-Data**) built on nuScenes and CARLA, and propose a VLM-based baseline approach (**DriveLM-Agent**) for jointly performing Graph VQA and end-to-end driving.
 
