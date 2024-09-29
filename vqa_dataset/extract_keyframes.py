@@ -145,7 +145,7 @@ def process_route(args, frames):
     return keyframe_paths
 
 def main(args):
-    routes = glob.glob(f"{args.path_dataset}/*/*_route*", recursive=True)
+    routes = glob.glob(f"{args.path_dataset}/*/*", recursive=True)
     print(f'Found {len(routes)} routes')
 
     all_keyframe_paths = []

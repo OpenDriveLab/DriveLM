@@ -1,13 +1,13 @@
 #!/bin/bash
 
-# PDM-Lite Dataset Download Script
-# This script downloads and extracts the PDM-Lite dataset in parallel
+# PDM_Lite_Carla_LB2 Dataset Download Script
+# This script downloads and extracts the PDM_Lite_Carla_LB2 dataset in parallel
 
 set -e  # Exit on error
 
 # Create and navigate to the dataset directory
-mkdir -p pdm_lite
-cd pdm_lite
+mkdir -p PDM_Lite_Carla_LB2
+cd PDM_Lite_Carla_LB2
 
 # Function to download and process a file
 download_and_process() {
@@ -28,13 +28,13 @@ download_and_process() {
 # Export function for parallel processing
 export -f download_and_process
 
-# Get the number of available processors
-num_procs=$(nproc)
+# Since it's mainly IO we can use one process per archive
+num_procs=38
 
 # Download main files in parallel (README.md and results.zip)
 parallel -j "$num_procs" download_and_process ::: \
-    "https://huggingface.co/datasets/Jens21/pdm_lite/resolve/main/results.zip" \
-    "https://huggingface.co/datasets/Jens21/pdm_lite/resolve/main/README.md"
+    "https://huggingface.co/datasets/autonomousvision/PDM_Lite_Carla_LB2/resolve/main/results.zip" \
+    "https://huggingface.co/datasets/autonomousvision/PDM_Lite_Carla_LB2/resolve/main/README.md"
 
 # Move into data directory for further downloads
 mkdir -p data
@@ -83,7 +83,7 @@ files=(
 )
 
 # Base URL for data files
-base_url="https://huggingface.co/datasets/Jens21/pdm_lite/resolve/main/data"
+base_url="https://huggingface.co/datasets/autonomousvision/PDM_Lite_Carla_LB2/resolve/main/data"
 
 # Download and process files in parallel using available CPU cores
 echo "Downloading and extracting data files using $num_procs processors..."
