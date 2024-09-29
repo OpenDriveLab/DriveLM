@@ -48,7 +48,9 @@ For more details, see [GVQA task](docs/gvqa.md), [Dataset Features](docs/data_de
 ## Graph Visual Question Answering (GVQA) Dataset <a name="dataset"></a>
 We provide a GVQA dataset, featuring 71,246 keyframes out of 214631 total frames across 1,759 routes with 100% completion and zero infractions. All scripts to reproduce the following can be found [HERE](vqa_dataset).
 
-1. Download the PDM-Lite dataset (330+ GB extracted):
+1. Download the PDM-Lite dataset (330+ GB extracted).
+  **Note:** This dataset is based on the PDM-Lite expert with improvements integrated from ["Tackling CARLA Leaderboard 2.0 with
+End-to-End Imitation Learning"](https://kashyap7x.github.io/assets/pdf/students/Zimmerlin2024.pdf)
 ```
 bash download_pdm_lite_carla_lb2.sh
 ```
