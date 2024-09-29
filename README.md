@@ -46,7 +46,7 @@ For more details, see [GVQA task](docs/gvqa.md), [Dataset Features](docs/data_de
 <p align="right">(<a href="#top">back to top</a>)</p>
 
 ## Graph Visual Question Answering (GVQA) Dataset <a name="dataset"></a>
-We provide a GVQA dataset, featuring 71,246 keyframes out of 214631 total frames across 1,759 routes with 100% completion and zero infractions. All scripts to generate the following VQA and keyframe files can be found [HERE](vqa_dataset).
+We provide a GVQA dataset, featuring 71,246 keyframes out of 214,631 total frames across 1,759 routes with 100% completion and zero infractions. All scripts to generate the following VQA and keyframe files can be found [HERE](vqa_dataset).
 
 1. Download the PDM-Lite dataset (330+ GB extracted).
   **Note:** This dataset is based on the PDM-Lite expert with improvements integrated from ["Tackling CARLA Leaderboard 2.0 with
@@ -72,12 +72,12 @@ python3 extract_keyframes.py --path-dataset /path/to/data --path-keyframes /path
 
 Generate Graph-VQAs:
 ```
-python3 generate_qas_drivelm_carla.py --path-keyframes /path/to/keyframes.txt --data-directory /path/to/data --output-graph-directory /path/to/output
+python3 carla_vqa_generator_main.py --path-keyframes /path/to/keyframes.txt --data-directory /path/to/data --output-graph-directory /path/to/output
 ```
 
 Optional arguments:
 - ```--sample-frame-mode```: Specify how to select frames, choose from 'all', 'keyframes', or 'uniform'.
-- ```--sample-uniform-interval```: Specify interval for uniform sampling.
+- ```--sample-uniform-interval```: Specify the interval for uniform sampling.
 - ```--save-examples```: Save example images for debugging.
 - ```--visualize-projection```: Visualize object centers in images.
 
