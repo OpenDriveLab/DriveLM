@@ -14,7 +14,8 @@ Dataset | #Seeds | RC (%) | IS | DS |
 | Training | 1 | 98.8 | 0.49 | 48.5 |
 | Bench2Drive | 3 | 99.8 | 89.3 | 89.2 |
 
-Find more details in the accompanying [report.pdf](docs/report.pdf).
+Find more details in the accompanying [report.pdf](docs/report.pdf) and ["Tackling CARLA Leaderboard 2.0 with
+End-to-End Imitation Learning"](https://kashyap7x.github.io/assets/pdf/students/Zimmerlin2024.pdf).
 
 ## Contents
 
