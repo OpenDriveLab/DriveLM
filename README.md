@@ -144,9 +144,9 @@ DriveLM attempts to address some of the challenges faced by the community.
 
 ## TODO List <a name="newsandtodolist"></a>
 
-- [ ] DriveLM-Data
+- [x] DriveLM-Data
   - [x] DriveLM-nuScenes
-  - [ ] DriveLM-CARLA
+  - [x] DriveLM-CARLA
 - [x] DriveLM-Metrics
   - [x] GPT-score
 - [ ] DriveLM-Agent
