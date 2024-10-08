@@ -660,7 +660,7 @@ class QAsGenerator():
                                                 vehicle["color_name"] != 'None' else ''
 
             # Handle specific color RGB values
-            if vehicle['color_rgb'] == [0, 28, 0]:
+            if vehicle['color_rgb'] == [0, 28, 0] or vehicle['color_rgb'] == [12, 42, 12]:
                 color = 'dark green '
             elif vehicle['color_rgb'] == [211, 142, 0]:
                 color = 'yellow '
