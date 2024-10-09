@@ -1,5 +1,5 @@
 import argparse
-from vqa_dataset.carla_vqa_generator import QAsGenerator
+from carla_vqa_generator import QAsGenerator
 import string
 import random
 import pathlib
