@@ -85,7 +85,7 @@ https://github.com/OpenDriveLab/DriveLM-new/assets/75412366/78c32442-73c8-4f1d-a
 
 ## News <a name="news"></a>
 
-- **`[2024/07/16]`** [Drive-Bench](https://drive-bench.github.io/) release! In-depth analysis in what are DriveLM really benchmarking. Take a look at [arxiv](https://arxiv.org/pdf/2501.04003).
+- **`[2025/01/08]`** [Drive-Bench](https://drive-bench.github.io/) release! In-depth analysis in what are DriveLM really benchmarking. Take a look at [arxiv](https://arxiv.org/pdf/2501.04003).
 - **`[2024/07/16]`** DriveLM [official leaderboard](https://huggingface.co/spaces/AGC2024/driving-with-language-official) reopen!
 - **`[2024/07/01]`** DriveLM got accepted to ECCV 2024! Congrats to the team!
 - **`[2024/06/01]`** Challenge ended up! [See the final leaderboard](https://opendrivelab.com/challenge2024/#driving_with_language).
