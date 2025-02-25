@@ -12,15 +12,12 @@ Provisional code to evaluate Autonomous Agents for the CARLA Autonomous Driving 
 """
 from __future__ import print_function
 
-print('start leaderboard_evaluator_local.py')
 import traceback
 import argparse
 from argparse import RawTextHelpFormatter
 from datetime import datetime
-from distutils.version import LooseVersion
 import importlib
 import os
-import pkg_resources
 import sys
 import carla
 import signal
@@ -86,11 +83,6 @@ class LeaderboardEvaluator(object):
 
         # Setup the simulation
         self.client, self.client_timeout, self.traffic_manager, self.traffic_manager_port = self._setup_simulation(args)
-
-        dist = pkg_resources.get_distribution("carla")
-        if dist.version != 'leaderboard':
-            if LooseVersion(dist.version) < LooseVersion('0.9.10'):
-                raise ImportError("CARLA version 0.9.10.1 or newer required. CARLA version found: {}".format(dist))
 
         # Load agent
         module_name = os.path.basename(args.agent).split('.')[0]
@@ -233,11 +225,7 @@ class LeaderboardEvaluator(object):
         Load a new CARLA world without changing the settings and provide data to CarlaDataProvider
         """
 
-        loaded_town = self.client.get_world().get_map().name.split('/')[-1]
-        if loaded_town != town:
-            self.world = self.client.load_world(town, reset_settings=False)
-        else:
-            self.world = self.client.get_world()
+        self.world = self.client.load_world(town, reset_settings=False)
 
         # Large Map settings are always reset, for some reason
         settings = self.world.get_settings()
@@ -504,7 +492,7 @@ def main():
 
     parser.add_argument("--track", type=str, default='SENSORS',
                         help="Participation track: SENSORS, MAP")
-    parser.add_argument('--resume', type=bool, default=False,
+    parser.add_argument('--resume', type=int, default=False,
                         help='Resume execution from last checkpoint?')
     parser.add_argument("--checkpoint", type=str, default='./simulation_results.json',
                         help="Path to checkpoint used for saving statistics and resuming")

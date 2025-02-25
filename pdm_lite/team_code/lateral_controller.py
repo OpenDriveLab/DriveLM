@@ -5,6 +5,7 @@ controller implementations.
 
 import numpy as np
 
+
 class LateralController:
     """
     Base class for lateral controllers.
@@ -59,14 +60,20 @@ class LateralPIDController(LateralController):
         self.lateral_pid_speed_threshold = self.config.lateral_pid_speed_threshold
 
         self.lateral_pid_window_size = self.config.lateral_pid_window_size
-        self.lateral_pid_minimum_lookahead_distance = self.config.lateral_pid_minimum_lookahead_distance
-        self.lateral_pid_maximum_lookahead_distance = self.config.lateral_pid_maximum_lookahead_distance
+        self.lateral_pid_minimum_lookahead_distance = (
+            self.config.lateral_pid_minimum_lookahead_distance
+        )
+        self.lateral_pid_maximum_lookahead_distance = (
+            self.config.lateral_pid_maximum_lookahead_distance
+        )
 
         # The following lists are used as deques
         self.error_history = []  # Sliding window to store past errors
         self.saved_error_history = []  # Saved error history for state loading
 
-    def step(self, route_points, current_speed, vehicle_position, vehicle_heading, inference_mode=False):
+    def step(
+        self, route_points, current_speed, vehicle_position, vehicle_heading, inference_mode=False
+    ):
         """
         Computes the steering angle based on the route, current speed, vehicle position, and heading.
 
@@ -85,14 +92,27 @@ class LateralPIDController(LateralController):
         # Compute the lookahead distance based on the current speed
         # Transfuser predicts checkpoints 1m apart, whereas in the expert the route points have distance 10cm.
         if inference_mode:
-            lookahead_distance = self.lateral_pid_speed_scale * current_speed + self.lateral_pid_speed_offset
-            lookahead_distance = np.clip(lookahead_distance, self.lateral_pid_minimum_lookahead_distance, \
-                self.lateral_pid_maximum_lookahead_distance) / self.config.route_points  # range [2.4, 10.5]
+            lookahead_distance = (
+                self.lateral_pid_speed_scale * current_speed + self.lateral_pid_speed_offset
+            )
+            lookahead_distance = (
+                np.clip(
+                    lookahead_distance,
+                    self.lateral_pid_minimum_lookahead_distance,
+                    self.lateral_pid_maximum_lookahead_distance,
+                )
+                / self.config.route_points
+            )  # range [2.4, 10.5]
             lookahead_distance = lookahead_distance - 2  # range [0.4, 8.5]
         else:
-            lookahead_distance = self.lateral_pid_speed_scale * current_speed_kph + self.lateral_pid_speed_offset
-            lookahead_distance = np.clip(lookahead_distance, self.lateral_pid_minimum_lookahead_distance,
-                                         self.lateral_pid_maximum_lookahead_distance)
+            lookahead_distance = (
+                self.lateral_pid_speed_scale * current_speed_kph + self.lateral_pid_speed_offset
+            )
+            lookahead_distance = np.clip(
+                lookahead_distance,
+                self.lateral_pid_minimum_lookahead_distance,
+                self.lateral_pid_maximum_lookahead_distance,
+            )
 
         lookahead_distance = int(min(lookahead_distance, route_points.shape[0] - 1))
 
@@ -105,20 +125,26 @@ class LateralPIDController(LateralController):
         heading_error = heading_error if heading_error < np.pi else heading_error - 2 * np.pi
 
         # Scale the heading error (leftover from a previous implementation)
-        heading_error = heading_error * 180. / np.pi / 90.
+        heading_error = heading_error * 180.0 / np.pi / 90.0
 
         # Update the error history. Only use the last lateral_pid_window_size errors like in a deque.
         self.error_history.append(heading_error)
-        self.error_history = self.error_history[-self.lateral_pid_window_size:]
+        self.error_history = self.error_history[-self.lateral_pid_window_size :]
 
         # Calculate the derivative and integral terms
-        derivative = 0.0 if len(self.error_history) == 1 else self.error_history[-1] - self.error_history[-2]
+        derivative = (
+            0.0 if len(self.error_history) == 1 else self.error_history[-1] - self.error_history[-2]
+        )
         integral = np.mean(self.error_history)
 
         # Compute the steering angle using the PID control law
         steering = np.clip(
-            self.lateral_pid_kp * heading_error + self.lateral_pid_kd * derivative + self.lateral_pid_ki * integral,
-            -1., 1.).item()
+            self.lateral_pid_kp * heading_error
+            + self.lateral_pid_kd * derivative
+            + self.lateral_pid_ki * integral,
+            -1.0,
+            1.0,
+        ).item()
 
         return steering
 

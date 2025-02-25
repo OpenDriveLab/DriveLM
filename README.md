@@ -12,8 +12,6 @@
  
 🔥 We present datasets (**DriveLM-Data**) built on nuScenes and CARLA, and propose a VLM-based baseline approach (**DriveLM-Agent**) for jointly performing Graph VQA and end-to-end driving.
 
-<!-- 🔥 **The key insight** is that with our proposed suite, we obtain a suitable proxy task to mimic the human reasoning process during driving.  -->
-
 <p align="center">
   <img src="assets/images/repo/drivelm_teaser.jpg">
 </p>
@@ -52,7 +50,8 @@ We provide a GVQA dataset, featuring 71,223 keyframes out of 214,631 total frame
   **Note:** This dataset is based on the PDM-Lite expert with improvements integrated from ["Tackling CARLA Leaderboard 2.0 with
 End-to-End Imitation Learning"](https://kashyap7x.github.io/assets/pdf/students/Zimmerlin2024.pdf)
 ```
-bash download_pdm_lite_carla_lb2.sh
+cd vqa_dataset
+python download_pdm_lite_carla_lb2.py
 ```
 2. Get DriveLM-VGQA labels and keyframes:
 ```
@@ -133,14 +132,6 @@ All assets and code in this repository are under the [Apache 2.0 license](./LICE
 <a href="https://twitter.com/OpenDriveLab" target="_blank">
     <img alt="Twitter Follow" src="https://img.shields.io/twitter/follow/OpenDriveLab?style=social&color=brightgreen&logo=twitter" />
   </a>
-
-<!-- <a href="https://opendrivelab.com" target="_blank">
-  <img src="https://img.shields.io/badge/contact%40opendrivelab.com-white?style=social&logo=gmail">
-</a> -->
-
-<!--
- [![Page Views Count](https://badges.toozhao.com/badges/01H9CR01K73G1S0AKDMF1ABC73/blue.svg)](https://badges.toozhao.com/stats/01H9CR01K73G1S0AKDMF1ABC73 "Get your own page views count badge on badges.toozhao.com")
--->
 
 **OpenDriveLab**
 - [DriveAGI](https://github.com/OpenDriveLab/DriveAGI) | [UniAD](https://github.com/OpenDriveLab/UniAD) | [OpenLane-V2](https://github.com/OpenDriveLab/OpenLane-V2) | [Survey on E2EAD](https://github.com/OpenDriveLab/End-to-end-Autonomous-Driving)

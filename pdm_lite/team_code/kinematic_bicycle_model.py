@@ -5,7 +5,7 @@ Kinematic bicycle model describing the motion of a car given its state and actio
 import numpy as np
 
 
-class KinematicBicycleModel():
+class KinematicBicycleModel:
     """
     Kinematic bicycle model describing the motion of a car given its state and action.
     """
@@ -28,11 +28,14 @@ class KinematicBicycleModel():
         self.throttle_acceleration = self.config.throttle_acceleration
         self.throttle_values = self.config.throttle_values
         self.brake_values = self.config.brake_values
-        self.throttle_threshold_during_forecasting = self.config.throttle_threshold_during_forecasting
+        self.throttle_threshold_during_forecasting = (
+            self.config.throttle_threshold_during_forecasting
+        )
 
     def forecast_other_vehicles(self, locations, headings, speeds, actions):
         """
         Forecast the future states of other vehicles based on their current states and actions.
+        Tuned parameters are taken from World on Rails.
 
         Args:
             locations (numpy.ndarray): Array of (x, y, z) coordinates representing the locations of other vehicles.
@@ -43,17 +46,32 @@ class KinematicBicycleModel():
         Returns:
             tuple: A tuple containing the forecasted locations, headings, and speeds for other vehicles.
         """
-        steers, throttles, brakes = actions[:, 0], actions[:, 1], actions[:, 2].astype(np.uint8)
+        steers, throttles, brakes = (
+            actions[:, 0],
+            actions[:, 1],
+            actions[:, 2].astype(np.uint8),
+        )
         wheel_angles = self.steering_gain * steers
-        slip_angles = np.arctan(self.rear_wheel_base / (self.front_wheel_base + self.rear_wheel_base) *
-                                np.tan(wheel_angles))
+        slip_angles = np.arctan(
+            self.rear_wheel_base
+            / (self.front_wheel_base + self.rear_wheel_base)
+            * np.tan(wheel_angles)
+        )
 
-        next_x = locations[:, 0] + speeds * np.cos(headings + slip_angles) * self.time_step
-        next_y = locations[:, 1] + speeds * np.sin(headings + slip_angles) * self.time_step
-        next_headings = headings + speeds / self.rear_wheel_base * np.sin(slip_angles) * self.time_step
+        next_x = (
+            locations[:, 0] + speeds * np.cos(headings + slip_angles) * self.time_step
+        )
+        next_y = (
+            locations[:, 1] + speeds * np.sin(headings + slip_angles) * self.time_step
+        )
+        next_headings = (
+            headings
+            + speeds / self.rear_wheel_base * np.sin(slip_angles) * self.time_step
+        )
 
-        next_speeds = speeds + self.time_step * np.where(brakes, self.brake_acceleration,
-                                                         throttles * self.throttle_acceleration)
+        next_speeds = speeds + self.time_step * np.where(
+            brakes, self.brake_acceleration, throttles * self.throttle_acceleration
+        )
         next_speeds = np.maximum(0.0, next_speeds)
 
         next_locations = np.column_stack([next_x, next_y, locations[:, 2]])
@@ -75,32 +93,45 @@ class KinematicBicycleModel():
         """
         steer, throttle, brake = action
         wheel_angle = self.steering_gain * steer
-        slip_angle = np.arctan(self.rear_wheel_base / (self.front_wheel_base + self.rear_wheel_base) *
-                               np.tan(wheel_angle))
+        slip_angle = np.arctan(
+            self.rear_wheel_base
+            / (self.front_wheel_base + self.rear_wheel_base)
+            * np.tan(wheel_angle)
+        )
 
         next_x = location[0] + speed * np.cos(heading + slip_angle) * self.time_step
         next_y = location[1] + speed * np.sin(heading + slip_angle) * self.time_step
-        next_heading = heading + speed / self.rear_wheel_base * np.sin(slip_angle) * self.time_step
+        next_heading = (
+            heading + speed / self.rear_wheel_base * np.sin(slip_angle) * self.time_step
+        )
 
         # We use different polynomial models for estimating the speed if whether the ego vehicle brakes or not.
         if brake:
             speed_kph = speed * 3.6
-            features = speed_kph**np.arange(1, 8)
+            features = speed_kph ** np.arange(1, 8)
             next_speed_kph = features @ self.brake_values
             next_speed = next_speed_kph / 3.6
         else:
-            throttle = np.clip(throttle, 0., 1.0)
+            throttle = np.clip(throttle, 0.0, 1.0)
 
             # For a throttle value < 0.3 the car doesn't really accelerate and the polynomial model below
             # doesn't hold anymore.
             if throttle < self.throttle_threshold_during_forecasting:
                 next_speed = speed
             else:
-                speed_kph = speed * 3.6
-                features = np.array([
-                    speed_kph, speed_kph**2, throttle, throttle**2, speed_kph * throttle, speed_kph * throttle**2,
-                    speed_kph**2 * throttle, speed_kph**2 * throttle**2
-                ]).T
+                speed_kph = (speed * 3.6).item()
+                features = np.array(
+                    [
+                        speed_kph,
+                        speed_kph**2,
+                        throttle,
+                        throttle**2,
+                        speed_kph * throttle,
+                        speed_kph * throttle**2,
+                        speed_kph**2 * throttle,
+                        speed_kph**2 * throttle**2,
+                    ]
+                ).T
 
                 next_speed_kph = features @ self.throttle_values
                 next_speed = next_speed_kph / 3.6

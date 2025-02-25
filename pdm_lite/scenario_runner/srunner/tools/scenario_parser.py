@@ -68,7 +68,7 @@ class ScenarioConfigurationParser(object):
                 config.name = scenario_config_name
                 config.type = scenario_config_type
 
-                for elem in scenario.getchildren():
+                for elem in list(scenario):
                     # Elements with special parsing
                     if elem.tag == 'ego_vehicle':
                         config.ego_vehicles.append(ActorConfigurationData.parse_from_node(elem, 'hero'))

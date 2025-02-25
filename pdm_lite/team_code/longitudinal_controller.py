@@ -5,6 +5,7 @@ longitudinal controller.
 
 import numpy as np
 
+
 class LongitudinalController:
     """
     Base class for longitudinal controller.
@@ -84,7 +85,7 @@ class LongitudinalPIDController(LongitudinalController):
 
     def get_throttle_and_brake(self, hazard_brake, target_speed, current_speed):
         """
-        Get the throttle and brake values based on the target speed, current speed, 
+        Get the throttle and brake values based on the target speed, current speed,
         and hazard brake condition using a PID controller.
 
         Args:
@@ -97,10 +98,12 @@ class LongitudinalPIDController(LongitudinalController):
         """
         # If there's a hazard or the target speed is very small, apply braking
         if hazard_brake or target_speed < 1e-5:
-            throttle, brake = 0., True
+            throttle, brake = 0.0, True
             return throttle, brake
 
-        target_speed = max(self.minimum_target_speed, target_speed)  # Avoid very small target speeds
+        target_speed = max(
+            self.minimum_target_speed, target_speed
+        )  # Avoid very small target speeds
 
         current_speed, target_speed = 3.6 * current_speed, 3.6 * target_speed  # Convert to km/h
 
@@ -108,22 +111,28 @@ class LongitudinalPIDController(LongitudinalController):
         if current_speed / target_speed > self.braking_ratio:
             self.speed_error_window = [0] * self.max_window_length
 
-            throttle, brake = 0., True
+            throttle, brake = 0.0, True
             return throttle, brake
 
         speed_error = target_speed - current_speed
         speed_error = speed_error + speed_error * current_speed * self.speed_error_scaling
 
         self.speed_error_window.append(speed_error)
-        self.speed_error_window = self.speed_error_window[-self.max_window_length:]
+        self.speed_error_window = self.speed_error_window[-self.max_window_length :]
 
-        derivative = 0 if len(
-            self.speed_error_window) == 1 else self.speed_error_window[-1] - self.speed_error_window[-2]
+        derivative = (
+            0
+            if len(self.speed_error_window) == 1
+            else self.speed_error_window[-1] - self.speed_error_window[-2]
+        )
         integral = np.mean(self.speed_error_window)
 
-        throttle = self.proportional_gain * speed_error + self.derivative_gain * derivative + \
-                                                                                    self.integral_gain * integral
-        throttle, brake = np.clip(throttle, 0., 1.), False
+        throttle = (
+            self.proportional_gain * speed_error
+            + self.derivative_gain * derivative
+            + self.integral_gain * integral
+        )
+        throttle, brake = np.clip(throttle, 0.0, 1.0), False
 
         return throttle, brake
 
@@ -180,7 +189,7 @@ class LongitudinalLinearRegressionController(LongitudinalController):
             tuple: A tuple containing the throttle and brake values.
         """
         if target_speed < 1e-5 or hazard_brake:
-            return 0., True
+            return 0.0, True
         elif target_speed < self.minimum_target_speed:  # Avoid very small target speeds
             target_speed = self.minimum_target_speed
 
@@ -191,28 +200,32 @@ class LongitudinalLinearRegressionController(LongitudinalController):
 
         # Maximum acceleration 1.9 m/tick
         if speed_error > self.maximum_acceleration:
-            return 1., False
+            return 1.0, False
 
         if current_speed / target_speed > params[-1] or hazard_brake:
-            throttle, control_brake = 0., True
+            throttle, control_brake = 0.0, True
             return throttle, control_brake
 
-        speed_error_cl = np.clip(speed_error, 0., np.inf) / 100.0
-        current_speed /= 100.
-        features = np.array([current_speed,\
-                            current_speed**2,\
-                            100*speed_error_cl,\
-                            speed_error_cl**2,\
-                            current_speed*speed_error_cl,\
-                            current_speed**2*speed_error_cl])
+        speed_error_cl = np.clip(speed_error, 0.0, np.inf) / 100.0
+        current_speed /= 100.0
+        features = np.array(
+            [
+                current_speed,
+                current_speed**2,
+                100 * speed_error_cl,
+                speed_error_cl**2,
+                current_speed * speed_error_cl,
+                current_speed**2 * speed_error_cl,
+            ]
+        )
 
-        throttle, control_brake = np.clip(features @ params[:-1], 0., 1.), False
+        throttle, control_brake = np.clip(features @ params[:-1], 0.0, 1.0), False
 
         return throttle, control_brake
 
     def get_throttle_extrapolation(self, target_speed, current_speed):
         """
-        Get the throttle value for the given target speed and current speed, assuming no hazard brake condition. 
+        Get the throttle value for the given target speed and current speed, assuming no hazard brake condition.
         This method is used for forecasting.
 
         Args:
@@ -229,25 +242,31 @@ class LongitudinalLinearRegressionController(LongitudinalController):
 
         # Maximum acceleration 1.9 m/tick
         if speed_error > self.maximum_acceleration:
-            return 1.
+            return 1.0
         # Maximum deceleration -4.82 m/tick
         elif speed_error < self.maximum_deceleration:
-            return 0.
+            return 0.0
 
-        throttle = 0.
+        throttle = 0.0
         # 0.1 to ensure small distances are overcome fast
         if target_speed < 0.1 or current_speed / target_speed > params[-1]:
             return throttle
 
-        speed_error_cl = np.clip(speed_error, 0., np.inf) / 100.0  # The scaling is a leftover from the optimization
-        current_speed /= 100.  # The scaling is a leftover from the optimization
-        features = np.array([current_speed,\
-                            current_speed**2,\
-                            100*speed_error_cl,\
-                            speed_error_cl**2,\
-                            current_speed*speed_error_cl,\
-                            current_speed**2*speed_error_cl]).flatten()
+        speed_error_cl = (
+            np.clip(speed_error, 0.0, np.inf) / 100.0
+        )  # The scaling is a leftover from the optimization
+        current_speed /= 100.0  # The scaling is a leftover from the optimization
+        features = np.array(
+            [
+                current_speed,
+                current_speed**2,
+                100 * speed_error_cl,
+                speed_error_cl**2,
+                current_speed * speed_error_cl,
+                current_speed**2 * speed_error_cl,
+            ]
+        ).flatten()
 
-        throttle = np.clip(features @ params[:-1], 0., 1.)
+        throttle = np.clip(features @ params[:-1], 0.0, 1.0)
 
         return throttle

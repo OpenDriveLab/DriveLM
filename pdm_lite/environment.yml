@@ -1,0 +1,21 @@
+name: pdm_lite
+channels:
+  - defaults
+dependencies:
+  - ca-certificates
+  - libpng
+  - python=3.10.15
+  - pip
+  - pip:
+    - torch
+    - carla==0.9.15
+    - laspy[lazrs,laszip]
+    - webcolors==1.13
+    - ujson
+    - scipy
+    - rdp
+    - h5py
+    - tqdm
+    - gym==0.26.2
+    - -r leaderboard/requirements.txt
+    - -r scenario_runner/requirements.txt
