@@ -44,21 +44,28 @@ For more details, see [GVQA task](docs/gvqa.md), [Dataset Features](docs/data_de
 <p align="right">(<a href="#top">back to top</a>)</p>
 
 ## Graph Visual Question Answering (GVQA) Dataset <a name="dataset"></a>
-We provide a GVQA dataset, featuring 71,223 keyframes out of 214,631 total frames across 1,759 routes with 100% completion and zero infractions. All scripts to generate the following VQA and keyframe files can be found [HERE](vqa_dataset).
+We provide a GVQA dataset, featuring 196,314 keyframes out of 581,662 total frames across 5,134 routes with 100% completion and zero infractions on 8 towns. All scripts to generate the VQA and keyframe files can be found [HERE](vqa_dataset).
 
-1. Download the PDM-Lite dataset (330+ GB extracted).
+### Download the PDM-Lite dataset (330+ GB extracted).
   **Note:** This dataset is based on the PDM-Lite expert with improvements integrated from ["Tackling CARLA Leaderboard 2.0 with
 End-to-End Imitation Learning"](https://kashyap7x.github.io/assets/pdf/students/Zimmerlin2024.pdf)
 ```
 cd vqa_dataset
 python download_pdm_lite_carla_lb2.py
 ```
-2. Get DriveLM-VGQA labels and keyframes:
-```
-wget https://huggingface.co/datasets/OpenDriveLab/DriveLM/resolve/main/drivelm_carla_keyframes.txt
-wget https://huggingface.co/datasets/OpenDriveLab/DriveLM/resolve/main/drivelm_carla_vqas.zip
-unzip drivelm_carla_vqas.zip
-```
+### Get DriveLM-GVQA Labels and Keyframes:
+1. Download keyframes file:
+    - Visit: <a href="https://huggingface.co/datasets/OpenDriveLab/DriveLM/tree/main">https://huggingface.co/datasets/OpenDriveLab/DriveLM/tree/main</a>
+    - Download `drivelm_carla_keyframes.txt`
+
+2. Download VQA dataset:
+   - From the same Hugging Face repository
+   - Download `drivelm_carla_vqas.zip`
+
+3. Extract the VQA dataset:
+   ```
+   unzip drivelm_carla_vqas.zip
+   ```
 
 <p align="right">(<a href="#top">back to top</a>)</p>
   
