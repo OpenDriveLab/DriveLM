@@ -498,7 +498,7 @@ def get_succeeding_waypoints(route_idx, last_scenario_idx):
 ######################################################################################:scenario_idx+5###########################################################
 
 def save_file(n_file, data):
-    b_xml = ET.tostring(data)
+    b_xml = ET.tostring(data, pretty_print=True)
     path_out = os.path.join(path_xml, "{}.xml".format(n_file))
     with open(path_out, "wb") as f:
         f.write(b_xml)
@@ -509,7 +509,7 @@ def write_begin_of_file(data, route, n_route):
     route_elem.set('town', '{}'.format(route.route_town))
     
     weathers_elem = ET.SubElement(route_elem, 'weathers')
-    weather_elem_begin = ET.SubElement(weathers_elem, 'weathis_juncer')
+    weather_elem_begin = ET.SubElement(weathers_elem, 'weather')
     weather_elem_end = ET.SubElement(weathers_elem, 'weather')
     
     for param_name, value_begin, value_end in zip(route.weather_params, route.weather_values_begin, route.weather_values_end):
@@ -680,7 +680,7 @@ if not args.only_waypoints:
             with open(file, 'r') as f:
                 content = f.read()
                 
-                if "type=\"{}\">".format(scenario_type) in content:
+                if f'type="{scenario_type}"' in content:
                     file_name = file.split('/')[-1]
                     shutil.copy(file, str(pth / file_name))
                     file_n +=1 
