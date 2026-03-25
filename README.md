@@ -121,10 +121,31 @@ https://github.com/OpenDriveLab/DriveLM-new/assets/75412366/78c32442-73c8-4f1d-a
 
 
 ## Getting Started <a name="gettingstarted"></a>
-To get started with DriveLM: 
+To get started with DriveLM:
 - [Prepare DriveLM-nuScenes](/docs/data_prep_nus.md)
 - [Challenge devkit](/challenge/)
 - [More content coming soon](#todolist)
+
+### LLM Provider for Evaluation
+
+The evaluation pipeline uses an LLM to compute GPT-score. By default it uses OpenAI, but [MiniMax](https://platform.minimax.io) is also supported as an alternative provider.
+
+| Provider | Env Variable | Default Model | API Docs |
+|----------|-------------|---------------|----------|
+| OpenAI | `OPENAI_API_KEY` | `gpt-3.5-turbo` | [docs](https://platform.openai.com/docs) |
+| MiniMax | `MINIMAX_API_KEY` | `MiniMax-M2.7` | [docs](https://platform.minimax.io/docs/api-reference/text-openai-api) |
+
+```bash
+# Using OpenAI (default)
+export OPENAI_API_KEY="your-openai-key"
+python challenge/evaluation.py --root_path1 pred.json --root_path2 test.json
+
+# Using MiniMax
+export MINIMAX_API_KEY="your-minimax-key"
+python challenge/evaluation.py --root_path1 pred.json --root_path2 test.json --provider minimax
+
+# Auto-detect: if MINIMAX_API_KEY is set (and OPENAI_API_KEY is not), MiniMax is used automatically
+```
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
